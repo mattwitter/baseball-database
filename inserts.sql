@@ -1,3890 +1,718 @@
+USE baseball;
+
 INSERT INTO teams
-(location, mascot, abbreviation,league,division)
-VALUES
-('Pittsburgh','Pirates','PIT','NL','Central'),
-('Texas','Rangers','TEX','AL','West'),
-('Kansas City','Royals','KC','AL','Central'),
-('Colorado','Rockies','COL','NL','West'),
-('St. Louis','Cardinals','STL','NL','Central'),
-('Minnesota','Twins','MIN','AL','Central'),
-('Chicago','Cubs','CHC','NL','Central'),
-('Tampa Bay','Rays','TB','AL','East'),
-('Seattle','Mariners','SEA','AL','West'),
-('Boston','Red Sox','BOS','AL','East'),
-('Oakland','Athletics','OAK','AL','West'),
-('Milwaukee','Brewers','MIL','NL','Central'),
-('Miami','Marlins','MIA','NL','East'),
-('Cleveland','Indians','CLE','AL','Central'),
-('San Francisco','Giants','SF','NL','West'),
-('Toronto','Blue Jays','TOR','AL','East'),
-('Los Angeles','Angels','LAA','AL','West'),
-('Atlanta','Braves','ATL','NL','East'),
-('Washington','Nationals','WSH','NL','East'),
-('Houston','Astros','HOU','AL','West'),
-('New York','Mets','NYM','NL','East'),
-('Cincinnati','Reds','CIN','NL','Central'),
-('Detroit','Tigers','DET','AL','Central'),
-('Baltimore','Orioles','BAL','AL','East'),
-('New York','Yankees','NYY','AL','East'),
-('San Diego','Padres','SD','NL','West');
-
-INSERT INTO players
-    (firstName, lastName, position, throws, hits, currentTeamId)
-VALUES
-("Chris",	"Archer",	"SP",	"R",	"R",
-(SELECT id FROM teams WHERE abbreviation = 'PIT'));
-
-INSERT INTO players
-    (firstName, lastName, position, throws, hits, currentTeamId)
-VALUES
-("Josh",	"Bell",	"1B",	"R",	"B",
-(SELECT id FROM teams WHERE abbreviation = 'PIT'));
-
-INSERT INTO players
-    (firstName, lastName, position, throws, hits, currentTeamId)
-VALUES
-("Francisco",	"Liriano",	"SP",	"L",	"L",
-(SELECT id FROM teams WHERE abbreviation = 'PIT'));
-
-INSERT INTO players
-    (firstName, lastName, position, throws, hits, currentTeamId)
-VALUES
-("Starling",	"Marte",	"CF",	"R",	"R",
-(SELECT id FROM teams WHERE abbreviation = 'PIT'));
-
-INSERT INTO players
-    (firstName, lastName, position, throws, hits, currentTeamId)
-VALUES
-("Colin",	"Moran",	"3B",	"R",	"L",
-(SELECT id FROM teams WHERE abbreviation = 'PIT'));
-
-INSERT INTO players
-    (firstName, lastName, position, throws, hits, currentTeamId)
-VALUES
-("Kevin",	"Newman",	"SS",	"R",	"R",
-(SELECT id FROM teams WHERE abbreviation = 'PIT'));
-
-INSERT INTO players
-    (firstName, lastName, position, throws, hits, currentTeamId)
-VALUES
-("Gregory",	"Polanco",	"RF",	"L",	"L",
-(SELECT id FROM teams WHERE abbreviation = 'PIT'));
-
-INSERT INTO players
-    (firstName, lastName, position, throws, hits, currentTeamId)
-VALUES
-("Bryan",	"Reynolds",	"LF",	"R",	"B",
-(SELECT id FROM teams WHERE abbreviation = 'PIT'));
-
-INSERT INTO players
-    (firstName, lastName, position, throws, hits, currentTeamId)
-VALUES
-("Jacob",	"Stallings",	"C",	"R",	"R",
-(SELECT id FROM teams WHERE abbreviation = 'PIT'));
-
-INSERT INTO players
-    (firstName, lastName, position, throws, hits, currentTeamId)
-VALUES
-("Cole",	"Tucker",	"SS",	"R",	"B",
-(SELECT id FROM teams WHERE abbreviation = 'PIT'));
-
-INSERT INTO players
-    (firstName, lastName, position, throws, hits, currentTeamId)
-VALUES
-("Felipe",	"Vazquez",	"RP",	"L",	"L",
-(SELECT id FROM teams WHERE abbreviation = 'PIT'));
-
-INSERT INTO players
-    (firstName, lastName, position, throws, hits, currentTeamId)
-VALUES
-("Elvis",	"Andrus",	"SS",	"R",	"R",
-(SELECT id FROM teams WHERE abbreviation = 'TEX'));
-
-INSERT INTO players
-    (firstName, lastName, position, throws, hits, currentTeamId)
-VALUES
-("Asdrubal",	"Cabrera",	"3B",	"R",	"B",
-(SELECT id FROM teams WHERE abbreviation = 'TEX'));
-
-INSERT INTO players
-    (firstName, lastName, position, throws, hits, currentTeamId)
-VALUES
-("Jesse",	"Chavez",	"RP",	"R",	"R",
-(SELECT id FROM teams WHERE abbreviation = 'TEX'));
-
-INSERT INTO players
-    (firstName, lastName, position, throws, hits, currentTeamId)
-VALUES
-("Delino",	"DeShields",	"LF",	"R",	"R",
-(SELECT id FROM teams WHERE abbreviation = 'TEX'));
-
-INSERT INTO players
-    (firstName, lastName, position, throws, hits, currentTeamId)
-VALUES
-("Ronald",	"Guzman",	"1B",	"L",	"L",
-(SELECT id FROM teams WHERE abbreviation = 'TEX'));
-
-INSERT INTO players
-    (firstName, lastName, position, throws, hits, currentTeamId)
-VALUES
-("Ariel",	"Jurado",	"RP",	"R",	"R",
-(SELECT id FROM teams WHERE abbreviation = 'TEX'));
-
-INSERT INTO players
-    (firstName, lastName, position, throws, hits, currentTeamId)
-VALUES
-("Shawn",	"Kelley",	"RP",	"R",	"R",
-(SELECT id FROM teams WHERE abbreviation = 'TEX'));
-
-INSERT INTO players
-    (firstName, lastName, position, throws, hits, currentTeamId)
-VALUES
-("Isiah",	"Kiner-Falefa",	"C",	"R",	"R",
-(SELECT id FROM teams WHERE abbreviation = 'TEX'));
-
-INSERT INTO players
-    (firstName, lastName, position, throws, hits, currentTeamId)
-VALUES
-("Chris",	"Martin",	"RP",	"R",	"R",
-(SELECT id FROM teams WHERE abbreviation = 'TEX'));
-
-INSERT INTO players
-    (firstName, lastName, position, throws, hits, currentTeamId)
-VALUES
-("Nomar",	"Mazara",	"RF",	"L",	"L",
-(SELECT id FROM teams WHERE abbreviation = 'TEX'));
-
-INSERT INTO players
-    (firstName, lastName, position, throws, hits, currentTeamId)
-VALUES
-("Rougned",	"Odor",	"2B",	"R",	"L",
-(SELECT id FROM teams WHERE abbreviation = 'TEX'));
-
-INSERT INTO players
-    (firstName, lastName, position, throws, hits, currentTeamId)
-VALUES
-("Hunter",	"Pence",	"RF",	"R",	"R",
-(SELECT id FROM teams WHERE abbreviation = 'TEX'));
-
-INSERT INTO players
-    (firstName, lastName, position, throws, hits, currentTeamId)
-VALUES
-("Danny",	"Santana",	"CF",	"R",	"B",
-(SELECT id FROM teams WHERE abbreviation = 'TEX'));
-
-INSERT INTO players
-    (firstName, lastName, position, throws, hits, currentTeamId)
-VALUES
-("Scott",	"Barlow",	"RP",	"R",	"R",
-(SELECT id FROM teams WHERE abbreviation = 'KC'));
-
-INSERT INTO players
-    (firstName, lastName, position, throws, hits, currentTeamId)
-VALUES
-("Cheslor",	"Cuthbert",	"3B",	"R",	"R",
-(SELECT id FROM teams WHERE abbreviation = 'KC'));
-
-INSERT INTO players
-    (firstName, lastName, position, throws, hits, currentTeamId)
-VALUES
-("Danny",	"Duffy",	"SP",	"L",	"L",
-(SELECT id FROM teams WHERE abbreviation = 'KC'));
-
-INSERT INTO players
-    (firstName, lastName, position, throws, hits, currentTeamId)
-VALUES
-("Brian",	"Flynn",	"RP",	"L",	"L",
-(SELECT id FROM teams WHERE abbreviation = 'KC'));
-
-INSERT INTO players
-    (firstName, lastName, position, throws, hits, currentTeamId)
-VALUES
-("Cam",	"Gallagher",	"C",	"R",	"R",
-(SELECT id FROM teams WHERE abbreviation = 'KC'));
-
-INSERT INTO players
-    (firstName, lastName, position, throws, hits, currentTeamId)
-VALUES
-("Alex",	"Gordon",	"LF",	"R",	"L",
-(SELECT id FROM teams WHERE abbreviation = 'KC'));
-
-
-INSERT INTO players
-    (firstName, lastName, position, throws, hits, currentTeamId)
-VALUES
-("Billy",	"Hamilton",	"CF",	"R",	"B",
-(SELECT id FROM teams WHERE abbreviation = 'KC'));
-
-INSERT INTO players
-    (firstName, lastName, position, throws, hits, currentTeamId)
-VALUES
-("Nicky",	"Lopez",	"2B",	"R",	"L",
-(SELECT id FROM teams WHERE abbreviation = 'KC'));
-
-INSERT INTO players
-    (firstName, lastName, position, throws, hits, currentTeamId)
-VALUES
-("Kevin",	"McCarthy",	"RP",	"R",	"R",
-(SELECT id FROM teams WHERE abbreviation = 'KC'));
-
-INSERT INTO players
-    (firstName, lastName, position, throws, hits, currentTeamId)
-VALUES
-("Whit",	"Merrifield",	"2B",	"R",	"R",
-(SELECT id FROM teams WHERE abbreviation = 'KC'));
-
-INSERT INTO players
-    (firstName, lastName, position, throws, hits, currentTeamId)
-VALUES
-("Adalberto",	"Mondesi",	"2B",	"R",	"B",
-(SELECT id FROM teams WHERE abbreviation = 'KC'));
-
-INSERT INTO players
-    (firstName, lastName, position, throws, hits, currentTeamId)
-VALUES
-("Ryan",	"O'Hearn",	"1B",	"L",	"L",
-(SELECT id FROM teams WHERE abbreviation = 'KC'));
-
-INSERT INTO players
-    (firstName, lastName, position, throws, hits, currentTeamId)
-VALUES
-("Jorge",	"Soler",	"RF",	"R",	"R",
-(SELECT id FROM teams WHERE abbreviation = 'KC'));
-
-INSERT INTO players
-    (firstName, lastName, position, throws, hits, currentTeamId)
-VALUES
-("Nolan",	"Arenado",	"3B",	"R",	"R",
-(SELECT id FROM teams WHERE abbreviation = 'COL'));
-
-INSERT INTO players
-    (firstName, lastName, position, throws, hits, currentTeamId)
-VALUES
-("David",	"Dahl",	"LF",	"R",	"L",
-(SELECT id FROM teams WHERE abbreviation = 'COL'));
-
-INSERT INTO players
-    (firstName, lastName, position, throws, hits, currentTeamId)
-VALUES
-("Ian",	"Desmond",	"1B",	"R",	"R",
-(SELECT id FROM teams WHERE abbreviation = 'COL'));
-
-
-INSERT INTO players
-    (firstName, lastName, position, throws, hits, currentTeamId)
-VALUES
-("Jairo",	"Diaz",	"RP",	"R",	"R",
-(SELECT id FROM teams WHERE abbreviation = 'COL'));
-
-INSERT INTO players
-    (firstName, lastName, position, throws, hits, currentTeamId)
-VALUES
-("Chris",	"Iannetta",	"C",	"R",	"R",
-(SELECT id FROM teams WHERE abbreviation = 'COL'));
-
-INSERT INTO players
-    (firstName, lastName, position, throws, hits, currentTeamId)
-VALUES
-("Peter",	"Lambert",	"SP",	"R",	"R",
-(SELECT id FROM teams WHERE abbreviation = 'COL'));
-
-INSERT INTO players
-    (firstName, lastName, position, throws, hits, currentTeamId)
-VALUES
-("Scott",	"Oberg",	"RP",	"R",	"R",
-(SELECT id FROM teams WHERE abbreviation = 'COL'));
-
-INSERT INTO players
-    (firstName, lastName, position, throws, hits, currentTeamId)
-VALUES
-("Mark",	"Reynolds",	"1B",	"R",	"R",
-(SELECT id FROM teams WHERE abbreviation = 'COL'));
-
-INSERT INTO players
-    (firstName, lastName, position, throws, hits, currentTeamId)
-VALUES
-("Brendan",	"Rodgers",	"SS",	"R",	"R",
-(SELECT id FROM teams WHERE abbreviation = 'COL'));
-
-INSERT INTO players
-    (firstName, lastName, position, throws, hits, currentTeamId)
-VALUES
-("Trevor",	"Story",	"SS",	"R",	"R",
-(SELECT id FROM teams WHERE abbreviation = 'COL'));
-
-INSERT INTO players
-    (firstName, lastName, position, throws, hits, currentTeamId)
-VALUES
-("Raimel",	"Tapia",	"CF",	"L",	"L",
-(SELECT id FROM teams WHERE abbreviation = 'COL'));
-
-INSERT INTO players
-    (firstName, lastName, position, throws, hits, currentTeamId)
-VALUES
-("Harrison",	"Bader",	"CF",	"R",	"R",
-(SELECT id FROM teams WHERE abbreviation = 'STL'));
-
-INSERT INTO players
-    (firstName, lastName, position, throws, hits, currentTeamId)
-VALUES
-("Matt",	"Carpenter",	"1B",	"R",	"L",
-(SELECT id FROM teams WHERE abbreviation = 'STL'));
-
-
-INSERT INTO players
-    (firstName, lastName, position, throws, hits, currentTeamId)
-VALUES
-("Paul",	"DeJong",	"SS",	"R",	"R",
-(SELECT id FROM teams WHERE abbreviation = 'STL'));
-
-INSERT INTO players
-    (firstName, lastName, position, throws, hits, currentTeamId)
-VALUES
-("Dexter",	"Fowler",	"RF",	"R",	"B",
-(SELECT id FROM teams WHERE abbreviation = 'STL'));
-
-INSERT INTO players
-    (firstName, lastName, position, throws, hits, currentTeamId)
-VALUES
-("John",	"Gant",	"RP",	"R",	"R",
-(SELECT id FROM teams WHERE abbreviation = 'STL'));
-
-INSERT INTO players
-    (firstName, lastName, position, throws, hits, currentTeamId)
-VALUES
-("Paul",	"Goldschmidt",	"1B",	"R",	"R",
-(SELECT id FROM teams WHERE abbreviation = 'STL'));
-
-INSERT INTO players
-    (firstName, lastName, position, throws, hits, currentTeamId)
-VALUES
-("Jordan",	"Hicks",	"RP",	"R",	"R",
-(SELECT id FROM teams WHERE abbreviation = 'STL'));
-
-INSERT INTO players
-    (firstName, lastName, position, throws, hits, currentTeamId)
-VALUES
-("Dakota",	"Hudson",	"SP",	"R",	"R",
-(SELECT id FROM teams WHERE abbreviation = 'STL'));
-
-INSERT INTO players
-    (firstName, lastName, position, throws, hits, currentTeamId)
-VALUES
-("Andrew",	"Miller",	"RP",	"L",	"L",
-(SELECT id FROM teams WHERE abbreviation = 'STL'));
-
-INSERT INTO players
-    (firstName, lastName, position, throws, hits, currentTeamId)
-VALUES
-("Marcell",	"Ozuna",	"LF",	"R",	"R",
-(SELECT id FROM teams WHERE abbreviation = 'STL'));
-
-INSERT INTO players
-    (firstName, lastName, position, throws, hits, currentTeamId)
-VALUES
-("Matt",	"Wieters",	"C",	"R",	"B",
-(SELECT id FROM teams WHERE abbreviation = 'STL'));
-
-INSERT INTO players
-    (firstName, lastName, position, throws, hits, currentTeamId)
-VALUES
-("Kolten",	"Wong",	"2B",	"R",	"L",
-(SELECT id FROM teams WHERE abbreviation = 'STL'));
-
-
-INSERT INTO players
-    (firstName, lastName, position, throws, hits, currentTeamId)
-VALUES
-("Ehire",	"Adrianza",	"SS",	"R",	"B",
-(SELECT id FROM teams WHERE abbreviation = 'MIN'));
-
-INSERT INTO players
-    (firstName, lastName, position, throws, hits, currentTeamId)
-VALUES
-("Willians",	"Astudillo",	"C",	"R",	"R",
-(SELECT id FROM teams WHERE abbreviation = 'MIN'));
-
-INSERT INTO players
-    (firstName, lastName, position, throws, hits, currentTeamId)
-VALUES
-("Jose",	"Berrios",	"SP",	"R",	"R",
-(SELECT id FROM teams WHERE abbreviation = 'MIN'));
-
-INSERT INTO players
-    (firstName, lastName, position, throws, hits, currentTeamId)
-VALUES
-("C.J.",	"Cron",	"1B",	"R",	"R",
-(SELECT id FROM teams WHERE abbreviation = 'MIN'));
-
-INSERT INTO players
-    (firstName, lastName, position, throws, hits, currentTeamId)
-VALUES
-("Mitch",	"Garver",	"C",	"R",	"R",
-(SELECT id FROM teams WHERE abbreviation = 'MIN'));
-
-INSERT INTO players
-    (firstName, lastName, position, throws, hits, currentTeamId)
-VALUES
-("Marwin",	"Gonzalez",	"3B",	"R",	"B",
-(SELECT id FROM teams WHERE abbreviation = 'MIN'));
-
-INSERT INTO players
-    (firstName, lastName, position, throws, hits, currentTeamId)
-VALUES
-("Max",	"Kepler",	"RF",	"L",	"L",
-(SELECT id FROM teams WHERE abbreviation = 'MIN'));
-
-INSERT INTO players
-    (firstName, lastName, position, throws, hits, currentTeamId)
-VALUES
-("Matt",	"Magill",	"RP",	"R",	"R",
-(SELECT id FROM teams WHERE abbreviation = 'MIN'));
-
-INSERT INTO players
-    (firstName, lastName, position, throws, hits, currentTeamId)
-VALUES
-("Trevor",	"May",	"RP",	"R",	"R",
-(SELECT id FROM teams WHERE abbreviation = 'MIN'));
-
-INSERT INTO players
-    (firstName, lastName, position, throws, hits, currentTeamId)
-VALUES
-("Jorge",	"Polanco",	"SS",	"R",	"B",
-(SELECT id FROM teams WHERE abbreviation = 'MIN'));
-
-
-INSERT INTO players
-    (firstName, lastName, position, throws, hits, currentTeamId)
-VALUES
-("Taylor",	"Rogers",	"RP",	"L",	"L",
-(SELECT id FROM teams WHERE abbreviation = 'MIN'));
-
-INSERT INTO players
-    (firstName, lastName, position, throws, hits, currentTeamId)
-VALUES
-("Eddie",	"Rosario",	"LF",	"R",	"L",
-(SELECT id FROM teams WHERE abbreviation = 'MIN'));
-
-INSERT INTO players
-    (firstName, lastName, position, throws, hits, currentTeamId)
-VALUES
-("Jonathan",	"Schoop",	"2B",	"R",	"R",
-(SELECT id FROM teams WHERE abbreviation = 'MIN'));
-
-INSERT INTO players
-    (firstName, lastName, position, throws, hits, currentTeamId)
-VALUES
-("Albert",	"Almora Jr.",	"CF",	"R",	"R",
-(SELECT id FROM teams WHERE abbreviation = 'CHC'));
-
-INSERT INTO players
-    (firstName, lastName, position, throws, hits, currentTeamId)
-VALUES
-("Javier",	"Baez",	"SS",	"R",	"R",
-(SELECT id FROM teams WHERE abbreviation = 'CHC'));
-
-INSERT INTO players
-    (firstName, lastName, position, throws, hits, currentTeamId)
-VALUES
-("David",	"Bote",	"3B",	"R",	"R",
-(SELECT id FROM teams WHERE abbreviation = 'CHC'));
-
-INSERT INTO players
-    (firstName, lastName, position, throws, hits, currentTeamId)
-VALUES
-("Kris",	"Bryant",	"3B",	"R",	"R",
-(SELECT id FROM teams WHERE abbreviation = 'CHC'));
-
-INSERT INTO players
-    (firstName, lastName, position, throws, hits, currentTeamId)
-VALUES
-("Willson",	"Contreras",	"C",	"R",	"R",
-(SELECT id FROM teams WHERE abbreviation = 'CHC'));
-
-INSERT INTO players
-    (firstName, lastName, position, throws, hits, currentTeamId)
-VALUES
-("Daniel",	"Descalso",	"3B",	"R",	"L",
-(SELECT id FROM teams WHERE abbreviation = 'CHC'));
-
-INSERT INTO players
-    (firstName, lastName, position, throws, hits, currentTeamId)
-VALUES
-("Carl",	"Edwards Jr.",	"RP",	"R",	"R",
-(SELECT id FROM teams WHERE abbreviation = 'CHC'));
-
-
-INSERT INTO players
-    (firstName, lastName, position, throws, hits, currentTeamId)
-VALUES
-("Jose",	"Quintana",	"SP",	"L",	"R",
-(SELECT id FROM teams WHERE abbreviation = 'CHC'));
-
-INSERT INTO players
-    (firstName, lastName, position, throws, hits, currentTeamId)
-VALUES
-("Anthony",	"Rizzo",	"1B",	"L",	"L",
-(SELECT id FROM teams WHERE abbreviation = 'CHC'));
-
-INSERT INTO players
-    (firstName, lastName, position, throws, hits, currentTeamId)
-VALUES
-("Kyle",	"Ryan",	"SP",	"L",	"L",
-(SELECT id FROM teams WHERE abbreviation = 'CHC'));
-
-INSERT INTO players
-    (firstName, lastName, position, throws, hits, currentTeamId)
-VALUES
-("Kyle",	"Schwarber",	"LF",	"R",	"L",
-(SELECT id FROM teams WHERE abbreviation = 'CHC'));
-
-INSERT INTO players
-    (firstName, lastName, position, throws, hits, currentTeamId)
-VALUES
-("Willy",	"Adames",	"SS",	"R",	"R",
-(SELECT id FROM teams WHERE abbreviation = 'TB'));
-
-INSERT INTO players
-    (firstName, lastName, position, throws, hits, currentTeamId)
-VALUES
-("Christian",	"Arroyo",	"3B",	"R",	"R",
-(SELECT id FROM teams WHERE abbreviation = 'TB'));
-
-INSERT INTO players
-    (firstName, lastName, position, throws, hits, currentTeamId)
-VALUES
-("Jalen",	"Beeks",	"RP",	"L",	"L",
-(SELECT id FROM teams WHERE abbreviation = 'TB'));
-
-INSERT INTO players
-    (firstName, lastName, position, throws, hits, currentTeamId)
-VALUES
-("Diego",	"Castillo",	"RP",	"R",	"R",
-(SELECT id FROM teams WHERE abbreviation = 'TB'));
-
-INSERT INTO players
-    (firstName, lastName, position, throws, hits, currentTeamId)
-VALUES
-("Travis",	"d'Arnaud",	"C",	"R",	"R",
-(SELECT id FROM teams WHERE abbreviation = 'TB'));
-
-INSERT INTO players
-    (firstName, lastName, position, throws, hits, currentTeamId)
-VALUES
-("Yandy",	"Diaz",	"3B",	"R",	"R",
-(SELECT id FROM teams WHERE abbreviation = 'TB'));
-
-
-INSERT INTO players
-    (firstName, lastName, position, throws, hits, currentTeamId)
-VALUES
-("Avisail",	"Garcia",	"RF",	"R",	"R",
-(SELECT id FROM teams WHERE abbreviation = 'TB'));
-
-INSERT INTO players
-    (firstName, lastName, position, throws, hits, currentTeamId)
-VALUES
-("Kevin",	"Kiermaier",	"CF",	"R",	"L",
-(SELECT id FROM teams WHERE abbreviation = 'TB'));
-
-INSERT INTO players
-    (firstName, lastName, position, throws, hits, currentTeamId)
-VALUES
-("Austin",	"Meadows",	"CF",	"L",	"L",
-(SELECT id FROM teams WHERE abbreviation = 'TB'));
-
-INSERT INTO players
-    (firstName, lastName, position, throws, hits, currentTeamId)
-VALUES
-("Tommy",	"Pham",	"CF",	"R",	"R",
-(SELECT id FROM teams WHERE abbreviation = 'TB'));
-
-INSERT INTO players
-    (firstName, lastName, position, throws, hits, currentTeamId)
-VALUES
-("Daniel",	"Robertson",	"2B",	"R",	"R",
-(SELECT id FROM teams WHERE abbreviation = 'TB'));
-
-INSERT INTO players
-    (firstName, lastName, position, throws, hits, currentTeamId)
-VALUES
-("Chaz",	"Roe",	"RP",	"R",	"R",
-(SELECT id FROM teams WHERE abbreviation = 'TB'));
-
-INSERT INTO players
-    (firstName, lastName, position, throws, hits, currentTeamId)
-VALUES
-("Ryne",	"Stanek",	"RP",	"R",	"R",
-(SELECT id FROM teams WHERE abbreviation = 'TB'));
-
-INSERT INTO players
-    (firstName, lastName, position, throws, hits, currentTeamId)
-VALUES
-("Hunter",	"Wood",	"RP",	"R",	"R",
-(SELECT id FROM teams WHERE abbreviation = 'TB'));
-
-INSERT INTO players
-    (firstName, lastName, position, throws, hits, currentTeamId)
-VALUES
-("Austin",	"Adams",	"RP",	"R",	"R",
-(SELECT id FROM teams WHERE abbreviation = 'SEA'));
-
-INSERT INTO players
-    (firstName, lastName, position, throws, hits, currentTeamId)
-VALUES
-("Anthony",	"Bass",	"RP",	"R",	"R",
-(SELECT id FROM teams WHERE abbreviation = 'SEA'));
-
-
-INSERT INTO players
-    (firstName, lastName, position, throws, hits, currentTeamId)
-VALUES
-("Gerson",	"Bautista",	"RP",	"R",	"R",
-(SELECT id FROM teams WHERE abbreviation = 'SEA'));
-
-INSERT INTO players
-    (firstName, lastName, position, throws, hits, currentTeamId)
-VALUES
-("Brandon",	"Brennan",	"RP",	"R",	"R",
-(SELECT id FROM teams WHERE abbreviation = 'SEA'));
-
-INSERT INTO players
-    (firstName, lastName, position, throws, hits, currentTeamId)
-VALUES
-("Roenis",	"Elias",	"SP",	"L",	"L",
-(SELECT id FROM teams WHERE abbreviation = 'SEA'));
-
-INSERT INTO players
-    (firstName, lastName, position, throws, hits, currentTeamId)
-VALUES
-("Edwin",	"Encarnacion",	"DH",	"R",	"R",
-(SELECT id FROM teams WHERE abbreviation = 'SEA'));
-
-INSERT INTO players
-    (firstName, lastName, position, throws, hits, currentTeamId)
-VALUES
-("Matt",	"Festa",	"RP",	"R",	"R",
-(SELECT id FROM teams WHERE abbreviation = 'SEA'));
-
-INSERT INTO players
-    (firstName, lastName, position, throws, hits, currentTeamId)
-VALUES
-("Cory",	"Gearrin",	"RP",	"R",	"R",
-(SELECT id FROM teams WHERE abbreviation = 'SEA'));
-
-INSERT INTO players
-    (firstName, lastName, position, throws, hits, currentTeamId)
-VALUES
-("Mitch",	"Haniger",	"RF",	"R",	"R",
-(SELECT id FROM teams WHERE abbreviation = 'SEA'));
-
-INSERT INTO players
-    (firstName, lastName, position, throws, hits, currentTeamId)
-VALUES
-("Shed",	"Long",	"2B",	"R",	"L",
-(SELECT id FROM teams WHERE abbreviation = 'SEA'));
-
-INSERT INTO players
-    (firstName, lastName, position, throws, hits, currentTeamId)
-VALUES
-("Tommy",	"Milone",	"SP",	"L",	"L",
-(SELECT id FROM teams WHERE abbreviation = 'SEA'));
-
-INSERT INTO players
-    (firstName, lastName, position, throws, hits, currentTeamId)
-VALUES
-("Dylan",	"Moore",	"3B",	"R",	"R",
-(SELECT id FROM teams WHERE abbreviation = 'SEA'));
-
-
-INSERT INTO players
-    (firstName, lastName, position, throws, hits, currentTeamId)
-VALUES
-("Omar",	"Narvaez",	"C",	"R",	"L",
-(SELECT id FROM teams WHERE abbreviation = 'SEA'));
-
-INSERT INTO players
-    (firstName, lastName, position, throws, hits, currentTeamId)
-VALUES
-("Domingo",	"Santana",	"RF",	"R",	"R",
-(SELECT id FROM teams WHERE abbreviation = 'SEA'));
-
-INSERT INTO players
-    (firstName, lastName, position, throws, hits, currentTeamId)
-VALUES
-("Kyle",	"Seager",	"3B",	"R",	"L",
-(SELECT id FROM teams WHERE abbreviation = 'SEA'));
-
-INSERT INTO players
-    (firstName, lastName, position, throws, hits, currentTeamId)
-VALUES
-("Mallex",	"Smith",	"CF",	"R",	"L",
-(SELECT id FROM teams WHERE abbreviation = 'SEA'));
-
-INSERT INTO players
-    (firstName, lastName, position, throws, hits, currentTeamId)
-VALUES
-("Daniel",	"Vogelbach",	"1B",	"R",	"L",
-(SELECT id FROM teams WHERE abbreviation = 'SEA'));
-
-INSERT INTO players
-    (firstName, lastName, position, throws, hits, currentTeamId)
-VALUES
-("Matt",	"Barnes",	"RP",	"R",	"R",
-(SELECT id FROM teams WHERE abbreviation = 'BOS'));
-
-INSERT INTO players
-    (firstName, lastName, position, throws, hits, currentTeamId)
-VALUES
-("Andrew",	"Benintendi",	"LF",	"L",	"L",
-(SELECT id FROM teams WHERE abbreviation = 'BOS'));
-
-INSERT INTO players
-    (firstName, lastName, position, throws, hits, currentTeamId)
-VALUES
-("Mookie",	"Betts",	"RF",	"R",	"R",
-(SELECT id FROM teams WHERE abbreviation = 'BOS'));
-
-INSERT INTO players
-    (firstName, lastName, position, throws, hits, currentTeamId)
-VALUES
-("Xander",	"Bogaerts",	"SS",	"R",	"R",
-(SELECT id FROM teams WHERE abbreviation = 'BOS'));
-
-INSERT INTO players
-    (firstName, lastName, position, throws, hits, currentTeamId)
-VALUES
-("Jackie",	"Bradley Jr.",	"CF",	"R",	"L",
-(SELECT id FROM teams WHERE abbreviation = 'BOS'));
-
-INSERT INTO players
-    (firstName, lastName, position, throws, hits, currentTeamId)
-VALUES
-("Ryan",	"Brasier",	"RP",	"R",	"R",
-(SELECT id FROM teams WHERE abbreviation = 'BOS'));
-
-INSERT INTO players
-    (firstName, lastName, position, throws, hits, currentTeamId)
-VALUES
-("Colten",	"Brewer",	"RP",	"R",	"R",
-(SELECT id FROM teams WHERE abbreviation = 'BOS'));
-
-INSERT INTO players
-    (firstName, lastName, position, throws, hits, currentTeamId)
-VALUES
-("Michael",	"Chavis",	"3B",	"R",	"R",
-(SELECT id FROM teams WHERE abbreviation = 'BOS'));
-
-INSERT INTO players
-    (firstName, lastName, position, throws, hits, currentTeamId)
-VALUES
-("Rafael",	"Devers",	"3B",	"R",	"L",
-(SELECT id FROM teams WHERE abbreviation = 'BOS'));
-
-INSERT INTO players
-    (firstName, lastName, position, throws, hits, currentTeamId)
-VALUES
-("Heath",	"Hembree",	"RP",	"R",	"R",
-(SELECT id FROM teams WHERE abbreviation = 'BOS'));
-
-INSERT INTO players
-    (firstName, lastName, position, throws, hits, currentTeamId)
-VALUES
-("J.D.",	"Martinez",	"LF",	"R",	"R",
-(SELECT id FROM teams WHERE abbreviation = 'BOS'));
-
-INSERT INTO players
-    (firstName, lastName, position, throws, hits, currentTeamId)
-VALUES
-("Eduardo",	"Nunez",	"2B",	"R",	"R",
-(SELECT id FROM teams WHERE abbreviation = 'BOS'));
-
-INSERT INTO players
-    (firstName, lastName, position, throws, hits, currentTeamId)
-VALUES
-("Josh",	"Taylor",	"RP",	"L",	"L",
-(SELECT id FROM teams WHERE abbreviation = 'BOS'));
-
-INSERT INTO players
-    (firstName, lastName, position, throws, hits, currentTeamId)
-VALUES
-("Christian",	"Vazquez",	"C",	"R",	"R",
-(SELECT id FROM teams WHERE abbreviation = 'BOS'));
-
-INSERT INTO players
-    (firstName, lastName, position, throws, hits, currentTeamId)
-VALUES
-("Marcus",	"Walden",	"RP",	"R",	"R",
-(SELECT id FROM teams WHERE abbreviation = 'BOS'));
-
-
-INSERT INTO players
-    (firstName, lastName, position, throws, hits, currentTeamId)
-VALUES
-("Ryan",	"Weber",	"RP",	"R",	"R",
-(SELECT id FROM teams WHERE abbreviation = 'BOS'));
-
-INSERT INTO players
-    (firstName, lastName, position, throws, hits, currentTeamId)
-VALUES
-("Ryan",	"Buchter",	"RP",	"L",	"L",
-(SELECT id FROM teams WHERE abbreviation = 'OAK'));
-
-INSERT INTO players
-    (firstName, lastName, position, throws, hits, currentTeamId)
-VALUES
-("Mark",	"Canha",	"1B",	"R",	"R",
-(SELECT id FROM teams WHERE abbreviation = 'OAK'));
-
-INSERT INTO players
-    (firstName, lastName, position, throws, hits, currentTeamId)
-VALUES
-("Matt",	"Chapman",	"3B",	"R",	"R",
-(SELECT id FROM teams WHERE abbreviation = 'OAK'));
-
-INSERT INTO players
-    (firstName, lastName, position, throws, hits, currentTeamId)
-VALUES
-("Khris",	"Davis",	"LF",	"R",	"R",
-(SELECT id FROM teams WHERE abbreviation = 'OAK'));
-
-INSERT INTO players
-    (firstName, lastName, position, throws, hits, currentTeamId)
-VALUES
-("Mike",	"Fiers",	"SP",	"R",	"R",
-(SELECT id FROM teams WHERE abbreviation = 'OAK'));
-
-INSERT INTO players
-    (firstName, lastName, position, throws, hits, currentTeamId)
-VALUES
-("Liam",	"Hendriks",	"RP",	"R",	"R",
-(SELECT id FROM teams WHERE abbreviation = 'OAK'));
-
-INSERT INTO players
-    (firstName, lastName, position, throws, hits, currentTeamId)
-VALUES
-("Ramon",	"Laureano",	"CF",	"R",	"R",
-(SELECT id FROM teams WHERE abbreviation = 'OAK'));
-
-INSERT INTO players
-    (firstName, lastName, position, throws, hits, currentTeamId)
-VALUES
-("Josh",	"Phegley",	"C",	"R",	"R",
-(SELECT id FROM teams WHERE abbreviation = 'OAK'));
-
-INSERT INTO players
-    (firstName, lastName, position, throws, hits, currentTeamId)
-VALUES
-("Chad",	"Pinder",	"SS",	"R",	"R",
-(SELECT id FROM teams WHERE abbreviation = 'OAK'));
-
-
-INSERT INTO players
-    (firstName, lastName, position, throws, hits, currentTeamId)
-VALUES
-("Stephen",	"Piscotty",	"RF",	"R",	"R",
-(SELECT id FROM teams WHERE abbreviation = 'OAK'));
-
-INSERT INTO players
-    (firstName, lastName, position, throws, hits, currentTeamId)
-VALUES
-("Jurickson",	"Profar",	"SS",	"R",	"B",
-(SELECT id FROM teams WHERE abbreviation = 'OAK'));
-
-INSERT INTO players
-    (firstName, lastName, position, throws, hits, currentTeamId)
-VALUES
-("Marcus",	"Semien",	"SS",	"R",	"R",
-(SELECT id FROM teams WHERE abbreviation = 'OAK'));
-
-INSERT INTO players
-    (firstName, lastName, position, throws, hits, currentTeamId)
-VALUES
-("Joakim",	"Soria",	"RP",	"R",	"R",
-(SELECT id FROM teams WHERE abbreviation = 'OAK'));
-
-INSERT INTO players
-    (firstName, lastName, position, throws, hits, currentTeamId)
-VALUES
-("Lou",	"Trivino",	"RP",	"R",	"R",
-(SELECT id FROM teams WHERE abbreviation = 'OAK'));
-
-INSERT INTO players
-    (firstName, lastName, position, throws, hits, currentTeamId)
-VALUES
-("Jesus",	"Aguilar",	"1B",	"R",	"R",
-(SELECT id FROM teams WHERE abbreviation = 'MIL'));
-
-INSERT INTO players
-    (firstName, lastName, position, throws, hits, currentTeamId)
-VALUES
-("Orlando",	"Arcia",	"SS",	"R",	"R",
-(SELECT id FROM teams WHERE abbreviation = 'MIL'));
-
-INSERT INTO players
-    (firstName, lastName, position, throws, hits, currentTeamId)
-VALUES
-("Ryan",	"Braun",	"LF",	"R",	"R",
-(SELECT id FROM teams WHERE abbreviation = 'MIL'));
-
-INSERT INTO players
-    (firstName, lastName, position, throws, hits, currentTeamId)
-VALUES
-("Lorenzo",	"Cain",	"CF",	"R",	"R",
-(SELECT id FROM teams WHERE abbreviation = 'MIL'));
-
-INSERT INTO players
-    (firstName, lastName, position, throws, hits, currentTeamId)
-VALUES
-("Josh",	"Hader",	"RP",	"L",	"L",
-(SELECT id FROM teams WHERE abbreviation = 'MIL'));
-
-
-INSERT INTO players
-    (firstName, lastName, position, throws, hits, currentTeamId)
-VALUES
-("Jeremy",	"Jeffress",	"RP",	"R",	"R",
-(SELECT id FROM teams WHERE abbreviation = 'MIL'));
-
-INSERT INTO players
-    (firstName, lastName, position, throws, hits, currentTeamId)
-VALUES
-("Mike",	"Moustakas",	"2B",	"R",	"L",
-(SELECT id FROM teams WHERE abbreviation = 'MIL'));
-
-INSERT INTO players
-    (firstName, lastName, position, throws, hits, currentTeamId)
-VALUES
-("Freddy",	"Peralta",	"SP",	"R",	"R",
-(SELECT id FROM teams WHERE abbreviation = 'MIL'));
-
-INSERT INTO players
-    (firstName, lastName, position, throws, hits, currentTeamId)
-VALUES
-("Hernan",	"Perez",	"3B",	"R",	"R",
-(SELECT id FROM teams WHERE abbreviation = 'MIL'));
-
-INSERT INTO players
-    (firstName, lastName, position, throws, hits, currentTeamId)
-VALUES
-("Manny",	"Pina",	"C",	"R",	"R",
-(SELECT id FROM teams WHERE abbreviation = 'MIL'));
-
-INSERT INTO players
-    (firstName, lastName, position, throws, hits, currentTeamId)
-VALUES
-("Christian",	"Yelich",	"RF",	"R",	"L",
-(SELECT id FROM teams WHERE abbreviation = 'MIL'));
-
-INSERT INTO players
-    (firstName, lastName, position, throws, hits, currentTeamId)
-VALUES
-("Jorge",	"Alfaro",	"C",	"R",	"R",
-(SELECT id FROM teams WHERE abbreviation = 'MIA'));
-
-INSERT INTO players
-    (firstName, lastName, position, throws, hits, currentTeamId)
-VALUES
-("Brian",	"Anderson",	"3B",	"R",	"R",
-(SELECT id FROM teams WHERE abbreviation = 'MIA'));
-
-INSERT INTO players
-    (firstName, lastName, position, throws, hits, currentTeamId)
-VALUES
-("Austin",	"Brice",	"RP",	"R",	"R",
-(SELECT id FROM teams WHERE abbreviation = 'MIA'));
-
-INSERT INTO players
-    (firstName, lastName, position, throws, hits, currentTeamId)
-VALUES
-("Starlin",	"Castro",	"2B",	"R",	"R",
-(SELECT id FROM teams WHERE abbreviation = 'MIA'));
-
-
-INSERT INTO players
-    (firstName, lastName, position, throws, hits, currentTeamId)
-VALUES
-("Garrett",	"Cooper",	"LF",	"R",	"R",
-(SELECT id FROM teams WHERE abbreviation = 'MIA'));
-
-INSERT INTO players
-    (firstName, lastName, position, throws, hits, currentTeamId)
-VALUES
-("Austin",	"Dean",	"LF",	"R",	"R",
-(SELECT id FROM teams WHERE abbreviation = 'MIA'));
-
-INSERT INTO players
-    (firstName, lastName, position, throws, hits, currentTeamId)
-VALUES
-("Tayron",	"Guerrero",	"RP",	"R",	"R",
-(SELECT id FROM teams WHERE abbreviation = 'MIA'));
-
-INSERT INTO players
-    (firstName, lastName, position, throws, hits, currentTeamId)
-VALUES
-("Harold",	"Ramirez",	"RF",	"R",	"R",
-(SELECT id FROM teams WHERE abbreviation = 'MIA'));
-
-INSERT INTO players
-    (firstName, lastName, position, throws, hits, currentTeamId)
-VALUES
-("JT",	"Riddle",	"SS",	"R",	"L",
-(SELECT id FROM teams WHERE abbreviation = 'MIA'));
-
-INSERT INTO players
-    (firstName, lastName, position, throws, hits, currentTeamId)
-VALUES
-("Miguel",	"Rojas",	"SS",	"R",	"R",
-(SELECT id FROM teams WHERE abbreviation = 'MIA'));
-
-INSERT INTO players
-    (firstName, lastName, position, throws, hits, currentTeamId)
-VALUES
-("Sergio",	"Romo",	"SP",	"R",	"R",
-(SELECT id FROM teams WHERE abbreviation = 'MIA'));
-
-INSERT INTO players
-    (firstName, lastName, position, throws, hits, currentTeamId)
-VALUES
-("Caleb",	"Smith",	"SP",	"L",	"R",
-(SELECT id FROM teams WHERE abbreviation = 'MIA'));
-
-INSERT INTO players
-    (firstName, lastName, position, throws, hits, currentTeamId)
-VALUES
-("Trevor",	"Bauer",	"SP",	"R",	"R",
-(SELECT id FROM teams WHERE abbreviation = 'CLE'));
-
-INSERT INTO players
-    (firstName, lastName, position, throws, hits, currentTeamId)
-VALUES
-("Jake",	"Bauers",	"LF",	"L",	"L",
-(SELECT id FROM teams WHERE abbreviation = 'CLE'));
-
-
-INSERT INTO players
-    (firstName, lastName, position, throws, hits, currentTeamId)
-VALUES
-("Jon",	"Edwards",	"RP",	"R",	"R",
-(SELECT id FROM teams WHERE abbreviation = 'CLE'));
-
-INSERT INTO players
-    (firstName, lastName, position, throws, hits, currentTeamId)
-VALUES
-("Jason",	"Kipnis",	"2B",	"R",	"L",
-(SELECT id FROM teams WHERE abbreviation = 'CLE'));
-
-INSERT INTO players
-    (firstName, lastName, position, throws, hits, currentTeamId)
-VALUES
-("Francisco",	"Lindor",	"SS",	"R",	"B",
-(SELECT id FROM teams WHERE abbreviation = 'CLE'));
-
-INSERT INTO players
-    (firstName, lastName, position, throws, hits, currentTeamId)
-VALUES
-("Jordan",	"Luplow",	"RF",	"R",	"R",
-(SELECT id FROM teams WHERE abbreviation = 'CLE'));
-
-INSERT INTO players
-    (firstName, lastName, position, throws, hits, currentTeamId)
-VALUES
-("Leonys",	"Martin",	"CF",	"R",	"L",
-(SELECT id FROM teams WHERE abbreviation = 'CLE'));
-
-INSERT INTO players
-    (firstName, lastName, position, throws, hits, currentTeamId)
-VALUES
-("Tyler",	"Naquin",	"CF",	"R",	"L",
-(SELECT id FROM teams WHERE abbreviation = 'CLE'));
-
-INSERT INTO players
-    (firstName, lastName, position, throws, hits, currentTeamId)
-VALUES
-("Roberto",	"Perez",	"C",	"R",	"R",
-(SELECT id FROM teams WHERE abbreviation = 'CLE'));
-
-INSERT INTO players
-    (firstName, lastName, position, throws, hits, currentTeamId)
-VALUES
-("Jose",	"Ramirez",	"2B",	"R",	"B",
-(SELECT id FROM teams WHERE abbreviation = 'CLE'));
-
-INSERT INTO players
-    (firstName, lastName, position, throws, hits, currentTeamId)
-VALUES
-("Carlos",	"Santana",	"1B",	"R",	"B",
-(SELECT id FROM teams WHERE abbreviation = 'CLE'));
-
-INSERT INTO players
-    (firstName, lastName, position, throws, hits, currentTeamId)
-VALUES
-("Josh",	"Smith",	"RP",	"L",	"L",
-(SELECT id FROM teams WHERE abbreviation = 'CLE'));
-
-
-INSERT INTO players
-    (firstName, lastName, position, throws, hits, currentTeamId)
-VALUES
-("Shaun",	"Anderson",	"SP",	"R",	"R",
-(SELECT id FROM teams WHERE abbreviation = 'SF'));
-
-INSERT INTO players
-    (firstName, lastName, position, throws, hits, currentTeamId)
-VALUES
-("Brandon",	"Belt",	"1B",	"L",	"L",
-(SELECT id FROM teams WHERE abbreviation = 'SF'));
-
-INSERT INTO players
-    (firstName, lastName, position, throws, hits, currentTeamId)
-VALUES
-("Brandon",	"Crawford",	"SS",	"R",	"L",
-(SELECT id FROM teams WHERE abbreviation = 'SF'));
-
-INSERT INTO players
-    (firstName, lastName, position, throws, hits, currentTeamId)
-VALUES
-("Steven",	"Duggar",	"CF",	"R",	"L",
-(SELECT id FROM teams WHERE abbreviation = 'SF'));
-
-INSERT INTO players
-    (firstName, lastName, position, throws, hits, currentTeamId)
-VALUES
-("Mark",	"Melancon",	"RP",	"R",	"R",
-(SELECT id FROM teams WHERE abbreviation = 'SF'));
-
-INSERT INTO players
-    (firstName, lastName, position, throws, hits, currentTeamId)
-VALUES
-("Reyes",	"Moronta",	"RP",	"R",	"R",
-(SELECT id FROM teams WHERE abbreviation = 'SF'));
-
-INSERT INTO players
-    (firstName, lastName, position, throws, hits, currentTeamId)
-VALUES
-("Joe",	"Panik",	"2B",	"R",	"L",
-(SELECT id FROM teams WHERE abbreviation = 'SF'));
-
-INSERT INTO players
-    (firstName, lastName, position, throws, hits, currentTeamId)
-VALUES
-("Kevin",	"Pillar",	"CF",	"R",	"R",
-(SELECT id FROM teams WHERE abbreviation = 'SF'));
-
-INSERT INTO players
-    (firstName, lastName, position, throws, hits, currentTeamId)
-VALUES
-("Pablo",	"Sandoval",	"3B",	"R",	"B",
-(SELECT id FROM teams WHERE abbreviation = 'SF'));
-
-INSERT INTO players
-    (firstName, lastName, position, throws, hits, currentTeamId)
-VALUES
-("Stephen",	"Vogt",	"C",	"R",	"L",
-(SELECT id FROM teams WHERE abbreviation = 'SF'));
-
-
-INSERT INTO players
-    (firstName, lastName, position, throws, hits, currentTeamId)
-VALUES
-("Tony",	"Watson",	"RP",	"L",	"L",
-(SELECT id FROM teams WHERE abbreviation = 'SF'));
-
-INSERT INTO players
-    (firstName, lastName, position, throws, hits, currentTeamId)
-VALUES
-("Mike",	"Yastrzemski",	"LF",	"L",	"L",
-(SELECT id FROM teams WHERE abbreviation = 'SF'));
-
-INSERT INTO players
-    (firstName, lastName, position, throws, hits, currentTeamId)
-VALUES
-("Brandon",	"Drury",	"3B",	"R",	"R",
-(SELECT id FROM teams WHERE abbreviation = 'TOR'));
-
-INSERT INTO players
-    (firstName, lastName, position, throws, hits, currentTeamId)
-VALUES
-("Freddy",	"Galvis",	"SS",	"R",	"B",
-(SELECT id FROM teams WHERE abbreviation = 'TOR'));
-
-INSERT INTO players
-    (firstName, lastName, position, throws, hits, currentTeamId)
-VALUES
-("Randal",	"Grichuk",	"LF",	"R",	"R",
-(SELECT id FROM teams WHERE abbreviation = 'TOR'));
-
-INSERT INTO players
-    (firstName, lastName, position, throws, hits, currentTeamId)
-VALUES
-("Vladimir",	"Guerrero Jr.",	"3B",	"R",	"R",
-(SELECT id FROM teams WHERE abbreviation = 'TOR'));
-
-INSERT INTO players
-    (firstName, lastName, position, throws, hits, currentTeamId)
-VALUES
-("Lourdes",	"Gurriel Jr.",	"2B",	"R",	"R",
-(SELECT id FROM teams WHERE abbreviation = 'TOR'));
-
-INSERT INTO players
-    (firstName, lastName, position, throws, hits, currentTeamId)
-VALUES
-("Teoscar",	"Hernandez",	"RF",	"R",	"R",
-(SELECT id FROM teams WHERE abbreviation = 'TOR'));
-
-INSERT INTO players
-    (firstName, lastName, position, throws, hits, currentTeamId)
-VALUES
-("Edwin",	"Jackson",	"SP",	"R",	"R",
-(SELECT id FROM teams WHERE abbreviation = 'TOR'));
-
-INSERT INTO players
-    (firstName, lastName, position, throws, hits, currentTeamId)
-VALUES
-("Elvis",	"Luciano",	"RP",	"R",	"R",
-(SELECT id FROM teams WHERE abbreviation = 'TOR'));
-
-
-INSERT INTO players
-    (firstName, lastName, position, throws, hits, currentTeamId)
-VALUES
-("Luke",	"Maile",	"C",	"R",	"R",
-(SELECT id FROM teams WHERE abbreviation = 'TOR'));
-
-INSERT INTO players
-    (firstName, lastName, position, throws, hits, currentTeamId)
-VALUES
-("Tim",	"Mayza",	"RP",	"L",	"L",
-(SELECT id FROM teams WHERE abbreviation = 'TOR'));
-
-INSERT INTO players
-    (firstName, lastName, position, throws, hits, currentTeamId)
-VALUES
-("Thomas",	"Pannone",	"RP",	"L",	"L",
-(SELECT id FROM teams WHERE abbreviation = 'TOR'));
-
-INSERT INTO players
-    (firstName, lastName, position, throws, hits, currentTeamId)
-VALUES
-("Justin",	"Smoak",	"1B",	"L",	"B",
-(SELECT id FROM teams WHERE abbreviation = 'TOR'));
-
-INSERT INTO players
-    (firstName, lastName, position, throws, hits, currentTeamId)
-VALUES
-("Eric",	"Sogard",	"2B",	"R",	"L",
-(SELECT id FROM teams WHERE abbreviation = 'TOR'));
-
-INSERT INTO players
-    (firstName, lastName, position, throws, hits, currentTeamId)
-VALUES
-("Jaime",	"Barria",	"SP",	"R",	"R",
-(SELECT id FROM teams WHERE abbreviation = 'LAA'));
-
-INSERT INTO players
-    (firstName, lastName, position, throws, hits, currentTeamId)
-VALUES
-("Kole",	"Calhoun",	"RF",	"L",	"L",
-(SELECT id FROM teams WHERE abbreviation = 'LAA'));
-
-INSERT INTO players
-    (firstName, lastName, position, throws, hits, currentTeamId)
-VALUES
-("David",	"Fletcher",	"SS",	"R",	"R",
-(SELECT id FROM teams WHERE abbreviation = 'LAA'));
-
-INSERT INTO players
-    (firstName, lastName, position, throws, hits, currentTeamId)
-VALUES
-("Dustin",	"Garneau",	"C",	"R",	"R",
-(SELECT id FROM teams WHERE abbreviation = 'LAA'));
-
-INSERT INTO players
-    (firstName, lastName, position, throws, hits, currentTeamId)
-VALUES
-("Brian",	"Goodwin",	"CF",	"R",	"L",
-(SELECT id FROM teams WHERE abbreviation = 'LAA'));
-
-
-INSERT INTO players
-    (firstName, lastName, position, throws, hits, currentTeamId)
-VALUES
-("Tommy	La", "Stella",	"3B",	"R",	"L",
-(SELECT id FROM teams WHERE abbreviation = 'LAA'));
-
-INSERT INTO players
-    (firstName, lastName, position, throws, hits, currentTeamId)
-VALUES
-("Shohei",	"Ohtani",	"DH",	"R",	"L",
-(SELECT id FROM teams WHERE abbreviation = 'LAA'));
-
-INSERT INTO players
-    (firstName, lastName, position, throws, hits, currentTeamId)
-VALUES
-("Luis",	"Rengifo",	"2B",	"R",	"B",
-(SELECT id FROM teams WHERE abbreviation = 'LAA'));
-
-INSERT INTO players
-    (firstName, lastName, position, throws, hits, currentTeamId)
-VALUES
-("Tyler",	"Skaggs",	"SP",	"L",	"L",
-(SELECT id FROM teams WHERE abbreviation = 'LAA'));
-
-INSERT INTO players
-    (firstName, lastName, position, throws, hits, currentTeamId)
-VALUES
-("Mike",	"Trout",	"CF",	"R",	"R",
-(SELECT id FROM teams WHERE abbreviation = 'LAA'));
-
-INSERT INTO players
-    (firstName, lastName, position, throws, hits, currentTeamId)
-VALUES
-("Jared",	"Walsh",	"1B",	"L",	"L",
-(SELECT id FROM teams WHERE abbreviation = 'LAA'));
-
-INSERT INTO players
-    (firstName, lastName, position, throws, hits, currentTeamId)
-VALUES
-("Ronald",	"Acuna Jr.",	"LF",	"R",	"R",
-(SELECT id FROM teams WHERE abbreviation = 'ATL'));
-
-INSERT INTO players
-    (firstName, lastName, position, throws, hits, currentTeamId)
-VALUES
-("Ozzie",	"Albies",	"2B",	"R",	"B",
-(SELECT id FROM teams WHERE abbreviation = 'ATL'));
-
-INSERT INTO players
-    (firstName, lastName, position, throws, hits, currentTeamId)
-VALUES
-("Josh",	"Donaldson",	"3B",	"R",	"R",
-(SELECT id FROM teams WHERE abbreviation = 'ATL'));
-
-INSERT INTO players
-    (firstName, lastName, position, throws, hits, currentTeamId)
-VALUES
-("Mike",	"Foltynewicz",	"SP",	"R",	"R",
-(SELECT id FROM teams WHERE abbreviation = 'ATL'));
-
-
-INSERT INTO players
-    (firstName, lastName, position, throws, hits, currentTeamId)
-VALUES
-("Freddie",	"Freeman",	"1B",	"R",	"L",
-(SELECT id FROM teams WHERE abbreviation = 'ATL'));
-
-INSERT INTO players
-    (firstName, lastName, position, throws, hits, currentTeamId)
-VALUES
-("Nick",	"Markakis",	"RF",	"L",	"L",
-(SELECT id FROM teams WHERE abbreviation = 'ATL'));
-
-INSERT INTO players
-    (firstName, lastName, position, throws, hits, currentTeamId)
-VALUES
-("Brian",	"McCann",	"C",	"R",	"L",
-(SELECT id FROM teams WHERE abbreviation = 'ATL'));
-
-INSERT INTO players
-    (firstName, lastName, position, throws, hits, currentTeamId)
-VALUES
-("Sean",	"Newcomb",	"SP",	"L",	"L",
-(SELECT id FROM teams WHERE abbreviation = 'ATL'));
-
-INSERT INTO players
-    (firstName, lastName, position, throws, hits, currentTeamId)
-VALUES
-("Austin",	"Riley",	"3B",	"R",	"R",
-(SELECT id FROM teams WHERE abbreviation = 'ATL'));
-
-INSERT INTO players
-    (firstName, lastName, position, throws, hits, currentTeamId)
-VALUES
-("Dansby",	"Swanson",	"SS",	"R",	"R",
-(SELECT id FROM teams WHERE abbreviation = 'ATL'));
-
-INSERT INTO players
-    (firstName, lastName, position, throws, hits, currentTeamId)
-VALUES
-("Jacob",	"Webb",	"RP",	"R",	"R",
-(SELECT id FROM teams WHERE abbreviation = 'ATL'));
-
-INSERT INTO players
-    (firstName, lastName, position, throws, hits, currentTeamId)
-VALUES
-("Patrick",	"Corbin",	"SP",	"L",	"L",
-(SELECT id FROM teams WHERE abbreviation = 'WSH'));
-
-INSERT INTO players
-    (firstName, lastName, position, throws, hits, currentTeamId)
-VALUES
-("Brian",	"Dozier",	"2B",	"R",	"R",
-(SELECT id FROM teams WHERE abbreviation = 'WSH'));
-
-INSERT INTO players
-    (firstName, lastName, position, throws, hits, currentTeamId)
-VALUES
-("Yan",	"Gomes",	"C",	"R",	"R",
-(SELECT id FROM teams WHERE abbreviation = 'WSH'));
-
-
-INSERT INTO players
-    (firstName, lastName, position, throws, hits, currentTeamId)
-VALUES
-("Matt",	"Grace",	"RP",	"L",	"L",
-(SELECT id FROM teams WHERE abbreviation = 'WSH'));
-
-INSERT INTO players
-    (firstName, lastName, position, throws, hits, currentTeamId)
-VALUES
-("Javy",	"Guerra",	"RP",	"R",	"R",
-(SELECT id FROM teams WHERE abbreviation = 'WSH'));
-
-INSERT INTO players
-    (firstName, lastName, position, throws, hits, currentTeamId)
-VALUES
-("Howie",	"Kendrick",	"2B",	"R",	"R",
-(SELECT id FROM teams WHERE abbreviation = 'WSH'));
-
-INSERT INTO players
-    (firstName, lastName, position, throws, hits, currentTeamId)
-VALUES
-("Anthony",	"Rendon",	"3B",	"R",	"R",
-(SELECT id FROM teams WHERE abbreviation = 'WSH'));
-
-INSERT INTO players
-    (firstName, lastName, position, throws, hits, currentTeamId)
-VALUES
-("Victor",	"Robles",	"CF",	"R",	"R",
-(SELECT id FROM teams WHERE abbreviation = 'WSH'));
-
-INSERT INTO players
-    (firstName, lastName, position, throws, hits, currentTeamId)
-VALUES
-("Tony",	"Sipp",	"RP",	"L",	"L",
-(SELECT id FROM teams WHERE abbreviation = 'WSH'));
-
-INSERT INTO players
-    (firstName, lastName, position, throws, hits, currentTeamId)
-VALUES
-("Juan",	"Soto",	"LF",	"L",	"L",
-(SELECT id FROM teams WHERE abbreviation = 'WSH'));
-
-INSERT INTO players
-    (firstName, lastName, position, throws, hits, currentTeamId)
-VALUES
-("Michael",	"Taylor",	"CF",	"R",	"R",
-(SELECT id FROM teams WHERE abbreviation = 'WSH'));
-
-INSERT INTO players
-    (firstName, lastName, position, throws, hits, currentTeamId)
-VALUES
-("Trea",	"Turner",	"SS",	"R",	"R",
-(SELECT id FROM teams WHERE abbreviation = 'WSH'));
-
-INSERT INTO players
-    (firstName, lastName, position, throws, hits, currentTeamId)
-VALUES
-("Michael",	"Brantley",	"LF",	"L",	"L",
-(SELECT id FROM teams WHERE abbreviation = 'HOU'));
-
-
-INSERT INTO players
-    (firstName, lastName, position, throws, hits, currentTeamId)
-VALUES
-("Alex",	"Bregman",	"3B",	"R",	"R",
-(SELECT id FROM teams WHERE abbreviation = 'HOU'));
-
-INSERT INTO players
-    (firstName, lastName, position, throws, hits, currentTeamId)
-VALUES
-("Robinson",	"Chirinos",	"C",	"R",	"R",
-(SELECT id FROM teams WHERE abbreviation = 'HOU'));
-
-INSERT INTO players
-    (firstName, lastName, position, throws, hits, currentTeamId)
-VALUES
-("Chris",	"Devenski",	"RP",	"R",	"R",
-(SELECT id FROM teams WHERE abbreviation = 'HOU'));
-
-INSERT INTO players
-    (firstName, lastName, position, throws, hits, currentTeamId)
-VALUES
-("Derek",	"Fisher",	"CF",	"R",	"L",
-(SELECT id FROM teams WHERE abbreviation = 'HOU'));
-
-INSERT INTO players
-    (firstName, lastName, position, throws, hits, currentTeamId)
-VALUES
-("Yuli",	"Gurriel",	"1B",	"R",	"R",
-(SELECT id FROM teams WHERE abbreviation = 'HOU'));
-
-INSERT INTO players
-    (firstName, lastName, position, throws, hits, currentTeamId)
-VALUES
-("Will",	"Harris",	"RP",	"R",	"R",
-(SELECT id FROM teams WHERE abbreviation = 'HOU'));
-
-INSERT INTO players
-    (firstName, lastName, position, throws, hits, currentTeamId)
-VALUES
-("Josh",	"James",	"SP",	"R",	"R",
-(SELECT id FROM teams WHERE abbreviation = 'HOU'));
-
-INSERT INTO players
-    (firstName, lastName, position, throws, hits, currentTeamId)
-VALUES
-("Tony",	"Kemp",	"LF",	"R",	"L",
-(SELECT id FROM teams WHERE abbreviation = 'HOU'));
-
-INSERT INTO players
-    (firstName, lastName, position, throws, hits, currentTeamId)
-VALUES
-("Jake",	"Marisnick",	"CF",	"R",	"R",
-(SELECT id FROM teams WHERE abbreviation = 'HOU'));
-
-INSERT INTO players
-    (firstName, lastName, position, throws, hits, currentTeamId)
-VALUES
-("Jack",	"Mayfield",	"2B",	"R",	"R",
-(SELECT id FROM teams WHERE abbreviation = 'HOU'));
-
-
-INSERT INTO players
-    (firstName, lastName, position, throws, hits, currentTeamId)
-VALUES
-("Roberto",	"Osuna",	"RP",	"R",	"R",
-(SELECT id FROM teams WHERE abbreviation = 'HOU'));
-
-INSERT INTO players
-    (firstName, lastName, position, throws, hits, currentTeamId)
-VALUES
-("Ryan",	"Pressly",	"RP",	"R",	"R",
-(SELECT id FROM teams WHERE abbreviation = 'HOU'));
-
-INSERT INTO players
-    (firstName, lastName, position, throws, hits, currentTeamId)
-VALUES
-("Hector",	"Rondon",	"RP",	"R",	"R",
-(SELECT id FROM teams WHERE abbreviation = 'HOU'));
-
-INSERT INTO players
-    (firstName, lastName, position, throws, hits, currentTeamId)
-VALUES
-("Justin",	"Verlander",	"SP",	"R",	"R",
-(SELECT id FROM teams WHERE abbreviation = 'HOU'));
-
-INSERT INTO players
-    (firstName, lastName, position, throws, hits, currentTeamId)
-VALUES
-("Tyler",	"White",	"2B",	"R",	"R",
-(SELECT id FROM teams WHERE abbreviation = 'HOU'));
-
-INSERT INTO players
-    (firstName, lastName, position, throws, hits, currentTeamId)
-VALUES
-("Pete",	"Alonso",	"1B",	"R",	"R",
-(SELECT id FROM teams WHERE abbreviation = 'NYM'));
-
-INSERT INTO players
-    (firstName, lastName, position, throws, hits, currentTeamId)
-VALUES
-("Michael",	"Conforto",	"RF",	"R",	"L",
-(SELECT id FROM teams WHERE abbreviation = 'NYM'));
-
-INSERT INTO players
-    (firstName, lastName, position, throws, hits, currentTeamId)
-VALUES
-("Jeurys",	"Familia",	"RP",	"R",	"R",
-(SELECT id FROM teams WHERE abbreviation = 'NYM'));
-
-INSERT INTO players
-    (firstName, lastName, position, throws, hits, currentTeamId)
-VALUES
-("Todd",	"Frazier",	"3B",	"R",	"R",
-(SELECT id FROM teams WHERE abbreviation = 'NYM'));
-
-INSERT INTO players
-    (firstName, lastName, position, throws, hits, currentTeamId)
-VALUES
-("Adeiny",	"Hechavarria",	"SS",	"R",	"R",
-(SELECT id FROM teams WHERE abbreviation = 'NYM'));
-
-
-INSERT INTO players
-    (firstName, lastName, position, throws, hits, currentTeamId)
-VALUES
-("Juan",	"Lagares",	"CF",	"R",	"R",
-(SELECT id FROM teams WHERE abbreviation = 'NYM'));
-
-INSERT INTO players
-    (firstName, lastName, position, throws, hits, currentTeamId)
-VALUES
-("Seth",	"Lugo",	"SP",	"R",	"R",
-(SELECT id FROM teams WHERE abbreviation = 'NYM'));
-
-INSERT INTO players
-    (firstName, lastName, position, throws, hits, currentTeamId)
-VALUES
-("Tomas",	"Nido",	"C",	"R",	"R",
-(SELECT id FROM teams WHERE abbreviation = 'NYM'));
-
-INSERT INTO players
-    (firstName, lastName, position, throws, hits, currentTeamId)
-VALUES
-("Amed",	"Rosario",	"SS",	"R",	"R",
-(SELECT id FROM teams WHERE abbreviation = 'NYM'));
-
-INSERT INTO players
-    (firstName, lastName, position, throws, hits, currentTeamId)
-VALUES
-("Dominic",	"Smith",	"1B",	"L",	"L",
-(SELECT id FROM teams WHERE abbreviation = 'NYM'));
-
-INSERT INTO players
-    (firstName, lastName, position, throws, hits, currentTeamId)
-VALUES
-("Zack",	"Wheeler",	"SP",	"R",	"L",
-(SELECT id FROM teams WHERE abbreviation = 'NYM'));
-
-INSERT INTO players
-    (firstName, lastName, position, throws, hits, currentTeamId)
-VALUES
-("Tucker",	"Barnhart",	"C",	"R",	"B",
-(SELECT id FROM teams WHERE abbreviation = 'CIN'));
-
-INSERT INTO players
-    (firstName, lastName, position, throws, hits, currentTeamId)
-VALUES
-("Anthony",	"DeSclafani",	"SP",	"R",	"R",
-(SELECT id FROM teams WHERE abbreviation = 'CIN'));
-
-INSERT INTO players
-    (firstName, lastName, position, throws, hits, currentTeamId)
-VALUES
-("Derek",	"Dietrich",	"LF",	"R",	"L",
-(SELECT id FROM teams WHERE abbreviation = 'CIN'));
-
-INSERT INTO players
-    (firstName, lastName, position, throws, hits, currentTeamId)
-VALUES
-("Amir",	"Garrett",	"RP",	"L",	"R",
-(SELECT id FROM teams WHERE abbreviation = 'CIN'));
-
-
-INSERT INTO players
-    (firstName, lastName, position, throws, hits, currentTeamId)
-VALUES
-("Jose",	"Iglesias",	"SS",	"R",	"R",
-(SELECT id FROM teams WHERE abbreviation = 'CIN'));
-
-INSERT INTO players
-    (firstName, lastName, position, throws, hits, currentTeamId)
-VALUES
-("Michael",	"Lorenzen",	"RP",	"R",	"R",
-(SELECT id FROM teams WHERE abbreviation = 'CIN'));
-
-INSERT INTO players
-    (firstName, lastName, position, throws, hits, currentTeamId)
-VALUES
-("Wandy",	"Peralta",	"RP",	"L",	"L",
-(SELECT id FROM teams WHERE abbreviation = 'CIN'));
-
-INSERT INTO players
-    (firstName, lastName, position, throws, hits, currentTeamId)
-VALUES
-("Yasiel",	"Puig",	"RF",	"R",	"R",
-(SELECT id FROM teams WHERE abbreviation = 'CIN'));
-
-INSERT INTO players
-    (firstName, lastName, position, throws, hits, currentTeamId)
-VALUES
-("Nick",	"Senzel",	"3B",	"R",	"R",
-(SELECT id FROM teams WHERE abbreviation = 'CIN'));
-
-INSERT INTO players
-    (firstName, lastName, position, throws, hits, currentTeamId)
-VALUES
-("Eugenio",	"Suarez",	"3B",	"R",	"R",
-(SELECT id FROM teams WHERE abbreviation = 'CIN'));
-
-INSERT INTO players
-    (firstName, lastName, position, throws, hits, currentTeamId)
-VALUES
-("Joey",	"Votto",	"1B",	"R",	"L",
-(SELECT id FROM teams WHERE abbreviation = 'CIN'));
-
-INSERT INTO players
-    (firstName, lastName, position, throws, hits, currentTeamId)
-VALUES
-("Jesse",	"Winker",	"RF",	"L",	"L",
-(SELECT id FROM teams WHERE abbreviation = 'CIN'));
-
-INSERT INTO players
-    (firstName, lastName, position, throws, hits, currentTeamId)
-VALUES
-("Austin",	"Adams",	"RP",	"R",	"R",
-(SELECT id FROM teams WHERE abbreviation = 'DET'));
-
-INSERT INTO players
-    (firstName, lastName, position, throws, hits, currentTeamId)
-VALUES
-("Victor",	"Alcantara",	"RP",	"R",	"R",
-(SELECT id FROM teams WHERE abbreviation = 'DET'));
-
-
-INSERT INTO players
-    (firstName, lastName, position, throws, hits, currentTeamId)
-VALUES
-("Gordon",	"Beckham",	"3B",	"R",	"R",
-(SELECT id FROM teams WHERE abbreviation = 'DET'));
-
-INSERT INTO players
-    (firstName, lastName, position, throws, hits, currentTeamId)
-VALUES
-("Nicholas",	"Castellanos",	"RF",	"R",	"R",
-(SELECT id FROM teams WHERE abbreviation = 'DET'));
-
-INSERT INTO players
-    (firstName, lastName, position, throws, hits, currentTeamId)
-VALUES
-("Brandon",	"Dixon",	"LF",	"R",	"R",
-(SELECT id FROM teams WHERE abbreviation = 'DET'));
-
-INSERT INTO players
-    (firstName, lastName, position, throws, hits, currentTeamId)
-VALUES
-("Buck",	"Farmer",	"RP",	"R",	"L",
-(SELECT id FROM teams WHERE abbreviation = 'DET'));
-
-INSERT INTO players
-    (firstName, lastName, position, throws, hits, currentTeamId)
-VALUES
-("Niko",	"Goodrum",	"SS",	"R",	"B",
-(SELECT id FROM teams WHERE abbreviation = 'DET'));
-
-INSERT INTO players
-    (firstName, lastName, position, throws, hits, currentTeamId)
-VALUES
-("Grayson",	"Greiner",	"C",	"R",	"R",
-(SELECT id FROM teams WHERE abbreviation = 'DET'));
-
-INSERT INTO players
-    (firstName, lastName, position, throws, hits, currentTeamId)
-VALUES
-("JaCoby",	"Jones",	"LF",	"R",	"R",
-(SELECT id FROM teams WHERE abbreviation = 'DET'));
-
-INSERT INTO players
-    (firstName, lastName, position, throws, hits, currentTeamId)
-VALUES
-("Dawel",	"Lugo",	"2B",	"R",	"R",
-(SELECT id FROM teams WHERE abbreviation = 'DET'));
-
-INSERT INTO players
-    (firstName, lastName, position, throws, hits, currentTeamId)
-VALUES
-("Daniel",	"Norris",	"SP",	"L",	"L",
-(SELECT id FROM teams WHERE abbreviation = 'DET'));
-
-INSERT INTO players
-    (firstName, lastName, position, throws, hits, currentTeamId)
-VALUES
-("Ronny",	"Rodriguez",	"3B",	"R",	"R",
-(SELECT id FROM teams WHERE abbreviation = 'DET'));
-
-
-INSERT INTO players
-    (firstName, lastName, position, throws, hits, currentTeamId)
-VALUES
-("Christin",	"Stewart",	"LF",	"R",	"L",
-(SELECT id FROM teams WHERE abbreviation = 'DET'));
-
-INSERT INTO players
-    (firstName, lastName, position, throws, hits, currentTeamId)
-VALUES
-("Daniel",	"Stumpf",	"RP",	"L",	"L",
-(SELECT id FROM teams WHERE abbreviation = 'DET'));
-
-INSERT INTO players
-    (firstName, lastName, position, throws, hits, currentTeamId)
-VALUES
-("Hanser",	"Alberto",	"SS",	"R",	"R",
-(SELECT id FROM teams WHERE abbreviation = 'BAL'));
-
-INSERT INTO players
-    (firstName, lastName, position, throws, hits, currentTeamId)
-VALUES
-("Miguel",	"Castro",	"RP",	"R",	"R",
-(SELECT id FROM teams WHERE abbreviation = 'BAL'));
-
-INSERT INTO players
-    (firstName, lastName, position, throws, hits, currentTeamId)
-VALUES
-("Chris",	"Davis",	"1B",	"R",	"L",
-(SELECT id FROM teams WHERE abbreviation = 'BAL'));
-
-INSERT INTO players
-    (firstName, lastName, position, throws, hits, currentTeamId)
-VALUES
-("David",	"Hess",	"RP",	"R",	"R",
-(SELECT id FROM teams WHERE abbreviation = 'BAL'));
-
-INSERT INTO players
-    (firstName, lastName, position, throws, hits, currentTeamId)
-VALUES
-("Trey",	"Mancini",	"LF",	"R",	"R",
-(SELECT id FROM teams WHERE abbreviation = 'BAL'));
-
-INSERT INTO players
-    (firstName, lastName, position, throws, hits, currentTeamId)
-VALUES
-("Richie",	"Martin",	"SS",	"R",	"R",
-(SELECT id FROM teams WHERE abbreviation = 'BAL'));
-
-INSERT INTO players
-    (firstName, lastName, position, throws, hits, currentTeamId)
-VALUES
-("Renato",	"Nunez",	"3B",	"R",	"R",
-(SELECT id FROM teams WHERE abbreviation = 'BAL'));
-
-INSERT INTO players
-    (firstName, lastName, position, throws, hits, currentTeamId)
-VALUES
-("Rio",	"Ruiz",	"3B",	"R",	"L",
-(SELECT id FROM teams WHERE abbreviation = 'BAL'));
-
-INSERT INTO players
-    (firstName, lastName, position, throws, hits, currentTeamId)
-VALUES
-("Chance",	"Sisco",	"C",	"R",	"L",
-(SELECT id FROM teams WHERE abbreviation = 'BAL'));
-
-INSERT INTO players
-    (firstName, lastName, position, throws, hits, currentTeamId)
-VALUES
-("Dwight",	"Smith Jr.",	"RF",	"R",	"L",
-(SELECT id FROM teams WHERE abbreviation = 'BAL'));
-
-INSERT INTO players
-    (firstName, lastName, position, throws, hits, currentTeamId)
-VALUES
-("Stevie",	"Wilkerson",	"SS",	"R",	"B",
-(SELECT id FROM teams WHERE abbreviation = 'BAL'));
-
-INSERT INTO players
-    (firstName, lastName, position, throws, hits, currentTeamId)
-VALUES
-("Aroldis",	"Chapman",	"RP",	"L",	"L",
-(SELECT id FROM teams WHERE abbreviation = 'NYY'));
-
-INSERT INTO players
-    (firstName, lastName, position, throws, hits, currentTeamId)
-VALUES
-("Thairo",	"Estrada",	"SS",	"R",	"R",
-(SELECT id FROM teams WHERE abbreviation = 'NYY'));
-
-INSERT INTO players
-    (firstName, lastName, position, throws, hits, currentTeamId)
-VALUES
-("Clint",	"Frazier",	"LF",	"R",	"R",
-(SELECT id FROM teams WHERE abbreviation = 'NYY'));
-
-INSERT INTO players
-    (firstName, lastName, position, throws, hits, currentTeamId)
-VALUES
-("Chad",	"Green",	"RP",	"R",	"L",
-(SELECT id FROM teams WHERE abbreviation = 'NYY'));
-
-INSERT INTO players
-    (firstName, lastName, position, throws, hits, currentTeamId)
-VALUES
-("J.A.",	"Happ",	"SP",	"L",	"L",
-(SELECT id FROM teams WHERE abbreviation = 'NYY'));
-
-INSERT INTO players
-    (firstName, lastName, position, throws, hits, currentTeamId)
-VALUES
-("Aaron",	"Hicks",	"CF",	"R",	"B",
-(SELECT id FROM teams WHERE abbreviation = 'NYY'));
-
-INSERT INTO players
-    (firstName, lastName, position, throws, hits, currentTeamId)
-VALUES
-("DJ",	"LeMahieu",	"2B",	"R",	"R",
-(SELECT id FROM teams WHERE abbreviation = 'NYY'));
-
-INSERT INTO players
-    (firstName, lastName, position, throws, hits, currentTeamId)
-VALUES
-("Cameron",	"Maybin",	"LF",	"R",	"R",
-(SELECT id FROM teams WHERE abbreviation = 'NYY'));
-
-INSERT INTO players
-    (firstName, lastName, position, throws, hits, currentTeamId)
-VALUES
-("Kendrys",	"Morales",	"DH",	"R",	"B",
-(SELECT id FROM teams WHERE abbreviation = 'NYY'));
-
-INSERT INTO players
-    (firstName, lastName, position, throws, hits, currentTeamId)
-VALUES
-("Gary",	"Sanchez",	"C",	"R",	"R",
-(SELECT id FROM teams WHERE abbreviation = 'NYY'));
-
-INSERT INTO players
-    (firstName, lastName, position, throws, hits, currentTeamId)
-VALUES
-("Gio",	"Urshela",	"3B",	"R",	"R",
-(SELECT id FROM teams WHERE abbreviation = 'NYY'));
-
-INSERT INTO players
-    (firstName, lastName, position, throws, hits, currentTeamId)
-VALUES
-("Luke",	"Voit",	"1B",	"R",	"R",
-(SELECT id FROM teams WHERE abbreviation = 'NYY'));
-
-INSERT INTO players
-    (firstName, lastName, position, throws, hits, currentTeamId)
-VALUES
-("Austin",	"Hedges",	"C",	"R",	"R",
-(SELECT id FROM teams WHERE abbreviation = 'SD'));
-
-INSERT INTO players
-    (firstName, lastName, position, throws, hits, currentTeamId)
-VALUES
-("Ian",	"Kinsler",	"2B",	"R",	"R",
-(SELECT id FROM teams WHERE abbreviation = 'SD'));
-
-INSERT INTO players
-    (firstName, lastName, position, throws, hits, currentTeamId)
-VALUES
-("Joey",	"Lucchesi",	"SP",	"L",	"L",
-(SELECT id FROM teams WHERE abbreviation = 'SD'));
-
-INSERT INTO players
-    (firstName, lastName, position, throws, hits, currentTeamId)
-VALUES
-("Manny",	"Machado",	"SS",	"R",	"R",
-(SELECT id FROM teams WHERE abbreviation = 'SD'));
-
-INSERT INTO players
-    (firstName, lastName, position, throws, hits, currentTeamId)
-VALUES
-("Manuel",	"Margot",	"CF",	"R",	"R",
-(SELECT id FROM teams WHERE abbreviation = 'SD'));
-
-INSERT INTO players
-    (firstName, lastName, position, throws, hits, currentTeamId)
-VALUES
-("Wil",	"Myers",	"RF",	"R",	"R",
-(SELECT id FROM teams WHERE abbreviation = 'SD'));
-
-INSERT INTO players
-    (firstName, lastName, position, throws, hits, currentTeamId)
-VALUES
-("Hunter",	"Renfroe",	"RF",	"R",	"R",
-(SELECT id FROM teams WHERE abbreviation = 'SD'));
-
-INSERT INTO players
-    (firstName, lastName, position, throws, hits, currentTeamId)
-VALUES
-("Franmil",	"Reyes",	"CF",	"R",	"R",
-(SELECT id FROM teams WHERE abbreviation = 'SD'));
-
-INSERT INTO players
-    (firstName, lastName, position, throws, hits, currentTeamId)
-VALUES
-("Craig",	"Stammen",	"RP",	"R",	"R",
-(SELECT id FROM teams WHERE abbreviation = 'SD'));
-
-INSERT INTO players
-    (firstName, lastName, position, throws, hits, currentTeamId)
-VALUES
-("Fernando",	"Tatis Jr.",	"SS",	"R",	"R",
-(SELECT id FROM teams WHERE abbreviation = 'SD'));
-
-INSERT INTO players
-    (firstName, lastName, position, throws, hits, currentTeamId)
-VALUES
-("Trey",	"Wingenter",	"RP",	"R",	"R",
-(SELECT id FROM teams WHERE abbreviation = 'SD'));
-
-INSERT INTO players
-    (firstName, lastName, position, throws, hits, currentTeamId)
-VALUES
-("Matt",	"Wisler",	"SP",	"R",	"R",
-(SELECT id FROM teams WHERE abbreviation = 'SD'));
-
-INSERT INTO players
-    (firstName, lastName, position, throws, hits, currentTeamId)
-VALUES
-("Kirby",	"Yates",	"RP",	"R",	"L",
-(SELECT id FROM teams WHERE abbreviation = 'SD'));
+  (location, mascot, abbreviation, league, division)
+VALUES
+  ('Pittsburgh', 'Pirates', 'PIT', 'NL', 'Central'),
+  ('Texas', 'Rangers', 'TEX', 'AL', 'West'),
+  ('Kansas City', 'Royals', 'KC', 'AL', 'Central'),
+  ('Colorado', 'Rockies', 'COL', 'NL', 'West'),
+  ('St. Louis', 'Cardinals', 'STL', 'NL', 'Central'),
+  ('Minnesota', 'Twins', 'MIN', 'AL', 'Central'),
+  ('Chicago', 'Cubs', 'CHC', 'NL', 'Central'),
+  ('Tampa Bay', 'Rays', 'TB', 'AL', 'East'),
+  ('Seattle', 'Mariners', 'SEA', 'AL', 'West'),
+  ('Boston', 'Red Sox', 'BOS', 'AL', 'East'),
+  ('Oakland', 'Athletics', 'OAK', 'AL', 'West'),
+  ('Milwaukee', 'Brewers', 'MIL', 'NL', 'Central'),
+  ('Miami', 'Marlins', 'MIA', 'NL', 'East'),
+  ('Cleveland', 'Indians', 'CLE', 'AL', 'Central'),
+  ('San Francisco', 'Giants', 'SF', 'NL', 'West'),
+  ('Toronto', 'Blue Jays', 'TOR', 'AL', 'East'),
+  ('Los Angeles', 'Angels', 'LAA', 'AL', 'West'),
+  ('Atlanta', 'Braves', 'ATL', 'NL', 'East'),
+  ('Washington', 'Nationals', 'WSH', 'NL', 'East'),
+  ('Houston', 'Astros', 'HOU', 'AL', 'West'),
+  ('New York', 'Mets', 'NYM', 'NL', 'East'),
+  ('Cincinnati', 'Reds', 'CIN', 'NL', 'Central'),
+  ('Detroit', 'Tigers', 'DET', 'AL', 'Central'),
+  ('Baltimore', 'Orioles', 'BAL', 'AL', 'East'),
+  ('New York', 'Yankees', 'NYY', 'AL', 'East'),
+  ('San Diego', 'Padres', 'SD', 'NL', 'West');
+
+
+INSERT INTO players
+  (firstName, lastName, position, throws, hits, currentTeamId)
+VALUES
+  ("Chris", "Archer", "SP", "R", "R", (SELECT id FROM teams WHERE abbreviation = 'PIT')),
+  ("Josh", "Bell", "1B", "R", "B", (SELECT id FROM teams WHERE abbreviation = 'PIT')),
+  ("Francisco", "Liriano", "SP", "L", "L", (SELECT id FROM teams WHERE abbreviation = 'PIT')),
+  ("Starling", "Marte", "CF", "R", "R", (SELECT id FROM teams WHERE abbreviation = 'PIT')),
+  ("Colin", "Moran", "3B", "R", "L", (SELECT id FROM teams WHERE abbreviation = 'PIT')),
+  ("Kevin", "Newman", "SS", "R", "R", (SELECT id FROM teams WHERE abbreviation = 'PIT')),
+  ("Gregory", "Polanco", "RF", "L", "L", (SELECT id FROM teams WHERE abbreviation = 'PIT')),
+  ("Bryan", "Reynolds", "LF", "R", "B", (SELECT id FROM teams WHERE abbreviation = 'PIT')),
+  ("Jacob", "Stallings", "C", "R", "R", (SELECT id FROM teams WHERE abbreviation = 'PIT')),
+  ("Cole", "Tucker", "SS", "R", "B", (SELECT id FROM teams WHERE abbreviation = 'PIT')),
+  ("Felipe", "Vazquez", "RP", "L", "L", (SELECT id FROM teams WHERE abbreviation = 'PIT')),
+  ("Elvis", "Andrus", "SS", "R", "R", (SELECT id FROM teams WHERE abbreviation = 'TEX')),
+  ("Asdrubal", "Cabrera", "3B", "R", "B", (SELECT id FROM teams WHERE abbreviation = 'TEX')),
+  ("Jesse", "Chavez", "RP", "R", "R", (SELECT id FROM teams WHERE abbreviation = 'TEX')),
+  ("Delino", "DeShields", "LF", "R", "R", (SELECT id FROM teams WHERE abbreviation = 'TEX')),
+  ("Ronald", "Guzman", "1B", "L", "L", (SELECT id FROM teams WHERE abbreviation = 'TEX')),
+  ("Ariel", "Jurado", "RP", "R", "R", (SELECT id FROM teams WHERE abbreviation = 'TEX')),
+  ("Shawn", "Kelley", "RP", "R", "R", (SELECT id FROM teams WHERE abbreviation = 'TEX')),
+  ("Isiah", "Kiner-Falefa", "C", "R", "R", (SELECT id FROM teams WHERE abbreviation = 'TEX')),
+  ("Chris", "Martin", "RP", "R", "R", (SELECT id FROM teams WHERE abbreviation = 'TEX')),
+  ("Nomar", "Mazara", "RF", "L", "L", (SELECT id FROM teams WHERE abbreviation = 'TEX')),
+  ("Rougned", "Odor", "2B", "R", "L", (SELECT id FROM teams WHERE abbreviation = 'TEX')),
+  ("Hunter", "Pence", "RF", "R", "R", (SELECT id FROM teams WHERE abbreviation = 'TEX')),
+  ("Danny", "Santana", "CF", "R", "B", (SELECT id FROM teams WHERE abbreviation = 'TEX')),
+  ("Scott", "Barlow", "RP", "R", "R", (SELECT id FROM teams WHERE abbreviation = 'KC')),
+  ("Cheslor", "Cuthbert", "3B", "R", "R", (SELECT id FROM teams WHERE abbreviation = 'KC')),
+  ("Danny", "Duffy", "SP", "L", "L", (SELECT id FROM teams WHERE abbreviation = 'KC')),
+  ("Brian", "Flynn", "RP", "L", "L", (SELECT id FROM teams WHERE abbreviation = 'KC')),
+  ("Cam", "Gallagher", "C", "R", "R", (SELECT id FROM teams WHERE abbreviation = 'KC')),
+  ("Alex", "Gordon", "LF", "R", "L", (SELECT id FROM teams WHERE abbreviation = 'KC')),
+  ("Billy", "Hamilton", "CF", "R", "B", (SELECT id FROM teams WHERE abbreviation = 'KC')),
+  ("Nicky", "Lopez", "2B", "R", "L", (SELECT id FROM teams WHERE abbreviation = 'KC')),
+  ("Kevin", "McCarthy", "RP", "R", "R", (SELECT id FROM teams WHERE abbreviation = 'KC')),
+  ("Whit", "Merrifield", "2B", "R", "R", (SELECT id FROM teams WHERE abbreviation = 'KC')),
+  ("Adalberto", "Mondesi", "2B", "R", "B", (SELECT id FROM teams WHERE abbreviation = 'KC')),
+  ("Ryan", "O'Hearn", "1B", "L", "L", (SELECT id FROM teams WHERE abbreviation = 'KC')),
+  ("Jorge", "Soler", "RF", "R", "R", (SELECT id FROM teams WHERE abbreviation = 'KC')),
+  ("Nolan", "Arenado", "3B", "R", "R", (SELECT id FROM teams WHERE abbreviation = 'COL')),
+  ("David", "Dahl", "LF", "R", "L", (SELECT id FROM teams WHERE abbreviation = 'COL')),
+  ("Ian", "Desmond", "1B", "R", "R", (SELECT id FROM teams WHERE abbreviation = 'COL')),
+  ("Jairo", "Diaz", "RP", "R", "R", (SELECT id FROM teams WHERE abbreviation = 'COL')),
+  ("Chris", "Iannetta", "C", "R", "R", (SELECT id FROM teams WHERE abbreviation = 'COL')),
+  ("Peter", "Lambert", "SP", "R", "R", (SELECT id FROM teams WHERE abbreviation = 'COL')),
+  ("Scott", "Oberg", "RP", "R", "R", (SELECT id FROM teams WHERE abbreviation = 'COL')),
+  ("Mark", "Reynolds", "1B", "R", "R", (SELECT id FROM teams WHERE abbreviation = 'COL')),
+  ("Brendan", "Rodgers", "SS", "R", "R", (SELECT id FROM teams WHERE abbreviation = 'COL')),
+  ("Trevor", "Story", "SS", "R", "R", (SELECT id FROM teams WHERE abbreviation = 'COL')),
+  ("Raimel", "Tapia", "CF", "L", "L", (SELECT id FROM teams WHERE abbreviation = 'COL')),
+  ("Harrison", "Bader", "CF", "R", "R", (SELECT id FROM teams WHERE abbreviation = 'STL')),
+  ("Matt", "Carpenter", "1B", "R", "L", (SELECT id FROM teams WHERE abbreviation = 'STL')),
+  ("Paul", "DeJong", "SS", "R", "R", (SELECT id FROM teams WHERE abbreviation = 'STL')),
+  ("Dexter", "Fowler", "RF", "R", "B", (SELECT id FROM teams WHERE abbreviation = 'STL')),
+  ("John", "Gant", "RP", "R", "R", (SELECT id FROM teams WHERE abbreviation = 'STL')),
+  ("Paul", "Goldschmidt", "1B", "R", "R", (SELECT id FROM teams WHERE abbreviation = 'STL')),
+  ("Jordan", "Hicks", "RP", "R", "R", (SELECT id FROM teams WHERE abbreviation = 'STL')),
+  ("Dakota", "Hudson", "SP", "R", "R", (SELECT id FROM teams WHERE abbreviation = 'STL')),
+  ("Andrew", "Miller", "RP", "L", "L", (SELECT id FROM teams WHERE abbreviation = 'STL')),
+  ("Marcell", "Ozuna", "LF", "R", "R", (SELECT id FROM teams WHERE abbreviation = 'STL')),
+  ("Matt", "Wieters", "C", "R", "B", (SELECT id FROM teams WHERE abbreviation = 'STL')),
+  ("Kolten", "Wong", "2B", "R", "L", (SELECT id FROM teams WHERE abbreviation = 'STL')),
+  ("Ehire", "Adrianza", "SS", "R", "B", (SELECT id FROM teams WHERE abbreviation = 'MIN')),
+  ("Willians", "Astudillo", "C", "R", "R", (SELECT id FROM teams WHERE abbreviation = 'MIN')),
+  ("Jose", "Berrios", "SP", "R", "R", (SELECT id FROM teams WHERE abbreviation = 'MIN')),
+  ("C.J.", "Cron", "1B", "R", "R", (SELECT id FROM teams WHERE abbreviation = 'MIN')),
+  ("Mitch", "Garver", "C", "R", "R", (SELECT id FROM teams WHERE abbreviation = 'MIN')),
+  ("Marwin", "Gonzalez", "3B", "R", "B", (SELECT id FROM teams WHERE abbreviation = 'MIN')),
+  ("Max", "Kepler", "RF", "L", "L", (SELECT id FROM teams WHERE abbreviation = 'MIN')),
+  ("Matt", "Magill", "RP", "R", "R", (SELECT id FROM teams WHERE abbreviation = 'MIN')),
+  ("Trevor", "May", "RP", "R", "R", (SELECT id FROM teams WHERE abbreviation = 'MIN')),
+  ("Jorge", "Polanco", "SS", "R", "B", (SELECT id FROM teams WHERE abbreviation = 'MIN')),
+  ("Taylor", "Rogers", "RP", "L", "L", (SELECT id FROM teams WHERE abbreviation = 'MIN')),
+  ("Eddie", "Rosario", "LF", "R", "L", (SELECT id FROM teams WHERE abbreviation = 'MIN')),
+  ("Jonathan", "Schoop", "2B", "R", "R", (SELECT id FROM teams WHERE abbreviation = 'MIN')),
+  ("Albert", "Almora Jr.", "CF", "R", "R", (SELECT id FROM teams WHERE abbreviation = 'CHC')),
+  ("Javier", "Baez", "SS", "R", "R", (SELECT id FROM teams WHERE abbreviation = 'CHC')),
+  ("David", "Bote", "3B", "R", "R", (SELECT id FROM teams WHERE abbreviation = 'CHC')),
+  ("Kris", "Bryant", "3B", "R", "R", (SELECT id FROM teams WHERE abbreviation = 'CHC')),
+  ("Willson", "Contreras", "C", "R", "R", (SELECT id FROM teams WHERE abbreviation = 'CHC')),
+  ("Daniel", "Descalso", "3B", "R", "L", (SELECT id FROM teams WHERE abbreviation = 'CHC')),
+  ("Carl", "Edwards Jr.", "RP", "R", "R", (SELECT id FROM teams WHERE abbreviation = 'CHC')),
+  ("Jose", "Quintana", "SP", "L", "R", (SELECT id FROM teams WHERE abbreviation = 'CHC')),
+  ("Anthony", "Rizzo", "1B", "L", "L", (SELECT id FROM teams WHERE abbreviation = 'CHC')),
+  ("Kyle", "Ryan", "SP", "L", "L", (SELECT id FROM teams WHERE abbreviation = 'CHC')),
+  ("Kyle", "Schwarber", "LF", "R", "L", (SELECT id FROM teams WHERE abbreviation = 'CHC')),
+  ("Willy", "Adames", "SS", "R", "R", (SELECT id FROM teams WHERE abbreviation = 'TB')),
+  ("Christian", "Arroyo", "3B", "R", "R", (SELECT id FROM teams WHERE abbreviation = 'TB')),
+  ("Jalen", "Beeks", "RP", "L", "L", (SELECT id FROM teams WHERE abbreviation = 'TB')),
+  ("Diego", "Castillo", "RP", "R", "R", (SELECT id FROM teams WHERE abbreviation = 'TB')),
+  ("Travis", "d'Arnaud", "C", "R", "R", (SELECT id FROM teams WHERE abbreviation = 'TB')),
+  ("Yandy", "Diaz", "3B", "R", "R", (SELECT id FROM teams WHERE abbreviation = 'TB')),
+  ("Avisail", "Garcia", "RF", "R", "R", (SELECT id FROM teams WHERE abbreviation = 'TB')),
+  ("Kevin", "Kiermaier", "CF", "R", "L", (SELECT id FROM teams WHERE abbreviation = 'TB')),
+  ("Austin", "Meadows", "CF", "L", "L", (SELECT id FROM teams WHERE abbreviation = 'TB')),
+  ("Tommy", "Pham", "CF", "R", "R", (SELECT id FROM teams WHERE abbreviation = 'TB')),
+  ("Daniel", "Robertson", "2B", "R", "R", (SELECT id FROM teams WHERE abbreviation = 'TB')),
+  ("Chaz", "Roe", "RP", "R", "R", (SELECT id FROM teams WHERE abbreviation = 'TB')),
+  ("Ryne", "Stanek", "RP", "R", "R", (SELECT id FROM teams WHERE abbreviation = 'TB')),
+  ("Hunter", "Wood", "RP", "R", "R", (SELECT id FROM teams WHERE abbreviation = 'TB')),
+  ("Austin", "Adams", "RP", "R", "R", (SELECT id FROM teams WHERE abbreviation = 'SEA')),
+  ("Anthony", "Bass", "RP", "R", "R", (SELECT id FROM teams WHERE abbreviation = 'SEA')),
+  ("Gerson", "Bautista", "RP", "R", "R", (SELECT id FROM teams WHERE abbreviation = 'SEA')),
+  ("Brandon", "Brennan", "RP", "R", "R", (SELECT id FROM teams WHERE abbreviation = 'SEA')),
+  ("Roenis", "Elias", "SP", "L", "L", (SELECT id FROM teams WHERE abbreviation = 'SEA')),
+  ("Edwin", "Encarnacion", "DH", "R", "R", (SELECT id FROM teams WHERE abbreviation = 'SEA')),
+  ("Matt", "Festa", "RP", "R", "R", (SELECT id FROM teams WHERE abbreviation = 'SEA')),
+  ("Cory", "Gearrin", "RP", "R", "R", (SELECT id FROM teams WHERE abbreviation = 'SEA')),
+  ("Mitch", "Haniger", "RF", "R", "R", (SELECT id FROM teams WHERE abbreviation = 'SEA')),
+  ("Shed", "Long", "2B", "R", "L", (SELECT id FROM teams WHERE abbreviation = 'SEA')),
+  ("Tommy", "Milone", "SP", "L", "L", (SELECT id FROM teams WHERE abbreviation = 'SEA')),
+  ("Dylan", "Moore", "3B", "R", "R", (SELECT id FROM teams WHERE abbreviation = 'SEA')),
+  ("Omar", "Narvaez", "C", "R", "L", (SELECT id FROM teams WHERE abbreviation = 'SEA')),
+  ("Domingo", "Santana", "RF", "R", "R", (SELECT id FROM teams WHERE abbreviation = 'SEA')),
+  ("Kyle", "Seager", "3B", "R", "L", (SELECT id FROM teams WHERE abbreviation = 'SEA')),
+  ("Mallex", "Smith", "CF", "R", "L", (SELECT id FROM teams WHERE abbreviation = 'SEA')),
+  ("Daniel", "Vogelbach", "1B", "R", "L", (SELECT id FROM teams WHERE abbreviation = 'SEA')),
+  ("Matt", "Barnes", "RP", "R", "R", (SELECT id FROM teams WHERE abbreviation = 'BOS')),
+  ("Andrew", "Benintendi", "LF", "L", "L", (SELECT id FROM teams WHERE abbreviation = 'BOS')),
+  ("Mookie", "Betts", "RF", "R", "R", (SELECT id FROM teams WHERE abbreviation = 'BOS')),
+  ("Xander", "Bogaerts", "SS", "R", "R", (SELECT id FROM teams WHERE abbreviation = 'BOS')),
+  ("Jackie", "Bradley Jr.", "CF", "R", "L", (SELECT id FROM teams WHERE abbreviation = 'BOS')),
+  ("Ryan", "Brasier", "RP", "R", "R", (SELECT id FROM teams WHERE abbreviation = 'BOS')),
+  ("Colten", "Brewer", "RP", "R", "R", (SELECT id FROM teams WHERE abbreviation = 'BOS')),
+  ("Michael", "Chavis", "3B", "R", "R", (SELECT id FROM teams WHERE abbreviation = 'BOS')),
+  ("Rafael", "Devers", "3B", "R", "L", (SELECT id FROM teams WHERE abbreviation = 'BOS')),
+  ("Heath", "Hembree", "RP", "R", "R", (SELECT id FROM teams WHERE abbreviation = 'BOS')),
+  ("J.D.", "Martinez", "LF", "R", "R", (SELECT id FROM teams WHERE abbreviation = 'BOS')),
+  ("Eduardo", "Nunez", "2B", "R", "R", (SELECT id FROM teams WHERE abbreviation = 'BOS')),
+  ("Josh", "Taylor", "RP", "L", "L", (SELECT id FROM teams WHERE abbreviation = 'BOS')),
+  ("Christian", "Vazquez", "C", "R", "R", (SELECT id FROM teams WHERE abbreviation = 'BOS')),
+  ("Marcus", "Walden", "RP", "R", "R", (SELECT id FROM teams WHERE abbreviation = 'BOS')),
+  ("Ryan", "Weber", "RP", "R", "R", (SELECT id FROM teams WHERE abbreviation = 'BOS')),
+  ("Ryan", "Buchter", "RP", "L", "L", (SELECT id FROM teams WHERE abbreviation = 'OAK')),
+  ("Mark", "Canha", "1B", "R", "R", (SELECT id FROM teams WHERE abbreviation = 'OAK')),
+  ("Matt", "Chapman", "3B", "R", "R", (SELECT id FROM teams WHERE abbreviation = 'OAK')),
+  ("Khris", "Davis", "LF", "R", "R", (SELECT id FROM teams WHERE abbreviation = 'OAK')),
+  ("Mike", "Fiers", "SP", "R", "R", (SELECT id FROM teams WHERE abbreviation = 'OAK')),
+  ("Liam", "Hendriks", "RP", "R", "R", (SELECT id FROM teams WHERE abbreviation = 'OAK')),
+  ("Ramon", "Laureano", "CF", "R", "R", (SELECT id FROM teams WHERE abbreviation = 'OAK')),
+  ("Josh", "Phegley", "C", "R", "R", (SELECT id FROM teams WHERE abbreviation = 'OAK')),
+  ("Chad", "Pinder", "SS", "R", "R", (SELECT id FROM teams WHERE abbreviation = 'OAK')),
+  ("Stephen", "Piscotty", "RF", "R", "R", (SELECT id FROM teams WHERE abbreviation = 'OAK')),
+  ("Jurickson", "Profar", "SS", "R", "B", (SELECT id FROM teams WHERE abbreviation = 'OAK')),
+  ("Marcus", "Semien", "SS", "R", "R", (SELECT id FROM teams WHERE abbreviation = 'OAK')),
+  ("Joakim", "Soria", "RP", "R", "R", (SELECT id FROM teams WHERE abbreviation = 'OAK')),
+  ("Lou", "Trivino", "RP", "R", "R", (SELECT id FROM teams WHERE abbreviation = 'OAK')),
+  ("Jesus", "Aguilar", "1B", "R", "R", (SELECT id FROM teams WHERE abbreviation = 'MIL')),
+  ("Orlando", "Arcia", "SS", "R", "R", (SELECT id FROM teams WHERE abbreviation = 'MIL')),
+  ("Ryan", "Braun", "LF", "R", "R", (SELECT id FROM teams WHERE abbreviation = 'MIL')),
+  ("Lorenzo", "Cain", "CF", "R", "R", (SELECT id FROM teams WHERE abbreviation = 'MIL')),
+  ("Josh", "Hader", "RP", "L", "L", (SELECT id FROM teams WHERE abbreviation = 'MIL')),
+  ("Jeremy", "Jeffress", "RP", "R", "R", (SELECT id FROM teams WHERE abbreviation = 'MIL')),
+  ("Mike", "Moustakas", "2B", "R", "L", (SELECT id FROM teams WHERE abbreviation = 'MIL')),
+  ("Freddy", "Peralta", "SP", "R", "R", (SELECT id FROM teams WHERE abbreviation = 'MIL')),
+  ("Hernan", "Perez", "3B", "R", "R", (SELECT id FROM teams WHERE abbreviation = 'MIL')),
+  ("Manny", "Pina", "C", "R", "R", (SELECT id FROM teams WHERE abbreviation = 'MIL')),
+  ("Christian", "Yelich", "RF", "R", "L", (SELECT id FROM teams WHERE abbreviation = 'MIL')),
+  ("Jorge", "Alfaro", "C", "R", "R", (SELECT id FROM teams WHERE abbreviation = 'MIA')),
+  ("Brian", "Anderson", "3B", "R", "R", (SELECT id FROM teams WHERE abbreviation = 'MIA')),
+  ("Austin", "Brice", "RP", "R", "R", (SELECT id FROM teams WHERE abbreviation = 'MIA')),
+  ("Starlin", "Castro", "2B", "R", "R", (SELECT id FROM teams WHERE abbreviation = 'MIA')),
+  ("Garrett", "Cooper", "LF", "R", "R", (SELECT id FROM teams WHERE abbreviation = 'MIA')),
+  ("Austin", "Dean", "LF", "R", "R", (SELECT id FROM teams WHERE abbreviation = 'MIA')),
+  ("Tayron", "Guerrero", "RP", "R", "R", (SELECT id FROM teams WHERE abbreviation = 'MIA')),
+  ("Harold", "Ramirez", "RF", "R", "R", (SELECT id FROM teams WHERE abbreviation = 'MIA')),
+  ("JT", "Riddle", "SS", "R", "L", (SELECT id FROM teams WHERE abbreviation = 'MIA')),
+  ("Miguel", "Rojas", "SS", "R", "R", (SELECT id FROM teams WHERE abbreviation = 'MIA')),
+  ("Sergio", "Romo", "SP", "R", "R", (SELECT id FROM teams WHERE abbreviation = 'MIA')),
+  ("Caleb", "Smith", "SP", "L", "R", (SELECT id FROM teams WHERE abbreviation = 'MIA')),
+  ("Trevor", "Bauer", "SP", "R", "R", (SELECT id FROM teams WHERE abbreviation = 'CLE')),
+  ("Jake", "Bauers", "LF", "L", "L", (SELECT id FROM teams WHERE abbreviation = 'CLE')),
+  ("Jon", "Edwards", "RP", "R", "R", (SELECT id FROM teams WHERE abbreviation = 'CLE')),
+  ("Jason", "Kipnis", "2B", "R", "L", (SELECT id FROM teams WHERE abbreviation = 'CLE')),
+  ("Francisco", "Lindor", "SS", "R", "B", (SELECT id FROM teams WHERE abbreviation = 'CLE')),
+  ("Jordan", "Luplow", "RF", "R", "R", (SELECT id FROM teams WHERE abbreviation = 'CLE')),
+  ("Leonys", "Martin", "CF", "R", "L", (SELECT id FROM teams WHERE abbreviation = 'CLE')),
+  ("Tyler", "Naquin", "CF", "R", "L", (SELECT id FROM teams WHERE abbreviation = 'CLE')),
+  ("Roberto", "Perez", "C", "R", "R", (SELECT id FROM teams WHERE abbreviation = 'CLE')),
+  ("Jose", "Ramirez", "2B", "R", "B", (SELECT id FROM teams WHERE abbreviation = 'CLE')),
+  ("Carlos", "Santana", "1B", "R", "B", (SELECT id FROM teams WHERE abbreviation = 'CLE')),
+  ("Josh", "Smith", "RP", "L", "L", (SELECT id FROM teams WHERE abbreviation = 'CLE')),
+  ("Shaun", "Anderson", "SP", "R", "R", (SELECT id FROM teams WHERE abbreviation = 'SF')),
+  ("Brandon", "Belt", "1B", "L", "L", (SELECT id FROM teams WHERE abbreviation = 'SF')),
+  ("Brandon", "Crawford", "SS", "R", "L", (SELECT id FROM teams WHERE abbreviation = 'SF')),
+  ("Steven", "Duggar", "CF", "R", "L", (SELECT id FROM teams WHERE abbreviation = 'SF')),
+  ("Mark", "Melancon", "RP", "R", "R", (SELECT id FROM teams WHERE abbreviation = 'SF')),
+  ("Reyes", "Moronta", "RP", "R", "R", (SELECT id FROM teams WHERE abbreviation = 'SF')),
+  ("Joe", "Panik", "2B", "R", "L", (SELECT id FROM teams WHERE abbreviation = 'SF')),
+  ("Kevin", "Pillar", "CF", "R", "R", (SELECT id FROM teams WHERE abbreviation = 'SF')),
+  ("Pablo", "Sandoval", "3B", "R", "B", (SELECT id FROM teams WHERE abbreviation = 'SF')),
+  ("Stephen", "Vogt", "C", "R", "L", (SELECT id FROM teams WHERE abbreviation = 'SF')),
+  ("Tony", "Watson", "RP", "L", "L", (SELECT id FROM teams WHERE abbreviation = 'SF')),
+  ("Mike", "Yastrzemski", "LF", "L", "L", (SELECT id FROM teams WHERE abbreviation = 'SF')),
+  ("Brandon", "Drury", "3B", "R", "R", (SELECT id FROM teams WHERE abbreviation = 'TOR')),
+  ("Freddy", "Galvis", "SS", "R", "B", (SELECT id FROM teams WHERE abbreviation = 'TOR')),
+  ("Randal", "Grichuk", "LF", "R", "R", (SELECT id FROM teams WHERE abbreviation = 'TOR')),
+  ("Vladimir", "Guerrero Jr.", "3B", "R", "R", (SELECT id FROM teams WHERE abbreviation = 'TOR')),
+  ("Lourdes", "Gurriel Jr.", "2B", "R", "R", (SELECT id FROM teams WHERE abbreviation = 'TOR')),
+  ("Teoscar", "Hernandez", "RF", "R", "R", (SELECT id FROM teams WHERE abbreviation = 'TOR')),
+  ("Edwin", "Jackson", "SP", "R", "R", (SELECT id FROM teams WHERE abbreviation = 'TOR')),
+  ("Elvis", "Luciano", "RP", "R", "R", (SELECT id FROM teams WHERE abbreviation = 'TOR')),
+  ("Luke", "Maile", "C", "R", "R", (SELECT id FROM teams WHERE abbreviation = 'TOR')),
+  ("Tim", "Mayza", "RP", "L", "L", (SELECT id FROM teams WHERE abbreviation = 'TOR')),
+  ("Thomas", "Pannone", "RP", "L", "L", (SELECT id FROM teams WHERE abbreviation = 'TOR')),
+  ("Justin", "Smoak", "1B", "L", "B", (SELECT id FROM teams WHERE abbreviation = 'TOR')),
+  ("Eric", "Sogard", "2B", "R", "L", (SELECT id FROM teams WHERE abbreviation = 'TOR')),
+  ("Jaime", "Barria", "SP", "R", "R", (SELECT id FROM teams WHERE abbreviation = 'LAA')),
+  ("Kole", "Calhoun", "RF", "L", "L", (SELECT id FROM teams WHERE abbreviation = 'LAA')),
+  ("David", "Fletcher", "SS", "R", "R", (SELECT id FROM teams WHERE abbreviation = 'LAA')),
+  ("Dustin", "Garneau", "C", "R", "R", (SELECT id FROM teams WHERE abbreviation = 'LAA')),
+  ("Brian", "Goodwin", "CF", "R", "L", (SELECT id FROM teams WHERE abbreviation = 'LAA')),
+  ("Tommy", "La Stella", "3B", "R", "L", (SELECT id FROM teams WHERE abbreviation = 'LAA')),
+  ("Shohei", "Ohtani", "DH", "R", "L", (SELECT id FROM teams WHERE abbreviation = 'LAA')),
+  ("Luis", "Rengifo", "2B", "R", "B", (SELECT id FROM teams WHERE abbreviation = 'LAA')),
+  ("Tyler", "Skaggs", "SP", "L", "L", (SELECT id FROM teams WHERE abbreviation = 'LAA')),
+  ("Mike", "Trout", "CF", "R", "R", (SELECT id FROM teams WHERE abbreviation = 'LAA')),
+  ("Jared", "Walsh", "1B", "L", "L", (SELECT id FROM teams WHERE abbreviation = 'LAA')),
+  ("Ronald", "Acuna Jr.", "LF", "R", "R", (SELECT id FROM teams WHERE abbreviation = 'ATL')),
+  ("Ozzie", "Albies", "2B", "R", "B", (SELECT id FROM teams WHERE abbreviation = 'ATL')),
+  ("Josh", "Donaldson", "3B", "R", "R", (SELECT id FROM teams WHERE abbreviation = 'ATL')),
+  ("Mike", "Foltynewicz", "SP", "R", "R", (SELECT id FROM teams WHERE abbreviation = 'ATL')),
+  ("Freddie", "Freeman", "1B", "R", "L", (SELECT id FROM teams WHERE abbreviation = 'ATL')),
+  ("Nick", "Markakis", "RF", "L", "L", (SELECT id FROM teams WHERE abbreviation = 'ATL')),
+  ("Brian", "McCann", "C", "R", "L", (SELECT id FROM teams WHERE abbreviation = 'ATL')),
+  ("Sean", "Newcomb", "SP", "L", "L", (SELECT id FROM teams WHERE abbreviation = 'ATL')),
+  ("Austin", "Riley", "3B", "R", "R", (SELECT id FROM teams WHERE abbreviation = 'ATL')),
+  ("Dansby", "Swanson", "SS", "R", "R", (SELECT id FROM teams WHERE abbreviation = 'ATL')),
+  ("Jacob", "Webb", "RP", "R", "R", (SELECT id FROM teams WHERE abbreviation = 'ATL')),
+  ("Patrick", "Corbin", "SP", "L", "L", (SELECT id FROM teams WHERE abbreviation = 'WSH')),
+  ("Brian", "Dozier", "2B", "R", "R", (SELECT id FROM teams WHERE abbreviation = 'WSH')),
+  ("Yan", "Gomes", "C", "R", "R", (SELECT id FROM teams WHERE abbreviation = 'WSH')),
+  ("Matt", "Grace", "RP", "L", "L", (SELECT id FROM teams WHERE abbreviation = 'WSH')),
+  ("Javy", "Guerra", "RP", "R", "R", (SELECT id FROM teams WHERE abbreviation = 'WSH')),
+  ("Howie", "Kendrick", "2B", "R", "R", (SELECT id FROM teams WHERE abbreviation = 'WSH')),
+  ("Anthony", "Rendon", "3B", "R", "R", (SELECT id FROM teams WHERE abbreviation = 'WSH')),
+  ("Victor", "Robles", "CF", "R", "R", (SELECT id FROM teams WHERE abbreviation = 'WSH')),
+  ("Tony", "Sipp", "RP", "L", "L", (SELECT id FROM teams WHERE abbreviation = 'WSH')),
+  ("Juan", "Soto", "LF", "L", "L", (SELECT id FROM teams WHERE abbreviation = 'WSH')),
+  ("Michael", "Taylor", "CF", "R", "R", (SELECT id FROM teams WHERE abbreviation = 'WSH')),
+  ("Trea", "Turner", "SS", "R", "R", (SELECT id FROM teams WHERE abbreviation = 'WSH')),
+  ("Michael", "Brantley", "LF", "L", "L", (SELECT id FROM teams WHERE abbreviation = 'HOU')),
+  ("Alex", "Bregman", "3B", "R", "R", (SELECT id FROM teams WHERE abbreviation = 'HOU')),
+  ("Robinson", "Chirinos", "C", "R", "R", (SELECT id FROM teams WHERE abbreviation = 'HOU')),
+  ("Chris", "Devenski", "RP", "R", "R", (SELECT id FROM teams WHERE abbreviation = 'HOU')),
+  ("Derek", "Fisher", "CF", "R", "L", (SELECT id FROM teams WHERE abbreviation = 'HOU')),
+  ("Yuli", "Gurriel", "1B", "R", "R", (SELECT id FROM teams WHERE abbreviation = 'HOU')),
+  ("Will", "Harris", "RP", "R", "R", (SELECT id FROM teams WHERE abbreviation = 'HOU')),
+  ("Josh", "James", "SP", "R", "R", (SELECT id FROM teams WHERE abbreviation = 'HOU')),
+  ("Tony", "Kemp", "LF", "R", "L", (SELECT id FROM teams WHERE abbreviation = 'HOU')),
+  ("Jake", "Marisnick", "CF", "R", "R", (SELECT id FROM teams WHERE abbreviation = 'HOU')),
+  ("Jack", "Mayfield", "2B", "R", "R", (SELECT id FROM teams WHERE abbreviation = 'HOU')),
+  ("Roberto", "Osuna", "RP", "R", "R", (SELECT id FROM teams WHERE abbreviation = 'HOU')),
+  ("Ryan", "Pressly", "RP", "R", "R", (SELECT id FROM teams WHERE abbreviation = 'HOU')),
+  ("Hector", "Rondon", "RP", "R", "R", (SELECT id FROM teams WHERE abbreviation = 'HOU')),
+  ("Justin", "Verlander", "SP", "R", "R", (SELECT id FROM teams WHERE abbreviation = 'HOU')),
+  ("Tyler", "White", "2B", "R", "R", (SELECT id FROM teams WHERE abbreviation = 'HOU')),
+  ("Pete", "Alonso", "1B", "R", "R", (SELECT id FROM teams WHERE abbreviation = 'NYM')),
+  ("Michael", "Conforto", "RF", "R", "L", (SELECT id FROM teams WHERE abbreviation = 'NYM')),
+  ("Jeurys", "Familia", "RP", "R", "R", (SELECT id FROM teams WHERE abbreviation = 'NYM')),
+  ("Todd", "Frazier", "3B", "R", "R", (SELECT id FROM teams WHERE abbreviation = 'NYM')),
+  ("Adeiny", "Hechavarria", "SS", "R", "R", (SELECT id FROM teams WHERE abbreviation = 'NYM')),
+  ("Juan", "Lagares", "CF", "R", "R", (SELECT id FROM teams WHERE abbreviation = 'NYM')),
+  ("Seth", "Lugo", "SP", "R", "R", (SELECT id FROM teams WHERE abbreviation = 'NYM')),
+  ("Tomas", "Nido", "C", "R", "R", (SELECT id FROM teams WHERE abbreviation = 'NYM')),
+  ("Amed", "Rosario", "SS", "R", "R", (SELECT id FROM teams WHERE abbreviation = 'NYM')),
+  ("Dominic", "Smith", "1B", "L", "L", (SELECT id FROM teams WHERE abbreviation = 'NYM')),
+  ("Zack", "Wheeler", "SP", "R", "L", (SELECT id FROM teams WHERE abbreviation = 'NYM')),
+  ("Tucker", "Barnhart", "C", "R", "B", (SELECT id FROM teams WHERE abbreviation = 'CIN')),
+  ("Anthony", "DeSclafani", "SP", "R", "R", (SELECT id FROM teams WHERE abbreviation = 'CIN')),
+  ("Derek", "Dietrich", "LF", "R", "L", (SELECT id FROM teams WHERE abbreviation = 'CIN')),
+  ("Amir", "Garrett", "RP", "L", "R", (SELECT id FROM teams WHERE abbreviation = 'CIN')),
+  ("Jose", "Iglesias", "SS", "R", "R", (SELECT id FROM teams WHERE abbreviation = 'CIN')),
+  ("Michael", "Lorenzen", "RP", "R", "R", (SELECT id FROM teams WHERE abbreviation = 'CIN')),
+  ("Wandy", "Peralta", "RP", "L", "L", (SELECT id FROM teams WHERE abbreviation = 'CIN')),
+  ("Yasiel", "Puig", "RF", "R", "R", (SELECT id FROM teams WHERE abbreviation = 'CIN')),
+  ("Nick", "Senzel", "3B", "R", "R", (SELECT id FROM teams WHERE abbreviation = 'CIN')),
+  ("Eugenio", "Suarez", "3B", "R", "R", (SELECT id FROM teams WHERE abbreviation = 'CIN')),
+  ("Joey", "Votto", "1B", "R", "L", (SELECT id FROM teams WHERE abbreviation = 'CIN')),
+  ("Jesse", "Winker", "RF", "L", "L", (SELECT id FROM teams WHERE abbreviation = 'CIN')),
+  ("Austin", "Adams", "RP", "R", "R", (SELECT id FROM teams WHERE abbreviation = 'DET')),
+  ("Victor", "Alcantara", "RP", "R", "R", (SELECT id FROM teams WHERE abbreviation = 'DET')),
+  ("Gordon", "Beckham", "3B", "R", "R", (SELECT id FROM teams WHERE abbreviation = 'DET')),
+  ("Nicholas", "Castellanos", "RF", "R", "R", (SELECT id FROM teams WHERE abbreviation = 'DET')),
+  ("Brandon", "Dixon", "LF", "R", "R", (SELECT id FROM teams WHERE abbreviation = 'DET')),
+  ("Buck", "Farmer", "RP", "R", "L", (SELECT id FROM teams WHERE abbreviation = 'DET')),
+  ("Niko", "Goodrum", "SS", "R", "B", (SELECT id FROM teams WHERE abbreviation = 'DET')),
+  ("Grayson", "Greiner", "C", "R", "R", (SELECT id FROM teams WHERE abbreviation = 'DET')),
+  ("JaCoby", "Jones", "LF", "R", "R", (SELECT id FROM teams WHERE abbreviation = 'DET')),
+  ("Dawel", "Lugo", "2B", "R", "R", (SELECT id FROM teams WHERE abbreviation = 'DET')),
+  ("Daniel", "Norris", "SP", "L", "L", (SELECT id FROM teams WHERE abbreviation = 'DET')),
+  ("Ronny", "Rodriguez", "3B", "R", "R", (SELECT id FROM teams WHERE abbreviation = 'DET')),
+  ("Christin", "Stewart", "LF", "R", "L", (SELECT id FROM teams WHERE abbreviation = 'DET')),
+  ("Daniel", "Stumpf", "RP", "L", "L", (SELECT id FROM teams WHERE abbreviation = 'DET')),
+  ("Hanser", "Alberto", "SS", "R", "R", (SELECT id FROM teams WHERE abbreviation = 'BAL')),
+  ("Miguel", "Castro", "RP", "R", "R", (SELECT id FROM teams WHERE abbreviation = 'BAL')),
+  ("Chris", "Davis", "1B", "R", "L", (SELECT id FROM teams WHERE abbreviation = 'BAL')),
+  ("David", "Hess", "RP", "R", "R", (SELECT id FROM teams WHERE abbreviation = 'BAL')),
+  ("Trey", "Mancini", "LF", "R", "R", (SELECT id FROM teams WHERE abbreviation = 'BAL')),
+  ("Richie", "Martin", "SS", "R", "R", (SELECT id FROM teams WHERE abbreviation = 'BAL')),
+  ("Renato", "Nunez", "3B", "R", "R", (SELECT id FROM teams WHERE abbreviation = 'BAL')),
+  ("Rio", "Ruiz", "3B", "R", "L", (SELECT id FROM teams WHERE abbreviation = 'BAL')),
+  ("Chance", "Sisco", "C", "R", "L", (SELECT id FROM teams WHERE abbreviation = 'BAL')),
+  ("Dwight", "Smith Jr.", "RF", "R", "L", (SELECT id FROM teams WHERE abbreviation = 'BAL')),
+  ("Stevie", "Wilkerson", "SS", "R", "B", (SELECT id FROM teams WHERE abbreviation = 'BAL')),
+  ("Aroldis", "Chapman", "RP", "L", "L", (SELECT id FROM teams WHERE abbreviation = 'NYY')),
+  ("Thairo", "Estrada", "SS", "R", "R", (SELECT id FROM teams WHERE abbreviation = 'NYY')),
+  ("Clint", "Frazier", "LF", "R", "R", (SELECT id FROM teams WHERE abbreviation = 'NYY')),
+  ("Chad", "Green", "RP", "R", "L", (SELECT id FROM teams WHERE abbreviation = 'NYY')),
+  ("J.A.", "Happ", "SP", "L", "L", (SELECT id FROM teams WHERE abbreviation = 'NYY')),
+  ("Aaron", "Hicks", "CF", "R", "B", (SELECT id FROM teams WHERE abbreviation = 'NYY')),
+  ("DJ", "LeMahieu", "2B", "R", "R", (SELECT id FROM teams WHERE abbreviation = 'NYY')),
+  ("Cameron", "Maybin", "LF", "R", "R", (SELECT id FROM teams WHERE abbreviation = 'NYY')),
+  ("Kendrys", "Morales", "DH", "R", "B", (SELECT id FROM teams WHERE abbreviation = 'NYY')),
+  ("Gary", "Sanchez", "C", "R", "R", (SELECT id FROM teams WHERE abbreviation = 'NYY')),
+  ("Gio", "Urshela", "3B", "R", "R", (SELECT id FROM teams WHERE abbreviation = 'NYY')),
+  ("Luke", "Voit", "1B", "R", "R", (SELECT id FROM teams WHERE abbreviation = 'NYY')),
+  ("Austin", "Hedges", "C", "R", "R", (SELECT id FROM teams WHERE abbreviation = 'SD')),
+  ("Ian", "Kinsler", "2B", "R", "R", (SELECT id FROM teams WHERE abbreviation = 'SD')),
+  ("Joey", "Lucchesi", "SP", "L", "L", (SELECT id FROM teams WHERE abbreviation = 'SD')),
+  ("Manny", "Machado", "SS", "R", "R", (SELECT id FROM teams WHERE abbreviation = 'SD')),
+  ("Manuel", "Margot", "CF", "R", "R", (SELECT id FROM teams WHERE abbreviation = 'SD')),
+  ("Wil", "Myers", "RF", "R", "R", (SELECT id FROM teams WHERE abbreviation = 'SD')),
+  ("Hunter", "Renfroe", "RF", "R", "R", (SELECT id FROM teams WHERE abbreviation = 'SD')),
+  ("Franmil", "Reyes", "CF", "R", "R", (SELECT id FROM teams WHERE abbreviation = 'SD')),
+  ("Craig", "Stammen", "RP", "R", "R", (SELECT id FROM teams WHERE abbreviation = 'SD')),
+  ("Fernando", "Tatis Jr.", "SS", "R", "R", (SELECT id FROM teams WHERE abbreviation = 'SD')),
+  ("Trey", "Wingenter", "RP", "R", "R", (SELECT id FROM teams WHERE abbreviation = 'SD')),
+  ("Matt", "Wisler", "SP", "R", "R", (SELECT id FROM teams WHERE abbreviation = 'SD')),
+  ("Kirby", "Yates", "RP", "R", "L", (SELECT id FROM teams WHERE abbreviation = 'SD'));
 
 INSERT INTO games
-(startTime, homeScore, awayScore, homeTeamId, awayTeamId)
-VALUES
-("2019-06-06 12:35:00",	"6",	"1",
-(SELECT homeTeamId FROM teams WHERE abbreviation = 'PIT'),
-(SELECT awayTeamId FROM teams WHERE abbreviation = 'ATL'));
-
-INSERT INTO games
-(startTime, homeScore, awayScore, homeTeamId, awayTeamId)
-VALUES
-("2019-06-06 20:05:00",	"4",	"3",
-(SELECT homeTeamId FROM teams WHERE abbreviation = 'TEX'),
-(SELECT awayTeamId FROM teams WHERE abbreviation = 'BAL'));
-
-INSERT INTO games
-(startTime, homeScore, awayScore, homeTeamId, awayTeamId)
-VALUES
-("2019-06-06 13:15:00",	"5",	"7",
-(SELECT homeTeamId FROM teams WHERE abbreviation = 'KC'),
-(SELECT awayTeamId FROM teams WHERE abbreviation = 'BOS'));
-
-INSERT INTO games
-(startTime, homeScore, awayScore, homeTeamId, awayTeamId)
-VALUES
-("2019-06-06 14:20:00",	"1",	"3",
-(SELECT homeTeamId FROM teams WHERE abbreviation = 'CHC'),
-(SELECT awayTeamId FROM teams WHERE abbreviation = 'COL'));
-
-INSERT INTO games
-(startTime, homeScore, awayScore, homeTeamId, awayTeamId)
-VALUES
-("2019-06-06 13:15:00",	"3",	"1",
-(SELECT homeTeamId FROM teams WHERE abbreviation = 'STL'),
-(SELECT awayTeamId FROM teams WHERE abbreviation = 'CIN'));
-
-INSERT INTO games
-(startTime, homeScore, awayScore, homeTeamId, awayTeamId)
-VALUES
-("2019-06-06 19:00:00",	"4",	"5",
-(SELECT homeTeamId FROM teams WHERE abbreviation = 'CLE'),
-(SELECT awayTeamId FROM teams WHERE abbreviation = 'MIN'));
-
-INSERT INTO games
-(startTime, homeScore, awayScore, homeTeamId, awayTeamId)
-VALUES
-("2019-06-06 13:10:00",	"1",	"6",
-(SELECT homeTeamId FROM teams WHERE abbreviation = 'DET'),
-(SELECT awayTeamId FROM teams WHERE abbreviation = 'TB'));
-
-INSERT INTO games
-(startTime, homeScore, awayScore, homeTeamId, awayTeamId)
-VALUES
-("2019-06-06 15:40:00",	"7",	"8",
-(SELECT homeTeamId FROM teams WHERE abbreviation = 'SEA'),
-(SELECT awayTeamId FROM teams WHERE abbreviation = 'HOU'));
-
-INSERT INTO games
-(startTime, homeScore, awayScore, homeTeamId, awayTeamId)
-VALUES
-("2019-06-06 22:07:00",	"4",	"7",
-(SELECT homeTeamId FROM teams WHERE abbreviation = 'LAA'),
-(SELECT awayTeamId FROM teams WHERE abbreviation = 'OAK'));
-
-INSERT INTO games
-(startTime, homeScore, awayScore, homeTeamId, awayTeamId)
-VALUES
-("2019-06-06 14:10:00",	"5",	"1",
-(SELECT homeTeamId FROM teams WHERE abbreviation = 'MIL'),
-(SELECT awayTeamId FROM teams WHERE abbreviation = 'MIA'));
-
-INSERT INTO games
-(startTime, homeScore, awayScore, homeTeamId, awayTeamId)
-VALUES
-("2019-06-06 12:10:00",	"7",	"3",
-(SELECT homeTeamId FROM teams WHERE abbreviation = 'NYM'),
-(SELECT awayTeamId FROM teams WHERE abbreviation = 'SF'));
-
-INSERT INTO games
-(startTime, homeScore, awayScore, homeTeamId, awayTeamId)
-VALUES
-("2019-06-06 19:00:00",	"2",	"6",
-(SELECT homeTeamId FROM teams WHERE abbreviation = 'TOR'),
-(SELECT awayTeamId FROM teams WHERE abbreviation = 'NYY'));
-
-INSERT INTO games
-(startTime, homeScore, awayScore, homeTeamId, awayTeamId)
-VALUES
-("2019-06-06 22:10:00",	"5",	"4",
-(SELECT homeTeamId FROM teams WHERE abbreviation = 'SD'),
-(SELECT awayTeamId FROM teams WHERE abbreviation = 'WSH'));
-
-INSERT INTO hittingStats
-(atBats,runs,hits,doubles,triples,homeRuns,runsBattedIn,walks,strikeOuts,steals,playerId,teamId,gameId)
-VALUES
-("4",	"2",	"3",	"3",	"0",	"0",	"2",	"0",	"0",	"0",
-(SELECT id FROM players WHERE firstName = "Josh" && lastName = "Bell"),
-(SELECT id FROM teams WHERE abbreviation = "PIT"),
-(SELECT id FROM games WHERE id = "1"));
-
-INSERT INTO hittingStats
-(atBats,runs,hits,doubles,triples,homeRuns,runsBattedIn,walks,strikeOuts,steals,playerId,teamId,gameId)
-VALUES
-("4",	"0",	"0",	"0",	"0",	"0",	"0",	"0",	"0",	"0",
-(SELECT id FROM players WHERE firstName = "Starling" && lastName = "Marte"),
-(SELECT id FROM teams WHERE abbreviation = "PIT"),
-(SELECT id FROM games WHERE id = "1"));
-
-INSERT INTO hittingStats
-(atBats,runs,hits,doubles,triples,homeRuns,runsBattedIn,walks,strikeOuts,steals,playerId,teamId,gameId)
-VALUES
-("3",	"1",	"1",	"0",	"0",	"1",	"2",	"0",	"1",	"0",
-(SELECT id FROM players WHERE firstName = "Colin" && lastName = "Moran"),
-(SELECT id FROM teams WHERE abbreviation = "PIT"),
-(SELECT id FROM games WHERE id = "1"));
-
-INSERT INTO hittingStats
-(atBats,runs,hits,doubles,triples,homeRuns,runsBattedIn,walks,strikeOuts,steals,playerId,teamId,gameId)
-VALUES
-("4",	"0",	"0",	"0",	"0",	"0",	"0",	"0",	"1",	"0",
-(SELECT id FROM players WHERE firstName = "Kevin" && lastName = "Newman"),
-(SELECT id FROM teams WHERE abbreviation = "PIT"),
-(SELECT id FROM games WHERE id = "1"));
-
-INSERT INTO hittingStats
-(atBats,runs,hits,doubles,triples,homeRuns,runsBattedIn,walks,strikeOuts,steals,playerId,teamId,gameId)
-VALUES
-("4",	"1",	"1",	"0",	"0",	"1",	"1",	"0",	"2",	"0",
-(SELECT id FROM players WHERE firstName = "Gregory" && lastName = "Polanco"),
-(SELECT id FROM teams WHERE abbreviation = "PIT"),
-(SELECT id FROM games WHERE id = "1"));
-
-INSERT INTO hittingStats
-(atBats,runs,hits,doubles,triples,homeRuns,runsBattedIn,walks,strikeOuts,steals,playerId,teamId,gameId)
-VALUES
-("4",	"1",	"2",	"0",	"0",	"0",	"0",	"0",	"1",	"0",
-(SELECT id FROM players WHERE firstName = "Bryan" && lastName = "Reynolds"),
-(SELECT id FROM teams WHERE abbreviation = "PIT"),
-(SELECT id FROM games WHERE id = "1"));
-
-INSERT INTO hittingStats
-(atBats,runs,hits,doubles,triples,homeRuns,runsBattedIn,walks,strikeOuts,steals,playerId,teamId,gameId)
-VALUES
-("2",	"0",	"0",	"0",	"0",	"0",	"0",	"1",	"0",	"0",
-(SELECT id FROM players WHERE firstName = "Jacob" && lastName = "Stallings"),
-(SELECT id FROM teams WHERE abbreviation = "PIT"),
-(SELECT id FROM games WHERE id = "1"));
-
-INSERT INTO hittingStats
-(atBats,runs,hits,doubles,triples,homeRuns,runsBattedIn,walks,strikeOuts,steals,playerId,teamId,gameId)
-VALUES
-("3",	"0",	"1",	"1",	"0",	"0",	"0",	"0",	"1",	"0",
-(SELECT id FROM players WHERE firstName = "Cole" && lastName = "Tucker"),
-(SELECT id FROM teams WHERE abbreviation = "PIT"),
-(SELECT id FROM games WHERE id = "1"));
-
-INSERT INTO hittingStats
-(atBats,runs,hits,doubles,triples,homeRuns,runsBattedIn,walks,strikeOuts,steals,playerId,teamId,gameId)
-VALUES
-("4",	"0",	"1",	"0",	"0",	"0",	"0",	"0",	"1",	"0",
-(SELECT id FROM players WHERE firstName = "Elvis" && lastName = "Andrus"),
-(SELECT id FROM teams WHERE abbreviation = "TEX"),
-(SELECT id FROM games WHERE id = "2"));
-
-INSERT INTO hittingStats
-(atBats,runs,hits,doubles,triples,homeRuns,runsBattedIn,walks,strikeOuts,steals,playerId,teamId,gameId)
-VALUES
-("2",	"1",	"1",	"0",	"0",	"0",	"0",	"1",	"0",	"0",
-(SELECT id FROM players WHERE firstName = "Asdrubal" && lastName = "Cabrera"),
-(SELECT id FROM teams WHERE abbreviation = "TEX"),
-(SELECT id FROM games WHERE id = "2"));
-
-INSERT INTO hittingStats
-(atBats,runs,hits,doubles,triples,homeRuns,runsBattedIn,walks,strikeOuts,steals,playerId,teamId,gameId)
-VALUES
-("3",	"1",	"1",	"0",	"0",	"0",	"0",	"1",	"0",	"1",
-(SELECT id FROM players WHERE firstName = "Delino" && lastName = "DeShields"),
-(SELECT id FROM teams WHERE abbreviation = "TEX"),
-(SELECT id FROM games WHERE id = "2"));
-
-INSERT INTO hittingStats
-(atBats,runs,hits,doubles,triples,homeRuns,runsBattedIn,walks,strikeOuts,steals,playerId,teamId,gameId)
-VALUES
-("3",	"0",	"2",	"1",	"0",	"0",	"1",	"0",	"0",	"0",
-(SELECT id FROM players WHERE firstName = "Ronald" && lastName = "Guzman"),
-(SELECT id FROM teams WHERE abbreviation = "TEX"),
-(SELECT id FROM games WHERE id = "2"));
-
-INSERT INTO hittingStats
-(atBats,runs,hits,doubles,triples,homeRuns,runsBattedIn,walks,strikeOuts,steals,playerId,teamId,gameId)
-VALUES
-("3",	"1",	"1",	"0",	"0",	"0",	"0",	"0",	"1",	"0",
-(SELECT id FROM players WHERE firstName = "Isiah" && lastName = "Kiner-Falefa"),
-(SELECT id FROM teams WHERE abbreviation = "TEX"),
-(SELECT id FROM games WHERE id = "2"));
-
-INSERT INTO hittingStats
-(atBats,runs,hits,doubles,triples,homeRuns,runsBattedIn,walks,strikeOuts,steals,playerId,teamId,gameId)
-VALUES
-("4",	"0",	"0",	"0",	"0",	"0",	"0",	"0",	"0",	"0",
-(SELECT id FROM players WHERE firstName = "Nomar" && lastName = "Mazara"),
-(SELECT id FROM teams WHERE abbreviation = "TEX"),
-(SELECT id FROM games WHERE id = "2"));
-
-INSERT INTO hittingStats
-(atBats,runs,hits,doubles,triples,homeRuns,runsBattedIn,walks,strikeOuts,steals,playerId,teamId,gameId)
-VALUES
-("3",	"0",	"0",	"0",	"0",	"0",	"0",	"0",	"0",	"0",
-(SELECT id FROM players WHERE firstName = "Rougned" && lastName = "Odor"),
-(SELECT id FROM teams WHERE abbreviation = "TEX"),
-(SELECT id FROM games WHERE id = "2"));
-
-INSERT INTO hittingStats
-(atBats,runs,hits,doubles,triples,homeRuns,runsBattedIn,walks,strikeOuts,steals,playerId,teamId,gameId)
-VALUES
-("4",	"1",	"1",	"0",	"0",	"1",	"1",	"0",	"2",	"0",
-(SELECT id FROM players WHERE firstName = "Hunter" && lastName = "Pence"),
-(SELECT id FROM teams WHERE abbreviation = "TEX"),
-(SELECT id FROM games WHERE id = "2"));
-
-INSERT INTO hittingStats
-(atBats,runs,hits,doubles,triples,homeRuns,runsBattedIn,walks,strikeOuts,steals,playerId,teamId,gameId)
-VALUES
-("3",	"0",	"1",	"0",	"0",	"0",	"1",	"0",	"1",	"0",
-(SELECT id FROM players WHERE firstName = "Danny" && lastName = "Santana"),
-(SELECT id FROM teams WHERE abbreviation = "TEX"),
-(SELECT id FROM games WHERE id = "2"));
-
-INSERT INTO hittingStats
-(atBats,runs,hits,doubles,triples,homeRuns,runsBattedIn,walks,strikeOuts,steals,playerId,teamId,gameId)
-VALUES
-("5",	"1",	"2",	"0",	"0",	"1",	"1",	"0",	"1",	"0",
-(SELECT id FROM players WHERE firstName = "Cheslor" && lastName = "Cuthbert"),
-(SELECT id FROM teams WHERE abbreviation = "KC"),
-(SELECT id FROM games WHERE id = "3"));
-
-INSERT INTO hittingStats
-(atBats,runs,hits,doubles,triples,homeRuns,runsBattedIn,walks,strikeOuts,steals,playerId,teamId,gameId)
-VALUES
-("3",	"0",	"2",	"0",	"0",	"0",	"0",	"1",	"0",	"0",
-(SELECT id FROM players WHERE firstName = "Cam" && lastName = "Gallagher"),
-(SELECT id FROM teams WHERE abbreviation = "KC"),
-(SELECT id FROM games WHERE id = "3"));
-
-INSERT INTO hittingStats
-(atBats,runs,hits,doubles,triples,homeRuns,runsBattedIn,walks,strikeOuts,steals,playerId,teamId,gameId)
-VALUES
-("5",	"2",	"3",	"0",	"0",	"1",	"1",	"0",	"2",	"0",
-(SELECT id FROM players WHERE firstName = "Alex" && lastName = "Gordon"),
-(SELECT id FROM teams WHERE abbreviation = "KC"),
-(SELECT id FROM games WHERE id = "3"));
-
-INSERT INTO hittingStats
-(atBats,runs,hits,doubles,triples,homeRuns,runsBattedIn,walks,strikeOuts,steals,playerId,teamId,gameId)
-VALUES
-("4",	"0",	"2",	"1",	"0",	"0",	"1",	"0",	"1",	"0",
-(SELECT id FROM players WHERE firstName = "Billy" && lastName = "Hamilton"),
-(SELECT id FROM teams WHERE abbreviation = "KC"),
-(SELECT id FROM games WHERE id = "3"));
-
-INSERT INTO hittingStats
-(atBats,runs,hits,doubles,triples,homeRuns,runsBattedIn,walks,strikeOuts,steals,playerId,teamId,gameId)
-VALUES
-("4",	"1",	"2",	"1",	"0",	"0",	"0",	"0",	"0",	"1",
-(SELECT id FROM players WHERE firstName = "Nicky" && lastName = "Lopez"),
-(SELECT id FROM teams WHERE abbreviation = "KC"),
-(SELECT id FROM games WHERE id = "3"));
-
-INSERT INTO hittingStats
-(atBats,runs,hits,doubles,triples,homeRuns,runsBattedIn,walks,strikeOuts,steals,playerId,teamId,gameId)
-VALUES
-("5",	"0",	"1",	"0",	"0",	"0",	"0",	"0",	"2",	"0",
-(SELECT id FROM players WHERE firstName = "Whit" && lastName = "Merrifield"),
-(SELECT id FROM teams WHERE abbreviation = "KC"),
-(SELECT id FROM games WHERE id = "3"));
-
-INSERT INTO hittingStats
-(atBats,runs,hits,doubles,triples,homeRuns,runsBattedIn,walks,strikeOuts,steals,playerId,teamId,gameId)
-VALUES
-("5",	"0",	"0",	"0",	"0",	"0",	"0",	"0",	"3",	"0",
-(SELECT id FROM players WHERE firstName = "Adalberto" && lastName = "Mondesi"),
-(SELECT id FROM teams WHERE abbreviation = "KC"),
-(SELECT id FROM games WHERE id = "3"));
-
-INSERT INTO hittingStats
-(atBats,runs,hits,doubles,triples,homeRuns,runsBattedIn,walks,strikeOuts,steals,playerId,teamId,gameId)
-VALUES
-("5",	"0",	"0",	"0",	"0",	"0",	"0",	"0",	"2",	"0",
-(SELECT id FROM players WHERE firstName = "Ryan" && lastName = "O'Hearn"),
-(SELECT id FROM teams WHERE abbreviation = "KC"),
-(SELECT id FROM games WHERE id = "3"));
-
-INSERT INTO hittingStats
-(atBats,runs,hits,doubles,triples,homeRuns,runsBattedIn,walks,strikeOuts,steals,playerId,teamId,gameId)
-VALUES
-("5",	"1",	"2",	"1",	"0",	"1",	"2",	"0",	"0",	"0",
-(SELECT id FROM players WHERE firstName = "Jorge" && lastName = "Soler"),
-(SELECT id FROM teams WHERE abbreviation = "KC"),
-(SELECT id FROM games WHERE id = "3"));
-
-INSERT INTO hittingStats
-(atBats,runs,hits,doubles,triples,homeRuns,runsBattedIn,walks,strikeOuts,steals,playerId,teamId,gameId)
-VALUES
-("4",	"0",	"0",	"0",	"0",	"0",	"0",	"0",	"1",	"0",
-(SELECT id FROM players WHERE firstName = "Nolan" && lastName = "Arenado"),
-(SELECT id FROM teams WHERE abbreviation = "COL"),
-(SELECT id FROM games WHERE id = "4"));
-
-INSERT INTO hittingStats
-(atBats,runs,hits,doubles,triples,homeRuns,runsBattedIn,walks,strikeOuts,steals,playerId,teamId,gameId)
-VALUES
-("4",	"1",	"1",	"0",	"0",	"0",	"1",	"0",	"0",	"0",
-(SELECT id FROM players WHERE firstName = "David" && lastName = "Dahl"),
-(SELECT id FROM teams WHERE abbreviation = "COL"),
-(SELECT id FROM games WHERE id = "4"));
-
-INSERT INTO hittingStats
-(atBats,runs,hits,doubles,triples,homeRuns,runsBattedIn,walks,strikeOuts,steals,playerId,teamId,gameId)
-VALUES
-("4",	"1",	"2",	"2",	"0",	"0",	"1",	"0",	"1",	"0",
-(SELECT id FROM players WHERE firstName = "Ian" && lastName = "Desmond"),
-(SELECT id FROM teams WHERE abbreviation = "COL"),
-(SELECT id FROM games WHERE id = "4"));
-
-INSERT INTO hittingStats
-(atBats,runs,hits,doubles,triples,homeRuns,runsBattedIn,walks,strikeOuts,steals,playerId,teamId,gameId)
-VALUES
-("2",	"0",	"0",	"0",	"0",	"0",	"1",	"0",	"1",	"0",
-(SELECT id FROM players WHERE firstName = "Chris" && lastName = "Iannetta"),
-(SELECT id FROM teams WHERE abbreviation = "COL"),
-(SELECT id FROM games WHERE id = "4"));
-
-INSERT INTO hittingStats
-(atBats,runs,hits,doubles,triples,homeRuns,runsBattedIn,walks,strikeOuts,steals,playerId,teamId,gameId)
-VALUES
-("4",	"0",	"1",	"1",	"0",	"0",	"0",	"0",	"1",	"0",
-(SELECT id FROM players WHERE firstName = "Mark" && lastName = "Reynolds"),
-(SELECT id FROM teams WHERE abbreviation = "COL"),
-(SELECT id FROM games WHERE id = "4"));
-
-INSERT INTO hittingStats
-(atBats,runs,hits,doubles,triples,homeRuns,runsBattedIn,walks,strikeOuts,steals,playerId,teamId,gameId)
-VALUES
-("3",	"0",	"0",	"0",	"0",	"0",	"0",	"1",	"1",	"0",
-(SELECT id FROM players WHERE firstName = "Brendan" && lastName = "Rodgers"),
-(SELECT id FROM teams WHERE abbreviation = "COL"),
-(SELECT id FROM games WHERE id = "4"));
-
-INSERT INTO hittingStats
-(atBats,runs,hits,doubles,triples,homeRuns,runsBattedIn,walks,strikeOuts,steals,playerId,teamId,gameId)
-VALUES
-("4",	"1",	"1",	"1",	"0",	"0",	"0",	"0",	"2",	"0",
-(SELECT id FROM players WHERE firstName = "Trevor" && lastName = "Story"),
-(SELECT id FROM teams WHERE abbreviation = "COL"),
-(SELECT id FROM games WHERE id = "4"));
-
-INSERT INTO hittingStats
-(atBats,runs,hits,doubles,triples,homeRuns,runsBattedIn,walks,strikeOuts,steals,playerId,teamId,gameId)
-VALUES
-("4",	"0",	"0",	"0",	"0",	"0",	"0",	"0",	"0",	"0",
-(SELECT id FROM players WHERE firstName = "Raimel" && lastName = "Tapia"),
-(SELECT id FROM teams WHERE abbreviation = "COL"),
-(SELECT id FROM games WHERE id = "4"));
-
-INSERT INTO hittingStats
-(atBats,runs,hits,doubles,triples,homeRuns,runsBattedIn,walks,strikeOuts,steals,playerId,teamId,gameId)
-VALUES
-("2",	"1",	"1",	"0",	"0",	"0",	"0",	"1",	"0",	"0",
-(SELECT id FROM players WHERE firstName = "Harrison" && lastName = "Bader"),
-(SELECT id FROM teams WHERE abbreviation = "STL"),
-(SELECT id FROM games WHERE id = "5"));
-
-INSERT INTO hittingStats
-(atBats,runs,hits,doubles,triples,homeRuns,runsBattedIn,walks,strikeOuts,steals,playerId,teamId,gameId)
-VALUES
-("4",	"0",	"1",	"0",	"0",	"0",	"1",	"0",	"3",	"1",
-(SELECT id FROM players WHERE firstName = "Matt" && lastName = "Carpenter"),
-(SELECT id FROM teams WHERE abbreviation = "STL"),
-(SELECT id FROM games WHERE id = "5"));
-
-INSERT INTO hittingStats
-(atBats,runs,hits,doubles,triples,homeRuns,runsBattedIn,walks,strikeOuts,steals,playerId,teamId,gameId)
-VALUES
-("4",	"1",	"1",	"0",	"0",	"1",	"2",	"0",	"1",	"0",
-(SELECT id FROM players WHERE firstName = "Paul" && lastName = "DeJong"),
-(SELECT id FROM teams WHERE abbreviation = "STL"),
-(SELECT id FROM games WHERE id = "5"));
-
-INSERT INTO hittingStats
-(atBats,runs,hits,doubles,triples,homeRuns,runsBattedIn,walks,strikeOuts,steals,playerId,teamId,gameId)
-VALUES
-("3",	"0",	"1",	"0",	"0",	"0",	"0",	"0",	"0",	"1",
-(SELECT id FROM players WHERE firstName = "Dexter" && lastName = "Fowler"),
-(SELECT id FROM teams WHERE abbreviation = "STL"),
-(SELECT id FROM games WHERE id = "5"));
-
-INSERT INTO hittingStats
-(atBats,runs,hits,doubles,triples,homeRuns,runsBattedIn,walks,strikeOuts,steals,playerId,teamId,gameId)
-VALUES
-("4",	"0",	"1",	"0",	"0",	"0",	"0",	"0",	"1",	"0",
-(SELECT id FROM players WHERE firstName = "Paul" && lastName = "Goldschmidt"),
-(SELECT id FROM teams WHERE abbreviation = "STL"),
-(SELECT id FROM games WHERE id = "5"));
-
-INSERT INTO hittingStats
-(atBats,runs,hits,doubles,triples,homeRuns,runsBattedIn,walks,strikeOuts,steals,playerId,teamId,gameId)
-VALUES
-("4",	"0",	"2",	"0",	"0",	"0",	"0",	"0",	"1",	"1",
-(SELECT id FROM players WHERE firstName = "Marcell" && lastName = "Ozuna"),
-(SELECT id FROM teams WHERE abbreviation = "STL"),
-(SELECT id FROM games WHERE id = "5"));
-
-INSERT INTO hittingStats
-(atBats,runs,hits,doubles,triples,homeRuns,runsBattedIn,walks,strikeOuts,steals,playerId,teamId,gameId)
-VALUES
-("4",	"0",	"0",	"0",	"0",	"0",	"0",	"0",	"2",	"0",
-(SELECT id FROM players WHERE firstName = "Matt" && lastName = "Wieters"),
-(SELECT id FROM teams WHERE abbreviation = "STL"),
-(SELECT id FROM games WHERE id = "5"));
-
-INSERT INTO hittingStats
-(atBats,runs,hits,doubles,triples,homeRuns,runsBattedIn,walks,strikeOuts,steals,playerId,teamId,gameId)
-VALUES
-("4",	"0",	"1",	"0",	"0",	"0",	"0",	"0",	"2",	"1",
-(SELECT id FROM players WHERE firstName = "Kolten" && lastName = "Wong"),
-(SELECT id FROM teams WHERE abbreviation = "STL"),
-(SELECT id FROM games WHERE id = "5"));
-
-INSERT INTO hittingStats
-(atBats,runs,hits,doubles,triples,homeRuns,runsBattedIn,walks,strikeOuts,steals,playerId,teamId,gameId)
-VALUES
-("3",	"0",	"0",	"0",	"0",	"0",	"0",	"0",	"1",	"0",
-(SELECT id FROM players WHERE firstName = "Ehire" && lastName = "Adrianza"),
-(SELECT id FROM teams WHERE abbreviation = "MIN"),
-(SELECT id FROM games WHERE id = "6"));
-
-INSERT INTO hittingStats
-(atBats,runs,hits,doubles,triples,homeRuns,runsBattedIn,walks,strikeOuts,steals,playerId,teamId,gameId)
-VALUES
-("4",	"1",	"1",	"0",	"0",	"0",	"0",	"0",	"0",	"0",
-(SELECT id FROM players WHERE firstName = "Willians" && lastName = "Astudillo"),
-(SELECT id FROM teams WHERE abbreviation = "MIN"),
-(SELECT id FROM games WHERE id = "6"));
-
-INSERT INTO hittingStats
-(atBats,runs,hits,doubles,triples,homeRuns,runsBattedIn,walks,strikeOuts,steals,playerId,teamId,gameId)
-VALUES
-("4",	"0",	"0",	"0",	"0",	"0",	"0",	"0",	"0",	"0",
-(SELECT id FROM players WHERE firstName = "C.J." && lastName = "Cron"),
-(SELECT id FROM teams WHERE abbreviation = "MIN"),
-(SELECT id FROM games WHERE id = "6"));
-
-INSERT INTO hittingStats
-(atBats,runs,hits,doubles,triples,homeRuns,runsBattedIn,walks,strikeOuts,steals,playerId,teamId,gameId)
-VALUES
-("5",	"0",	"1",	"1",	"0",	"0",	"1",	"0",	"4",	"0",
-(SELECT id FROM players WHERE firstName = "Mitch" && lastName = "Garver"),
-(SELECT id FROM teams WHERE abbreviation = "MIN"),
-(SELECT id FROM games WHERE id = "6"));
-
-INSERT INTO hittingStats
-(atBats,runs,hits,doubles,triples,homeRuns,runsBattedIn,walks,strikeOuts,steals,playerId,teamId,gameId)
-VALUES
-("3",	"0",	"0",	"0",	"0",	"0",	"0",	"1",	"1",	"0",
-(SELECT id FROM players WHERE firstName = "Marwin" && lastName = "Gonzalez"),
-(SELECT id FROM teams WHERE abbreviation = "MIN"),
-(SELECT id FROM games WHERE id = "6"));
-
-INSERT INTO hittingStats
-(atBats,runs,hits,doubles,triples,homeRuns,runsBattedIn,walks,strikeOuts,steals,playerId,teamId,gameId)
-VALUES
-("4",	"3",	"4",	"0",	"0",	"3",	"4",	"1",	"0",	"0",
-(SELECT id FROM players WHERE firstName = "Max" && lastName = "Kepler"),
-(SELECT id FROM teams WHERE abbreviation = "MIN"),
-(SELECT id FROM games WHERE id = "6"));
-
-INSERT INTO hittingStats
-(atBats,runs,hits,doubles,triples,homeRuns,runsBattedIn,walks,strikeOuts,steals,playerId,teamId,gameId)
-VALUES
-("5",	"1",	"1",	"0",	"0",	"0",	"0",	"0",	"1",	"1",
-(SELECT id FROM players WHERE firstName = "Jorge" && lastName = "Polanco"),
-(SELECT id FROM teams WHERE abbreviation = "MIN"),
-(SELECT id FROM games WHERE id = "6"));
-
-INSERT INTO hittingStats
-(atBats,runs,hits,doubles,triples,homeRuns,runsBattedIn,walks,strikeOuts,steals,playerId,teamId,gameId)
-VALUES
-("3",	"0",	"0",	"0",	"0",	"0",	"0",	"1",	"0",	"0",
-(SELECT id FROM players WHERE firstName = "Eddie" && lastName = "Rosario"),
-(SELECT id FROM teams WHERE abbreviation = "MIN"),
-(SELECT id FROM games WHERE id = "6"));
-
-INSERT INTO hittingStats
-(atBats,runs,hits,doubles,triples,homeRuns,runsBattedIn,walks,strikeOuts,steals,playerId,teamId,gameId)
-VALUES
-("4",	"0",	"0",	"0",	"0",	"0",	"0",	"0",	"1",	"0",
-(SELECT id FROM players WHERE firstName = "Jonathan" && lastName = "Schoop"),
-(SELECT id FROM teams WHERE abbreviation = "MIN"),
-(SELECT id FROM games WHERE id = "6"));
-
-INSERT INTO hittingStats
-(atBats,runs,hits,doubles,triples,homeRuns,runsBattedIn,walks,strikeOuts,steals,playerId,teamId,gameId)
-VALUES
-("4",	"0",	"1",	"0",	"0",	"0",	"0",	"0",	"1",	"0",
-(SELECT id FROM players WHERE firstName = "Albert" && lastName = "Almora Jr."),
-(SELECT id FROM teams WHERE abbreviation = "CHC"),
-(SELECT id FROM games WHERE id = "4"));
-
-INSERT INTO hittingStats
-(atBats,runs,hits,doubles,triples,homeRuns,runsBattedIn,walks,strikeOuts,steals,playerId,teamId,gameId)
-VALUES
-("4",	"0",	"2",	"0",	"0",	"0",	"1",	"0",	"0",	"0",
-(SELECT id FROM players WHERE firstName = "Javier" && lastName = "Baez"),
-(SELECT id FROM teams WHERE abbreviation = "CHC"),
-(SELECT id FROM games WHERE id = "4"));
-
-INSERT INTO hittingStats
-(atBats,runs,hits,doubles,triples,homeRuns,runsBattedIn,walks,strikeOuts,steals,playerId,teamId,gameId)
-VALUES
-("4",	"0",	"0",	"0",	"0",	"0",	"0",	"0",	"2",	"0",
-(SELECT id FROM players WHERE firstName = "David" && lastName = "Bote"),
-(SELECT id FROM teams WHERE abbreviation = "CHC"),
-(SELECT id FROM games WHERE id = "4"));
-
-INSERT INTO hittingStats
-(atBats,runs,hits,doubles,triples,homeRuns,runsBattedIn,walks,strikeOuts,steals,playerId,teamId,gameId)
-VALUES
-("3",	"1",	"1",	"1",	"0",	"0",	"0",	"1",	"0",	"0",
-(SELECT id FROM players WHERE firstName = "Kris" && lastName = "Bryant"),
-(SELECT id FROM teams WHERE abbreviation = "CHC"),
-(SELECT id FROM games WHERE id = "4"));
-
-INSERT INTO hittingStats
-(atBats,runs,hits,doubles,triples,homeRuns,runsBattedIn,walks,strikeOuts,steals,playerId,teamId,gameId)
-VALUES
-("4",	"0",	"0",	"0",	"0",	"0",	"0",	"0",	"1",	"0",
-(SELECT id FROM players WHERE firstName = "Willson" && lastName = "Contreras"),
-(SELECT id FROM teams WHERE abbreviation = "CHC"),
-(SELECT id FROM games WHERE id = "4"));
-
-INSERT INTO hittingStats
-(atBats,runs,hits,doubles,triples,homeRuns,runsBattedIn,walks,strikeOuts,steals,playerId,teamId,gameId)
-VALUES
-("2",	"0",	"0",	"0",	"0",	"0",	"0",	"1",	"2",	"0",
-(SELECT id FROM players WHERE firstName = "Daniel" && lastName = "Descalso"),
-(SELECT id FROM teams WHERE abbreviation = "CHC"),
-(SELECT id FROM games WHERE id = "4"));
-
-INSERT INTO hittingStats
-(atBats,runs,hits,doubles,triples,homeRuns,runsBattedIn,walks,strikeOuts,steals,playerId,teamId,gameId)
-VALUES
-("4",	"0",	"0",	"0",	"0",	"0",	"0",	"0",	"1",	"0",
-(SELECT id FROM players WHERE firstName = "Anthony" && lastName = "Rizzo"),
-(SELECT id FROM teams WHERE abbreviation = "CHC"),
-(SELECT id FROM games WHERE id = "4"));
-
-INSERT INTO hittingStats
-(atBats,runs,hits,doubles,triples,homeRuns,runsBattedIn,walks,strikeOuts,steals,playerId,teamId,gameId)
-VALUES
-("4",	"0",	"1",	"0",	"0",	"0",	"0",	"0",	"2",	"1",
-(SELECT id FROM players WHERE firstName = "Kyle" && lastName = "Schwarber"),
-(SELECT id FROM teams WHERE abbreviation = "CHC"),
-(SELECT id FROM games WHERE id = "4"));
-
-INSERT INTO hittingStats
-(atBats,runs,hits,doubles,triples,homeRuns,runsBattedIn,walks,strikeOuts,steals,playerId,teamId,gameId)
-VALUES
-("5",	"1",	"2",	"0",	"0",	"1",	"1",	"0",	"1",	"0",
-(SELECT id FROM players WHERE firstName = "Willy" && lastName = "Adames"),
-(SELECT id FROM teams WHERE abbreviation = "TB"),
-(SELECT id FROM games WHERE id = "7"));
-
-INSERT INTO hittingStats
-(atBats,runs,hits,doubles,triples,homeRuns,runsBattedIn,walks,strikeOuts,steals,playerId,teamId,gameId)
-VALUES
-("3",	"1",	"0",	"0",	"0",	"0",	"0",	"1",	"1",	"0",
-(SELECT id FROM players WHERE firstName = "Christian" && lastName = "Arroyo"),
-(SELECT id FROM teams WHERE abbreviation = "TB"),
-(SELECT id FROM games WHERE id = "7"));
-
-INSERT INTO hittingStats
-(atBats,runs,hits,doubles,triples,homeRuns,runsBattedIn,walks,strikeOuts,steals,playerId,teamId,gameId)
-VALUES
-("3",	"2",	"2",	"0",	"0",	"2",	"4",	"1",	"1",	"0",
-(SELECT id FROM players WHERE firstName = "Travis" && lastName = "d'Arnaud"),
-(SELECT id FROM teams WHERE abbreviation = "TB"),
-(SELECT id FROM games WHERE id = "7"));
-
-INSERT INTO hittingStats
-(atBats,runs,hits,doubles,triples,homeRuns,runsBattedIn,walks,strikeOuts,steals,playerId,teamId,gameId)
-VALUES
-("5",	"1",	"3",	"0",	"0",	"0",	"0",	"0",	"0",	"0",
-(SELECT id FROM players WHERE firstName = "Yandy" && lastName = "Diaz"),
-(SELECT id FROM teams WHERE abbreviation = "TB"),
-(SELECT id FROM games WHERE id = "7"));
-
-INSERT INTO hittingStats
-(atBats,runs,hits,doubles,triples,homeRuns,runsBattedIn,walks,strikeOuts,steals,playerId,teamId,gameId)
-VALUES
-("5",	"0",	"2",	"1",	"0",	"0",	"0",	"0",	"1",	"0",
-(SELECT id FROM players WHERE firstName = "Avisail" && lastName = "Garcia"),
-(SELECT id FROM teams WHERE abbreviation = "TB"),
-(SELECT id FROM games WHERE id = "7"));
-
-INSERT INTO hittingStats
-(atBats,runs,hits,doubles,triples,homeRuns,runsBattedIn,walks,strikeOuts,steals,playerId,teamId,gameId)
-VALUES
-("3",	"1",	"2",	"1",	"0",	"0",	"0",	"0",	"1",	"0",
-(SELECT id FROM players WHERE firstName = "Kevin" && lastName = "Kiermaier"),
-(SELECT id FROM teams WHERE abbreviation = "TB"),
-(SELECT id FROM games WHERE id = "7"));
-
-INSERT INTO hittingStats
-(atBats,runs,hits,doubles,triples,homeRuns,runsBattedIn,walks,strikeOuts,steals,playerId,teamId,gameId)
-VALUES
-("5",	"0",	"1",	"0",	"0",	"0",	"1",	"0",	"2",	"0",
-(SELECT id FROM players WHERE firstName = "Austin" && lastName = "Meadows"),
-(SELECT id FROM teams WHERE abbreviation = "TB"),
-(SELECT id FROM games WHERE id = "7"));
-
-INSERT INTO hittingStats
-(atBats,runs,hits,doubles,triples,homeRuns,runsBattedIn,walks,strikeOuts,steals,playerId,teamId,gameId)
-VALUES
-("5",	"0",	"0",	"0",	"0",	"0",	"0",	"0",	"1",	"0",
-(SELECT id FROM players WHERE firstName = "Tommy" && lastName = "Pham"),
-(SELECT id FROM teams WHERE abbreviation = "TB"),
-(SELECT id FROM games WHERE id = "7"));
-
-INSERT INTO hittingStats
-(atBats,runs,hits,doubles,triples,homeRuns,runsBattedIn,walks,strikeOuts,steals,playerId,teamId,gameId)
-VALUES
-("4",	"0",	"2",	"1",	"0",	"0",	"0",	"0",	"1",	"0",
-(SELECT id FROM players WHERE firstName = "Daniel" && lastName = "Robertson"),
-(SELECT id FROM teams WHERE abbreviation = "TB"),
-(SELECT id FROM games WHERE id = "7"));
-
-INSERT INTO hittingStats
-(atBats,runs,hits,doubles,triples,homeRuns,runsBattedIn,walks,strikeOuts,steals,playerId,teamId,gameId)
-VALUES
-("5",	"2",	"2",	"1",	"0",	"0",	"1",	"2",	"1",	"0",
-(SELECT id FROM players WHERE firstName = "Edwin" && lastName = "Encarnacion"),
-(SELECT id FROM teams WHERE abbreviation = "SEA"),
-(SELECT id FROM games WHERE id = "8"));
-
-INSERT INTO hittingStats
-(atBats,runs,hits,doubles,triples,homeRuns,runsBattedIn,walks,strikeOuts,steals,playerId,teamId,gameId)
-VALUES
-("3",	"0",	"0",	"0",	"0",	"0",	"0",	"0",	"2",	"0",
-(SELECT id FROM players WHERE firstName = "Mitch" && lastName = "Haniger"),
-(SELECT id FROM teams WHERE abbreviation = "SEA"),
-(SELECT id FROM games WHERE id = "8"));
-
-INSERT INTO hittingStats
-(atBats,runs,hits,doubles,triples,homeRuns,runsBattedIn,walks,strikeOuts,steals,playerId,teamId,gameId)
-VALUES
-("7",	"1",	"0",	"0",	"0",	"0",	"1",	"0",	"4",	"0",
-(SELECT id FROM players WHERE firstName = "Shed" && lastName = "Long"),
-(SELECT id FROM teams WHERE abbreviation = "SEA"),
-(SELECT id FROM games WHERE id = "8"));
-
-INSERT INTO hittingStats
-(atBats,runs,hits,doubles,triples,homeRuns,runsBattedIn,walks,strikeOuts,steals,playerId,teamId,gameId)
-VALUES
-("5",	"1",	"2",	"0",	"0",	"0",	"1",	"1",	"1",	"1",
-(SELECT id FROM players WHERE firstName = "Dylan" && lastName = "Moore"),
-(SELECT id FROM teams WHERE abbreviation = "SEA"),
-(SELECT id FROM games WHERE id = "8"));
-
-INSERT INTO hittingStats
-(atBats,runs,hits,doubles,triples,homeRuns,runsBattedIn,walks,strikeOuts,steals,playerId,teamId,gameId)
-VALUES
-("6",	"1",	"2",	"0",	"0",	"1",	"1",	"1",	"2",	"0",
-(SELECT id FROM players WHERE firstName = "Omar" && lastName = "Narvaez"),
-(SELECT id FROM teams WHERE abbreviation = "SEA"),
-(SELECT id FROM games WHERE id = "8"));
-
-INSERT INTO hittingStats
-(atBats,runs,hits,doubles,triples,homeRuns,runsBattedIn,walks,strikeOuts,steals,playerId,teamId,gameId)
-VALUES
-("6",	"1",	"2",	"0",	"0",	"0",	"1",	"1",	"1",	"0",
-(SELECT id FROM players WHERE firstName = "Domingo" && lastName = "Santana"),
-(SELECT id FROM teams WHERE abbreviation = "SEA"),
-(SELECT id FROM games WHERE id = "8"));
-
-INSERT INTO hittingStats
-(atBats,runs,hits,doubles,triples,homeRuns,runsBattedIn,walks,strikeOuts,steals,playerId,teamId,gameId)
-VALUES
-("7",	"0",	"0",	"0",	"0",	"0",	"0",	"0",	"2",	"0",
-(SELECT id FROM players WHERE firstName = "Kyle" && lastName = "Seager"),
-(SELECT id FROM teams WHERE abbreviation = "SEA"),
-(SELECT id FROM games WHERE id = "8"));
-
-INSERT INTO hittingStats
-(atBats,runs,hits,doubles,triples,homeRuns,runsBattedIn,walks,strikeOuts,steals,playerId,teamId,gameId)
-VALUES
-("6",	"0",	"1",	"0",	"0",	"0",	"1",	"1",	"1",	"1",
-(SELECT id FROM players WHERE firstName = "Mallex" && lastName = "Smith"),
-(SELECT id FROM teams WHERE abbreviation = "SEA"),
-(SELECT id FROM games WHERE id = "8"));
-
-INSERT INTO hittingStats
-(atBats,runs,hits,doubles,triples,homeRuns,runsBattedIn,walks,strikeOuts,steals,playerId,teamId,gameId)
-VALUES
-("5",	"1",	"2",	"0",	"0",	"0",	"1",	"2",	"1",	"0",
-(SELECT id FROM players WHERE firstName = "Daniel" && lastName = "Vogelbach"),
-(SELECT id FROM teams WHERE abbreviation = "SEA"),
-(SELECT id FROM games WHERE id = "8"));
-
-INSERT INTO hittingStats
-(atBats,runs,hits,doubles,triples,homeRuns,runsBattedIn,walks,strikeOuts,steals,playerId,teamId,gameId)
-VALUES
-("5",	"1",	"1",	"0",	"0",	"0",	"0",	"0",	"2",	"0",
-(SELECT id FROM players WHERE firstName = "Andrew" && lastName = "Benintendi"),
-(SELECT id FROM teams WHERE abbreviation = "BOS"),
-(SELECT id FROM games WHERE id = "3"));
-
-INSERT INTO hittingStats
-(atBats,runs,hits,doubles,triples,homeRuns,runsBattedIn,walks,strikeOuts,steals,playerId,teamId,gameId)
-VALUES
-("3",	"1",	"1",	"0",	"0",	"1",	"2",	"2",	"0",	"0",
-(SELECT id FROM players WHERE firstName = "Mookie" && lastName = "Betts"),
-(SELECT id FROM teams WHERE abbreviation = "BOS"),
-(SELECT id FROM games WHERE id = "3"));
-
-INSERT INTO hittingStats
-(atBats,runs,hits,doubles,triples,homeRuns,runsBattedIn,walks,strikeOuts,steals,playerId,teamId,gameId)
-VALUES
-("4",	"1",	"1",	"0",	"0",	"0",	"0",	"1",	"1",	"1",
-(SELECT id FROM players WHERE firstName = "Xander" && lastName = "Bogaerts"),
-(SELECT id FROM teams WHERE abbreviation = "BOS"),
-(SELECT id FROM games WHERE id = "3"));
-
-INSERT INTO hittingStats
-(atBats,runs,hits,doubles,triples,homeRuns,runsBattedIn,walks,strikeOuts,steals,playerId,teamId,gameId)
-VALUES
-("2",	"1",	"0",	"0",	"0",	"0",	"0",	"1",	"1",	"0",
-(SELECT id FROM players WHERE firstName = "Jackie" && lastName = "Bradley Jr."),
-(SELECT id FROM teams WHERE abbreviation = "BOS"),
-(SELECT id FROM games WHERE id = "3"));
-
-INSERT INTO hittingStats
-(atBats,runs,hits,doubles,triples,homeRuns,runsBattedIn,walks,strikeOuts,steals,playerId,teamId,gameId)
-VALUES
-("4",	"0",	"0",	"0",	"0",	"0",	"0",	"0",	"3",	"0",
-(SELECT id FROM players WHERE firstName = "Michael" && lastName = "Chavis"),
-(SELECT id FROM teams WHERE abbreviation = "BOS"),
-(SELECT id FROM games WHERE id = "3"));
-
-INSERT INTO hittingStats
-(atBats,runs,hits,doubles,triples,homeRuns,runsBattedIn,walks,strikeOuts,steals,playerId,teamId,gameId)
-VALUES
-("3",	"1",	"1",	"0",	"0",	"0",	"2",	"2",	"0",	"0",
-(SELECT id FROM players WHERE firstName = "Rafael" && lastName = "Devers"),
-(SELECT id FROM teams WHERE abbreviation = "BOS"),
-(SELECT id FROM games WHERE id = "3"));
-
-INSERT INTO hittingStats
-(atBats,runs,hits,doubles,triples,homeRuns,runsBattedIn,walks,strikeOuts,steals,playerId,teamId,gameId)
-VALUES
-("2",	"1",	"1",	"1",	"0",	"0",	"0",	"0",	"0",	"0",
-(SELECT id FROM players WHERE firstName = "J.D." && lastName = "Martinez"),
-(SELECT id FROM teams WHERE abbreviation = "BOS"),
-(SELECT id FROM games WHERE id = "3"));
-
-INSERT INTO hittingStats
-(atBats,runs,hits,doubles,triples,homeRuns,runsBattedIn,walks,strikeOuts,steals,playerId,teamId,gameId)
-VALUES
-("4",	"0",	"3",	"0",	"0",	"0",	"0",	"0",	"0",	"1",
-(SELECT id FROM players WHERE firstName = "Eduardo" && lastName = "Nunez"),
-(SELECT id FROM teams WHERE abbreviation = "BOS"),
-(SELECT id FROM games WHERE id = "3"));
-
-INSERT INTO hittingStats
-(atBats,runs,hits,doubles,triples,homeRuns,runsBattedIn,walks,strikeOuts,steals,playerId,teamId,gameId)
-VALUES
-("4",	"1",	"1",	"0",	"1",	"0",	"2",	"0",	"0",	"0",
-(SELECT id FROM players WHERE firstName = "Christian" && lastName = "Vazquez"),
-(SELECT id FROM teams WHERE abbreviation = "BOS"),
-(SELECT id FROM games WHERE id = "3"));
-
-INSERT INTO hittingStats
-(atBats,runs,hits,doubles,triples,homeRuns,runsBattedIn,walks,strikeOuts,steals,playerId,teamId,gameId)
-VALUES
-("1",	"1",	"1",	"0",	"0",	"0",	"0",	"3",	"0",	"0",
-(SELECT id FROM players WHERE firstName = "Mark" && lastName = "Canha"),
-(SELECT id FROM teams WHERE abbreviation = "OAK"),
-(SELECT id FROM games WHERE id = "9"));
-
-INSERT INTO hittingStats
-(atBats,runs,hits,doubles,triples,homeRuns,runsBattedIn,walks,strikeOuts,steals,playerId,teamId,gameId)
-VALUES
-("4",	"1",	"0",	"0",	"0",	"0",	"0",	"1",	"2",	"0",
-(SELECT id FROM players WHERE firstName = "Matt" && lastName = "Chapman"),
-(SELECT id FROM teams WHERE abbreviation = "OAK"),
-(SELECT id FROM games WHERE id = "9"));
-
-INSERT INTO hittingStats
-(atBats,runs,hits,doubles,triples,homeRuns,runsBattedIn,walks,strikeOuts,steals,playerId,teamId,gameId)
-VALUES
-("5",	"1",	"2",	"0",	"0",	"0",	"1",	"0",	"2",	"0",
-(SELECT id FROM players WHERE firstName = "Khris" && lastName = "Davis"),
-(SELECT id FROM teams WHERE abbreviation = "OAK"),
-(SELECT id FROM games WHERE id = "9"));
-
-INSERT INTO hittingStats
-(atBats,runs,hits,doubles,triples,homeRuns,runsBattedIn,walks,strikeOuts,steals,playerId,teamId,gameId)
-VALUES
-("4",	"1",	"1",	"0",	"0",	"0",	"2",	"0",	"0",	"0",
-(SELECT id FROM players WHERE firstName = "Ramon" && lastName = "Laureano"),
-(SELECT id FROM teams WHERE abbreviation = "OAK"),
-(SELECT id FROM games WHERE id = "9"));
-
-INSERT INTO hittingStats
-(atBats,runs,hits,doubles,triples,homeRuns,runsBattedIn,walks,strikeOuts,steals,playerId,teamId,gameId)
-VALUES
-("3",	"0",	"0",	"0",	"0",	"0",	"1",	"0",	"0",	"0",
-(SELECT id FROM players WHERE firstName = "Josh" && lastName = "Phegley"),
-(SELECT id FROM teams WHERE abbreviation = "OAK"),
-(SELECT id FROM games WHERE id = "9"));
-
-INSERT INTO hittingStats
-(atBats,runs,hits,doubles,triples,homeRuns,runsBattedIn,walks,strikeOuts,steals,playerId,teamId,gameId)
-VALUES
-("4",	"1",	"0",	"0",	"0",	"0",	"0",	"1",	"2",	"0",
-(SELECT id FROM players WHERE firstName = "Chad" && lastName = "Pinder"),
-(SELECT id FROM teams WHERE abbreviation = "OAK"),
-(SELECT id FROM games WHERE id = "9"));
-
-INSERT INTO hittingStats
-(atBats,runs,hits,doubles,triples,homeRuns,runsBattedIn,walks,strikeOuts,steals,playerId,teamId,gameId)
-VALUES
-("5",	"2",	"2",	"0",	"0",	"1",	"1",	"0",	"1",	"0",
-(SELECT id FROM players WHERE firstName = "Stephen" && lastName = "Piscotty"),
-(SELECT id FROM teams WHERE abbreviation = "OAK"),
-(SELECT id FROM games WHERE id = "9"));
-
-INSERT INTO hittingStats
-(atBats,runs,hits,doubles,triples,homeRuns,runsBattedIn,walks,strikeOuts,steals,playerId,teamId,gameId)
-VALUES
-("3",	"0",	"1",	"0",	"0",	"0",	"1",	"1",	"1",	"0",
-(SELECT id FROM players WHERE firstName = "Jurickson" && lastName = "Profar"),
-(SELECT id FROM teams WHERE abbreviation = "OAK"),
-(SELECT id FROM games WHERE id = "9"));
-
-INSERT INTO hittingStats
-(atBats,runs,hits,doubles,triples,homeRuns,runsBattedIn,walks,strikeOuts,steals,playerId,teamId,gameId)
-VALUES
-("5",	"0",	"1",	"0",	"0",	"0",	"0",	"0",	"2",	"0",
-(SELECT id FROM players WHERE firstName = "Marcus" && lastName = "Semien"),
-(SELECT id FROM teams WHERE abbreviation = "OAK"),
-(SELECT id FROM games WHERE id = "9"));
-
-INSERT INTO hittingStats
-(atBats,runs,hits,doubles,triples,homeRuns,runsBattedIn,walks,strikeOuts,steals,playerId,teamId,gameId)
-VALUES
-("4",	"0",	"1",	"0",	"0",	"0",	"0",	"0",	"1",	"0",
-(SELECT id FROM players WHERE firstName = "Jesus" && lastName = "Aguilar"),
-(SELECT id FROM teams WHERE abbreviation = "MIL"),
-(SELECT id FROM games WHERE id = "10"));
-
-INSERT INTO hittingStats
-(atBats,runs,hits,doubles,triples,homeRuns,runsBattedIn,walks,strikeOuts,steals,playerId,teamId,gameId)
-VALUES
-("4",	"0",	"0",	"0",	"0",	"0",	"0",	"0",	"0",	"0",
-(SELECT id FROM players WHERE firstName = "Orlando" && lastName = "Arcia"),
-(SELECT id FROM teams WHERE abbreviation = "MIL"),
-(SELECT id FROM games WHERE id = "10"));
-
-INSERT INTO hittingStats
-(atBats,runs,hits,doubles,triples,homeRuns,runsBattedIn,walks,strikeOuts,steals,playerId,teamId,gameId)
-VALUES
-("4",	"0",	"1",	"0",	"0",	"0",	"1",	"0",	"0",	"0",
-(SELECT id FROM players WHERE firstName = "Ryan" && lastName = "Braun"),
-(SELECT id FROM teams WHERE abbreviation = "MIL"),
-(SELECT id FROM games WHERE id = "10"));
-
-INSERT INTO hittingStats
-(atBats,runs,hits,doubles,triples,homeRuns,runsBattedIn,walks,strikeOuts,steals,playerId,teamId,gameId)
-VALUES
-("3",	"2",	"2",	"0",	"0",	"0",	"0",	"1",	"0",	"1",
-(SELECT id FROM players WHERE firstName = "Lorenzo" && lastName = "Cain"),
-(SELECT id FROM teams WHERE abbreviation = "MIL"),
-(SELECT id FROM games WHERE id = "10"));
-
-INSERT INTO hittingStats
-(atBats,runs,hits,doubles,triples,homeRuns,runsBattedIn,walks,strikeOuts,steals,playerId,teamId,gameId)
-VALUES
-("4",	"2",	"2",	"0",	"0",	"2",	"2",	"0",	"0",	"0",
-(SELECT id FROM players WHERE firstName = "Mike" && lastName = "Moustakas"),
-(SELECT id FROM teams WHERE abbreviation = "MIL"),
-(SELECT id FROM games WHERE id = "10"));
-
-INSERT INTO hittingStats
-(atBats,runs,hits,doubles,triples,homeRuns,runsBattedIn,walks,strikeOuts,steals,playerId,teamId,gameId)
-VALUES
-("4",	"0",	"0",	"0",	"0",	"0",	"0",	"0",	"1",	"0",
-(SELECT id FROM players WHERE firstName = "Hernan" && lastName = "Perez"),
-(SELECT id FROM teams WHERE abbreviation = "MIL"),
-(SELECT id FROM games WHERE id = "10"));
-
-INSERT INTO hittingStats
-(atBats,runs,hits,doubles,triples,homeRuns,runsBattedIn,walks,strikeOuts,steals,playerId,teamId,gameId)
-VALUES
-("2",	"0",	"0",	"0",	"0",	"0",	"0",	"1",	"1",	"0",
-(SELECT id FROM players WHERE firstName = "Manny" && lastName = "Pina"),
-(SELECT id FROM teams WHERE abbreviation = "MIL"),
-(SELECT id FROM games WHERE id = "10"));
-
-INSERT INTO hittingStats
-(atBats,runs,hits,doubles,triples,homeRuns,runsBattedIn,walks,strikeOuts,steals,playerId,teamId,gameId)
-VALUES
-("4",	"1",	"3",	"0",	"0",	"1",	"2",	"0",	"1",	"1",
-(SELECT id FROM players WHERE firstName = "Christian" && lastName = "Yelich"),
-(SELECT id FROM teams WHERE abbreviation = "MIL"),
-(SELECT id FROM games WHERE id = "10"));
-
-INSERT INTO hittingStats
-(atBats,runs,hits,doubles,triples,homeRuns,runsBattedIn,walks,strikeOuts,steals,playerId,teamId,gameId)
-VALUES
-("4",	"0",	"0",	"0",	"0",	"0",	"0",	"0",	"2",	"0",
-(SELECT id FROM players WHERE firstName = "Jorge" && lastName = "Alfaro"),
-(SELECT id FROM teams WHERE abbreviation = "MIA"),
-(SELECT id FROM games WHERE id = "10"));
-
-INSERT INTO hittingStats
-(atBats,runs,hits,doubles,triples,homeRuns,runsBattedIn,walks,strikeOuts,steals,playerId,teamId,gameId)
-VALUES
-("3",	"0",	"0",	"0",	"0",	"0",	"0",	"0",	"1",	"0",
-(SELECT id FROM players WHERE firstName = "Brian" && lastName = "Anderson"),
-(SELECT id FROM teams WHERE abbreviation = "MIA"),
-(SELECT id FROM games WHERE id = "10"));
-
-INSERT INTO hittingStats
-(atBats,runs,hits,doubles,triples,homeRuns,runsBattedIn,walks,strikeOuts,steals,playerId,teamId,gameId)
-VALUES
-("4",	"0",	"0",	"0",	"0",	"0",	"0",	"0",	"2",	"0",
-(SELECT id FROM players WHERE firstName = "Starlin" && lastName = "Castro"),
-(SELECT id FROM teams WHERE abbreviation = "MIA"),
-(SELECT id FROM games WHERE id = "10"));
-
-INSERT INTO hittingStats
-(atBats,runs,hits,doubles,triples,homeRuns,runsBattedIn,walks,strikeOuts,steals,playerId,teamId,gameId)
-VALUES
-("3",	"0",	"1",	"0",	"0",	"0",	"1",	"1",	"1",	"0",
-(SELECT id FROM players WHERE firstName = "Garrett" && lastName = "Cooper"),
-(SELECT id FROM teams WHERE abbreviation = "MIA"),
-(SELECT id FROM games WHERE id = "10"));
-
-INSERT INTO hittingStats
-(atBats,runs,hits,doubles,triples,homeRuns,runsBattedIn,walks,strikeOuts,steals,playerId,teamId,gameId)
-VALUES
-("4",	"0",	"1",	"1",	"0",	"0",	"0",	"0",	"0",	"0",
-(SELECT id FROM players WHERE firstName = "Austin" && lastName = "Dean"),
-(SELECT id FROM teams WHERE abbreviation = "MIA"),
-(SELECT id FROM games WHERE id = "10"));
-
-INSERT INTO hittingStats
-(atBats,runs,hits,doubles,triples,homeRuns,runsBattedIn,walks,strikeOuts,steals,playerId,teamId,gameId)
-VALUES
-("4",	"0",	"0",	"0",	"0",	"0",	"0",	"0",	"3",	"0",
-(SELECT id FROM players WHERE firstName = "Harold" && lastName = "Ramirez"),
-(SELECT id FROM teams WHERE abbreviation = "MIA"),
-(SELECT id FROM games WHERE id = "10"));
-
-INSERT INTO hittingStats
-(atBats,runs,hits,doubles,triples,homeRuns,runsBattedIn,walks,strikeOuts,steals,playerId,teamId,gameId)
-VALUES
-("3",	"0",	"1",	"1",	"0",	"0",	"0",	"0",	"1",	"0",
-(SELECT id FROM players WHERE firstName = "JT" && lastName = "Riddle"),
-(SELECT id FROM teams WHERE abbreviation = "MIA"),
-(SELECT id FROM games WHERE id = "10"));
-
-INSERT INTO hittingStats
-(atBats,runs,hits,doubles,triples,homeRuns,runsBattedIn,walks,strikeOuts,steals,playerId,teamId,gameId)
-VALUES
-("4",	"0",	"0",	"0",	"0",	"0",	"0",	"0",	"3",	"0",
-(SELECT id FROM players WHERE firstName = "Miguel" && lastName = "Rojas"),
-(SELECT id FROM teams WHERE abbreviation = "MIA"),
-(SELECT id FROM games WHERE id = "10"));
-
-INSERT INTO hittingStats
-(atBats,runs,hits,doubles,triples,homeRuns,runsBattedIn,walks,strikeOuts,steals,playerId,teamId,gameId)
-VALUES
-("4",	"0",	"0",	"0",	"0",	"0",	"0",	"0",	"4",	"0",
-(SELECT id FROM players WHERE firstName = "Jake" && lastName = "Bauers"),
-(SELECT id FROM teams WHERE abbreviation = "CLE"),
-(SELECT id FROM games WHERE id = "6"));
-
-INSERT INTO hittingStats
-(atBats,runs,hits,doubles,triples,homeRuns,runsBattedIn,walks,strikeOuts,steals,playerId,teamId,gameId)
-VALUES
-("4",	"0",	"0",	"0",	"0",	"0",	"0",	"0",	"1",	"0",
-(SELECT id FROM players WHERE firstName = "Jason" && lastName = "Kipnis"),
-(SELECT id FROM teams WHERE abbreviation = "CLE"),
-(SELECT id FROM games WHERE id = "6"));
-
-INSERT INTO hittingStats
-(atBats,runs,hits,doubles,triples,homeRuns,runsBattedIn,walks,strikeOuts,steals,playerId,teamId,gameId)
-VALUES
-("4",	"0",	"0",	"0",	"0",	"0",	"0",	"0",	"1",	"0",
-(SELECT id FROM players WHERE firstName = "Francisco" && lastName = "Lindor"),
-(SELECT id FROM teams WHERE abbreviation = "CLE"),
-(SELECT id FROM games WHERE id = "6"));
-
-INSERT INTO hittingStats
-(atBats,runs,hits,doubles,triples,homeRuns,runsBattedIn,walks,strikeOuts,steals,playerId,teamId,gameId)
-VALUES
-("3",	"1",	"0",	"0",	"0",	"0",	"0",	"1",	"1",	"0",
-(SELECT id FROM players WHERE firstName = "Jordan" && lastName = "Luplow"),
-(SELECT id FROM teams WHERE abbreviation = "CLE"),
-(SELECT id FROM games WHERE id = "6"));
-
-INSERT INTO hittingStats
-(atBats,runs,hits,doubles,triples,homeRuns,runsBattedIn,walks,strikeOuts,steals,playerId,teamId,gameId)
-VALUES
-("3",	"0",	"0",	"0",	"0",	"0",	"0",	"0",	"1",	"0",
-(SELECT id FROM players WHERE firstName = "Leonys" && lastName = "Martin"),
-(SELECT id FROM teams WHERE abbreviation = "CLE"),
-(SELECT id FROM games WHERE id = "6"));
-
-INSERT INTO hittingStats
-(atBats,runs,hits,doubles,triples,homeRuns,runsBattedIn,walks,strikeOuts,steals,playerId,teamId,gameId)
-VALUES
-("3",	"0",	"1",	"0",	"0",	"0",	"1",	"0",	"1",	"0",
-(SELECT id FROM players WHERE firstName = "Tyler" && lastName = "Naquin"),
-(SELECT id FROM teams WHERE abbreviation = "CLE"),
-(SELECT id FROM games WHERE id = "6"));
-
-INSERT INTO hittingStats
-(atBats,runs,hits,doubles,triples,homeRuns,runsBattedIn,walks,strikeOuts,steals,playerId,teamId,gameId)
-VALUES
-("2",	"1",	"1",	"0",	"0",	"1",	"2",	"1",	"0",	"0",
-(SELECT id FROM players WHERE firstName = "Roberto" && lastName = "Perez"),
-(SELECT id FROM teams WHERE abbreviation = "CLE"),
-(SELECT id FROM games WHERE id = "6"));
-
-INSERT INTO hittingStats
-(atBats,runs,hits,doubles,triples,homeRuns,runsBattedIn,walks,strikeOuts,steals,playerId,teamId,gameId)
-VALUES
-("4",	"1",	"0",	"0",	"0",	"0",	"0",	"0",	"0",	"0",
-(SELECT id FROM players WHERE firstName = "Jose" && lastName = "Ramirez"),
-(SELECT id FROM teams WHERE abbreviation = "CLE"),
-(SELECT id FROM games WHERE id = "6"));
-
-INSERT INTO hittingStats
-(atBats,runs,hits,doubles,triples,homeRuns,runsBattedIn,walks,strikeOuts,steals,playerId,teamId,gameId)
-VALUES
-("4",	"0",	"1",	"1",	"0",	"0",	"0",	"0",	"0",	"0",
-(SELECT id FROM players WHERE firstName = "Carlos" && lastName = "Santana"),
-(SELECT id FROM teams WHERE abbreviation = "CLE"),
-(SELECT id FROM games WHERE id = "6"));
-
-INSERT INTO hittingStats
-(atBats,runs,hits,doubles,triples,homeRuns,runsBattedIn,walks,strikeOuts,steals,playerId,teamId,gameId)
-VALUES
-("4",	"1",	"1",	"0",	"0",	"1",	"2",	"0",	"2",	"0",
-(SELECT id FROM players WHERE firstName = "Brandon" && lastName = "Belt"),
-(SELECT id FROM teams WHERE abbreviation = "SF"),
-(SELECT id FROM games WHERE id = "11"));
-
-INSERT INTO hittingStats
-(atBats,runs,hits,doubles,triples,homeRuns,runsBattedIn,walks,strikeOuts,steals,playerId,teamId,gameId)
-VALUES
-("2",	"0",	"0",	"0",	"0",	"0",	"0",	"1",	"0",	"0",
-(SELECT id FROM players WHERE firstName = "Brandon" && lastName = "Crawford"),
-(SELECT id FROM teams WHERE abbreviation = "SF"),
-(SELECT id FROM games WHERE id = "11"));
-
-INSERT INTO hittingStats
-(atBats,runs,hits,doubles,triples,homeRuns,runsBattedIn,walks,strikeOuts,steals,playerId,teamId,gameId)
-VALUES
-("3",	"0",	"0",	"0",	"0",	"0",	"0",	"0",	"0",	"0",
-(SELECT id FROM players WHERE firstName = "Steven" && lastName = "Duggar"),
-(SELECT id FROM teams WHERE abbreviation = "SF"),
-(SELECT id FROM games WHERE id = "11"));
-
-INSERT INTO hittingStats
-(atBats,runs,hits,doubles,triples,homeRuns,runsBattedIn,walks,strikeOuts,steals,playerId,teamId,gameId)
-VALUES
-("4",	"0",	"0",	"0",	"0",	"0",	"0",	"0",	"0",	"0",
-(SELECT id FROM players WHERE firstName = "Joe" && lastName = "Panik"),
-(SELECT id FROM teams WHERE abbreviation = "SF"),
-(SELECT id FROM games WHERE id = "11"));
-
-INSERT INTO hittingStats
-(atBats,runs,hits,doubles,triples,homeRuns,runsBattedIn,walks,strikeOuts,steals,playerId,teamId,gameId)
-VALUES
-("3",	"0",	"0",	"0",	"0",	"0",	"0",	"0",	"1",	"0",
-(SELECT id FROM players WHERE firstName = "Kevin" && lastName = "Pillar"),
-(SELECT id FROM teams WHERE abbreviation = "SF"),
-(SELECT id FROM games WHERE id = "11"));
-
-INSERT INTO hittingStats
-(atBats,runs,hits,doubles,triples,homeRuns,runsBattedIn,walks,strikeOuts,steals,playerId,teamId,gameId)
-VALUES
-("4",	"2",	"1",	"0",	"0",	"1",	"1",	"0",	"1",	"0",
-(SELECT id FROM players WHERE firstName = "Pablo" && lastName = "Sandoval"),
-(SELECT id FROM teams WHERE abbreviation = "SF"),
-(SELECT id FROM games WHERE id = "11"));
-
-INSERT INTO hittingStats
-(atBats,runs,hits,doubles,triples,homeRuns,runsBattedIn,walks,strikeOuts,steals,playerId,teamId,gameId)
-VALUES
-("4",	"0",	"0",	"0",	"0",	"0",	"0",	"0",	"2",	"0",
-(SELECT id FROM players WHERE firstName = "Stephen" && lastName = "Vogt"),
-(SELECT id FROM teams WHERE abbreviation = "SF"),
-(SELECT id FROM games WHERE id = "11"));
-
-INSERT INTO hittingStats
-(atBats,runs,hits,doubles,triples,homeRuns,runsBattedIn,walks,strikeOuts,steals,playerId,teamId,gameId)
-VALUES
-("4",	"0",	"1",	"0",	"0",	"0",	"0",	"0",	"2",	"0",
-(SELECT id FROM players WHERE firstName = "Mike" && lastName = "Yastrzemski"),
-(SELECT id FROM teams WHERE abbreviation = "SF"),
-(SELECT id FROM games WHERE id = "11"));
-
-INSERT INTO hittingStats
-(atBats,runs,hits,doubles,triples,homeRuns,runsBattedIn,walks,strikeOuts,steals,playerId,teamId,gameId)
-VALUES
-("3",	"0",	"1",	"0",	"0",	"0",	"0",	"0",	"0",	"0",
-(SELECT id FROM players WHERE firstName = "Brandon" && lastName = "Drury"),
-(SELECT id FROM teams WHERE abbreviation = "TOR"),
-(SELECT id FROM games WHERE id = "12"));
-
-INSERT INTO hittingStats
-(atBats,runs,hits,doubles,triples,homeRuns,runsBattedIn,walks,strikeOuts,steals,playerId,teamId,gameId)
-VALUES
-("4",	"0",	"0",	"0",	"0",	"0",	"0",	"0",	"2",	"0",
-(SELECT id FROM players WHERE firstName = "Freddy" && lastName = "Galvis"),
-(SELECT id FROM teams WHERE abbreviation = "TOR"),
-(SELECT id FROM games WHERE id = "12"));
-
-INSERT INTO hittingStats
-(atBats,runs,hits,doubles,triples,homeRuns,runsBattedIn,walks,strikeOuts,steals,playerId,teamId,gameId)
-VALUES
-("4",	"0",	"2",	"0",	"0",	"0",	"0",	"0",	"0",	"0",
-(SELECT id FROM players WHERE firstName = "Randal" && lastName = "Grichuk"),
-(SELECT id FROM teams WHERE abbreviation = "TOR"),
-(SELECT id FROM games WHERE id = "12"));
-
-INSERT INTO hittingStats
-(atBats,runs,hits,doubles,triples,homeRuns,runsBattedIn,walks,strikeOuts,steals,playerId,teamId,gameId)
-VALUES
-("4",	"0",	"0",	"0",	"0",	"0",	"0",	"0",	"0",	"0",
-(SELECT id FROM players WHERE firstName = "Vladimir" && lastName = "Guerrero Jr."),
-(SELECT id FROM teams WHERE abbreviation = "TOR"),
-(SELECT id FROM games WHERE id = "12"));
-
-INSERT INTO hittingStats
-(atBats,runs,hits,doubles,triples,homeRuns,runsBattedIn,walks,strikeOuts,steals,playerId,teamId,gameId)
-VALUES
-("4",	"0",	"1",	"0",	"0",	"0",	"0",	"0",	"0",	"0",
-(SELECT id FROM players WHERE firstName = "Lourdes" && lastName = "Gurriel Jr."),
-(SELECT id FROM teams WHERE abbreviation = "TOR"),
-(SELECT id FROM games WHERE id = "12"));
-
-INSERT INTO hittingStats
-(atBats,runs,hits,doubles,triples,homeRuns,runsBattedIn,walks,strikeOuts,steals,playerId,teamId,gameId)
-VALUES
-("4",	"0",	"0",	"0",	"0",	"0",	"0",	"0",	"2",	"0",
-(SELECT id FROM players WHERE firstName = "Teoscar" && lastName = "Hernandez"),
-(SELECT id FROM teams WHERE abbreviation = "TOR"),
-(SELECT id FROM games WHERE id = "12"));
-
-INSERT INTO hittingStats
-(atBats,runs,hits,doubles,triples,homeRuns,runsBattedIn,walks,strikeOuts,steals,playerId,teamId,gameId)
-VALUES
-("3",	"0",	"1",	"0",	"0",	"0",	"0",	"0",	"0",	"0",
-(SELECT id FROM players WHERE firstName = "Luke" && lastName = "Maile"),
-(SELECT id FROM teams WHERE abbreviation = "TOR"),
-(SELECT id FROM games WHERE id = "12"));
-
-INSERT INTO hittingStats
-(atBats,runs,hits,doubles,triples,homeRuns,runsBattedIn,walks,strikeOuts,steals,playerId,teamId,gameId)
-VALUES
-("4",	"1",	"1",	"0",	"0",	"0",	"0",	"0",	"0",	"0",
-(SELECT id FROM players WHERE firstName = "Justin" && lastName = "Smoak"),
-(SELECT id FROM teams WHERE abbreviation = "TOR"),
-(SELECT id FROM games WHERE id = "12"));
-
-INSERT INTO hittingStats
-(atBats,runs,hits,doubles,triples,homeRuns,runsBattedIn,walks,strikeOuts,steals,playerId,teamId,gameId)
-VALUES
-("4",	"1",	"2",	"1",	"0",	"1",	"1",	"0",	"0",	"0",
-(SELECT id FROM players WHERE firstName = "Eric" && lastName = "Sogard"),
-(SELECT id FROM teams WHERE abbreviation = "TOR"),
-(SELECT id FROM games WHERE id = "12"));
-
-INSERT INTO hittingStats
-(atBats,runs,hits,doubles,triples,homeRuns,runsBattedIn,walks,strikeOuts,steals,playerId,teamId,gameId)
-VALUES
-("4",	"0",	"2",	"0",	"0",	"0",	"0",	"0",	"0",	"1",
-(SELECT id FROM players WHERE firstName = "Kole" && lastName = "Calhoun"),
-(SELECT id FROM teams WHERE abbreviation = "LAA"),
-(SELECT id FROM games WHERE id = "9"));
-
-INSERT INTO hittingStats
-(atBats,runs,hits,doubles,triples,homeRuns,runsBattedIn,walks,strikeOuts,steals,playerId,teamId,gameId)
-VALUES
-("4",	"0",	"1",	"0",	"0",	"0",	"0",	"0",	"0",	"0",
-(SELECT id FROM players WHERE firstName = "David" && lastName = "Fletcher"),
-(SELECT id FROM teams WHERE abbreviation = "LAA"),
-(SELECT id FROM games WHERE id = "9"));
-
-INSERT INTO hittingStats
-(atBats,runs,hits,doubles,triples,homeRuns,runsBattedIn,walks,strikeOuts,steals,playerId,teamId,gameId)
-VALUES
-("4",	"0",	"0",	"0",	"0",	"0",	"0",	"0",	"1",	"0",
-(SELECT id FROM players WHERE firstName = "Dustin" && lastName = "Garneau"),
-(SELECT id FROM teams WHERE abbreviation = "LAA"),
-(SELECT id FROM games WHERE id = "9"));
-
-INSERT INTO hittingStats
-(atBats,runs,hits,doubles,triples,homeRuns,runsBattedIn,walks,strikeOuts,steals,playerId,teamId,gameId)
-VALUES
-("2",	"0",	"0",	"0",	"0",	"0",	"1",	"1",	"1",	"0",
-(SELECT id FROM players WHERE firstName = "Brian" && lastName = "Goodwin"),
-(SELECT id FROM teams WHERE abbreviation = "LAA"),
-(SELECT id FROM games WHERE id = "9"));
-
-INSERT INTO hittingStats
-(atBats,runs,hits,doubles,triples,homeRuns,runsBattedIn,walks,strikeOuts,steals,playerId,teamId,gameId)
-VALUES
-("5",	"1",	"2",	"0",	"0",	"0",	"1",	"0",	"0",	"0",
-(SELECT id FROM players WHERE firstName = "Tommy" && lastName = "La Stella"),
-(SELECT id FROM teams WHERE abbreviation = "LAA"),
-(SELECT id FROM games WHERE id = "9"));
-
-INSERT INTO hittingStats
-(atBats,runs,hits,doubles,triples,homeRuns,runsBattedIn,walks,strikeOuts,steals,playerId,teamId,gameId)
-VALUES
-("4",	"1",	"1",	"0",	"0",	"0",	"0",	"0",	"0",	"0",
-(SELECT id FROM players WHERE firstName = "Shohei" && lastName = "Ohtani"),
-(SELECT id FROM teams WHERE abbreviation = "LAA"),
-(SELECT id FROM games WHERE id = "9"));
-
-INSERT INTO hittingStats
-(atBats,runs,hits,doubles,triples,homeRuns,runsBattedIn,walks,strikeOuts,steals,playerId,teamId,gameId)
-VALUES
-("4",	"0",	"1",	"1",	"0",	"0",	"0",	"0",	"1",	"0",
-(SELECT id FROM players WHERE firstName = "Luis" && lastName = "Rengifo"),
-(SELECT id FROM teams WHERE abbreviation = "LAA"),
-(SELECT id FROM games WHERE id = "9"));
-
-INSERT INTO hittingStats
-(atBats,runs,hits,doubles,triples,homeRuns,runsBattedIn,walks,strikeOuts,steals,playerId,teamId,gameId)
-VALUES
-("4",	"1",	"1",	"0",	"0",	"1",	"2",	"1",	"1",	"0",
-(SELECT id FROM players WHERE firstName = "Mike" && lastName = "Trout"),
-(SELECT id FROM teams WHERE abbreviation = "LAA"),
-(SELECT id FROM games WHERE id = "9"));
-
-INSERT INTO hittingStats
-(atBats,runs,hits,doubles,triples,homeRuns,runsBattedIn,walks,strikeOuts,steals,playerId,teamId,gameId)
-VALUES
-("4",	"1",	"1",	"1",	"0",	"0",	"0",	"0",	"1",	"0",
-(SELECT id FROM players WHERE firstName = "Jared" && lastName = "Walsh"),
-(SELECT id FROM teams WHERE abbreviation = "LAA"),
-(SELECT id FROM games WHERE id = "9"));
-
-INSERT INTO hittingStats
-(atBats,runs,hits,doubles,triples,homeRuns,runsBattedIn,walks,strikeOuts,steals,playerId,teamId,gameId)
-VALUES
-("4",	"0",	"1",	"0",	"0",	"0",	"0",	"1",	"1",	"0",
-(SELECT id FROM players WHERE firstName = "Ronald" && lastName = "Acuna Jr."),
-(SELECT id FROM teams WHERE abbreviation = "ATL"),
-(SELECT id FROM games WHERE id = "1"));
-
-INSERT INTO hittingStats
-(atBats,runs,hits,doubles,triples,homeRuns,runsBattedIn,walks,strikeOuts,steals,playerId,teamId,gameId)
-VALUES
-("3",	"0",	"1",	"0",	"0",	"0",	"0",	"1",	"1",	"0",
-(SELECT id FROM players WHERE firstName = "Ozzie" && lastName = "Albies"),
-(SELECT id FROM teams WHERE abbreviation = "ATL"),
-(SELECT id FROM games WHERE id = "1"));
-
-INSERT INTO hittingStats
-(atBats,runs,hits,doubles,triples,homeRuns,runsBattedIn,walks,strikeOuts,steals,playerId,teamId,gameId)
-VALUES
-("4",	"0",	"0",	"0",	"0",	"0",	"0",	"0",	"1",	"1",
-(SELECT id FROM players WHERE firstName = "Josh" && lastName = "Donaldson"),
-(SELECT id FROM teams WHERE abbreviation = "ATL"),
-(SELECT id FROM games WHERE id = "1"));
-
-INSERT INTO hittingStats
-(atBats,runs,hits,doubles,triples,homeRuns,runsBattedIn,walks,strikeOuts,steals,playerId,teamId,gameId)
-VALUES
-("3",	"1",	"1",	"0",	"0",	"1",	"1",	"1",	"0",	"0",
-(SELECT id FROM players WHERE firstName = "Freddie" && lastName = "Freeman"),
-(SELECT id FROM teams WHERE abbreviation = "ATL"),
-(SELECT id FROM games WHERE id = "1"));
-
-INSERT INTO hittingStats
-(atBats,runs,hits,doubles,triples,homeRuns,runsBattedIn,walks,strikeOuts,steals,playerId,teamId,gameId)
-VALUES
-("4",	"0",	"0",	"0",	"0",	"0",	"0",	"0",	"0",	"0",
-(SELECT id FROM players WHERE firstName = "Nick" && lastName = "Markakis"),
-(SELECT id FROM teams WHERE abbreviation = "ATL"),
-(SELECT id FROM games WHERE id = "1"));
-
-INSERT INTO hittingStats
-(atBats,runs,hits,doubles,triples,homeRuns,runsBattedIn,walks,strikeOuts,steals,playerId,teamId,gameId)
-VALUES
-("3",	"0",	"2",	"1",	"0",	"0",	"0",	"0",	"0",	"0",
-(SELECT id FROM players WHERE firstName = "Brian" && lastName = "McCann"),
-(SELECT id FROM teams WHERE abbreviation = "ATL"),
-(SELECT id FROM games WHERE id = "1"));
-
-INSERT INTO hittingStats
-(atBats,runs,hits,doubles,triples,homeRuns,runsBattedIn,walks,strikeOuts,steals,playerId,teamId,gameId)
-VALUES
-("4",	"0",	"2",	"0",	"0",	"0",	"0",	"0",	"2",	"0",
-(SELECT id FROM players WHERE firstName = "Austin" && lastName = "Riley"),
-(SELECT id FROM teams WHERE abbreviation = "ATL"),
-(SELECT id FROM games WHERE id = "1"));
-
-INSERT INTO hittingStats
-(atBats,runs,hits,doubles,triples,homeRuns,runsBattedIn,walks,strikeOuts,steals,playerId,teamId,gameId)
-VALUES
-("4",	"0",	"0",	"0",	"0",	"0",	"0",	"0",	"2",	"0",
-(SELECT id FROM players WHERE firstName = "Dansby" && lastName = "Swanson"),
-(SELECT id FROM teams WHERE abbreviation = "ATL"),
-(SELECT id FROM games WHERE id = "1"));
-
-INSERT INTO hittingStats
-(atBats,runs,hits,doubles,triples,homeRuns,runsBattedIn,walks,strikeOuts,steals,playerId,teamId,gameId)
-VALUES
-("4",	"1",	"2",	"1",	"0",	"1",	"2",	"0",	"1",	"0",
-(SELECT id FROM players WHERE firstName = "Brian" && lastName = "Dozier"),
-(SELECT id FROM teams WHERE abbreviation = "WSH"),
-(SELECT id FROM games WHERE id = "13"));
-
-INSERT INTO hittingStats
-(atBats,runs,hits,doubles,triples,homeRuns,runsBattedIn,walks,strikeOuts,steals,playerId,teamId,gameId)
-VALUES
-("3",	"0",	"0",	"0",	"0",	"0",	"0",	"0",	"2",	"0",
-(SELECT id FROM players WHERE firstName = "Yan" && lastName = "Gomes"),
-(SELECT id FROM teams WHERE abbreviation = "WSH"),
-(SELECT id FROM games WHERE id = "13"));
-
-INSERT INTO hittingStats
-(atBats,runs,hits,doubles,triples,homeRuns,runsBattedIn,walks,strikeOuts,steals,playerId,teamId,gameId)
-VALUES
-("4",	"1",	"1",	"0",	"0",	"0",	"2",	"0",	"1",	"0",
-(SELECT id FROM players WHERE firstName = "Howie" && lastName = "Kendrick"),
-(SELECT id FROM teams WHERE abbreviation = "WSH"),
-(SELECT id FROM games WHERE id = "13"));
-
-INSERT INTO hittingStats
-(atBats,runs,hits,doubles,triples,homeRuns,runsBattedIn,walks,strikeOuts,steals,playerId,teamId,gameId)
-VALUES
-("3",	"0",	"0",	"0",	"0",	"0",	"0",	"1",	"1",	"0",
-(SELECT id FROM players WHERE firstName = "Anthony" && lastName = "Rendon"),
-(SELECT id FROM teams WHERE abbreviation = "WSH"),
-(SELECT id FROM games WHERE id = "13"));
-
-INSERT INTO hittingStats
-(atBats,runs,hits,doubles,triples,homeRuns,runsBattedIn,walks,strikeOuts,steals,playerId,teamId,gameId)
-VALUES
-("4",	"1",	"1",	"1",	"0",	"0",	"0",	"0",	"2",	"0",
-(SELECT id FROM players WHERE firstName = "Victor" && lastName = "Robles"),
-(SELECT id FROM teams WHERE abbreviation = "WSH"),
-(SELECT id FROM games WHERE id = "13"));
-
-INSERT INTO hittingStats
-(atBats,runs,hits,doubles,triples,homeRuns,runsBattedIn,walks,strikeOuts,steals,playerId,teamId,gameId)
-VALUES
-("3",	"1",	"0",	"0",	"0",	"0",	"0",	"1",	"0",	"0",
-(SELECT id FROM players WHERE firstName = "Juan" && lastName = "Soto"),
-(SELECT id FROM teams WHERE abbreviation = "WSH"),
-(SELECT id FROM games WHERE id = "13"));
-
-INSERT INTO hittingStats
-(atBats,runs,hits,doubles,triples,homeRuns,runsBattedIn,walks,strikeOuts,steals,playerId,teamId,gameId)
-VALUES
-("3",	"0",	"0",	"0",	"0",	"0",	"0",	"0",	"1",	"0",
-(SELECT id FROM players WHERE firstName = "Michael" && lastName = "Taylor"),
-(SELECT id FROM teams WHERE abbreviation = "WSH"),
-(SELECT id FROM games WHERE id = "13"));
-
-INSERT INTO hittingStats
-(atBats,runs,hits,doubles,triples,homeRuns,runsBattedIn,walks,strikeOuts,steals,playerId,teamId,gameId)
-VALUES
-("3",	"0",	"0",	"0",	"0",	"0",	"0",	"1",	"2",	"0",
-(SELECT id FROM players WHERE firstName = "Trea" && lastName = "Turner"),
-(SELECT id FROM teams WHERE abbreviation = "WSH"),
-(SELECT id FROM games WHERE id = "13"));
-
-INSERT INTO hittingStats
-(atBats,runs,hits,doubles,triples,homeRuns,runsBattedIn,walks,strikeOuts,steals,playerId,teamId,gameId)
-VALUES
-("5",	"0",	"1",	"1",	"0",	"0",	"0",	"0",	"1",	"0",
-(SELECT id FROM players WHERE firstName = "Michael" && lastName = "Brantley"),
-(SELECT id FROM teams WHERE abbreviation = "HOU"),
-(SELECT id FROM games WHERE id = "8"));
-
-INSERT INTO hittingStats
-(atBats,runs,hits,doubles,triples,homeRuns,runsBattedIn,walks,strikeOuts,steals,playerId,teamId,gameId)
-VALUES
-("6",	"1",	"3",	"0",	"0",	"1",	"1",	"1",	"0",	"0",
-(SELECT id FROM players WHERE firstName = "Alex" && lastName = "Bregman"),
-(SELECT id FROM teams WHERE abbreviation = "HOU"),
-(SELECT id FROM games WHERE id = "8"));
-
-INSERT INTO hittingStats
-(atBats,runs,hits,doubles,triples,homeRuns,runsBattedIn,walks,strikeOuts,steals,playerId,teamId,gameId)
-VALUES
-("3",	"3",	"1",	"0",	"0",	"1",	"2",	"4",	"2",	"0",
-(SELECT id FROM players WHERE firstName = "Robinson" && lastName = "Chirinos"),
-(SELECT id FROM teams WHERE abbreviation = "HOU"),
-(SELECT id FROM games WHERE id = "8"));
-
-INSERT INTO hittingStats
-(atBats,runs,hits,doubles,triples,homeRuns,runsBattedIn,walks,strikeOuts,steals,playerId,teamId,gameId)
-VALUES
-("6",	"1",	"2",	"0",	"0",	"0",	"0",	"0",	"1",	"0",
-(SELECT id FROM players WHERE firstName = "Derek" && lastName = "Fisher"),
-(SELECT id FROM teams WHERE abbreviation = "HOU"),
-(SELECT id FROM games WHERE id = "8"));
-
-INSERT INTO hittingStats
-(atBats,runs,hits,doubles,triples,homeRuns,runsBattedIn,walks,strikeOuts,steals,playerId,teamId,gameId)
-VALUES
-("6",	"1",	"1",	"0",	"0",	"0",	"2",	"0",	"0",	"0",
-(SELECT id FROM players WHERE firstName = "Yuli" && lastName = "Gurriel"),
-(SELECT id FROM teams WHERE abbreviation = "HOU"),
-(SELECT id FROM games WHERE id = "8"));
-
-INSERT INTO hittingStats
-(atBats,runs,hits,doubles,triples,homeRuns,runsBattedIn,walks,strikeOuts,steals,playerId,teamId,gameId)
-VALUES
-("4",	"0",	"1",	"1",	"0",	"0",	"1",	"1",	"1",	"0",
-(SELECT id FROM players WHERE firstName = "Tony" && lastName = "Kemp"),
-(SELECT id FROM teams WHERE abbreviation = "HOU"),
-(SELECT id FROM games WHERE id = "8"));
-
-INSERT INTO hittingStats
-(atBats,runs,hits,doubles,triples,homeRuns,runsBattedIn,walks,strikeOuts,steals,playerId,teamId,gameId)
-VALUES
-("5",	"0",	"0",	"0",	"0",	"0",	"0",	"1",	"1",	"0",
-(SELECT id FROM players WHERE firstName = "Jake" && lastName = "Marisnick"),
-(SELECT id FROM teams WHERE abbreviation = "HOU"),
-(SELECT id FROM games WHERE id = "8"));
-
-INSERT INTO hittingStats
-(atBats,runs,hits,doubles,triples,homeRuns,runsBattedIn,walks,strikeOuts,steals,playerId,teamId,gameId)
-VALUES
-("4",	"1",	"1",	"0",	"0",	"1",	"1",	"0",	"0",	"0",
-(SELECT id FROM players WHERE firstName = "Jack" && lastName = "Mayfield"),
-(SELECT id FROM teams WHERE abbreviation = "HOU"),
-(SELECT id FROM games WHERE id = "8"));
-
-INSERT INTO hittingStats
-(atBats,runs,hits,doubles,triples,homeRuns,runsBattedIn,walks,strikeOuts,steals,playerId,teamId,gameId)
-VALUES
-("6",	"0",	"3",	"0",	"0",	"0",	"0",	"1",	"1",	"0",
-(SELECT id FROM players WHERE firstName = "Tyler" && lastName = "White"),
-(SELECT id FROM teams WHERE abbreviation = "HOU"),
-(SELECT id FROM games WHERE id = "8"));
-
-INSERT INTO hittingStats
-(atBats,runs,hits,doubles,triples,homeRuns,runsBattedIn,walks,strikeOuts,steals,playerId,teamId,gameId)
-VALUES
-("4",	"0",	"1",	"0",	"0",	"0",	"0",	"1",	"1",	"0",
-(SELECT id FROM players WHERE firstName = "Pete" && lastName = "Alonso"),
-(SELECT id FROM teams WHERE abbreviation = "NYM"),
-(SELECT id FROM games WHERE id = "11"));
-
-INSERT INTO hittingStats
-(atBats,runs,hits,doubles,triples,homeRuns,runsBattedIn,walks,strikeOuts,steals,playerId,teamId,gameId)
-VALUES
-("3",	"1",	"1",	"0",	"0",	"0",	"0",	"1",	"0",	"1",
-(SELECT id FROM players WHERE firstName = "Michael" && lastName = "Conforto"),
-(SELECT id FROM teams WHERE abbreviation = "NYM"),
-(SELECT id FROM games WHERE id = "11"));
-
-INSERT INTO hittingStats
-(atBats,runs,hits,doubles,triples,homeRuns,runsBattedIn,walks,strikeOuts,steals,playerId,teamId,gameId)
-VALUES
-("4",	"1",	"1",	"0",	"0",	"1",	"2",	"0",	"0",	"0",
-(SELECT id FROM players WHERE firstName = "Todd" && lastName = "Frazier"),
-(SELECT id FROM teams WHERE abbreviation = "NYM"),
-(SELECT id FROM games WHERE id = "11"));
-
-INSERT INTO hittingStats
-(atBats,runs,hits,doubles,triples,homeRuns,runsBattedIn,walks,strikeOuts,steals,playerId,teamId,gameId)
-VALUES
-("4",	"1",	"2",	"0",	"0",	"0",	"0",	"0",	"0",	"0",
-(SELECT id FROM players WHERE firstName = "Adeiny" && lastName = "Hechavarria"),
-(SELECT id FROM teams WHERE abbreviation = "NYM"),
-(SELECT id FROM games WHERE id = "11"));
-
-INSERT INTO hittingStats
-(atBats,runs,hits,doubles,triples,homeRuns,runsBattedIn,walks,strikeOuts,steals,playerId,teamId,gameId)
-VALUES
-("3",	"2",	"2",	"1",	"0",	"0",	"1",	"1",	"0",	"0",
-(SELECT id FROM players WHERE firstName = "Juan" && lastName = "Lagares"),
-(SELECT id FROM teams WHERE abbreviation = "NYM"),
-(SELECT id FROM games WHERE id = "11"));
-
-INSERT INTO hittingStats
-(atBats,runs,hits,doubles,triples,homeRuns,runsBattedIn,walks,strikeOuts,steals,playerId,teamId,gameId)
-VALUES
-("4",	"0",	"1",	"0",	"0",	"0",	"0",	"0",	"0",	"0",
-(SELECT id FROM players WHERE firstName = "Tomas" && lastName = "Nido"),
-(SELECT id FROM teams WHERE abbreviation = "NYM"),
-(SELECT id FROM games WHERE id = "11"));
-
-INSERT INTO hittingStats
-(atBats,runs,hits,doubles,triples,homeRuns,runsBattedIn,walks,strikeOuts,steals,playerId,teamId,gameId)
-VALUES
-("3",	"1",	"1",	"0",	"0",	"1",	"1",	"0",	"1",	"0",
-(SELECT id FROM players WHERE firstName = "Amed" && lastName = "Rosario"),
-(SELECT id FROM teams WHERE abbreviation = "NYM"),
-(SELECT id FROM games WHERE id = "11"));
-
-INSERT INTO hittingStats
-(atBats,runs,hits,doubles,triples,homeRuns,runsBattedIn,walks,strikeOuts,steals,playerId,teamId,gameId)
-VALUES
-("3",	"1",	"2",	"0",	"0",	"1",	"1",	"0",	"0",	"0",
-(SELECT id FROM players WHERE firstName = "Dominic" && lastName = "Smith"),
-(SELECT id FROM teams WHERE abbreviation = "NYM"),
-(SELECT id FROM games WHERE id = "11"));
-
-INSERT INTO hittingStats
-(atBats,runs,hits,doubles,triples,homeRuns,runsBattedIn,walks,strikeOuts,steals,playerId,teamId,gameId)
-VALUES
-("3",	"0",	"0",	"0",	"0",	"0",	"1",	"0",	"2",	"0",
-(SELECT id FROM players WHERE firstName = "Tucker" && lastName = "Barnhart"),
-(SELECT id FROM teams WHERE abbreviation = "CIN"),
-(SELECT id FROM games WHERE id = "5"));
-
-INSERT INTO hittingStats
-(atBats,runs,hits,doubles,triples,homeRuns,runsBattedIn,walks,strikeOuts,steals,playerId,teamId,gameId)
-VALUES
-("3",	"0",	"0",	"0",	"0",	"0",	"0",	"1",	"0",	"0",
-(SELECT id FROM players WHERE firstName = "Derek" && lastName = "Dietrich"),
-(SELECT id FROM teams WHERE abbreviation = "CIN"),
-(SELECT id FROM games WHERE id = "5"));
-
-INSERT INTO hittingStats
-(atBats,runs,hits,doubles,triples,homeRuns,runsBattedIn,walks,strikeOuts,steals,playerId,teamId,gameId)
-VALUES
-("3",	"0",	"0",	"0",	"0",	"0",	"0",	"1",	"1",	"0",
-(SELECT id FROM players WHERE firstName = "Jose" && lastName = "Iglesias"),
-(SELECT id FROM teams WHERE abbreviation = "CIN"),
-(SELECT id FROM games WHERE id = "5"));
-
-INSERT INTO hittingStats
-(atBats,runs,hits,doubles,triples,homeRuns,runsBattedIn,walks,strikeOuts,steals,playerId,teamId,gameId)
-VALUES
-("4",	"0",	"1",	"1",	"0",	"0",	"0",	"0",	"1",	"1",
-(SELECT id FROM players WHERE firstName = "Yasiel" && lastName = "Puig"),
-(SELECT id FROM teams WHERE abbreviation = "CIN"),
-(SELECT id FROM games WHERE id = "5"));
-
-INSERT INTO hittingStats
-(atBats,runs,hits,doubles,triples,homeRuns,runsBattedIn,walks,strikeOuts,steals,playerId,teamId,gameId)
-VALUES
-("3",	"0",	"1",	"1",	"0",	"0",	"0",	"1",	"0",	"0",
-(SELECT id FROM players WHERE firstName = "Nick" && lastName = "Senzel"),
-(SELECT id FROM teams WHERE abbreviation = "CIN"),
-(SELECT id FROM games WHERE id = "5"));
-
-INSERT INTO hittingStats
-(atBats,runs,hits,doubles,triples,homeRuns,runsBattedIn,walks,strikeOuts,steals,playerId,teamId,gameId)
-VALUES
-("4",	"0",	"1",	"0",	"0",	"0",	"0",	"0",	"0",	"0",
-(SELECT id FROM players WHERE firstName = "Eugenio" && lastName = "Suarez"),
-(SELECT id FROM teams WHERE abbreviation = "CIN"),
-(SELECT id FROM games WHERE id = "5"));
-
-INSERT INTO hittingStats
-(atBats,runs,hits,doubles,triples,homeRuns,runsBattedIn,walks,strikeOuts,steals,playerId,teamId,gameId)
-VALUES
-("4",	"0",	"0",	"0",	"0",	"0",	"0",	"0",	"2",	"0",
-(SELECT id FROM players WHERE firstName = "Joey" && lastName = "Votto"),
-(SELECT id FROM teams WHERE abbreviation = "CIN"),
-(SELECT id FROM games WHERE id = "5"));
-
-INSERT INTO hittingStats
-(atBats,runs,hits,doubles,triples,homeRuns,runsBattedIn,walks,strikeOuts,steals,playerId,teamId,gameId)
-VALUES
-("3",	"1",	"1",	"0",	"0",	"0",	"0",	"1",	"0",	"0",
-(SELECT id FROM players WHERE firstName = "Jesse" && lastName = "Winker"),
-(SELECT id FROM teams WHERE abbreviation = "CIN"),
-(SELECT id FROM games WHERE id = "5"));
-
-INSERT INTO hittingStats
-(atBats,runs,hits,doubles,triples,homeRuns,runsBattedIn,walks,strikeOuts,steals,playerId,teamId,gameId)
-VALUES
-("4",	"0",	"1",	"0",	"0",	"0",	"0",	"0",	"1",	"0",
-(SELECT id FROM players WHERE firstName = "Gordon" && lastName = "Beckham"),
-(SELECT id FROM teams WHERE abbreviation = "DET"),
-(SELECT id FROM games WHERE id = "7"));
-
-INSERT INTO hittingStats
-(atBats,runs,hits,doubles,triples,homeRuns,runsBattedIn,walks,strikeOuts,steals,playerId,teamId,gameId)
-VALUES
-("4",	"1",	"1",	"1",	"0",	"0",	"0",	"0",	"1",	"0",
-(SELECT id FROM players WHERE firstName = "Nicholas" && lastName = "Castellanos"),
-(SELECT id FROM teams WHERE abbreviation = "DET"),
-(SELECT id FROM games WHERE id = "7"));
-
-INSERT INTO hittingStats
-(atBats,runs,hits,doubles,triples,homeRuns,runsBattedIn,walks,strikeOuts,steals,playerId,teamId,gameId)
-VALUES
-("4",	"0",	"2",	"0",	"0",	"0",	"1",	"0",	"1",	"1",
-(SELECT id FROM players WHERE firstName = "Brandon" && lastName = "Dixon"),
-(SELECT id FROM teams WHERE abbreviation = "DET"),
-(SELECT id FROM games WHERE id = "7"));
-
-INSERT INTO hittingStats
-(atBats,runs,hits,doubles,triples,homeRuns,runsBattedIn,walks,strikeOuts,steals,playerId,teamId,gameId)
-VALUES
-("4",	"0",	"0",	"0",	"0",	"0",	"0",	"0",	"2",	"0",
-(SELECT id FROM players WHERE firstName = "Niko" && lastName = "Goodrum"),
-(SELECT id FROM teams WHERE abbreviation = "DET"),
-(SELECT id FROM games WHERE id = "7"));
-
-INSERT INTO hittingStats
-(atBats,runs,hits,doubles,triples,homeRuns,runsBattedIn,walks,strikeOuts,steals,playerId,teamId,gameId)
-VALUES
-("4",	"0",	"0",	"0",	"0",	"0",	"0",	"0",	"1",	"0",
-(SELECT id FROM players WHERE firstName = "Grayson" && lastName = "Greiner"),
-(SELECT id FROM teams WHERE abbreviation = "DET"),
-(SELECT id FROM games WHERE id = "7"));
-
-INSERT INTO hittingStats
-(atBats,runs,hits,doubles,triples,homeRuns,runsBattedIn,walks,strikeOuts,steals,playerId,teamId,gameId)
-VALUES
-("2",	"0",	"1",	"0",	"0",	"0",	"0",	"1",	"0",	"1",
-(SELECT id FROM players WHERE firstName = "JaCoby" && lastName = "Jones"),
-(SELECT id FROM teams WHERE abbreviation = "DET"),
-(SELECT id FROM games WHERE id = "7"));
-
-INSERT INTO hittingStats
-(atBats,runs,hits,doubles,triples,homeRuns,runsBattedIn,walks,strikeOuts,steals,playerId,teamId,gameId)
-VALUES
-("2",	"0",	"0",	"0",	"0",	"0",	"0",	"0",	"1",	"0",
-(SELECT id FROM players WHERE firstName = "Dawel" && lastName = "Lugo"),
-(SELECT id FROM teams WHERE abbreviation = "DET"),
-(SELECT id FROM games WHERE id = "7"));
-
-INSERT INTO hittingStats
-(atBats,runs,hits,doubles,triples,homeRuns,runsBattedIn,walks,strikeOuts,steals,playerId,teamId,gameId)
-VALUES
-("4",	"0",	"0",	"0",	"0",	"0",	"0",	"0",	"0",	"0",
-(SELECT id FROM players WHERE firstName = "Ronny" && lastName = "Rodriguez"),
-(SELECT id FROM teams WHERE abbreviation = "DET"),
-(SELECT id FROM games WHERE id = "7"));
-
-INSERT INTO hittingStats
-(atBats,runs,hits,doubles,triples,homeRuns,runsBattedIn,walks,strikeOuts,steals,playerId,teamId,gameId)
-VALUES
-("4",	"0",	"2",	"1",	"0",	"0",	"0",	"0",	"0",	"0",
-(SELECT id FROM players WHERE firstName = "Christin" && lastName = "Stewart"),
-(SELECT id FROM teams WHERE abbreviation = "DET"),
-(SELECT id FROM games WHERE id = "7"));
-
-INSERT INTO hittingStats
-(atBats,runs,hits,doubles,triples,homeRuns,runsBattedIn,walks,strikeOuts,steals,playerId,teamId,gameId)
-VALUES
-("4",	"1",	"2",	"0",	"0",	"0",	"0",	"0",	"1",	"0",
-(SELECT id FROM players WHERE firstName = "Hanser" && lastName = "Alberto"),
-(SELECT id FROM teams WHERE abbreviation = "BAL"),
-(SELECT id FROM games WHERE id = "2"));
-
-INSERT INTO hittingStats
-(atBats,runs,hits,doubles,triples,homeRuns,runsBattedIn,walks,strikeOuts,steals,playerId,teamId,gameId)
-VALUES
-("4",	"0",	"1",	"1",	"0",	"0",	"1",	"0",	"0",	"0",
-(SELECT id FROM players WHERE firstName = "Chris" && lastName = "Davis"),
-(SELECT id FROM teams WHERE abbreviation = "BAL"),
-(SELECT id FROM games WHERE id = "2"));
-
-INSERT INTO hittingStats
-(atBats,runs,hits,doubles,triples,homeRuns,runsBattedIn,walks,strikeOuts,steals,playerId,teamId,gameId)
-VALUES
-("4",	"1",	"3",	"0",	"0",	"1",	"1",	"0",	"0",	"0",
-(SELECT id FROM players WHERE firstName = "Trey" && lastName = "Mancini"),
-(SELECT id FROM teams WHERE abbreviation = "BAL"),
-(SELECT id FROM games WHERE id = "2"));
-
-INSERT INTO hittingStats
-(atBats,runs,hits,doubles,triples,homeRuns,runsBattedIn,walks,strikeOuts,steals,playerId,teamId,gameId)
-VALUES
-("3",	"0",	"0",	"0",	"0",	"0",	"0",	"0",	"2",	"0",
-(SELECT id FROM players WHERE firstName = "Richie" && lastName = "Martin"),
-(SELECT id FROM teams WHERE abbreviation = "BAL"),
-(SELECT id FROM games WHERE id = "2"));
-
-INSERT INTO hittingStats
-(atBats,runs,hits,doubles,triples,homeRuns,runsBattedIn,walks,strikeOuts,steals,playerId,teamId,gameId)
-VALUES
-("4",	"0",	"0",	"0",	"0",	"0",	"0",	"0",	"2",	"0",
-(SELECT id FROM players WHERE firstName = "Renato" && lastName = "Nunez"),
-(SELECT id FROM teams WHERE abbreviation = "BAL"),
-(SELECT id FROM games WHERE id = "2"));
-
-INSERT INTO hittingStats
-(atBats,runs,hits,doubles,triples,homeRuns,runsBattedIn,walks,strikeOuts,steals,playerId,teamId,gameId)
-VALUES
-("4",	"0",	"0",	"0",	"0",	"0",	"0",	"0",	"3",	"0",
-(SELECT id FROM players WHERE firstName = "Rio" && lastName = "Ruiz"),
-(SELECT id FROM teams WHERE abbreviation = "BAL"),
-(SELECT id FROM games WHERE id = "2"));
-
-INSERT INTO hittingStats
-(atBats,runs,hits,doubles,triples,homeRuns,runsBattedIn,walks,strikeOuts,steals,playerId,teamId,gameId)
-VALUES
-("2",	"1",	"1",	"1",	"0",	"0",	"0",	"1",	"0",	"0",
-(SELECT id FROM players WHERE firstName = "Chance" && lastName = "Sisco"),
-(SELECT id FROM teams WHERE abbreviation = "BAL"),
-(SELECT id FROM games WHERE id = "2"));
-
-INSERT INTO hittingStats
-(atBats,runs,hits,doubles,triples,homeRuns,runsBattedIn,walks,strikeOuts,steals,playerId,teamId,gameId)
-VALUES
-("2",	"0",	"0",	"0",	"0",	"0",	"0",	"1",	"0",	"0",
-(SELECT id FROM players WHERE firstName = "Dwight" && lastName = "Smith Jr."),
-(SELECT id FROM teams WHERE abbreviation = "BAL"),
-(SELECT id FROM games WHERE id = "2"));
-
-INSERT INTO hittingStats
-(atBats,runs,hits,doubles,triples,homeRuns,runsBattedIn,walks,strikeOuts,steals,playerId,teamId,gameId)
-VALUES
-("4",	"0",	"1",	"0",	"0",	"0",	"1",	"0",	"2",	"0",
-(SELECT id FROM players WHERE firstName = "Stevie" && lastName = "Wilkerson"),
-(SELECT id FROM teams WHERE abbreviation = "BAL"),
-(SELECT id FROM games WHERE id = "2"));
-
-INSERT INTO hittingStats
-(atBats,runs,hits,doubles,triples,homeRuns,runsBattedIn,walks,strikeOuts,steals,playerId,teamId,gameId)
-VALUES
-("4",	"1",	"0",	"0",	"0",	"0",	"0",	"0",	"2",	"0",
-(SELECT id FROM players WHERE firstName = "Thairo" && lastName = "Estrada"),
-(SELECT id FROM teams WHERE abbreviation = "NYY"),
-(SELECT id FROM games WHERE id = "12"));
-
-INSERT INTO hittingStats
-(atBats,runs,hits,doubles,triples,homeRuns,runsBattedIn,walks,strikeOuts,steals,playerId,teamId,gameId)
-VALUES
-("4",	"0",	"0",	"0",	"0",	"0",	"0",	"0",	"1",	"0",
-(SELECT id FROM players WHERE firstName = "Clint" && lastName = "Frazier"),
-(SELECT id FROM teams WHERE abbreviation = "NYY"),
-(SELECT id FROM games WHERE id = "12"));
-
-INSERT INTO hittingStats
-(atBats,runs,hits,doubles,triples,homeRuns,runsBattedIn,walks,strikeOuts,steals,playerId,teamId,gameId)
-VALUES
-("5",	"1",	"2",	"0",	"0",	"1",	"3",	"0",	"1",	"0",
-(SELECT id FROM players WHERE firstName = "Aaron" && lastName = "Hicks"),
-(SELECT id FROM teams WHERE abbreviation = "NYY"),
-(SELECT id FROM games WHERE id = "12"));
-
-INSERT INTO hittingStats
-(atBats,runs,hits,doubles,triples,homeRuns,runsBattedIn,walks,strikeOuts,steals,playerId,teamId,gameId)
-VALUES
-("4",	"1",	"3",	"2",	"0",	"0",	"2",	"1",	"0",	"0",
-(SELECT id FROM players WHERE firstName = "DJ" && lastName = "LeMahieu"),
-(SELECT id FROM teams WHERE abbreviation = "NYY"),
-(SELECT id FROM games WHERE id = "12"));
-
-INSERT INTO hittingStats
-(atBats,runs,hits,doubles,triples,homeRuns,runsBattedIn,walks,strikeOuts,steals,playerId,teamId,gameId)
-VALUES
-("4",	"2",	"2",	"1",	"0",	"0",	"0",	"0",	"1",	"0",
-(SELECT id FROM players WHERE firstName = "Cameron" && lastName = "Maybin"),
-(SELECT id FROM teams WHERE abbreviation = "NYY"),
-(SELECT id FROM games WHERE id = "12"));
-
-INSERT INTO hittingStats
-(atBats,runs,hits,doubles,triples,homeRuns,runsBattedIn,walks,strikeOuts,steals,playerId,teamId,gameId)
-VALUES
-("3",	"0",	"0",	"0",	"0",	"0",	"0",	"1",	"1",	"0",
-(SELECT id FROM players WHERE firstName = "Kendrys" && lastName = "Morales"),
-(SELECT id FROM teams WHERE abbreviation = "NYY"),
-(SELECT id FROM games WHERE id = "12"));
-
-INSERT INTO hittingStats
-(atBats,runs,hits,doubles,triples,homeRuns,runsBattedIn,walks,strikeOuts,steals,playerId,teamId,gameId)
-VALUES
-("5",	"0",	"0",	"0",	"0",	"0",	"0",	"0",	"1",	"0",
-(SELECT id FROM players WHERE firstName = "Gary" && lastName = "Sanchez"),
-(SELECT id FROM teams WHERE abbreviation = "NYY"),
-(SELECT id FROM games WHERE id = "12"));
-
-INSERT INTO hittingStats
-(atBats,runs,hits,doubles,triples,homeRuns,runsBattedIn,walks,strikeOuts,steals,playerId,teamId,gameId)
-VALUES
-("4",	"1",	"1",	"0",	"0",	"1",	"1",	"0",	"0",	"0",
-(SELECT id FROM players WHERE firstName = "Gio" && lastName = "Urshela"),
-(SELECT id FROM teams WHERE abbreviation = "NYY"),
-(SELECT id FROM games WHERE id = "12"));
-
-INSERT INTO hittingStats
-(atBats,runs,hits,doubles,triples,homeRuns,runsBattedIn,walks,strikeOuts,steals,playerId,teamId,gameId)
-VALUES
-("3",	"0",	"0",	"0",	"0",	"0",	"0",	"2",	"0",	"0",
-(SELECT id FROM players WHERE firstName = "Luke" && lastName = "Voit"),
-(SELECT id FROM teams WHERE abbreviation = "NYY"),
-(SELECT id FROM games WHERE id = "12"));
-
-INSERT INTO hittingStats
-(atBats,runs,hits,doubles,triples,homeRuns,runsBattedIn,walks,strikeOuts,steals,playerId,teamId,gameId)
-VALUES
-("4",	"0",	"0",	"0",	"0",	"0",	"0",	"0",	"3",	"0",
-(SELECT id FROM players WHERE firstName = "Austin" && lastName = "Hedges"),
-(SELECT id FROM teams WHERE abbreviation = "SD"),
-(SELECT id FROM games WHERE id = "13"));
-
-INSERT INTO hittingStats
-(atBats,runs,hits,doubles,triples,homeRuns,runsBattedIn,walks,strikeOuts,steals,playerId,teamId,gameId)
-VALUES
-("4",	"0",	"2",	"0",	"0",	"0",	"0",	"0",	"0",	"0",
-(SELECT id FROM players WHERE firstName = "Ian" && lastName = "Kinsler"),
-(SELECT id FROM teams WHERE abbreviation = "SD"),
-(SELECT id FROM games WHERE id = "13"));
-
-INSERT INTO hittingStats
-(atBats,runs,hits,doubles,triples,homeRuns,runsBattedIn,walks,strikeOuts,steals,playerId,teamId,gameId)
-VALUES
-("4",	"0",	"0",	"0",	"0",	"0",	"1",	"0",	"1",	"0",
-(SELECT id FROM players WHERE firstName = "Manny" && lastName = "Machado"),
-(SELECT id FROM teams WHERE abbreviation = "SD"),
-(SELECT id FROM games WHERE id = "13"));
-
-INSERT INTO hittingStats
-(atBats,runs,hits,doubles,triples,homeRuns,runsBattedIn,walks,strikeOuts,steals,playerId,teamId,gameId)
-VALUES
-("2",	"1",	"2",	"0",	"0",	"0",	"0",	"1",	"0",	"0",
-(SELECT id FROM players WHERE firstName = "Manuel" && lastName = "Margot"),
-(SELECT id FROM teams WHERE abbreviation = "SD"),
-(SELECT id FROM games WHERE id = "13"));
-
-INSERT INTO hittingStats
-(atBats,runs,hits,doubles,triples,homeRuns,runsBattedIn,walks,strikeOuts,steals,playerId,teamId,gameId)
-VALUES
-("2",	"1",	"0",	"0",	"0",	"0",	"0",	"2",	"1",	"0",
-(SELECT id FROM players WHERE firstName = "Wil" && lastName = "Myers"),
-(SELECT id FROM teams WHERE abbreviation = "SD"),
-(SELECT id FROM games WHERE id = "13"));
-
-INSERT INTO hittingStats
-(atBats,runs,hits,doubles,triples,homeRuns,runsBattedIn,walks,strikeOuts,steals,playerId,teamId,gameId)
-VALUES
-("3",	"1",	"1",	"0",	"0",	"1",	"2",	"1",	"1",	"0",
-(SELECT id FROM players WHERE firstName = "Hunter" && lastName = "Renfroe"),
-(SELECT id FROM teams WHERE abbreviation = "SD"),
-(SELECT id FROM games WHERE id = "13"));
-
-INSERT INTO hittingStats
-(atBats,runs,hits,doubles,triples,homeRuns,runsBattedIn,walks,strikeOuts,steals,playerId,teamId,gameId)
-VALUES
-("2",	"1",	"0",	"0",	"0",	"0",	"1",	"1",	"1",	"0",
-(SELECT id FROM players WHERE firstName = "Franmil" && lastName = "Reyes"),
-(SELECT id FROM teams WHERE abbreviation = "SD"),
-(SELECT id FROM games WHERE id = "13"));
-
-INSERT INTO hittingStats
-(atBats,runs,hits,doubles,triples,homeRuns,runsBattedIn,walks,strikeOuts,steals,playerId,teamId,gameId)
-VALUES
-("2",	"1",	"1",	"0",	"0",	"0",	"0",	"2",	"0",	"0",
-(SELECT id FROM players WHERE firstName = "Fernando" && lastName = "Tatis Jr."),
-(SELECT id FROM teams WHERE abbreviation = "SD"),
-(SELECT id FROM games WHERE id = "13"));
+  (startTime, homeScore, awayScore, homeTeamId, awayTeamId)
+VALUES
+  ('2019-06-06 12:35:00', 6, 1, (SELECT id FROM teams WHERE abbreviation = 'PIT'), (SELECT id FROM teams WHERE abbreviation = 'ATL')),
+  ('2019-06-06 20:05:00', 4, 3, (SELECT id FROM teams WHERE abbreviation = 'TEX'), (SELECT id FROM teams WHERE abbreviation = 'BAL')),
+  ('2019-06-06 13:15:00', 5, 7, (SELECT id FROM teams WHERE abbreviation = 'KC'), (SELECT id FROM teams WHERE abbreviation = 'BOS')),
+  ('2019-06-06 14:20:00', 1, 3, (SELECT id FROM teams WHERE abbreviation = 'CHC'), (SELECT id FROM teams WHERE abbreviation = 'COL')),
+  ('2019-06-06 13:15:00', 3, 1, (SELECT id FROM teams WHERE abbreviation = 'STL'), (SELECT id FROM teams WHERE abbreviation = 'CIN')),
+  ('2019-06-06 19:00:00', 4, 5, (SELECT id FROM teams WHERE abbreviation = 'CLE'), (SELECT id FROM teams WHERE abbreviation = 'MIN')),
+  ('2019-06-06 13:10:00', 1, 6, (SELECT id FROM teams WHERE abbreviation = 'DET'), (SELECT id FROM teams WHERE abbreviation = 'TB')),
+  ('2019-06-06 15:40:00', 7, 8, (SELECT id FROM teams WHERE abbreviation = 'SEA'), (SELECT id FROM teams WHERE abbreviation = 'HOU')),
+  ('2019-06-06 22:07:00', 4, 7, (SELECT id FROM teams WHERE abbreviation = 'LAA'), (SELECT id FROM teams WHERE abbreviation = 'OAK')),
+  ('2019-06-06 14:10:00', 5, 1, (SELECT id FROM teams WHERE abbreviation = 'MIL'), (SELECT id FROM teams WHERE abbreviation = 'MIA')),
+  ('2019-06-06 12:10:00', 7, 3, (SELECT id FROM teams WHERE abbreviation = 'NYM'), (SELECT id FROM teams WHERE abbreviation = 'SF')),
+  ('2019-06-06 19:00:00', 2, 6, (SELECT id FROM teams WHERE abbreviation = 'TOR'), (SELECT id FROM teams WHERE abbreviation = 'NYY')),
+  ('2019-06-06 22:10:00', 5, 4, (SELECT id FROM teams WHERE abbreviation = 'SD'), (SELECT id FROM teams WHERE abbreviation = 'WSH'));
+
+
+INSERT INTO hittingStats
+  (playerId, gameId, teamId, atBats, runs, hits, doubles, triples, homeRuns, runsBattedIn, walks, strikeouts, steals)
+VALUES
+  ((SELECT id FROM players WHERE firstName = 'Josh' AND lastName = 'Bell' AND position = '1B'), (SELECT id FROM games WHERE startTime = '2019-06-06 12:35:00' AND homeTeamId = (SELECT id FROM teams WHERE abbreviation = 'PIT') AND awayTeamId = (SELECT id FROM teams WHERE abbreviation = 'ATL')), (SELECT id FROM teams WHERE abbreviation = 'PIT'),4, 2, 3, 3, 0, 0, 2, 0, 0, 0),
+  ((SELECT id FROM players WHERE firstName = 'Starling' AND lastName = 'Marte' AND position = 'CF'), (SELECT id FROM games WHERE startTime = '2019-06-06 12:35:00' AND homeTeamId = (SELECT id FROM teams WHERE abbreviation = 'PIT') AND awayTeamId = (SELECT id FROM teams WHERE abbreviation = 'ATL')), (SELECT id FROM teams WHERE abbreviation = 'PIT'),4, 0, 0, 0, 0, 0, 0, 0, 0, 0),
+  ((SELECT id FROM players WHERE firstName = 'Colin' AND lastName = 'Moran' AND position = '3B'), (SELECT id FROM games WHERE startTime = '2019-06-06 12:35:00' AND homeTeamId = (SELECT id FROM teams WHERE abbreviation = 'PIT') AND awayTeamId = (SELECT id FROM teams WHERE abbreviation = 'ATL')), (SELECT id FROM teams WHERE abbreviation = 'PIT'),3, 1, 1, 0, 0, 1, 2, 0, 1, 0),
+  ((SELECT id FROM players WHERE firstName = 'Kevin' AND lastName = 'Newman' AND position = 'SS'), (SELECT id FROM games WHERE startTime = '2019-06-06 12:35:00' AND homeTeamId = (SELECT id FROM teams WHERE abbreviation = 'PIT') AND awayTeamId = (SELECT id FROM teams WHERE abbreviation = 'ATL')), (SELECT id FROM teams WHERE abbreviation = 'PIT'),4, 0, 0, 0, 0, 0, 0, 0, 1, 0),
+  ((SELECT id FROM players WHERE firstName = 'Gregory' AND lastName = 'Polanco' AND position = 'RF'), (SELECT id FROM games WHERE startTime = '2019-06-06 12:35:00' AND homeTeamId = (SELECT id FROM teams WHERE abbreviation = 'PIT') AND awayTeamId = (SELECT id FROM teams WHERE abbreviation = 'ATL')), (SELECT id FROM teams WHERE abbreviation = 'PIT'),4, 1, 1, 0, 0, 1, 1, 0, 2, 0),
+  ((SELECT id FROM players WHERE firstName = 'Bryan' AND lastName = 'Reynolds' AND position = 'LF'), (SELECT id FROM games WHERE startTime = '2019-06-06 12:35:00' AND homeTeamId = (SELECT id FROM teams WHERE abbreviation = 'PIT') AND awayTeamId = (SELECT id FROM teams WHERE abbreviation = 'ATL')), (SELECT id FROM teams WHERE abbreviation = 'PIT'),4, 1, 2, 0, 0, 0, 0, 0, 1, 0),
+  ((SELECT id FROM players WHERE firstName = 'Jacob' AND lastName = 'Stallings' AND position = 'C'), (SELECT id FROM games WHERE startTime = '2019-06-06 12:35:00' AND homeTeamId = (SELECT id FROM teams WHERE abbreviation = 'PIT') AND awayTeamId = (SELECT id FROM teams WHERE abbreviation = 'ATL')), (SELECT id FROM teams WHERE abbreviation = 'PIT'),2, 0, 0, 0, 0, 0, 0, 1, 0, 0),
+  ((SELECT id FROM players WHERE firstName = 'Cole' AND lastName = 'Tucker' AND position = 'SS'), (SELECT id FROM games WHERE startTime = '2019-06-06 12:35:00' AND homeTeamId = (SELECT id FROM teams WHERE abbreviation = 'PIT') AND awayTeamId = (SELECT id FROM teams WHERE abbreviation = 'ATL')), (SELECT id FROM teams WHERE abbreviation = 'PIT'),3, 0, 1, 1, 0, 0, 0, 0, 1, 0),
+  ((SELECT id FROM players WHERE firstName = 'Elvis' AND lastName = 'Andrus' AND position = 'SS'), (SELECT id FROM games WHERE startTime = '2019-06-06 20:05:00' AND homeTeamId = (SELECT id FROM teams WHERE abbreviation = 'TEX') AND awayTeamId = (SELECT id FROM teams WHERE abbreviation = 'BAL')), (SELECT id FROM teams WHERE abbreviation = 'TEX'),4, 0, 1, 0, 0, 0, 0, 0, 1, 0),
+  ((SELECT id FROM players WHERE firstName = 'Asdrubal' AND lastName = 'Cabrera' AND position = '3B'), (SELECT id FROM games WHERE startTime = '2019-06-06 20:05:00' AND homeTeamId = (SELECT id FROM teams WHERE abbreviation = 'TEX') AND awayTeamId = (SELECT id FROM teams WHERE abbreviation = 'BAL')), (SELECT id FROM teams WHERE abbreviation = 'TEX'),2, 1, 1, 0, 0, 0, 0, 1, 0, 0),
+  ((SELECT id FROM players WHERE firstName = 'Delino' AND lastName = 'DeShields' AND position = 'LF'), (SELECT id FROM games WHERE startTime = '2019-06-06 20:05:00' AND homeTeamId = (SELECT id FROM teams WHERE abbreviation = 'TEX') AND awayTeamId = (SELECT id FROM teams WHERE abbreviation = 'BAL')), (SELECT id FROM teams WHERE abbreviation = 'TEX'),3, 1, 1, 0, 0, 0, 0, 1, 0, 1),
+  ((SELECT id FROM players WHERE firstName = 'Ronald' AND lastName = 'Guzman' AND position = '1B'), (SELECT id FROM games WHERE startTime = '2019-06-06 20:05:00' AND homeTeamId = (SELECT id FROM teams WHERE abbreviation = 'TEX') AND awayTeamId = (SELECT id FROM teams WHERE abbreviation = 'BAL')), (SELECT id FROM teams WHERE abbreviation = 'TEX'),3, 0, 2, 1, 0, 0, 1, 0, 0, 0),
+  ((SELECT id FROM players WHERE firstName = 'Isiah' AND lastName = 'Kiner-Falefa' AND position = 'C'), (SELECT id FROM games WHERE startTime = '2019-06-06 20:05:00' AND homeTeamId = (SELECT id FROM teams WHERE abbreviation = 'TEX') AND awayTeamId = (SELECT id FROM teams WHERE abbreviation = 'BAL')), (SELECT id FROM teams WHERE abbreviation = 'TEX'),3, 1, 1, 0, 0, 0, 0, 0, 1, 0),
+  ((SELECT id FROM players WHERE firstName = 'Nomar' AND lastName = 'Mazara' AND position = 'RF'), (SELECT id FROM games WHERE startTime = '2019-06-06 20:05:00' AND homeTeamId = (SELECT id FROM teams WHERE abbreviation = 'TEX') AND awayTeamId = (SELECT id FROM teams WHERE abbreviation = 'BAL')), (SELECT id FROM teams WHERE abbreviation = 'TEX'),4, 0, 0, 0, 0, 0, 0, 0, 0, 0),
+  ((SELECT id FROM players WHERE firstName = 'Rougned' AND lastName = 'Odor' AND position = '2B'), (SELECT id FROM games WHERE startTime = '2019-06-06 20:05:00' AND homeTeamId = (SELECT id FROM teams WHERE abbreviation = 'TEX') AND awayTeamId = (SELECT id FROM teams WHERE abbreviation = 'BAL')), (SELECT id FROM teams WHERE abbreviation = 'TEX'),3, 0, 0, 0, 0, 0, 0, 0, 0, 0),
+  ((SELECT id FROM players WHERE firstName = 'Hunter' AND lastName = 'Pence' AND position = 'RF'), (SELECT id FROM games WHERE startTime = '2019-06-06 20:05:00' AND homeTeamId = (SELECT id FROM teams WHERE abbreviation = 'TEX') AND awayTeamId = (SELECT id FROM teams WHERE abbreviation = 'BAL')), (SELECT id FROM teams WHERE abbreviation = 'TEX'),4, 1, 1, 0, 0, 1, 1, 0, 2, 0),
+  ((SELECT id FROM players WHERE firstName = 'Danny' AND lastName = 'Santana' AND position = 'CF'), (SELECT id FROM games WHERE startTime = '2019-06-06 20:05:00' AND homeTeamId = (SELECT id FROM teams WHERE abbreviation = 'TEX') AND awayTeamId = (SELECT id FROM teams WHERE abbreviation = 'BAL')), (SELECT id FROM teams WHERE abbreviation = 'TEX'),3, 0, 1, 0, 0, 0, 1, 0, 1, 0),
+  ((SELECT id FROM players WHERE firstName = 'Cheslor' AND lastName = 'Cuthbert' AND position = '3B'), (SELECT id FROM games WHERE startTime = '2019-06-06 13:15:00' AND homeTeamId = (SELECT id FROM teams WHERE abbreviation = 'KC') AND awayTeamId = (SELECT id FROM teams WHERE abbreviation = 'BOS')), (SELECT id FROM teams WHERE abbreviation = 'KC'),5, 1, 2, 0, 0, 1, 1, 0, 1, 0),
+  ((SELECT id FROM players WHERE firstName = 'Cam' AND lastName = 'Gallagher' AND position = 'C'), (SELECT id FROM games WHERE startTime = '2019-06-06 13:15:00' AND homeTeamId = (SELECT id FROM teams WHERE abbreviation = 'KC') AND awayTeamId = (SELECT id FROM teams WHERE abbreviation = 'BOS')), (SELECT id FROM teams WHERE abbreviation = 'KC'),3, 0, 2, 0, 0, 0, 0, 1, 0, 0),
+  ((SELECT id FROM players WHERE firstName = 'Alex' AND lastName = 'Gordon' AND position = 'LF'), (SELECT id FROM games WHERE startTime = '2019-06-06 13:15:00' AND homeTeamId = (SELECT id FROM teams WHERE abbreviation = 'KC') AND awayTeamId = (SELECT id FROM teams WHERE abbreviation = 'BOS')), (SELECT id FROM teams WHERE abbreviation = 'KC'),5, 2, 3, 0, 0, 1, 1, 0, 2, 0),
+  ((SELECT id FROM players WHERE firstName = 'Billy' AND lastName = 'Hamilton' AND position = 'CF'), (SELECT id FROM games WHERE startTime = '2019-06-06 13:15:00' AND homeTeamId = (SELECT id FROM teams WHERE abbreviation = 'KC') AND awayTeamId = (SELECT id FROM teams WHERE abbreviation = 'BOS')), (SELECT id FROM teams WHERE abbreviation = 'KC'),4, 0, 2, 1, 0, 0, 1, 0, 1, 0),
+  ((SELECT id FROM players WHERE firstName = 'Nicky' AND lastName = 'Lopez' AND position = '2B'), (SELECT id FROM games WHERE startTime = '2019-06-06 13:15:00' AND homeTeamId = (SELECT id FROM teams WHERE abbreviation = 'KC') AND awayTeamId = (SELECT id FROM teams WHERE abbreviation = 'BOS')), (SELECT id FROM teams WHERE abbreviation = 'KC'),4, 1, 2, 1, 0, 0, 0, 0, 0, 1),
+  ((SELECT id FROM players WHERE firstName = 'Whit' AND lastName = 'Merrifield' AND position = '2B'), (SELECT id FROM games WHERE startTime = '2019-06-06 13:15:00' AND homeTeamId = (SELECT id FROM teams WHERE abbreviation = 'KC') AND awayTeamId = (SELECT id FROM teams WHERE abbreviation = 'BOS')), (SELECT id FROM teams WHERE abbreviation = 'KC'),5, 0, 1, 0, 0, 0, 0, 0, 2, 0),
+  ((SELECT id FROM players WHERE firstName = 'Adalberto' AND lastName = 'Mondesi' AND position = '2B'), (SELECT id FROM games WHERE startTime = '2019-06-06 13:15:00' AND homeTeamId = (SELECT id FROM teams WHERE abbreviation = 'KC') AND awayTeamId = (SELECT id FROM teams WHERE abbreviation = 'BOS')), (SELECT id FROM teams WHERE abbreviation = 'KC'),5, 0, 0, 0, 0, 0, 0, 0, 3, 0),
+  ((SELECT id FROM players WHERE firstName = 'Ryan' AND lastName = 'O\'Hearn' AND position = '1B'), (SELECT id FROM games WHERE startTime = '2019-06-06 13:15:00' AND homeTeamId = (SELECT id FROM teams WHERE abbreviation = 'KC') AND awayTeamId = (SELECT id FROM teams WHERE abbreviation = 'BOS')), (SELECT id FROM teams WHERE abbreviation = 'KC'),5, 0, 0, 0, 0, 0, 0, 0, 2, 0),
+  ((SELECT id FROM players WHERE firstName = 'Jorge' AND lastName = 'Soler' AND position = 'RF'), (SELECT id FROM games WHERE startTime = '2019-06-06 13:15:00' AND homeTeamId = (SELECT id FROM teams WHERE abbreviation = 'KC') AND awayTeamId = (SELECT id FROM teams WHERE abbreviation = 'BOS')), (SELECT id FROM teams WHERE abbreviation = 'KC'),5, 1, 2, 1, 0, 1, 2, 0, 0, 0),
+  ((SELECT id FROM players WHERE firstName = 'Nolan' AND lastName = 'Arenado' AND position = '3B'), (SELECT id FROM games WHERE startTime = '2019-06-06 14:20:00' AND homeTeamId = (SELECT id FROM teams WHERE abbreviation = 'CHC') AND awayTeamId = (SELECT id FROM teams WHERE abbreviation = 'COL')), (SELECT id FROM teams WHERE abbreviation = 'COL'),4, 0, 0, 0, 0, 0, 0, 0, 1, 0),
+  ((SELECT id FROM players WHERE firstName = 'David' AND lastName = 'Dahl' AND position = 'LF'), (SELECT id FROM games WHERE startTime = '2019-06-06 14:20:00' AND homeTeamId = (SELECT id FROM teams WHERE abbreviation = 'CHC') AND awayTeamId = (SELECT id FROM teams WHERE abbreviation = 'COL')), (SELECT id FROM teams WHERE abbreviation = 'COL'),4, 1, 1, 0, 0, 0, 1, 0, 0, 0),
+  ((SELECT id FROM players WHERE firstName = 'Ian' AND lastName = 'Desmond' AND position = '1B'), (SELECT id FROM games WHERE startTime = '2019-06-06 14:20:00' AND homeTeamId = (SELECT id FROM teams WHERE abbreviation = 'CHC') AND awayTeamId = (SELECT id FROM teams WHERE abbreviation = 'COL')), (SELECT id FROM teams WHERE abbreviation = 'COL'),4, 1, 2, 2, 0, 0, 1, 0, 1, 0),
+  ((SELECT id FROM players WHERE firstName = 'Chris' AND lastName = 'Iannetta' AND position = 'C'), (SELECT id FROM games WHERE startTime = '2019-06-06 14:20:00' AND homeTeamId = (SELECT id FROM teams WHERE abbreviation = 'CHC') AND awayTeamId = (SELECT id FROM teams WHERE abbreviation = 'COL')), (SELECT id FROM teams WHERE abbreviation = 'COL'),2, 0, 0, 0, 0, 0, 1, 0, 1, 0),
+  ((SELECT id FROM players WHERE firstName = 'Mark' AND lastName = 'Reynolds' AND position = '1B'), (SELECT id FROM games WHERE startTime = '2019-06-06 14:20:00' AND homeTeamId = (SELECT id FROM teams WHERE abbreviation = 'CHC') AND awayTeamId = (SELECT id FROM teams WHERE abbreviation = 'COL')), (SELECT id FROM teams WHERE abbreviation = 'COL'),4, 0, 1, 1, 0, 0, 0, 0, 1, 0),
+  ((SELECT id FROM players WHERE firstName = 'Brendan' AND lastName = 'Rodgers' AND position = 'SS'), (SELECT id FROM games WHERE startTime = '2019-06-06 14:20:00' AND homeTeamId = (SELECT id FROM teams WHERE abbreviation = 'CHC') AND awayTeamId = (SELECT id FROM teams WHERE abbreviation = 'COL')), (SELECT id FROM teams WHERE abbreviation = 'COL'),3, 0, 0, 0, 0, 0, 0, 1, 1, 0),
+  ((SELECT id FROM players WHERE firstName = 'Trevor' AND lastName = 'Story' AND position = 'SS'), (SELECT id FROM games WHERE startTime = '2019-06-06 14:20:00' AND homeTeamId = (SELECT id FROM teams WHERE abbreviation = 'CHC') AND awayTeamId = (SELECT id FROM teams WHERE abbreviation = 'COL')), (SELECT id FROM teams WHERE abbreviation = 'COL'),4, 1, 1, 1, 0, 0, 0, 0, 2, 0),
+  ((SELECT id FROM players WHERE firstName = 'Raimel' AND lastName = 'Tapia' AND position = 'CF'), (SELECT id FROM games WHERE startTime = '2019-06-06 14:20:00' AND homeTeamId = (SELECT id FROM teams WHERE abbreviation = 'CHC') AND awayTeamId = (SELECT id FROM teams WHERE abbreviation = 'COL')), (SELECT id FROM teams WHERE abbreviation = 'COL'),4, 0, 0, 0, 0, 0, 0, 0, 0, 0),
+  ((SELECT id FROM players WHERE firstName = 'Harrison' AND lastName = 'Bader' AND position = 'CF'), (SELECT id FROM games WHERE startTime = '2019-06-06 13:15:00' AND homeTeamId = (SELECT id FROM teams WHERE abbreviation = 'STL') AND awayTeamId = (SELECT id FROM teams WHERE abbreviation = 'CIN')), (SELECT id FROM teams WHERE abbreviation = 'STL'),2, 1, 1, 0, 0, 0, 0, 1, 0, 0),
+  ((SELECT id FROM players WHERE firstName = 'Matt' AND lastName = 'Carpenter' AND position = '1B'), (SELECT id FROM games WHERE startTime = '2019-06-06 13:15:00' AND homeTeamId = (SELECT id FROM teams WHERE abbreviation = 'STL') AND awayTeamId = (SELECT id FROM teams WHERE abbreviation = 'CIN')), (SELECT id FROM teams WHERE abbreviation = 'STL'),4, 0, 1, 0, 0, 0, 1, 0, 3, 1),
+  ((SELECT id FROM players WHERE firstName = 'Paul' AND lastName = 'DeJong' AND position = 'SS'), (SELECT id FROM games WHERE startTime = '2019-06-06 13:15:00' AND homeTeamId = (SELECT id FROM teams WHERE abbreviation = 'STL') AND awayTeamId = (SELECT id FROM teams WHERE abbreviation = 'CIN')), (SELECT id FROM teams WHERE abbreviation = 'STL'),4, 1, 1, 0, 0, 1, 2, 0, 1, 0),
+  ((SELECT id FROM players WHERE firstName = 'Dexter' AND lastName = 'Fowler' AND position = 'RF'), (SELECT id FROM games WHERE startTime = '2019-06-06 13:15:00' AND homeTeamId = (SELECT id FROM teams WHERE abbreviation = 'STL') AND awayTeamId = (SELECT id FROM teams WHERE abbreviation = 'CIN')), (SELECT id FROM teams WHERE abbreviation = 'STL'),3, 0, 1, 0, 0, 0, 0, 0, 0, 1),
+  ((SELECT id FROM players WHERE firstName = 'Paul' AND lastName = 'Goldschmidt' AND position = '1B'), (SELECT id FROM games WHERE startTime = '2019-06-06 13:15:00' AND homeTeamId = (SELECT id FROM teams WHERE abbreviation = 'STL') AND awayTeamId = (SELECT id FROM teams WHERE abbreviation = 'CIN')), (SELECT id FROM teams WHERE abbreviation = 'STL'),4, 0, 1, 0, 0, 0, 0, 0, 1, 0),
+  ((SELECT id FROM players WHERE firstName = 'Marcell' AND lastName = 'Ozuna' AND position = 'LF'), (SELECT id FROM games WHERE startTime = '2019-06-06 13:15:00' AND homeTeamId = (SELECT id FROM teams WHERE abbreviation = 'STL') AND awayTeamId = (SELECT id FROM teams WHERE abbreviation = 'CIN')), (SELECT id FROM teams WHERE abbreviation = 'STL'),4, 0, 2, 0, 0, 0, 0, 0, 1, 1),
+  ((SELECT id FROM players WHERE firstName = 'Matt' AND lastName = 'Wieters' AND position = 'C'), (SELECT id FROM games WHERE startTime = '2019-06-06 13:15:00' AND homeTeamId = (SELECT id FROM teams WHERE abbreviation = 'STL') AND awayTeamId = (SELECT id FROM teams WHERE abbreviation = 'CIN')), (SELECT id FROM teams WHERE abbreviation = 'STL'),4, 0, 0, 0, 0, 0, 0, 0, 2, 0),
+  ((SELECT id FROM players WHERE firstName = 'Kolten' AND lastName = 'Wong' AND position = '2B'), (SELECT id FROM games WHERE startTime = '2019-06-06 13:15:00' AND homeTeamId = (SELECT id FROM teams WHERE abbreviation = 'STL') AND awayTeamId = (SELECT id FROM teams WHERE abbreviation = 'CIN')), (SELECT id FROM teams WHERE abbreviation = 'STL'),4, 0, 1, 0, 0, 0, 0, 0, 2, 1),
+  ((SELECT id FROM players WHERE firstName = 'Ehire' AND lastName = 'Adrianza' AND position = 'SS'), (SELECT id FROM games WHERE startTime = '2019-06-06 19:00:00' AND homeTeamId = (SELECT id FROM teams WHERE abbreviation = 'CLE') AND awayTeamId = (SELECT id FROM teams WHERE abbreviation = 'MIN')), (SELECT id FROM teams WHERE abbreviation = 'MIN'),3, 0, 0, 0, 0, 0, 0, 0, 1, 0),
+  ((SELECT id FROM players WHERE firstName = 'Willians' AND lastName = 'Astudillo' AND position = 'C'), (SELECT id FROM games WHERE startTime = '2019-06-06 19:00:00' AND homeTeamId = (SELECT id FROM teams WHERE abbreviation = 'CLE') AND awayTeamId = (SELECT id FROM teams WHERE abbreviation = 'MIN')), (SELECT id FROM teams WHERE abbreviation = 'MIN'),4, 1, 1, 0, 0, 0, 0, 0, 0, 0),
+  ((SELECT id FROM players WHERE firstName = 'C.J.' AND lastName = 'Cron' AND position = '1B'), (SELECT id FROM games WHERE startTime = '2019-06-06 19:00:00' AND homeTeamId = (SELECT id FROM teams WHERE abbreviation = 'CLE') AND awayTeamId = (SELECT id FROM teams WHERE abbreviation = 'MIN')), (SELECT id FROM teams WHERE abbreviation = 'MIN'),4, 0, 0, 0, 0, 0, 0, 0, 0, 0),
+  ((SELECT id FROM players WHERE firstName = 'Mitch' AND lastName = 'Garver' AND position = 'C'), (SELECT id FROM games WHERE startTime = '2019-06-06 19:00:00' AND homeTeamId = (SELECT id FROM teams WHERE abbreviation = 'CLE') AND awayTeamId = (SELECT id FROM teams WHERE abbreviation = 'MIN')), (SELECT id FROM teams WHERE abbreviation = 'MIN'),5, 0, 1, 1, 0, 0, 1, 0, 4, 0),
+  ((SELECT id FROM players WHERE firstName = 'Marwin' AND lastName = 'Gonzalez' AND position = '3B'), (SELECT id FROM games WHERE startTime = '2019-06-06 19:00:00' AND homeTeamId = (SELECT id FROM teams WHERE abbreviation = 'CLE') AND awayTeamId = (SELECT id FROM teams WHERE abbreviation = 'MIN')), (SELECT id FROM teams WHERE abbreviation = 'MIN'),3, 0, 0, 0, 0, 0, 0, 1, 1, 0),
+  ((SELECT id FROM players WHERE firstName = 'Max' AND lastName = 'Kepler' AND position = 'RF'), (SELECT id FROM games WHERE startTime = '2019-06-06 19:00:00' AND homeTeamId = (SELECT id FROM teams WHERE abbreviation = 'CLE') AND awayTeamId = (SELECT id FROM teams WHERE abbreviation = 'MIN')), (SELECT id FROM teams WHERE abbreviation = 'MIN'),4, 3, 4, 0, 0, 3, 4, 1, 0, 0),
+  ((SELECT id FROM players WHERE firstName = 'Jorge' AND lastName = 'Polanco' AND position = 'SS'), (SELECT id FROM games WHERE startTime = '2019-06-06 19:00:00' AND homeTeamId = (SELECT id FROM teams WHERE abbreviation = 'CLE') AND awayTeamId = (SELECT id FROM teams WHERE abbreviation = 'MIN')), (SELECT id FROM teams WHERE abbreviation = 'MIN'),5, 1, 1, 0, 0, 0, 0, 0, 1, 1),
+  ((SELECT id FROM players WHERE firstName = 'Eddie' AND lastName = 'Rosario' AND position = 'LF'), (SELECT id FROM games WHERE startTime = '2019-06-06 19:00:00' AND homeTeamId = (SELECT id FROM teams WHERE abbreviation = 'CLE') AND awayTeamId = (SELECT id FROM teams WHERE abbreviation = 'MIN')), (SELECT id FROM teams WHERE abbreviation = 'MIN'),3, 0, 0, 0, 0, 0, 0, 1, 0, 0),
+  ((SELECT id FROM players WHERE firstName = 'Jonathan' AND lastName = 'Schoop' AND position = '2B'), (SELECT id FROM games WHERE startTime = '2019-06-06 19:00:00' AND homeTeamId = (SELECT id FROM teams WHERE abbreviation = 'CLE') AND awayTeamId = (SELECT id FROM teams WHERE abbreviation = 'MIN')), (SELECT id FROM teams WHERE abbreviation = 'MIN'),4, 0, 0, 0, 0, 0, 0, 0, 1, 0),
+  ((SELECT id FROM players WHERE firstName = 'Albert' AND lastName = 'Almora Jr.' AND position = 'CF'), (SELECT id FROM games WHERE startTime = '2019-06-06 14:20:00' AND homeTeamId = (SELECT id FROM teams WHERE abbreviation = 'CHC') AND awayTeamId = (SELECT id FROM teams WHERE abbreviation = 'COL')), (SELECT id FROM teams WHERE abbreviation = 'CHC'),4, 0, 1, 0, 0, 0, 0, 0, 1, 0),
+  ((SELECT id FROM players WHERE firstName = 'Javier' AND lastName = 'Baez' AND position = 'SS'), (SELECT id FROM games WHERE startTime = '2019-06-06 14:20:00' AND homeTeamId = (SELECT id FROM teams WHERE abbreviation = 'CHC') AND awayTeamId = (SELECT id FROM teams WHERE abbreviation = 'COL')), (SELECT id FROM teams WHERE abbreviation = 'CHC'),4, 0, 2, 0, 0, 0, 1, 0, 0, 0),
+  ((SELECT id FROM players WHERE firstName = 'David' AND lastName = 'Bote' AND position = '3B'), (SELECT id FROM games WHERE startTime = '2019-06-06 14:20:00' AND homeTeamId = (SELECT id FROM teams WHERE abbreviation = 'CHC') AND awayTeamId = (SELECT id FROM teams WHERE abbreviation = 'COL')), (SELECT id FROM teams WHERE abbreviation = 'CHC'),4, 0, 0, 0, 0, 0, 0, 0, 2, 0),
+  ((SELECT id FROM players WHERE firstName = 'Kris' AND lastName = 'Bryant' AND position = '3B'), (SELECT id FROM games WHERE startTime = '2019-06-06 14:20:00' AND homeTeamId = (SELECT id FROM teams WHERE abbreviation = 'CHC') AND awayTeamId = (SELECT id FROM teams WHERE abbreviation = 'COL')), (SELECT id FROM teams WHERE abbreviation = 'CHC'),3, 1, 1, 1, 0, 0, 0, 1, 0, 0),
+  ((SELECT id FROM players WHERE firstName = 'Willson' AND lastName = 'Contreras' AND position = 'C'), (SELECT id FROM games WHERE startTime = '2019-06-06 14:20:00' AND homeTeamId = (SELECT id FROM teams WHERE abbreviation = 'CHC') AND awayTeamId = (SELECT id FROM teams WHERE abbreviation = 'COL')), (SELECT id FROM teams WHERE abbreviation = 'CHC'),4, 0, 0, 0, 0, 0, 0, 0, 1, 0),
+  ((SELECT id FROM players WHERE firstName = 'Daniel' AND lastName = 'Descalso' AND position = '3B'), (SELECT id FROM games WHERE startTime = '2019-06-06 14:20:00' AND homeTeamId = (SELECT id FROM teams WHERE abbreviation = 'CHC') AND awayTeamId = (SELECT id FROM teams WHERE abbreviation = 'COL')), (SELECT id FROM teams WHERE abbreviation = 'CHC'),2, 0, 0, 0, 0, 0, 0, 1, 2, 0),
+  ((SELECT id FROM players WHERE firstName = 'Anthony' AND lastName = 'Rizzo' AND position = '1B'), (SELECT id FROM games WHERE startTime = '2019-06-06 14:20:00' AND homeTeamId = (SELECT id FROM teams WHERE abbreviation = 'CHC') AND awayTeamId = (SELECT id FROM teams WHERE abbreviation = 'COL')), (SELECT id FROM teams WHERE abbreviation = 'CHC'),4, 0, 0, 0, 0, 0, 0, 0, 1, 0),
+  ((SELECT id FROM players WHERE firstName = 'Kyle' AND lastName = 'Schwarber' AND position = 'LF'), (SELECT id FROM games WHERE startTime = '2019-06-06 14:20:00' AND homeTeamId = (SELECT id FROM teams WHERE abbreviation = 'CHC') AND awayTeamId = (SELECT id FROM teams WHERE abbreviation = 'COL')), (SELECT id FROM teams WHERE abbreviation = 'CHC'),4, 0, 1, 0, 0, 0, 0, 0, 2, 1),
+  ((SELECT id FROM players WHERE firstName = 'Willy' AND lastName = 'Adames' AND position = 'SS'), (SELECT id FROM games WHERE startTime = '2019-06-06 13:10:00' AND homeTeamId = (SELECT id FROM teams WHERE abbreviation = 'DET') AND awayTeamId = (SELECT id FROM teams WHERE abbreviation = 'TB')), (SELECT id FROM teams WHERE abbreviation = 'TB'),5, 1, 2, 0, 0, 1, 1, 0, 1, 0),
+  ((SELECT id FROM players WHERE firstName = 'Christian' AND lastName = 'Arroyo' AND position = '3B'), (SELECT id FROM games WHERE startTime = '2019-06-06 13:10:00' AND homeTeamId = (SELECT id FROM teams WHERE abbreviation = 'DET') AND awayTeamId = (SELECT id FROM teams WHERE abbreviation = 'TB')), (SELECT id FROM teams WHERE abbreviation = 'TB'),3, 1, 0, 0, 0, 0, 0, 1, 1, 0),
+  ((SELECT id FROM players WHERE firstName = 'Travis' AND lastName = 'd\'Arnaud' AND position = 'C'), (SELECT id FROM games WHERE startTime = '2019-06-06 13:10:00' AND homeTeamId = (SELECT id FROM teams WHERE abbreviation = 'DET') AND awayTeamId = (SELECT id FROM teams WHERE abbreviation = 'TB')), (SELECT id FROM teams WHERE abbreviation = 'TB'),3, 2, 2, 0, 0, 2, 4, 1, 1, 0),
+  ((SELECT id FROM players WHERE firstName = 'Yandy' AND lastName = 'Diaz' AND position = '3B'), (SELECT id FROM games WHERE startTime = '2019-06-06 13:10:00' AND homeTeamId = (SELECT id FROM teams WHERE abbreviation = 'DET') AND awayTeamId = (SELECT id FROM teams WHERE abbreviation = 'TB')), (SELECT id FROM teams WHERE abbreviation = 'TB'),5, 1, 3, 0, 0, 0, 0, 0, 0, 0),
+  ((SELECT id FROM players WHERE firstName = 'Avisail' AND lastName = 'Garcia' AND position = 'RF'), (SELECT id FROM games WHERE startTime = '2019-06-06 13:10:00' AND homeTeamId = (SELECT id FROM teams WHERE abbreviation = 'DET') AND awayTeamId = (SELECT id FROM teams WHERE abbreviation = 'TB')), (SELECT id FROM teams WHERE abbreviation = 'TB'),5, 0, 2, 1, 0, 0, 0, 0, 1, 0),
+  ((SELECT id FROM players WHERE firstName = 'Kevin' AND lastName = 'Kiermaier' AND position = 'CF'), (SELECT id FROM games WHERE startTime = '2019-06-06 13:10:00' AND homeTeamId = (SELECT id FROM teams WHERE abbreviation = 'DET') AND awayTeamId = (SELECT id FROM teams WHERE abbreviation = 'TB')), (SELECT id FROM teams WHERE abbreviation = 'TB'),3, 1, 2, 1, 0, 0, 0, 0, 1, 0),
+  ((SELECT id FROM players WHERE firstName = 'Austin' AND lastName = 'Meadows' AND position = 'CF'), (SELECT id FROM games WHERE startTime = '2019-06-06 13:10:00' AND homeTeamId = (SELECT id FROM teams WHERE abbreviation = 'DET') AND awayTeamId = (SELECT id FROM teams WHERE abbreviation = 'TB')), (SELECT id FROM teams WHERE abbreviation = 'TB'),5, 0, 1, 0, 0, 0, 1, 0, 2, 0),
+  ((SELECT id FROM players WHERE firstName = 'Tommy' AND lastName = 'Pham' AND position = 'CF'), (SELECT id FROM games WHERE startTime = '2019-06-06 13:10:00' AND homeTeamId = (SELECT id FROM teams WHERE abbreviation = 'DET') AND awayTeamId = (SELECT id FROM teams WHERE abbreviation = 'TB')), (SELECT id FROM teams WHERE abbreviation = 'TB'),5, 0, 0, 0, 0, 0, 0, 0, 1, 0),
+  ((SELECT id FROM players WHERE firstName = 'Daniel' AND lastName = 'Robertson' AND position = '2B'), (SELECT id FROM games WHERE startTime = '2019-06-06 13:10:00' AND homeTeamId = (SELECT id FROM teams WHERE abbreviation = 'DET') AND awayTeamId = (SELECT id FROM teams WHERE abbreviation = 'TB')), (SELECT id FROM teams WHERE abbreviation = 'TB'),4, 0, 2, 1, 0, 0, 0, 0, 1, 0),
+  ((SELECT id FROM players WHERE firstName = 'Edwin' AND lastName = 'Encarnacion' AND position = 'DH'), (SELECT id FROM games WHERE startTime = '2019-06-06 15:40:00' AND homeTeamId = (SELECT id FROM teams WHERE abbreviation = 'SEA') AND awayTeamId = (SELECT id FROM teams WHERE abbreviation = 'HOU')), (SELECT id FROM teams WHERE abbreviation = 'SEA'),5, 2, 2, 1, 0, 0, 1, 2, 1, 0),
+  ((SELECT id FROM players WHERE firstName = 'Mitch' AND lastName = 'Haniger' AND position = 'RF'), (SELECT id FROM games WHERE startTime = '2019-06-06 15:40:00' AND homeTeamId = (SELECT id FROM teams WHERE abbreviation = 'SEA') AND awayTeamId = (SELECT id FROM teams WHERE abbreviation = 'HOU')), (SELECT id FROM teams WHERE abbreviation = 'SEA'),3, 0, 0, 0, 0, 0, 0, 0, 2, 0),
+  ((SELECT id FROM players WHERE firstName = 'Shed' AND lastName = 'Long' AND position = '2B'), (SELECT id FROM games WHERE startTime = '2019-06-06 15:40:00' AND homeTeamId = (SELECT id FROM teams WHERE abbreviation = 'SEA') AND awayTeamId = (SELECT id FROM teams WHERE abbreviation = 'HOU')), (SELECT id FROM teams WHERE abbreviation = 'SEA'),7, 1, 0, 0, 0, 0, 1, 0, 4, 0),
+  ((SELECT id FROM players WHERE firstName = 'Dylan' AND lastName = 'Moore' AND position = '3B'), (SELECT id FROM games WHERE startTime = '2019-06-06 15:40:00' AND homeTeamId = (SELECT id FROM teams WHERE abbreviation = 'SEA') AND awayTeamId = (SELECT id FROM teams WHERE abbreviation = 'HOU')), (SELECT id FROM teams WHERE abbreviation = 'SEA'),5, 1, 2, 0, 0, 0, 1, 1, 1, 1),
+  ((SELECT id FROM players WHERE firstName = 'Omar' AND lastName = 'Narvaez' AND position = 'C'), (SELECT id FROM games WHERE startTime = '2019-06-06 15:40:00' AND homeTeamId = (SELECT id FROM teams WHERE abbreviation = 'SEA') AND awayTeamId = (SELECT id FROM teams WHERE abbreviation = 'HOU')), (SELECT id FROM teams WHERE abbreviation = 'SEA'),6, 1, 2, 0, 0, 1, 1, 1, 2, 0),
+  ((SELECT id FROM players WHERE firstName = 'Domingo' AND lastName = 'Santana' AND position = 'RF'), (SELECT id FROM games WHERE startTime = '2019-06-06 15:40:00' AND homeTeamId = (SELECT id FROM teams WHERE abbreviation = 'SEA') AND awayTeamId = (SELECT id FROM teams WHERE abbreviation = 'HOU')), (SELECT id FROM teams WHERE abbreviation = 'SEA'),6, 1, 2, 0, 0, 0, 1, 1, 1, 0),
+  ((SELECT id FROM players WHERE firstName = 'Kyle' AND lastName = 'Seager' AND position = '3B'), (SELECT id FROM games WHERE startTime = '2019-06-06 15:40:00' AND homeTeamId = (SELECT id FROM teams WHERE abbreviation = 'SEA') AND awayTeamId = (SELECT id FROM teams WHERE abbreviation = 'HOU')), (SELECT id FROM teams WHERE abbreviation = 'SEA'),7, 0, 0, 0, 0, 0, 0, 0, 2, 0),
+  ((SELECT id FROM players WHERE firstName = 'Mallex' AND lastName = 'Smith' AND position = 'CF'), (SELECT id FROM games WHERE startTime = '2019-06-06 15:40:00' AND homeTeamId = (SELECT id FROM teams WHERE abbreviation = 'SEA') AND awayTeamId = (SELECT id FROM teams WHERE abbreviation = 'HOU')), (SELECT id FROM teams WHERE abbreviation = 'SEA'),6, 0, 1, 0, 0, 0, 1, 1, 1, 1),
+  ((SELECT id FROM players WHERE firstName = 'Daniel' AND lastName = 'Vogelbach' AND position = '1B'), (SELECT id FROM games WHERE startTime = '2019-06-06 15:40:00' AND homeTeamId = (SELECT id FROM teams WHERE abbreviation = 'SEA') AND awayTeamId = (SELECT id FROM teams WHERE abbreviation = 'HOU')), (SELECT id FROM teams WHERE abbreviation = 'SEA'),5, 1, 2, 0, 0, 0, 1, 2, 1, 0),
+  ((SELECT id FROM players WHERE firstName = 'Andrew' AND lastName = 'Benintendi' AND position = 'LF'), (SELECT id FROM games WHERE startTime = '2019-06-06 13:15:00' AND homeTeamId = (SELECT id FROM teams WHERE abbreviation = 'KC') AND awayTeamId = (SELECT id FROM teams WHERE abbreviation = 'BOS')), (SELECT id FROM teams WHERE abbreviation = 'BOS'),5, 1, 1, 0, 0, 0, 0, 0, 2, 0),
+  ((SELECT id FROM players WHERE firstName = 'Mookie' AND lastName = 'Betts' AND position = 'RF'), (SELECT id FROM games WHERE startTime = '2019-06-06 13:15:00' AND homeTeamId = (SELECT id FROM teams WHERE abbreviation = 'KC') AND awayTeamId = (SELECT id FROM teams WHERE abbreviation = 'BOS')), (SELECT id FROM teams WHERE abbreviation = 'BOS'),3, 1, 1, 0, 0, 1, 2, 2, 0, 0),
+  ((SELECT id FROM players WHERE firstName = 'Xander' AND lastName = 'Bogaerts' AND position = 'SS'), (SELECT id FROM games WHERE startTime = '2019-06-06 13:15:00' AND homeTeamId = (SELECT id FROM teams WHERE abbreviation = 'KC') AND awayTeamId = (SELECT id FROM teams WHERE abbreviation = 'BOS')), (SELECT id FROM teams WHERE abbreviation = 'BOS'),4, 1, 1, 0, 0, 0, 0, 1, 1, 1),
+  ((SELECT id FROM players WHERE firstName = 'Jackie' AND lastName = 'Bradley Jr.' AND position = 'CF'), (SELECT id FROM games WHERE startTime = '2019-06-06 13:15:00' AND homeTeamId = (SELECT id FROM teams WHERE abbreviation = 'KC') AND awayTeamId = (SELECT id FROM teams WHERE abbreviation = 'BOS')), (SELECT id FROM teams WHERE abbreviation = 'BOS'),2, 1, 0, 0, 0, 0, 0, 1, 1, 0),
+  ((SELECT id FROM players WHERE firstName = 'Michael' AND lastName = 'Chavis' AND position = '3B'), (SELECT id FROM games WHERE startTime = '2019-06-06 13:15:00' AND homeTeamId = (SELECT id FROM teams WHERE abbreviation = 'KC') AND awayTeamId = (SELECT id FROM teams WHERE abbreviation = 'BOS')), (SELECT id FROM teams WHERE abbreviation = 'BOS'),4, 0, 0, 0, 0, 0, 0, 0, 3, 0),
+  ((SELECT id FROM players WHERE firstName = 'Rafael' AND lastName = 'Devers' AND position = '3B'), (SELECT id FROM games WHERE startTime = '2019-06-06 13:15:00' AND homeTeamId = (SELECT id FROM teams WHERE abbreviation = 'KC') AND awayTeamId = (SELECT id FROM teams WHERE abbreviation = 'BOS')), (SELECT id FROM teams WHERE abbreviation = 'BOS'),3, 1, 1, 0, 0, 0, 2, 2, 0, 0),
+  ((SELECT id FROM players WHERE firstName = 'J.D.' AND lastName = 'Martinez' AND position = 'LF'), (SELECT id FROM games WHERE startTime = '2019-06-06 13:15:00' AND homeTeamId = (SELECT id FROM teams WHERE abbreviation = 'KC') AND awayTeamId = (SELECT id FROM teams WHERE abbreviation = 'BOS')), (SELECT id FROM teams WHERE abbreviation = 'BOS'),2, 1, 1, 1, 0, 0, 0, 0, 0, 0),
+  ((SELECT id FROM players WHERE firstName = 'Eduardo' AND lastName = 'Nunez' AND position = '2B'), (SELECT id FROM games WHERE startTime = '2019-06-06 13:15:00' AND homeTeamId = (SELECT id FROM teams WHERE abbreviation = 'KC') AND awayTeamId = (SELECT id FROM teams WHERE abbreviation = 'BOS')), (SELECT id FROM teams WHERE abbreviation = 'BOS'),4, 0, 3, 0, 0, 0, 0, 0, 0, 1),
+  ((SELECT id FROM players WHERE firstName = 'Christian' AND lastName = 'Vazquez' AND position = 'C'), (SELECT id FROM games WHERE startTime = '2019-06-06 13:15:00' AND homeTeamId = (SELECT id FROM teams WHERE abbreviation = 'KC') AND awayTeamId = (SELECT id FROM teams WHERE abbreviation = 'BOS')), (SELECT id FROM teams WHERE abbreviation = 'BOS'),4, 1, 1, 0, 1, 0, 2, 0, 0, 0),
+  ((SELECT id FROM players WHERE firstName = 'Mark' AND lastName = 'Canha' AND position = '1B'), (SELECT id FROM games WHERE startTime = '2019-06-06 22:07:00' AND homeTeamId = (SELECT id FROM teams WHERE abbreviation = 'LAA') AND awayTeamId = (SELECT id FROM teams WHERE abbreviation = 'OAK')), (SELECT id FROM teams WHERE abbreviation = 'OAK'),1, 1, 1, 0, 0, 0, 0, 3, 0, 0),
+  ((SELECT id FROM players WHERE firstName = 'Matt' AND lastName = 'Chapman' AND position = '3B'), (SELECT id FROM games WHERE startTime = '2019-06-06 22:07:00' AND homeTeamId = (SELECT id FROM teams WHERE abbreviation = 'LAA') AND awayTeamId = (SELECT id FROM teams WHERE abbreviation = 'OAK')), (SELECT id FROM teams WHERE abbreviation = 'OAK'),4, 1, 0, 0, 0, 0, 0, 1, 2, 0),
+  ((SELECT id FROM players WHERE firstName = 'Khris' AND lastName = 'Davis' AND position = 'LF'), (SELECT id FROM games WHERE startTime = '2019-06-06 22:07:00' AND homeTeamId = (SELECT id FROM teams WHERE abbreviation = 'LAA') AND awayTeamId = (SELECT id FROM teams WHERE abbreviation = 'OAK')), (SELECT id FROM teams WHERE abbreviation = 'OAK'),5, 1, 2, 0, 0, 0, 1, 0, 2, 0),
+  ((SELECT id FROM players WHERE firstName = 'Ramon' AND lastName = 'Laureano' AND position = 'CF'), (SELECT id FROM games WHERE startTime = '2019-06-06 22:07:00' AND homeTeamId = (SELECT id FROM teams WHERE abbreviation = 'LAA') AND awayTeamId = (SELECT id FROM teams WHERE abbreviation = 'OAK')), (SELECT id FROM teams WHERE abbreviation = 'OAK'),4, 1, 1, 0, 0, 0, 2, 0, 0, 0),
+  ((SELECT id FROM players WHERE firstName = 'Josh' AND lastName = 'Phegley' AND position = 'C'), (SELECT id FROM games WHERE startTime = '2019-06-06 22:07:00' AND homeTeamId = (SELECT id FROM teams WHERE abbreviation = 'LAA') AND awayTeamId = (SELECT id FROM teams WHERE abbreviation = 'OAK')), (SELECT id FROM teams WHERE abbreviation = 'OAK'),3, 0, 0, 0, 0, 0, 1, 0, 0, 0),
+  ((SELECT id FROM players WHERE firstName = 'Chad' AND lastName = 'Pinder' AND position = 'SS'), (SELECT id FROM games WHERE startTime = '2019-06-06 22:07:00' AND homeTeamId = (SELECT id FROM teams WHERE abbreviation = 'LAA') AND awayTeamId = (SELECT id FROM teams WHERE abbreviation = 'OAK')), (SELECT id FROM teams WHERE abbreviation = 'OAK'),4, 1, 0, 0, 0, 0, 0, 1, 2, 0),
+  ((SELECT id FROM players WHERE firstName = 'Stephen' AND lastName = 'Piscotty' AND position = 'RF'), (SELECT id FROM games WHERE startTime = '2019-06-06 22:07:00' AND homeTeamId = (SELECT id FROM teams WHERE abbreviation = 'LAA') AND awayTeamId = (SELECT id FROM teams WHERE abbreviation = 'OAK')), (SELECT id FROM teams WHERE abbreviation = 'OAK'),5, 2, 2, 0, 0, 1, 1, 0, 1, 0),
+  ((SELECT id FROM players WHERE firstName = 'Jurickson' AND lastName = 'Profar' AND position = 'SS'), (SELECT id FROM games WHERE startTime = '2019-06-06 22:07:00' AND homeTeamId = (SELECT id FROM teams WHERE abbreviation = 'LAA') AND awayTeamId = (SELECT id FROM teams WHERE abbreviation = 'OAK')), (SELECT id FROM teams WHERE abbreviation = 'OAK'),3, 0, 1, 0, 0, 0, 1, 1, 1, 0),
+  ((SELECT id FROM players WHERE firstName = 'Marcus' AND lastName = 'Semien' AND position = 'SS'), (SELECT id FROM games WHERE startTime = '2019-06-06 22:07:00' AND homeTeamId = (SELECT id FROM teams WHERE abbreviation = 'LAA') AND awayTeamId = (SELECT id FROM teams WHERE abbreviation = 'OAK')), (SELECT id FROM teams WHERE abbreviation = 'OAK'),5, 0, 1, 0, 0, 0, 0, 0, 2, 0),
+  ((SELECT id FROM players WHERE firstName = 'Jesus' AND lastName = 'Aguilar' AND position = '1B'), (SELECT id FROM games WHERE startTime = '2019-06-06 14:10:00' AND homeTeamId = (SELECT id FROM teams WHERE abbreviation = 'MIL') AND awayTeamId = (SELECT id FROM teams WHERE abbreviation = 'MIA')), (SELECT id FROM teams WHERE abbreviation = 'MIL'),4, 0, 1, 0, 0, 0, 0, 0, 1, 0),
+  ((SELECT id FROM players WHERE firstName = 'Orlando' AND lastName = 'Arcia' AND position = 'SS'), (SELECT id FROM games WHERE startTime = '2019-06-06 14:10:00' AND homeTeamId = (SELECT id FROM teams WHERE abbreviation = 'MIL') AND awayTeamId = (SELECT id FROM teams WHERE abbreviation = 'MIA')), (SELECT id FROM teams WHERE abbreviation = 'MIL'),4, 0, 0, 0, 0, 0, 0, 0, 0, 0),
+  ((SELECT id FROM players WHERE firstName = 'Ryan' AND lastName = 'Braun' AND position = 'LF'), (SELECT id FROM games WHERE startTime = '2019-06-06 14:10:00' AND homeTeamId = (SELECT id FROM teams WHERE abbreviation = 'MIL') AND awayTeamId = (SELECT id FROM teams WHERE abbreviation = 'MIA')), (SELECT id FROM teams WHERE abbreviation = 'MIL'),4, 0, 1, 0, 0, 0, 1, 0, 0, 0),
+  ((SELECT id FROM players WHERE firstName = 'Lorenzo' AND lastName = 'Cain' AND position = 'CF'), (SELECT id FROM games WHERE startTime = '2019-06-06 14:10:00' AND homeTeamId = (SELECT id FROM teams WHERE abbreviation = 'MIL') AND awayTeamId = (SELECT id FROM teams WHERE abbreviation = 'MIA')), (SELECT id FROM teams WHERE abbreviation = 'MIL'),3, 2, 2, 0, 0, 0, 0, 1, 0, 1),
+  ((SELECT id FROM players WHERE firstName = 'Mike' AND lastName = 'Moustakas' AND position = '2B'), (SELECT id FROM games WHERE startTime = '2019-06-06 14:10:00' AND homeTeamId = (SELECT id FROM teams WHERE abbreviation = 'MIL') AND awayTeamId = (SELECT id FROM teams WHERE abbreviation = 'MIA')), (SELECT id FROM teams WHERE abbreviation = 'MIL'),4, 2, 2, 0, 0, 2, 2, 0, 0, 0),
+  ((SELECT id FROM players WHERE firstName = 'Hernan' AND lastName = 'Perez' AND position = '3B'), (SELECT id FROM games WHERE startTime = '2019-06-06 14:10:00' AND homeTeamId = (SELECT id FROM teams WHERE abbreviation = 'MIL') AND awayTeamId = (SELECT id FROM teams WHERE abbreviation = 'MIA')), (SELECT id FROM teams WHERE abbreviation = 'MIL'),4, 0, 0, 0, 0, 0, 0, 0, 1, 0),
+  ((SELECT id FROM players WHERE firstName = 'Manny' AND lastName = 'Pina' AND position = 'C'), (SELECT id FROM games WHERE startTime = '2019-06-06 14:10:00' AND homeTeamId = (SELECT id FROM teams WHERE abbreviation = 'MIL') AND awayTeamId = (SELECT id FROM teams WHERE abbreviation = 'MIA')), (SELECT id FROM teams WHERE abbreviation = 'MIL'),2, 0, 0, 0, 0, 0, 0, 1, 1, 0),
+  ((SELECT id FROM players WHERE firstName = 'Christian' AND lastName = 'Yelich' AND position = 'RF'), (SELECT id FROM games WHERE startTime = '2019-06-06 14:10:00' AND homeTeamId = (SELECT id FROM teams WHERE abbreviation = 'MIL') AND awayTeamId = (SELECT id FROM teams WHERE abbreviation = 'MIA')), (SELECT id FROM teams WHERE abbreviation = 'MIL'),4, 1, 3, 0, 0, 1, 2, 0, 1, 1),
+  ((SELECT id FROM players WHERE firstName = 'Jorge' AND lastName = 'Alfaro' AND position = 'C'), (SELECT id FROM games WHERE startTime = '2019-06-06 14:10:00' AND homeTeamId = (SELECT id FROM teams WHERE abbreviation = 'MIL') AND awayTeamId = (SELECT id FROM teams WHERE abbreviation = 'MIA')), (SELECT id FROM teams WHERE abbreviation = 'MIA'),4, 0, 0, 0, 0, 0, 0, 0, 2, 0),
+  ((SELECT id FROM players WHERE firstName = 'Brian' AND lastName = 'Anderson' AND position = '3B'), (SELECT id FROM games WHERE startTime = '2019-06-06 14:10:00' AND homeTeamId = (SELECT id FROM teams WHERE abbreviation = 'MIL') AND awayTeamId = (SELECT id FROM teams WHERE abbreviation = 'MIA')), (SELECT id FROM teams WHERE abbreviation = 'MIA'),3, 0, 0, 0, 0, 0, 0, 0, 1, 0),
+  ((SELECT id FROM players WHERE firstName = 'Starlin' AND lastName = 'Castro' AND position = '2B'), (SELECT id FROM games WHERE startTime = '2019-06-06 14:10:00' AND homeTeamId = (SELECT id FROM teams WHERE abbreviation = 'MIL') AND awayTeamId = (SELECT id FROM teams WHERE abbreviation = 'MIA')), (SELECT id FROM teams WHERE abbreviation = 'MIA'),4, 0, 0, 0, 0, 0, 0, 0, 2, 0),
+  ((SELECT id FROM players WHERE firstName = 'Garrett' AND lastName = 'Cooper' AND position = 'LF'), (SELECT id FROM games WHERE startTime = '2019-06-06 14:10:00' AND homeTeamId = (SELECT id FROM teams WHERE abbreviation = 'MIL') AND awayTeamId = (SELECT id FROM teams WHERE abbreviation = 'MIA')), (SELECT id FROM teams WHERE abbreviation = 'MIA'),3, 0, 1, 0, 0, 0, 1, 1, 1, 0),
+  ((SELECT id FROM players WHERE firstName = 'Austin' AND lastName = 'Dean' AND position = 'LF'), (SELECT id FROM games WHERE startTime = '2019-06-06 14:10:00' AND homeTeamId = (SELECT id FROM teams WHERE abbreviation = 'MIL') AND awayTeamId = (SELECT id FROM teams WHERE abbreviation = 'MIA')), (SELECT id FROM teams WHERE abbreviation = 'MIA'),4, 0, 1, 1, 0, 0, 0, 0, 0, 0),
+  ((SELECT id FROM players WHERE firstName = 'Harold' AND lastName = 'Ramirez' AND position = 'RF'), (SELECT id FROM games WHERE startTime = '2019-06-06 14:10:00' AND homeTeamId = (SELECT id FROM teams WHERE abbreviation = 'MIL') AND awayTeamId = (SELECT id FROM teams WHERE abbreviation = 'MIA')), (SELECT id FROM teams WHERE abbreviation = 'MIA'),4, 0, 0, 0, 0, 0, 0, 0, 3, 0),
+  ((SELECT id FROM players WHERE firstName = 'JT' AND lastName = 'Riddle' AND position = 'SS'), (SELECT id FROM games WHERE startTime = '2019-06-06 14:10:00' AND homeTeamId = (SELECT id FROM teams WHERE abbreviation = 'MIL') AND awayTeamId = (SELECT id FROM teams WHERE abbreviation = 'MIA')), (SELECT id FROM teams WHERE abbreviation = 'MIA'),3, 0, 1, 1, 0, 0, 0, 0, 1, 0),
+  ((SELECT id FROM players WHERE firstName = 'Miguel' AND lastName = 'Rojas' AND position = 'SS'), (SELECT id FROM games WHERE startTime = '2019-06-06 14:10:00' AND homeTeamId = (SELECT id FROM teams WHERE abbreviation = 'MIL') AND awayTeamId = (SELECT id FROM teams WHERE abbreviation = 'MIA')), (SELECT id FROM teams WHERE abbreviation = 'MIA'),4, 0, 0, 0, 0, 0, 0, 0, 3, 0),
+  ((SELECT id FROM players WHERE firstName = 'Jake' AND lastName = 'Bauers' AND position = 'LF'), (SELECT id FROM games WHERE startTime = '2019-06-06 19:00:00' AND homeTeamId = (SELECT id FROM teams WHERE abbreviation = 'CLE') AND awayTeamId = (SELECT id FROM teams WHERE abbreviation = 'MIN')), (SELECT id FROM teams WHERE abbreviation = 'CLE'),4, 0, 0, 0, 0, 0, 0, 0, 4, 0),
+  ((SELECT id FROM players WHERE firstName = 'Jason' AND lastName = 'Kipnis' AND position = '2B'), (SELECT id FROM games WHERE startTime = '2019-06-06 19:00:00' AND homeTeamId = (SELECT id FROM teams WHERE abbreviation = 'CLE') AND awayTeamId = (SELECT id FROM teams WHERE abbreviation = 'MIN')), (SELECT id FROM teams WHERE abbreviation = 'CLE'),4, 0, 0, 0, 0, 0, 0, 0, 1, 0),
+  ((SELECT id FROM players WHERE firstName = 'Francisco' AND lastName = 'Lindor' AND position = 'SS'), (SELECT id FROM games WHERE startTime = '2019-06-06 19:00:00' AND homeTeamId = (SELECT id FROM teams WHERE abbreviation = 'CLE') AND awayTeamId = (SELECT id FROM teams WHERE abbreviation = 'MIN')), (SELECT id FROM teams WHERE abbreviation = 'CLE'),4, 0, 0, 0, 0, 0, 0, 0, 1, 0),
+  ((SELECT id FROM players WHERE firstName = 'Jordan' AND lastName = 'Luplow' AND position = 'RF'), (SELECT id FROM games WHERE startTime = '2019-06-06 19:00:00' AND homeTeamId = (SELECT id FROM teams WHERE abbreviation = 'CLE') AND awayTeamId = (SELECT id FROM teams WHERE abbreviation = 'MIN')), (SELECT id FROM teams WHERE abbreviation = 'CLE'),3, 1, 0, 0, 0, 0, 0, 1, 1, 0),
+  ((SELECT id FROM players WHERE firstName = 'Leonys' AND lastName = 'Martin' AND position = 'CF'), (SELECT id FROM games WHERE startTime = '2019-06-06 19:00:00' AND homeTeamId = (SELECT id FROM teams WHERE abbreviation = 'CLE') AND awayTeamId = (SELECT id FROM teams WHERE abbreviation = 'MIN')), (SELECT id FROM teams WHERE abbreviation = 'CLE'),3, 0, 0, 0, 0, 0, 0, 0, 1, 0),
+  ((SELECT id FROM players WHERE firstName = 'Tyler' AND lastName = 'Naquin' AND position = 'CF'), (SELECT id FROM games WHERE startTime = '2019-06-06 19:00:00' AND homeTeamId = (SELECT id FROM teams WHERE abbreviation = 'CLE') AND awayTeamId = (SELECT id FROM teams WHERE abbreviation = 'MIN')), (SELECT id FROM teams WHERE abbreviation = 'CLE'),3, 0, 1, 0, 0, 0, 1, 0, 1, 0),
+  ((SELECT id FROM players WHERE firstName = 'Roberto' AND lastName = 'Perez' AND position = 'C'), (SELECT id FROM games WHERE startTime = '2019-06-06 19:00:00' AND homeTeamId = (SELECT id FROM teams WHERE abbreviation = 'CLE') AND awayTeamId = (SELECT id FROM teams WHERE abbreviation = 'MIN')), (SELECT id FROM teams WHERE abbreviation = 'CLE'),2, 1, 1, 0, 0, 1, 2, 1, 0, 0),
+  ((SELECT id FROM players WHERE firstName = 'Jose' AND lastName = 'Ramirez' AND position = '2B'), (SELECT id FROM games WHERE startTime = '2019-06-06 19:00:00' AND homeTeamId = (SELECT id FROM teams WHERE abbreviation = 'CLE') AND awayTeamId = (SELECT id FROM teams WHERE abbreviation = 'MIN')), (SELECT id FROM teams WHERE abbreviation = 'CLE'),4, 1, 0, 0, 0, 0, 0, 0, 0, 0),
+  ((SELECT id FROM players WHERE firstName = 'Carlos' AND lastName = 'Santana' AND position = '1B'), (SELECT id FROM games WHERE startTime = '2019-06-06 19:00:00' AND homeTeamId = (SELECT id FROM teams WHERE abbreviation = 'CLE') AND awayTeamId = (SELECT id FROM teams WHERE abbreviation = 'MIN')), (SELECT id FROM teams WHERE abbreviation = 'CLE'),4, 0, 1, 1, 0, 0, 0, 0, 0, 0),
+  ((SELECT id FROM players WHERE firstName = 'Brandon' AND lastName = 'Belt' AND position = '1B'), (SELECT id FROM games WHERE startTime = '2019-06-06 12:10:00' AND homeTeamId = (SELECT id FROM teams WHERE abbreviation = 'NYM') AND awayTeamId = (SELECT id FROM teams WHERE abbreviation = 'SF')), (SELECT id FROM teams WHERE abbreviation = 'SF'),4, 1, 1, 0, 0, 1, 2, 0, 2, 0),
+  ((SELECT id FROM players WHERE firstName = 'Brandon' AND lastName = 'Crawford' AND position = 'SS'), (SELECT id FROM games WHERE startTime = '2019-06-06 12:10:00' AND homeTeamId = (SELECT id FROM teams WHERE abbreviation = 'NYM') AND awayTeamId = (SELECT id FROM teams WHERE abbreviation = 'SF')), (SELECT id FROM teams WHERE abbreviation = 'SF'),2, 0, 0, 0, 0, 0, 0, 1, 0, 0),
+  ((SELECT id FROM players WHERE firstName = 'Steven' AND lastName = 'Duggar' AND position = 'CF'), (SELECT id FROM games WHERE startTime = '2019-06-06 12:10:00' AND homeTeamId = (SELECT id FROM teams WHERE abbreviation = 'NYM') AND awayTeamId = (SELECT id FROM teams WHERE abbreviation = 'SF')), (SELECT id FROM teams WHERE abbreviation = 'SF'),3, 0, 0, 0, 0, 0, 0, 0, 0, 0),
+  ((SELECT id FROM players WHERE firstName = 'Joe' AND lastName = 'Panik' AND position = '2B'), (SELECT id FROM games WHERE startTime = '2019-06-06 12:10:00' AND homeTeamId = (SELECT id FROM teams WHERE abbreviation = 'NYM') AND awayTeamId = (SELECT id FROM teams WHERE abbreviation = 'SF')), (SELECT id FROM teams WHERE abbreviation = 'SF'),4, 0, 0, 0, 0, 0, 0, 0, 0, 0),
+  ((SELECT id FROM players WHERE firstName = 'Kevin' AND lastName = 'Pillar' AND position = 'CF'), (SELECT id FROM games WHERE startTime = '2019-06-06 12:10:00' AND homeTeamId = (SELECT id FROM teams WHERE abbreviation = 'NYM') AND awayTeamId = (SELECT id FROM teams WHERE abbreviation = 'SF')), (SELECT id FROM teams WHERE abbreviation = 'SF'),3, 0, 0, 0, 0, 0, 0, 0, 1, 0),
+  ((SELECT id FROM players WHERE firstName = 'Pablo' AND lastName = 'Sandoval' AND position = '3B'), (SELECT id FROM games WHERE startTime = '2019-06-06 12:10:00' AND homeTeamId = (SELECT id FROM teams WHERE abbreviation = 'NYM') AND awayTeamId = (SELECT id FROM teams WHERE abbreviation = 'SF')), (SELECT id FROM teams WHERE abbreviation = 'SF'),4, 2, 1, 0, 0, 1, 1, 0, 1, 0),
+  ((SELECT id FROM players WHERE firstName = 'Stephen' AND lastName = 'Vogt' AND position = 'C'), (SELECT id FROM games WHERE startTime = '2019-06-06 12:10:00' AND homeTeamId = (SELECT id FROM teams WHERE abbreviation = 'NYM') AND awayTeamId = (SELECT id FROM teams WHERE abbreviation = 'SF')), (SELECT id FROM teams WHERE abbreviation = 'SF'),4, 0, 0, 0, 0, 0, 0, 0, 2, 0),
+  ((SELECT id FROM players WHERE firstName = 'Mike' AND lastName = 'Yastrzemski' AND position = 'LF'), (SELECT id FROM games WHERE startTime = '2019-06-06 12:10:00' AND homeTeamId = (SELECT id FROM teams WHERE abbreviation = 'NYM') AND awayTeamId = (SELECT id FROM teams WHERE abbreviation = 'SF')), (SELECT id FROM teams WHERE abbreviation = 'SF'),4, 0, 1, 0, 0, 0, 0, 0, 2, 0),
+  ((SELECT id FROM players WHERE firstName = 'Brandon' AND lastName = 'Drury' AND position = '3B'), (SELECT id FROM games WHERE startTime = '2019-06-06 19:00:00' AND homeTeamId = (SELECT id FROM teams WHERE abbreviation = 'TOR') AND awayTeamId = (SELECT id FROM teams WHERE abbreviation = 'NYY')), (SELECT id FROM teams WHERE abbreviation = 'TOR'),3, 0, 1, 0, 0, 0, 0, 0, 0, 0),
+  ((SELECT id FROM players WHERE firstName = 'Freddy' AND lastName = 'Galvis' AND position = 'SS'), (SELECT id FROM games WHERE startTime = '2019-06-06 19:00:00' AND homeTeamId = (SELECT id FROM teams WHERE abbreviation = 'TOR') AND awayTeamId = (SELECT id FROM teams WHERE abbreviation = 'NYY')), (SELECT id FROM teams WHERE abbreviation = 'TOR'),4, 0, 0, 0, 0, 0, 0, 0, 2, 0),
+  ((SELECT id FROM players WHERE firstName = 'Randal' AND lastName = 'Grichuk' AND position = 'LF'), (SELECT id FROM games WHERE startTime = '2019-06-06 19:00:00' AND homeTeamId = (SELECT id FROM teams WHERE abbreviation = 'TOR') AND awayTeamId = (SELECT id FROM teams WHERE abbreviation = 'NYY')), (SELECT id FROM teams WHERE abbreviation = 'TOR'),4, 0, 2, 0, 0, 0, 0, 0, 0, 0),
+  ((SELECT id FROM players WHERE firstName = 'Vladimir' AND lastName = 'Guerrero Jr.' AND position = '3B'), (SELECT id FROM games WHERE startTime = '2019-06-06 19:00:00' AND homeTeamId = (SELECT id FROM teams WHERE abbreviation = 'TOR') AND awayTeamId = (SELECT id FROM teams WHERE abbreviation = 'NYY')), (SELECT id FROM teams WHERE abbreviation = 'TOR'),4, 0, 0, 0, 0, 0, 0, 0, 0, 0),
+  ((SELECT id FROM players WHERE firstName = 'Lourdes' AND lastName = 'Gurriel Jr.' AND position = '2B'), (SELECT id FROM games WHERE startTime = '2019-06-06 19:00:00' AND homeTeamId = (SELECT id FROM teams WHERE abbreviation = 'TOR') AND awayTeamId = (SELECT id FROM teams WHERE abbreviation = 'NYY')), (SELECT id FROM teams WHERE abbreviation = 'TOR'),4, 0, 1, 0, 0, 0, 0, 0, 0, 0),
+  ((SELECT id FROM players WHERE firstName = 'Teoscar' AND lastName = 'Hernandez' AND position = 'RF'), (SELECT id FROM games WHERE startTime = '2019-06-06 19:00:00' AND homeTeamId = (SELECT id FROM teams WHERE abbreviation = 'TOR') AND awayTeamId = (SELECT id FROM teams WHERE abbreviation = 'NYY')), (SELECT id FROM teams WHERE abbreviation = 'TOR'),4, 0, 0, 0, 0, 0, 0, 0, 2, 0),
+  ((SELECT id FROM players WHERE firstName = 'Luke' AND lastName = 'Maile' AND position = 'C'), (SELECT id FROM games WHERE startTime = '2019-06-06 19:00:00' AND homeTeamId = (SELECT id FROM teams WHERE abbreviation = 'TOR') AND awayTeamId = (SELECT id FROM teams WHERE abbreviation = 'NYY')), (SELECT id FROM teams WHERE abbreviation = 'TOR'),3, 0, 1, 0, 0, 0, 0, 0, 0, 0),
+  ((SELECT id FROM players WHERE firstName = 'Justin' AND lastName = 'Smoak' AND position = '1B'), (SELECT id FROM games WHERE startTime = '2019-06-06 19:00:00' AND homeTeamId = (SELECT id FROM teams WHERE abbreviation = 'TOR') AND awayTeamId = (SELECT id FROM teams WHERE abbreviation = 'NYY')), (SELECT id FROM teams WHERE abbreviation = 'TOR'),4, 1, 1, 0, 0, 0, 0, 0, 0, 0),
+  ((SELECT id FROM players WHERE firstName = 'Eric' AND lastName = 'Sogard' AND position = '2B'), (SELECT id FROM games WHERE startTime = '2019-06-06 19:00:00' AND homeTeamId = (SELECT id FROM teams WHERE abbreviation = 'TOR') AND awayTeamId = (SELECT id FROM teams WHERE abbreviation = 'NYY')), (SELECT id FROM teams WHERE abbreviation = 'TOR'),4, 1, 2, 1, 0, 1, 1, 0, 0, 0),
+  ((SELECT id FROM players WHERE firstName = 'Kole' AND lastName = 'Calhoun' AND position = 'RF'), (SELECT id FROM games WHERE startTime = '2019-06-06 22:07:00' AND homeTeamId = (SELECT id FROM teams WHERE abbreviation = 'LAA') AND awayTeamId = (SELECT id FROM teams WHERE abbreviation = 'OAK')), (SELECT id FROM teams WHERE abbreviation = 'LAA'),4, 0, 2, 0, 0, 0, 0, 0, 0, 1),
+  ((SELECT id FROM players WHERE firstName = 'David' AND lastName = 'Fletcher' AND position = 'SS'), (SELECT id FROM games WHERE startTime = '2019-06-06 22:07:00' AND homeTeamId = (SELECT id FROM teams WHERE abbreviation = 'LAA') AND awayTeamId = (SELECT id FROM teams WHERE abbreviation = 'OAK')), (SELECT id FROM teams WHERE abbreviation = 'LAA'),4, 0, 1, 0, 0, 0, 0, 0, 0, 0),
+  ((SELECT id FROM players WHERE firstName = 'Dustin' AND lastName = 'Garneau' AND position = 'C'), (SELECT id FROM games WHERE startTime = '2019-06-06 22:07:00' AND homeTeamId = (SELECT id FROM teams WHERE abbreviation = 'LAA') AND awayTeamId = (SELECT id FROM teams WHERE abbreviation = 'OAK')), (SELECT id FROM teams WHERE abbreviation = 'LAA'),4, 0, 0, 0, 0, 0, 0, 0, 1, 0),
+  ((SELECT id FROM players WHERE firstName = 'Brian' AND lastName = 'Goodwin' AND position = 'CF'), (SELECT id FROM games WHERE startTime = '2019-06-06 22:07:00' AND homeTeamId = (SELECT id FROM teams WHERE abbreviation = 'LAA') AND awayTeamId = (SELECT id FROM teams WHERE abbreviation = 'OAK')), (SELECT id FROM teams WHERE abbreviation = 'LAA'),2, 0, 0, 0, 0, 0, 1, 1, 1, 0),
+  ((SELECT id FROM players WHERE firstName = 'Tommy' AND lastName = 'La Stella' AND position = '3B'), (SELECT id FROM games WHERE startTime = '2019-06-06 22:07:00' AND homeTeamId = (SELECT id FROM teams WHERE abbreviation = 'LAA') AND awayTeamId = (SELECT id FROM teams WHERE abbreviation = 'OAK')), (SELECT id FROM teams WHERE abbreviation = 'LAA'),5, 1, 2, 0, 0, 0, 1, 0, 0, 0),
+  ((SELECT id FROM players WHERE firstName = 'Shohei' AND lastName = 'Ohtani' AND position = 'DH'), (SELECT id FROM games WHERE startTime = '2019-06-06 22:07:00' AND homeTeamId = (SELECT id FROM teams WHERE abbreviation = 'LAA') AND awayTeamId = (SELECT id FROM teams WHERE abbreviation = 'OAK')), (SELECT id FROM teams WHERE abbreviation = 'LAA'),4, 1, 1, 0, 0, 0, 0, 0, 0, 0),
+  ((SELECT id FROM players WHERE firstName = 'Luis' AND lastName = 'Rengifo' AND position = '2B'), (SELECT id FROM games WHERE startTime = '2019-06-06 22:07:00' AND homeTeamId = (SELECT id FROM teams WHERE abbreviation = 'LAA') AND awayTeamId = (SELECT id FROM teams WHERE abbreviation = 'OAK')), (SELECT id FROM teams WHERE abbreviation = 'LAA'),4, 0, 1, 1, 0, 0, 0, 0, 1, 0),
+  ((SELECT id FROM players WHERE firstName = 'Mike' AND lastName = 'Trout' AND position = 'CF'), (SELECT id FROM games WHERE startTime = '2019-06-06 22:07:00' AND homeTeamId = (SELECT id FROM teams WHERE abbreviation = 'LAA') AND awayTeamId = (SELECT id FROM teams WHERE abbreviation = 'OAK')), (SELECT id FROM teams WHERE abbreviation = 'LAA'),4, 1, 1, 0, 0, 1, 2, 1, 1, 0),
+  ((SELECT id FROM players WHERE firstName = 'Jared' AND lastName = 'Walsh' AND position = '1B'), (SELECT id FROM games WHERE startTime = '2019-06-06 22:07:00' AND homeTeamId = (SELECT id FROM teams WHERE abbreviation = 'LAA') AND awayTeamId = (SELECT id FROM teams WHERE abbreviation = 'OAK')), (SELECT id FROM teams WHERE abbreviation = 'LAA'),4, 1, 1, 1, 0, 0, 0, 0, 1, 0),
+  ((SELECT id FROM players WHERE firstName = 'Ronald' AND lastName = 'Acuna Jr.' AND position = 'LF'), (SELECT id FROM games WHERE startTime = '2019-06-06 12:35:00' AND homeTeamId = (SELECT id FROM teams WHERE abbreviation = 'PIT') AND awayTeamId = (SELECT id FROM teams WHERE abbreviation = 'ATL')), (SELECT id FROM teams WHERE abbreviation = 'ATL'),4, 0, 1, 0, 0, 0, 0, 1, 1, 0),
+  ((SELECT id FROM players WHERE firstName = 'Ozzie' AND lastName = 'Albies' AND position = '2B'), (SELECT id FROM games WHERE startTime = '2019-06-06 12:35:00' AND homeTeamId = (SELECT id FROM teams WHERE abbreviation = 'PIT') AND awayTeamId = (SELECT id FROM teams WHERE abbreviation = 'ATL')), (SELECT id FROM teams WHERE abbreviation = 'ATL'),3, 0, 1, 0, 0, 0, 0, 1, 1, 0),
+  ((SELECT id FROM players WHERE firstName = 'Josh' AND lastName = 'Donaldson' AND position = '3B'), (SELECT id FROM games WHERE startTime = '2019-06-06 12:35:00' AND homeTeamId = (SELECT id FROM teams WHERE abbreviation = 'PIT') AND awayTeamId = (SELECT id FROM teams WHERE abbreviation = 'ATL')), (SELECT id FROM teams WHERE abbreviation = 'ATL'),4, 0, 0, 0, 0, 0, 0, 0, 1, 1),
+  ((SELECT id FROM players WHERE firstName = 'Freddie' AND lastName = 'Freeman' AND position = '1B'), (SELECT id FROM games WHERE startTime = '2019-06-06 12:35:00' AND homeTeamId = (SELECT id FROM teams WHERE abbreviation = 'PIT') AND awayTeamId = (SELECT id FROM teams WHERE abbreviation = 'ATL')), (SELECT id FROM teams WHERE abbreviation = 'ATL'),3, 1, 1, 0, 0, 1, 1, 1, 0, 0),
+  ((SELECT id FROM players WHERE firstName = 'Nick' AND lastName = 'Markakis' AND position = 'RF'), (SELECT id FROM games WHERE startTime = '2019-06-06 12:35:00' AND homeTeamId = (SELECT id FROM teams WHERE abbreviation = 'PIT') AND awayTeamId = (SELECT id FROM teams WHERE abbreviation = 'ATL')), (SELECT id FROM teams WHERE abbreviation = 'ATL'),4, 0, 0, 0, 0, 0, 0, 0, 0, 0),
+  ((SELECT id FROM players WHERE firstName = 'Brian' AND lastName = 'McCann' AND position = 'C'), (SELECT id FROM games WHERE startTime = '2019-06-06 12:35:00' AND homeTeamId = (SELECT id FROM teams WHERE abbreviation = 'PIT') AND awayTeamId = (SELECT id FROM teams WHERE abbreviation = 'ATL')), (SELECT id FROM teams WHERE abbreviation = 'ATL'),3, 0, 2, 1, 0, 0, 0, 0, 0, 0),
+  ((SELECT id FROM players WHERE firstName = 'Austin' AND lastName = 'Riley' AND position = '3B'), (SELECT id FROM games WHERE startTime = '2019-06-06 12:35:00' AND homeTeamId = (SELECT id FROM teams WHERE abbreviation = 'PIT') AND awayTeamId = (SELECT id FROM teams WHERE abbreviation = 'ATL')), (SELECT id FROM teams WHERE abbreviation = 'ATL'),4, 0, 2, 0, 0, 0, 0, 0, 2, 0),
+  ((SELECT id FROM players WHERE firstName = 'Dansby' AND lastName = 'Swanson' AND position = 'SS'), (SELECT id FROM games WHERE startTime = '2019-06-06 12:35:00' AND homeTeamId = (SELECT id FROM teams WHERE abbreviation = 'PIT') AND awayTeamId = (SELECT id FROM teams WHERE abbreviation = 'ATL')), (SELECT id FROM teams WHERE abbreviation = 'ATL'),4, 0, 0, 0, 0, 0, 0, 0, 2, 0),
+  ((SELECT id FROM players WHERE firstName = 'Brian' AND lastName = 'Dozier' AND position = '2B'), (SELECT id FROM games WHERE startTime = '2019-06-06 22:10:00' AND homeTeamId = (SELECT id FROM teams WHERE abbreviation = 'SD') AND awayTeamId = (SELECT id FROM teams WHERE abbreviation = 'WSH')), (SELECT id FROM teams WHERE abbreviation = 'WSH'),4, 1, 2, 1, 0, 1, 2, 0, 1, 0),
+  ((SELECT id FROM players WHERE firstName = 'Yan' AND lastName = 'Gomes' AND position = 'C'), (SELECT id FROM games WHERE startTime = '2019-06-06 22:10:00' AND homeTeamId = (SELECT id FROM teams WHERE abbreviation = 'SD') AND awayTeamId = (SELECT id FROM teams WHERE abbreviation = 'WSH')), (SELECT id FROM teams WHERE abbreviation = 'WSH'),3, 0, 0, 0, 0, 0, 0, 0, 2, 0),
+  ((SELECT id FROM players WHERE firstName = 'Howie' AND lastName = 'Kendrick' AND position = '2B'), (SELECT id FROM games WHERE startTime = '2019-06-06 22:10:00' AND homeTeamId = (SELECT id FROM teams WHERE abbreviation = 'SD') AND awayTeamId = (SELECT id FROM teams WHERE abbreviation = 'WSH')), (SELECT id FROM teams WHERE abbreviation = 'WSH'),4, 1, 1, 0, 0, 0, 2, 0, 1, 0),
+  ((SELECT id FROM players WHERE firstName = 'Anthony' AND lastName = 'Rendon' AND position = '3B'), (SELECT id FROM games WHERE startTime = '2019-06-06 22:10:00' AND homeTeamId = (SELECT id FROM teams WHERE abbreviation = 'SD') AND awayTeamId = (SELECT id FROM teams WHERE abbreviation = 'WSH')), (SELECT id FROM teams WHERE abbreviation = 'WSH'),3, 0, 0, 0, 0, 0, 0, 1, 1, 0),
+  ((SELECT id FROM players WHERE firstName = 'Victor' AND lastName = 'Robles' AND position = 'CF'), (SELECT id FROM games WHERE startTime = '2019-06-06 22:10:00' AND homeTeamId = (SELECT id FROM teams WHERE abbreviation = 'SD') AND awayTeamId = (SELECT id FROM teams WHERE abbreviation = 'WSH')), (SELECT id FROM teams WHERE abbreviation = 'WSH'),4, 1, 1, 1, 0, 0, 0, 0, 2, 0),
+  ((SELECT id FROM players WHERE firstName = 'Juan' AND lastName = 'Soto' AND position = 'LF'), (SELECT id FROM games WHERE startTime = '2019-06-06 22:10:00' AND homeTeamId = (SELECT id FROM teams WHERE abbreviation = 'SD') AND awayTeamId = (SELECT id FROM teams WHERE abbreviation = 'WSH')), (SELECT id FROM teams WHERE abbreviation = 'WSH'),3, 1, 0, 0, 0, 0, 0, 1, 0, 0),
+  ((SELECT id FROM players WHERE firstName = 'Michael' AND lastName = 'Taylor' AND position = 'CF'), (SELECT id FROM games WHERE startTime = '2019-06-06 22:10:00' AND homeTeamId = (SELECT id FROM teams WHERE abbreviation = 'SD') AND awayTeamId = (SELECT id FROM teams WHERE abbreviation = 'WSH')), (SELECT id FROM teams WHERE abbreviation = 'WSH'),3, 0, 0, 0, 0, 0, 0, 0, 1, 0),
+  ((SELECT id FROM players WHERE firstName = 'Trea' AND lastName = 'Turner' AND position = 'SS'), (SELECT id FROM games WHERE startTime = '2019-06-06 22:10:00' AND homeTeamId = (SELECT id FROM teams WHERE abbreviation = 'SD') AND awayTeamId = (SELECT id FROM teams WHERE abbreviation = 'WSH')), (SELECT id FROM teams WHERE abbreviation = 'WSH'),3, 0, 0, 0, 0, 0, 0, 1, 2, 0),
+  ((SELECT id FROM players WHERE firstName = 'Michael' AND lastName = 'Brantley' AND position = 'LF'), (SELECT id FROM games WHERE startTime = '2019-06-06 15:40:00' AND homeTeamId = (SELECT id FROM teams WHERE abbreviation = 'SEA') AND awayTeamId = (SELECT id FROM teams WHERE abbreviation = 'HOU')), (SELECT id FROM teams WHERE abbreviation = 'HOU'),5, 0, 1, 1, 0, 0, 0, 0, 1, 0),
+  ((SELECT id FROM players WHERE firstName = 'Alex' AND lastName = 'Bregman' AND position = '3B'), (SELECT id FROM games WHERE startTime = '2019-06-06 15:40:00' AND homeTeamId = (SELECT id FROM teams WHERE abbreviation = 'SEA') AND awayTeamId = (SELECT id FROM teams WHERE abbreviation = 'HOU')), (SELECT id FROM teams WHERE abbreviation = 'HOU'),6, 1, 3, 0, 0, 1, 1, 1, 0, 0),
+  ((SELECT id FROM players WHERE firstName = 'Robinson' AND lastName = 'Chirinos' AND position = 'C'), (SELECT id FROM games WHERE startTime = '2019-06-06 15:40:00' AND homeTeamId = (SELECT id FROM teams WHERE abbreviation = 'SEA') AND awayTeamId = (SELECT id FROM teams WHERE abbreviation = 'HOU')), (SELECT id FROM teams WHERE abbreviation = 'HOU'),3, 3, 1, 0, 0, 1, 2, 4, 2, 0),
+  ((SELECT id FROM players WHERE firstName = 'Derek' AND lastName = 'Fisher' AND position = 'CF'), (SELECT id FROM games WHERE startTime = '2019-06-06 15:40:00' AND homeTeamId = (SELECT id FROM teams WHERE abbreviation = 'SEA') AND awayTeamId = (SELECT id FROM teams WHERE abbreviation = 'HOU')), (SELECT id FROM teams WHERE abbreviation = 'HOU'),6, 1, 2, 0, 0, 0, 0, 0, 1, 0),
+  ((SELECT id FROM players WHERE firstName = 'Yuli' AND lastName = 'Gurriel' AND position = '1B'), (SELECT id FROM games WHERE startTime = '2019-06-06 15:40:00' AND homeTeamId = (SELECT id FROM teams WHERE abbreviation = 'SEA') AND awayTeamId = (SELECT id FROM teams WHERE abbreviation = 'HOU')), (SELECT id FROM teams WHERE abbreviation = 'HOU'),6, 1, 1, 0, 0, 0, 2, 0, 0, 0),
+  ((SELECT id FROM players WHERE firstName = 'Tony' AND lastName = 'Kemp' AND position = 'LF'), (SELECT id FROM games WHERE startTime = '2019-06-06 15:40:00' AND homeTeamId = (SELECT id FROM teams WHERE abbreviation = 'SEA') AND awayTeamId = (SELECT id FROM teams WHERE abbreviation = 'HOU')), (SELECT id FROM teams WHERE abbreviation = 'HOU'),4, 0, 1, 1, 0, 0, 1, 1, 1, 0),
+  ((SELECT id FROM players WHERE firstName = 'Jake' AND lastName = 'Marisnick' AND position = 'CF'), (SELECT id FROM games WHERE startTime = '2019-06-06 15:40:00' AND homeTeamId = (SELECT id FROM teams WHERE abbreviation = 'SEA') AND awayTeamId = (SELECT id FROM teams WHERE abbreviation = 'HOU')), (SELECT id FROM teams WHERE abbreviation = 'HOU'),5, 0, 0, 0, 0, 0, 0, 1, 1, 0),
+  ((SELECT id FROM players WHERE firstName = 'Jack' AND lastName = 'Mayfield' AND position = '2B'), (SELECT id FROM games WHERE startTime = '2019-06-06 15:40:00' AND homeTeamId = (SELECT id FROM teams WHERE abbreviation = 'SEA') AND awayTeamId = (SELECT id FROM teams WHERE abbreviation = 'HOU')), (SELECT id FROM teams WHERE abbreviation = 'HOU'),4, 1, 1, 0, 0, 1, 1, 0, 0, 0),
+  ((SELECT id FROM players WHERE firstName = 'Tyler' AND lastName = 'White' AND position = '2B'), (SELECT id FROM games WHERE startTime = '2019-06-06 15:40:00' AND homeTeamId = (SELECT id FROM teams WHERE abbreviation = 'SEA') AND awayTeamId = (SELECT id FROM teams WHERE abbreviation = 'HOU')), (SELECT id FROM teams WHERE abbreviation = 'HOU'),6, 0, 3, 0, 0, 0, 0, 1, 1, 0),
+  ((SELECT id FROM players WHERE firstName = 'Pete' AND lastName = 'Alonso' AND position = '1B'), (SELECT id FROM games WHERE startTime = '2019-06-06 12:10:00' AND homeTeamId = (SELECT id FROM teams WHERE abbreviation = 'NYM') AND awayTeamId = (SELECT id FROM teams WHERE abbreviation = 'SF')), (SELECT id FROM teams WHERE abbreviation = 'NYM'),4, 0, 1, 0, 0, 0, 0, 1, 1, 0),
+  ((SELECT id FROM players WHERE firstName = 'Michael' AND lastName = 'Conforto' AND position = 'RF'), (SELECT id FROM games WHERE startTime = '2019-06-06 12:10:00' AND homeTeamId = (SELECT id FROM teams WHERE abbreviation = 'NYM') AND awayTeamId = (SELECT id FROM teams WHERE abbreviation = 'SF')), (SELECT id FROM teams WHERE abbreviation = 'NYM'),3, 1, 1, 0, 0, 0, 0, 1, 0, 1),
+  ((SELECT id FROM players WHERE firstName = 'Todd' AND lastName = 'Frazier' AND position = '3B'), (SELECT id FROM games WHERE startTime = '2019-06-06 12:10:00' AND homeTeamId = (SELECT id FROM teams WHERE abbreviation = 'NYM') AND awayTeamId = (SELECT id FROM teams WHERE abbreviation = 'SF')), (SELECT id FROM teams WHERE abbreviation = 'NYM'),4, 1, 1, 0, 0, 1, 2, 0, 0, 0),
+  ((SELECT id FROM players WHERE firstName = 'Adeiny' AND lastName = 'Hechavarria' AND position = 'SS'), (SELECT id FROM games WHERE startTime = '2019-06-06 12:10:00' AND homeTeamId = (SELECT id FROM teams WHERE abbreviation = 'NYM') AND awayTeamId = (SELECT id FROM teams WHERE abbreviation = 'SF')), (SELECT id FROM teams WHERE abbreviation = 'NYM'),4, 1, 2, 0, 0, 0, 0, 0, 0, 0),
+  ((SELECT id FROM players WHERE firstName = 'Juan' AND lastName = 'Lagares' AND position = 'CF'), (SELECT id FROM games WHERE startTime = '2019-06-06 12:10:00' AND homeTeamId = (SELECT id FROM teams WHERE abbreviation = 'NYM') AND awayTeamId = (SELECT id FROM teams WHERE abbreviation = 'SF')), (SELECT id FROM teams WHERE abbreviation = 'NYM'),3, 2, 2, 1, 0, 0, 1, 1, 0, 0),
+  ((SELECT id FROM players WHERE firstName = 'Tomas' AND lastName = 'Nido' AND position = 'C'), (SELECT id FROM games WHERE startTime = '2019-06-06 12:10:00' AND homeTeamId = (SELECT id FROM teams WHERE abbreviation = 'NYM') AND awayTeamId = (SELECT id FROM teams WHERE abbreviation = 'SF')), (SELECT id FROM teams WHERE abbreviation = 'NYM'),4, 0, 1, 0, 0, 0, 0, 0, 0, 0),
+  ((SELECT id FROM players WHERE firstName = 'Amed' AND lastName = 'Rosario' AND position = 'SS'), (SELECT id FROM games WHERE startTime = '2019-06-06 12:10:00' AND homeTeamId = (SELECT id FROM teams WHERE abbreviation = 'NYM') AND awayTeamId = (SELECT id FROM teams WHERE abbreviation = 'SF')), (SELECT id FROM teams WHERE abbreviation = 'NYM'),3, 1, 1, 0, 0, 1, 1, 0, 1, 0),
+  ((SELECT id FROM players WHERE firstName = 'Dominic' AND lastName = 'Smith' AND position = '1B'), (SELECT id FROM games WHERE startTime = '2019-06-06 12:10:00' AND homeTeamId = (SELECT id FROM teams WHERE abbreviation = 'NYM') AND awayTeamId = (SELECT id FROM teams WHERE abbreviation = 'SF')), (SELECT id FROM teams WHERE abbreviation = 'NYM'),3, 1, 2, 0, 0, 1, 1, 0, 0, 0),
+  ((SELECT id FROM players WHERE firstName = 'Tucker' AND lastName = 'Barnhart' AND position = 'C'), (SELECT id FROM games WHERE startTime = '2019-06-06 13:15:00' AND homeTeamId = (SELECT id FROM teams WHERE abbreviation = 'STL') AND awayTeamId = (SELECT id FROM teams WHERE abbreviation = 'CIN')), (SELECT id FROM teams WHERE abbreviation = 'CIN'),3, 0, 0, 0, 0, 0, 1, 0, 2, 0),
+  ((SELECT id FROM players WHERE firstName = 'Derek' AND lastName = 'Dietrich' AND position = 'LF'), (SELECT id FROM games WHERE startTime = '2019-06-06 13:15:00' AND homeTeamId = (SELECT id FROM teams WHERE abbreviation = 'STL') AND awayTeamId = (SELECT id FROM teams WHERE abbreviation = 'CIN')), (SELECT id FROM teams WHERE abbreviation = 'CIN'),3, 0, 0, 0, 0, 0, 0, 1, 0, 0),
+  ((SELECT id FROM players WHERE firstName = 'Jose' AND lastName = 'Iglesias' AND position = 'SS'), (SELECT id FROM games WHERE startTime = '2019-06-06 13:15:00' AND homeTeamId = (SELECT id FROM teams WHERE abbreviation = 'STL') AND awayTeamId = (SELECT id FROM teams WHERE abbreviation = 'CIN')), (SELECT id FROM teams WHERE abbreviation = 'CIN'),3, 0, 0, 0, 0, 0, 0, 1, 1, 0),
+  ((SELECT id FROM players WHERE firstName = 'Yasiel' AND lastName = 'Puig' AND position = 'RF'), (SELECT id FROM games WHERE startTime = '2019-06-06 13:15:00' AND homeTeamId = (SELECT id FROM teams WHERE abbreviation = 'STL') AND awayTeamId = (SELECT id FROM teams WHERE abbreviation = 'CIN')), (SELECT id FROM teams WHERE abbreviation = 'CIN'),4, 0, 1, 1, 0, 0, 0, 0, 1, 1),
+  ((SELECT id FROM players WHERE firstName = 'Nick' AND lastName = 'Senzel' AND position = '3B'), (SELECT id FROM games WHERE startTime = '2019-06-06 13:15:00' AND homeTeamId = (SELECT id FROM teams WHERE abbreviation = 'STL') AND awayTeamId = (SELECT id FROM teams WHERE abbreviation = 'CIN')), (SELECT id FROM teams WHERE abbreviation = 'CIN'),3, 0, 1, 1, 0, 0, 0, 1, 0, 0),
+  ((SELECT id FROM players WHERE firstName = 'Eugenio' AND lastName = 'Suarez' AND position = '3B'), (SELECT id FROM games WHERE startTime = '2019-06-06 13:15:00' AND homeTeamId = (SELECT id FROM teams WHERE abbreviation = 'STL') AND awayTeamId = (SELECT id FROM teams WHERE abbreviation = 'CIN')), (SELECT id FROM teams WHERE abbreviation = 'CIN'),4, 0, 1, 0, 0, 0, 0, 0, 0, 0),
+  ((SELECT id FROM players WHERE firstName = 'Joey' AND lastName = 'Votto' AND position = '1B'), (SELECT id FROM games WHERE startTime = '2019-06-06 13:15:00' AND homeTeamId = (SELECT id FROM teams WHERE abbreviation = 'STL') AND awayTeamId = (SELECT id FROM teams WHERE abbreviation = 'CIN')), (SELECT id FROM teams WHERE abbreviation = 'CIN'),4, 0, 0, 0, 0, 0, 0, 0, 2, 0),
+  ((SELECT id FROM players WHERE firstName = 'Jesse' AND lastName = 'Winker' AND position = 'RF'), (SELECT id FROM games WHERE startTime = '2019-06-06 13:15:00' AND homeTeamId = (SELECT id FROM teams WHERE abbreviation = 'STL') AND awayTeamId = (SELECT id FROM teams WHERE abbreviation = 'CIN')), (SELECT id FROM teams WHERE abbreviation = 'CIN'),3, 1, 1, 0, 0, 0, 0, 1, 0, 0),
+  ((SELECT id FROM players WHERE firstName = 'Gordon' AND lastName = 'Beckham' AND position = '3B'), (SELECT id FROM games WHERE startTime = '2019-06-06 13:10:00' AND homeTeamId = (SELECT id FROM teams WHERE abbreviation = 'DET') AND awayTeamId = (SELECT id FROM teams WHERE abbreviation = 'TB')), (SELECT id FROM teams WHERE abbreviation = 'DET'),4, 0, 1, 0, 0, 0, 0, 0, 1, 0),
+  ((SELECT id FROM players WHERE firstName = 'Nicholas' AND lastName = 'Castellanos' AND position = 'RF'), (SELECT id FROM games WHERE startTime = '2019-06-06 13:10:00' AND homeTeamId = (SELECT id FROM teams WHERE abbreviation = 'DET') AND awayTeamId = (SELECT id FROM teams WHERE abbreviation = 'TB')), (SELECT id FROM teams WHERE abbreviation = 'DET'),4, 1, 1, 1, 0, 0, 0, 0, 1, 0),
+  ((SELECT id FROM players WHERE firstName = 'Brandon' AND lastName = 'Dixon' AND position = 'LF'), (SELECT id FROM games WHERE startTime = '2019-06-06 13:10:00' AND homeTeamId = (SELECT id FROM teams WHERE abbreviation = 'DET') AND awayTeamId = (SELECT id FROM teams WHERE abbreviation = 'TB')), (SELECT id FROM teams WHERE abbreviation = 'DET'),4, 0, 2, 0, 0, 0, 1, 0, 1, 1),
+  ((SELECT id FROM players WHERE firstName = 'Niko' AND lastName = 'Goodrum' AND position = 'SS'), (SELECT id FROM games WHERE startTime = '2019-06-06 13:10:00' AND homeTeamId = (SELECT id FROM teams WHERE abbreviation = 'DET') AND awayTeamId = (SELECT id FROM teams WHERE abbreviation = 'TB')), (SELECT id FROM teams WHERE abbreviation = 'DET'),4, 0, 0, 0, 0, 0, 0, 0, 2, 0),
+  ((SELECT id FROM players WHERE firstName = 'Grayson' AND lastName = 'Greiner' AND position = 'C'), (SELECT id FROM games WHERE startTime = '2019-06-06 13:10:00' AND homeTeamId = (SELECT id FROM teams WHERE abbreviation = 'DET') AND awayTeamId = (SELECT id FROM teams WHERE abbreviation = 'TB')), (SELECT id FROM teams WHERE abbreviation = 'DET'),4, 0, 0, 0, 0, 0, 0, 0, 1, 0),
+  ((SELECT id FROM players WHERE firstName = 'JaCoby' AND lastName = 'Jones' AND position = 'LF'), (SELECT id FROM games WHERE startTime = '2019-06-06 13:10:00' AND homeTeamId = (SELECT id FROM teams WHERE abbreviation = 'DET') AND awayTeamId = (SELECT id FROM teams WHERE abbreviation = 'TB')), (SELECT id FROM teams WHERE abbreviation = 'DET'),2, 0, 1, 0, 0, 0, 0, 1, 0, 1),
+  ((SELECT id FROM players WHERE firstName = 'Dawel' AND lastName = 'Lugo' AND position = '2B'), (SELECT id FROM games WHERE startTime = '2019-06-06 13:10:00' AND homeTeamId = (SELECT id FROM teams WHERE abbreviation = 'DET') AND awayTeamId = (SELECT id FROM teams WHERE abbreviation = 'TB')), (SELECT id FROM teams WHERE abbreviation = 'DET'),2, 0, 0, 0, 0, 0, 0, 0, 1, 0),
+  ((SELECT id FROM players WHERE firstName = 'Ronny' AND lastName = 'Rodriguez' AND position = '3B'), (SELECT id FROM games WHERE startTime = '2019-06-06 13:10:00' AND homeTeamId = (SELECT id FROM teams WHERE abbreviation = 'DET') AND awayTeamId = (SELECT id FROM teams WHERE abbreviation = 'TB')), (SELECT id FROM teams WHERE abbreviation = 'DET'),4, 0, 0, 0, 0, 0, 0, 0, 0, 0),
+  ((SELECT id FROM players WHERE firstName = 'Christin' AND lastName = 'Stewart' AND position = 'LF'), (SELECT id FROM games WHERE startTime = '2019-06-06 13:10:00' AND homeTeamId = (SELECT id FROM teams WHERE abbreviation = 'DET') AND awayTeamId = (SELECT id FROM teams WHERE abbreviation = 'TB')), (SELECT id FROM teams WHERE abbreviation = 'DET'),4, 0, 2, 1, 0, 0, 0, 0, 0, 0),
+  ((SELECT id FROM players WHERE firstName = 'Hanser' AND lastName = 'Alberto' AND position = 'SS'), (SELECT id FROM games WHERE startTime = '2019-06-06 20:05:00' AND homeTeamId = (SELECT id FROM teams WHERE abbreviation = 'TEX') AND awayTeamId = (SELECT id FROM teams WHERE abbreviation = 'BAL')), (SELECT id FROM teams WHERE abbreviation = 'BAL'),4, 1, 2, 0, 0, 0, 0, 0, 1, 0),
+  ((SELECT id FROM players WHERE firstName = 'Chris' AND lastName = 'Davis' AND position = '1B'), (SELECT id FROM games WHERE startTime = '2019-06-06 20:05:00' AND homeTeamId = (SELECT id FROM teams WHERE abbreviation = 'TEX') AND awayTeamId = (SELECT id FROM teams WHERE abbreviation = 'BAL')), (SELECT id FROM teams WHERE abbreviation = 'BAL'),4, 0, 1, 1, 0, 0, 1, 0, 0, 0),
+  ((SELECT id FROM players WHERE firstName = 'Trey' AND lastName = 'Mancini' AND position = 'LF'), (SELECT id FROM games WHERE startTime = '2019-06-06 20:05:00' AND homeTeamId = (SELECT id FROM teams WHERE abbreviation = 'TEX') AND awayTeamId = (SELECT id FROM teams WHERE abbreviation = 'BAL')), (SELECT id FROM teams WHERE abbreviation = 'BAL'),4, 1, 3, 0, 0, 1, 1, 0, 0, 0),
+  ((SELECT id FROM players WHERE firstName = 'Richie' AND lastName = 'Martin' AND position = 'SS'), (SELECT id FROM games WHERE startTime = '2019-06-06 20:05:00' AND homeTeamId = (SELECT id FROM teams WHERE abbreviation = 'TEX') AND awayTeamId = (SELECT id FROM teams WHERE abbreviation = 'BAL')), (SELECT id FROM teams WHERE abbreviation = 'BAL'),3, 0, 0, 0, 0, 0, 0, 0, 2, 0),
+  ((SELECT id FROM players WHERE firstName = 'Renato' AND lastName = 'Nunez' AND position = '3B'), (SELECT id FROM games WHERE startTime = '2019-06-06 20:05:00' AND homeTeamId = (SELECT id FROM teams WHERE abbreviation = 'TEX') AND awayTeamId = (SELECT id FROM teams WHERE abbreviation = 'BAL')), (SELECT id FROM teams WHERE abbreviation = 'BAL'),4, 0, 0, 0, 0, 0, 0, 0, 2, 0),
+  ((SELECT id FROM players WHERE firstName = 'Rio' AND lastName = 'Ruiz' AND position = '3B'), (SELECT id FROM games WHERE startTime = '2019-06-06 20:05:00' AND homeTeamId = (SELECT id FROM teams WHERE abbreviation = 'TEX') AND awayTeamId = (SELECT id FROM teams WHERE abbreviation = 'BAL')), (SELECT id FROM teams WHERE abbreviation = 'BAL'),4, 0, 0, 0, 0, 0, 0, 0, 3, 0),
+  ((SELECT id FROM players WHERE firstName = 'Chance' AND lastName = 'Sisco' AND position = 'C'), (SELECT id FROM games WHERE startTime = '2019-06-06 20:05:00' AND homeTeamId = (SELECT id FROM teams WHERE abbreviation = 'TEX') AND awayTeamId = (SELECT id FROM teams WHERE abbreviation = 'BAL')), (SELECT id FROM teams WHERE abbreviation = 'BAL'),2, 1, 1, 1, 0, 0, 0, 1, 0, 0),
+  ((SELECT id FROM players WHERE firstName = 'Dwight' AND lastName = 'Smith Jr.' AND position = 'RF'), (SELECT id FROM games WHERE startTime = '2019-06-06 20:05:00' AND homeTeamId = (SELECT id FROM teams WHERE abbreviation = 'TEX') AND awayTeamId = (SELECT id FROM teams WHERE abbreviation = 'BAL')), (SELECT id FROM teams WHERE abbreviation = 'BAL'),2, 0, 0, 0, 0, 0, 0, 1, 0, 0),
+  ((SELECT id FROM players WHERE firstName = 'Stevie' AND lastName = 'Wilkerson' AND position = 'SS'), (SELECT id FROM games WHERE startTime = '2019-06-06 20:05:00' AND homeTeamId = (SELECT id FROM teams WHERE abbreviation = 'TEX') AND awayTeamId = (SELECT id FROM teams WHERE abbreviation = 'BAL')), (SELECT id FROM teams WHERE abbreviation = 'BAL'),4, 0, 1, 0, 0, 0, 1, 0, 2, 0),
+  ((SELECT id FROM players WHERE firstName = 'Thairo' AND lastName = 'Estrada' AND position = 'SS'), (SELECT id FROM games WHERE startTime = '2019-06-06 19:00:00' AND homeTeamId = (SELECT id FROM teams WHERE abbreviation = 'TOR') AND awayTeamId = (SELECT id FROM teams WHERE abbreviation = 'NYY')), (SELECT id FROM teams WHERE abbreviation = 'NYY'),4, 1, 0, 0, 0, 0, 0, 0, 2, 0),
+  ((SELECT id FROM players WHERE firstName = 'Clint' AND lastName = 'Frazier' AND position = 'LF'), (SELECT id FROM games WHERE startTime = '2019-06-06 19:00:00' AND homeTeamId = (SELECT id FROM teams WHERE abbreviation = 'TOR') AND awayTeamId = (SELECT id FROM teams WHERE abbreviation = 'NYY')), (SELECT id FROM teams WHERE abbreviation = 'NYY'),4, 0, 0, 0, 0, 0, 0, 0, 1, 0),
+  ((SELECT id FROM players WHERE firstName = 'Aaron' AND lastName = 'Hicks' AND position = 'CF'), (SELECT id FROM games WHERE startTime = '2019-06-06 19:00:00' AND homeTeamId = (SELECT id FROM teams WHERE abbreviation = 'TOR') AND awayTeamId = (SELECT id FROM teams WHERE abbreviation = 'NYY')), (SELECT id FROM teams WHERE abbreviation = 'NYY'),5, 1, 2, 0, 0, 1, 3, 0, 1, 0),
+  ((SELECT id FROM players WHERE firstName = 'DJ' AND lastName = 'LeMahieu' AND position = '2B'), (SELECT id FROM games WHERE startTime = '2019-06-06 19:00:00' AND homeTeamId = (SELECT id FROM teams WHERE abbreviation = 'TOR') AND awayTeamId = (SELECT id FROM teams WHERE abbreviation = 'NYY')), (SELECT id FROM teams WHERE abbreviation = 'NYY'),4, 1, 3, 2, 0, 0, 2, 1, 0, 0),
+  ((SELECT id FROM players WHERE firstName = 'Cameron' AND lastName = 'Maybin' AND position = 'LF'), (SELECT id FROM games WHERE startTime = '2019-06-06 19:00:00' AND homeTeamId = (SELECT id FROM teams WHERE abbreviation = 'TOR') AND awayTeamId = (SELECT id FROM teams WHERE abbreviation = 'NYY')), (SELECT id FROM teams WHERE abbreviation = 'NYY'),4, 2, 2, 1, 0, 0, 0, 0, 1, 0),
+  ((SELECT id FROM players WHERE firstName = 'Kendrys' AND lastName = 'Morales' AND position = 'DH'), (SELECT id FROM games WHERE startTime = '2019-06-06 19:00:00' AND homeTeamId = (SELECT id FROM teams WHERE abbreviation = 'TOR') AND awayTeamId = (SELECT id FROM teams WHERE abbreviation = 'NYY')), (SELECT id FROM teams WHERE abbreviation = 'NYY'),3, 0, 0, 0, 0, 0, 0, 1, 1, 0),
+  ((SELECT id FROM players WHERE firstName = 'Gary' AND lastName = 'Sanchez' AND position = 'C'), (SELECT id FROM games WHERE startTime = '2019-06-06 19:00:00' AND homeTeamId = (SELECT id FROM teams WHERE abbreviation = 'TOR') AND awayTeamId = (SELECT id FROM teams WHERE abbreviation = 'NYY')), (SELECT id FROM teams WHERE abbreviation = 'NYY'),5, 0, 0, 0, 0, 0, 0, 0, 1, 0),
+  ((SELECT id FROM players WHERE firstName = 'Gio' AND lastName = 'Urshela' AND position = '3B'), (SELECT id FROM games WHERE startTime = '2019-06-06 19:00:00' AND homeTeamId = (SELECT id FROM teams WHERE abbreviation = 'TOR') AND awayTeamId = (SELECT id FROM teams WHERE abbreviation = 'NYY')), (SELECT id FROM teams WHERE abbreviation = 'NYY'),4, 1, 1, 0, 0, 1, 1, 0, 0, 0),
+  ((SELECT id FROM players WHERE firstName = 'Luke' AND lastName = 'Voit' AND position = '1B'), (SELECT id FROM games WHERE startTime = '2019-06-06 19:00:00' AND homeTeamId = (SELECT id FROM teams WHERE abbreviation = 'TOR') AND awayTeamId = (SELECT id FROM teams WHERE abbreviation = 'NYY')), (SELECT id FROM teams WHERE abbreviation = 'NYY'),3, 0, 0, 0, 0, 0, 0, 2, 0, 0),
+  ((SELECT id FROM players WHERE firstName = 'Austin' AND lastName = 'Hedges' AND position = 'C'), (SELECT id FROM games WHERE startTime = '2019-06-06 22:10:00' AND homeTeamId = (SELECT id FROM teams WHERE abbreviation = 'SD') AND awayTeamId = (SELECT id FROM teams WHERE abbreviation = 'WSH')), (SELECT id FROM teams WHERE abbreviation = 'SD'),4, 0, 0, 0, 0, 0, 0, 0, 3, 0),
+  ((SELECT id FROM players WHERE firstName = 'Ian' AND lastName = 'Kinsler' AND position = '2B'), (SELECT id FROM games WHERE startTime = '2019-06-06 22:10:00' AND homeTeamId = (SELECT id FROM teams WHERE abbreviation = 'SD') AND awayTeamId = (SELECT id FROM teams WHERE abbreviation = 'WSH')), (SELECT id FROM teams WHERE abbreviation = 'SD'),4, 0, 2, 0, 0, 0, 0, 0, 0, 0),
+  ((SELECT id FROM players WHERE firstName = 'Manny' AND lastName = 'Machado' AND position = 'SS'), (SELECT id FROM games WHERE startTime = '2019-06-06 22:10:00' AND homeTeamId = (SELECT id FROM teams WHERE abbreviation = 'SD') AND awayTeamId = (SELECT id FROM teams WHERE abbreviation = 'WSH')), (SELECT id FROM teams WHERE abbreviation = 'SD'),4, 0, 0, 0, 0, 0, 1, 0, 1, 0),
+  ((SELECT id FROM players WHERE firstName = 'Manuel' AND lastName = 'Margot' AND position = 'CF'), (SELECT id FROM games WHERE startTime = '2019-06-06 22:10:00' AND homeTeamId = (SELECT id FROM teams WHERE abbreviation = 'SD') AND awayTeamId = (SELECT id FROM teams WHERE abbreviation = 'WSH')), (SELECT id FROM teams WHERE abbreviation = 'SD'),2, 1, 2, 0, 0, 0, 0, 1, 0, 0),
+  ((SELECT id FROM players WHERE firstName = 'Wil' AND lastName = 'Myers' AND position = 'RF'), (SELECT id FROM games WHERE startTime = '2019-06-06 22:10:00' AND homeTeamId = (SELECT id FROM teams WHERE abbreviation = 'SD') AND awayTeamId = (SELECT id FROM teams WHERE abbreviation = 'WSH')), (SELECT id FROM teams WHERE abbreviation = 'SD'),2, 1, 0, 0, 0, 0, 0, 2, 1, 0),
+  ((SELECT id FROM players WHERE firstName = 'Hunter' AND lastName = 'Renfroe' AND position = 'RF'), (SELECT id FROM games WHERE startTime = '2019-06-06 22:10:00' AND homeTeamId = (SELECT id FROM teams WHERE abbreviation = 'SD') AND awayTeamId = (SELECT id FROM teams WHERE abbreviation = 'WSH')), (SELECT id FROM teams WHERE abbreviation = 'SD'),3, 1, 1, 0, 0, 1, 2, 1, 1, 0),
+  ((SELECT id FROM players WHERE firstName = 'Franmil' AND lastName = 'Reyes' AND position = 'CF'), (SELECT id FROM games WHERE startTime = '2019-06-06 22:10:00' AND homeTeamId = (SELECT id FROM teams WHERE abbreviation = 'SD') AND awayTeamId = (SELECT id FROM teams WHERE abbreviation = 'WSH')), (SELECT id FROM teams WHERE abbreviation = 'SD'),2, 1, 0, 0, 0, 0, 1, 1, 1, 0),
+  ((SELECT id FROM players WHERE firstName = 'Fernando' AND lastName = 'Tatis Jr.' AND position = 'SS'), (SELECT id FROM games WHERE startTime = '2019-06-06 22:10:00' AND homeTeamId = (SELECT id FROM teams WHERE abbreviation = 'SD') AND awayTeamId = (SELECT id FROM teams WHERE abbreviation = 'WSH')), (SELECT id FROM teams WHERE abbreviation = 'SD'),2, 1, 1, 0, 0, 0, 0, 2, 0, 0);
+
+INSERT INTO pitchingStats
+  (playerId, gameId, teamId, win, inningsPitched, hits, runs, earnedRuns, walks, strikeOuts)
+VALUES
+  ((SELECT id FROM players WHERE firstName = 'Felipe' AND lastName = 'Vazquez' AND position = 'RP' AND currentTeamId = (SELECT id FROM teams WHERE abbreviation = 'PIT')), (SELECT id FROM games WHERE startTime = '2019-06-06 12:35:00' AND homeTeamId = (SELECT id FROM teams WHERE abbreviation = 'PIT') AND awayTeamId = (SELECT id FROM teams WHERE abbreviation ='ATL')), (SELECT id FROM teams WHERE abbreviation = 'PIT'), 1, 1.1, 1, 0, 0, 2, 1),
+  ((SELECT id FROM players WHERE firstName = 'Jesse' AND lastName = 'Chavez' AND position = 'RP' AND currentTeamId = (SELECT id FROM teams WHERE abbreviation = 'TEX')), (SELECT id FROM games WHERE startTime = '2019-06-06 20:05:00' AND homeTeamId = (SELECT id FROM teams WHERE abbreviation = 'TEX') AND awayTeamId = (SELECT id FROM teams WHERE abbreviation ='BAL')), (SELECT id FROM teams WHERE abbreviation = 'TEX'), 1, 1, 0, 0, 0, 0, 1),
+  ((SELECT id FROM players WHERE firstName = 'Ariel' AND lastName = 'Jurado' AND position = 'RP' AND currentTeamId = (SELECT id FROM teams WHERE abbreviation = 'TEX')), (SELECT id FROM games WHERE startTime = '2019-06-06 20:05:00' AND homeTeamId = (SELECT id FROM teams WHERE abbreviation = 'TEX') AND awayTeamId = (SELECT id FROM teams WHERE abbreviation ='BAL')), (SELECT id FROM teams WHERE abbreviation = 'TEX'), 1, 6, 8, 3, 3, 1, 6),
+  ((SELECT id FROM players WHERE firstName = 'Shawn' AND lastName = 'Kelley' AND position = 'RP' AND currentTeamId = (SELECT id FROM teams WHERE abbreviation = 'TEX')), (SELECT id FROM games WHERE startTime = '2019-06-06 20:05:00' AND homeTeamId = (SELECT id FROM teams WHERE abbreviation = 'TEX') AND awayTeamId = (SELECT id FROM teams WHERE abbreviation ='BAL')), (SELECT id FROM teams WHERE abbreviation = 'TEX'), 1, 1, 0, 0, 0, 1, 1),
+  ((SELECT id FROM players WHERE firstName = 'Chris' AND lastName = 'Martin' AND position = 'RP' AND currentTeamId = (SELECT id FROM teams WHERE abbreviation = 'TEX')), (SELECT id FROM games WHERE startTime = '2019-06-06 20:05:00' AND homeTeamId = (SELECT id FROM teams WHERE abbreviation = 'TEX') AND awayTeamId = (SELECT id FROM teams WHERE abbreviation ='BAL')), (SELECT id FROM teams WHERE abbreviation = 'TEX'), 1, 1, 0, 0, 0, 0, 3),
+  ((SELECT id FROM players WHERE firstName = 'Scott' AND lastName = 'Barlow' AND position = 'RP' AND currentTeamId = (SELECT id FROM teams WHERE abbreviation = 'KC')), (SELECT id FROM games WHERE startTime = '2019-06-06 13:15:00' AND homeTeamId = (SELECT id FROM teams WHERE abbreviation = 'KC') AND awayTeamId = (SELECT id FROM teams WHERE abbreviation ='BOS')), (SELECT id FROM teams WHERE abbreviation = 'KC'), 0, 1.1, 1, 3, 3, 2, 3),
+  ((SELECT id FROM players WHERE firstName = 'Brian' AND lastName = 'Flynn' AND position = 'RP' AND currentTeamId = (SELECT id FROM teams WHERE abbreviation = 'KC')), (SELECT id FROM games WHERE startTime = '2019-06-06 13:15:00' AND homeTeamId = (SELECT id FROM teams WHERE abbreviation = 'KC') AND awayTeamId = (SELECT id FROM teams WHERE abbreviation ='BOS')), (SELECT id FROM teams WHERE abbreviation = 'KC'), 0, 3.1, 3, 0, 0, 2, 3),
+  ((SELECT id FROM players WHERE firstName = 'Kevin' AND lastName = 'McCarthy' AND position = 'RP' AND currentTeamId = (SELECT id FROM teams WHERE abbreviation = 'KC')), (SELECT id FROM games WHERE startTime = '2019-06-06 13:15:00' AND homeTeamId = (SELECT id FROM teams WHERE abbreviation = 'KC') AND awayTeamId = (SELECT id FROM teams WHERE abbreviation ='BOS')), (SELECT id FROM teams WHERE abbreviation = 'KC'), 0, 2, 1, 0, 0, 0, 0),
+  ((SELECT id FROM players WHERE firstName = 'Jairo' AND lastName = 'Diaz' AND position = 'RP' AND currentTeamId = (SELECT id FROM teams WHERE abbreviation = 'COL')), (SELECT id FROM games WHERE startTime = '2019-06-06 14:20:00' AND homeTeamId = (SELECT id FROM teams WHERE abbreviation = 'CHC') AND awayTeamId = (SELECT id FROM teams WHERE abbreviation ='COL')), (SELECT id FROM teams WHERE abbreviation = 'COL'), 1, 1, 1, 0, 0, 1, 2),
+  ((SELECT id FROM players WHERE firstName = 'Scott' AND lastName = 'Oberg' AND position = 'RP' AND currentTeamId = (SELECT id FROM teams WHERE abbreviation = 'COL')), (SELECT id FROM games WHERE startTime = '2019-06-06 14:20:00' AND homeTeamId = (SELECT id FROM teams WHERE abbreviation = 'CHC') AND awayTeamId = (SELECT id FROM teams WHERE abbreviation ='COL')), (SELECT id FROM teams WHERE abbreviation = 'COL'), 1, 1, 0, 0, 0, 0, 1),
+  ((SELECT id FROM players WHERE firstName = 'John' AND lastName = 'Gant' AND position = 'RP' AND currentTeamId = (SELECT id FROM teams WHERE abbreviation = 'STL')), (SELECT id FROM games WHERE startTime = '2019-06-06 13:15:00' AND homeTeamId = (SELECT id FROM teams WHERE abbreviation = 'STL') AND awayTeamId = (SELECT id FROM teams WHERE abbreviation ='CIN')), (SELECT id FROM teams WHERE abbreviation = 'STL'), 1, 1.1, 0, 0, 0, 0, 1),
+  ((SELECT id FROM players WHERE firstName = 'Jordan' AND lastName = 'Hicks' AND position = 'RP' AND currentTeamId = (SELECT id FROM teams WHERE abbreviation = 'STL')), (SELECT id FROM games WHERE startTime = '2019-06-06 13:15:00' AND homeTeamId = (SELECT id FROM teams WHERE abbreviation = 'STL') AND awayTeamId = (SELECT id FROM teams WHERE abbreviation ='CIN')), (SELECT id FROM teams WHERE abbreviation = 'STL'), 1, 1, 0, 0, 0, 0, 1),
+  ((SELECT id FROM players WHERE firstName = 'Andrew' AND lastName = 'Miller' AND position = 'RP' AND currentTeamId = (SELECT id FROM teams WHERE abbreviation = 'STL')), (SELECT id FROM games WHERE startTime = '2019-06-06 13:15:00' AND homeTeamId = (SELECT id FROM teams WHERE abbreviation = 'STL') AND awayTeamId = (SELECT id FROM teams WHERE abbreviation ='CIN')), (SELECT id FROM teams WHERE abbreviation = 'STL'), 1, 0.1, 0, 0, 0, 0, 1),
+  ((SELECT id FROM players WHERE firstName = 'Matt' AND lastName = 'Magill' AND position = 'RP' AND currentTeamId = (SELECT id FROM teams WHERE abbreviation = 'MIN')), (SELECT id FROM games WHERE startTime = '2019-06-06 19:00:00' AND homeTeamId = (SELECT id FROM teams WHERE abbreviation = 'CLE') AND awayTeamId = (SELECT id FROM teams WHERE abbreviation ='MIN')), (SELECT id FROM teams WHERE abbreviation = 'MIN'), 1, 0, 1, 1, 1, 1, 0),
+  ((SELECT id FROM players WHERE firstName = 'Trevor' AND lastName = 'May' AND position = 'RP' AND currentTeamId = (SELECT id FROM teams WHERE abbreviation = 'MIN')), (SELECT id FROM games WHERE startTime = '2019-06-06 19:00:00' AND homeTeamId = (SELECT id FROM teams WHERE abbreviation = 'CLE') AND awayTeamId = (SELECT id FROM teams WHERE abbreviation ='MIN')), (SELECT id FROM teams WHERE abbreviation = 'MIN'), 1, 1, 0, 0, 0, 0, 0),
+  ((SELECT id FROM players WHERE firstName = 'Taylor' AND lastName = 'Rogers' AND position = 'RP' AND currentTeamId = (SELECT id FROM teams WHERE abbreviation = 'MIN')), (SELECT id FROM games WHERE startTime = '2019-06-06 19:00:00' AND homeTeamId = (SELECT id FROM teams WHERE abbreviation = 'CLE') AND awayTeamId = (SELECT id FROM teams WHERE abbreviation ='MIN')), (SELECT id FROM teams WHERE abbreviation = 'MIN'), 1, 2, 1, 1, 1, 0, 3),
+  ((SELECT id FROM players WHERE firstName = 'Carl' AND lastName = 'Edwards Jr.' AND position = 'RP' AND currentTeamId = (SELECT id FROM teams WHERE abbreviation = 'CHC')), (SELECT id FROM games WHERE startTime = '2019-06-06 14:20:00' AND homeTeamId = (SELECT id FROM teams WHERE abbreviation = 'CHC') AND awayTeamId = (SELECT id FROM teams WHERE abbreviation ='COL')), (SELECT id FROM teams WHERE abbreviation = 'CHC'), 0, 0.2, 0, 0, 0, 0, 1),
+  ((SELECT id FROM players WHERE firstName = 'Jalen' AND lastName = 'Beeks' AND position = 'RP' AND currentTeamId = (SELECT id FROM teams WHERE abbreviation = 'TB')), (SELECT id FROM games WHERE startTime = '2019-06-06 13:10:00' AND homeTeamId = (SELECT id FROM teams WHERE abbreviation = 'DET') AND awayTeamId = (SELECT id FROM teams WHERE abbreviation ='TB')), (SELECT id FROM teams WHERE abbreviation = 'TB'), 1, 4.1, 4, 0, 0, 0, 2),
+  ((SELECT id FROM players WHERE firstName = 'Diego' AND lastName = 'Castillo' AND position = 'RP' AND currentTeamId = (SELECT id FROM teams WHERE abbreviation = 'TB')), (SELECT id FROM games WHERE startTime = '2019-06-06 13:10:00' AND homeTeamId = (SELECT id FROM teams WHERE abbreviation = 'DET') AND awayTeamId = (SELECT id FROM teams WHERE abbreviation ='TB')), (SELECT id FROM teams WHERE abbreviation = 'TB'), 1, 0.1, 1, 0, 0, 0, 0),
+  ((SELECT id FROM players WHERE firstName = 'Chaz' AND lastName = 'Roe' AND position = 'RP' AND currentTeamId = (SELECT id FROM teams WHERE abbreviation = 'TB')), (SELECT id FROM games WHERE startTime = '2019-06-06 13:10:00' AND homeTeamId = (SELECT id FROM teams WHERE abbreviation = 'DET') AND awayTeamId = (SELECT id FROM teams WHERE abbreviation ='TB')), (SELECT id FROM teams WHERE abbreviation = 'TB'), 1, 1, 0, 0, 0, 2, 2),
+  ((SELECT id FROM players WHERE firstName = 'Ryne' AND lastName = 'Stanek' AND position = 'RP' AND currentTeamId = (SELECT id FROM teams WHERE abbreviation = 'TB')), (SELECT id FROM games WHERE startTime = '2019-06-06 13:10:00' AND homeTeamId = (SELECT id FROM teams WHERE abbreviation = 'DET') AND awayTeamId = (SELECT id FROM teams WHERE abbreviation ='TB')), (SELECT id FROM teams WHERE abbreviation = 'TB'), 1, 2, 2, 1, 1, 0, 2),
+  ((SELECT id FROM players WHERE firstName = 'Hunter' AND lastName = 'Wood' AND position = 'RP' AND currentTeamId = (SELECT id FROM teams WHERE abbreviation = 'TB')), (SELECT id FROM games WHERE startTime = '2019-06-06 13:10:00' AND homeTeamId = (SELECT id FROM teams WHERE abbreviation = 'DET') AND awayTeamId = (SELECT id FROM teams WHERE abbreviation ='TB')), (SELECT id FROM teams WHERE abbreviation = 'TB'), 1, 1.1, 1, 0, 0, 0, 1),
+  ((SELECT id FROM players WHERE firstName = 'Austin' AND lastName = 'Adams' AND position = 'RP' AND currentTeamId = (SELECT id FROM teams WHERE abbreviation = 'SEA')), (SELECT id FROM games WHERE startTime = '2019-06-06 15:40:00' AND homeTeamId = (SELECT id FROM teams WHERE abbreviation = 'SEA') AND awayTeamId = (SELECT id FROM teams WHERE abbreviation ='HOU')), (SELECT id FROM teams WHERE abbreviation = 'SEA'), 0, 0.2, 3, 3, 3, 2, 0),
+  ((SELECT id FROM players WHERE firstName = 'Anthony' AND lastName = 'Bass' AND position = 'RP' AND currentTeamId = (SELECT id FROM teams WHERE abbreviation = 'SEA')), (SELECT id FROM games WHERE startTime = '2019-06-06 15:40:00' AND homeTeamId = (SELECT id FROM teams WHERE abbreviation = 'SEA') AND awayTeamId = (SELECT id FROM teams WHERE abbreviation ='HOU')), (SELECT id FROM teams WHERE abbreviation = 'SEA'), 0, 2, 2, 1, 1, 2, 1),
+  ((SELECT id FROM players WHERE firstName = 'Gerson' AND lastName = 'Bautista' AND position = 'RP' AND currentTeamId = (SELECT id FROM teams WHERE abbreviation = 'SEA')), (SELECT id FROM games WHERE startTime = '2019-06-06 15:40:00' AND homeTeamId = (SELECT id FROM teams WHERE abbreviation = 'SEA') AND awayTeamId = (SELECT id FROM teams WHERE abbreviation ='HOU')), (SELECT id FROM teams WHERE abbreviation = 'SEA'), 0, 1, 1, 1, 1, 2, 0),
+  ((SELECT id FROM players WHERE firstName = 'Brandon' AND lastName = 'Brennan' AND position = 'RP' AND currentTeamId = (SELECT id FROM teams WHERE abbreviation = 'SEA')), (SELECT id FROM games WHERE startTime = '2019-06-06 15:40:00' AND homeTeamId = (SELECT id FROM teams WHERE abbreviation = 'SEA') AND awayTeamId = (SELECT id FROM teams WHERE abbreviation ='HOU')), (SELECT id FROM teams WHERE abbreviation = 'SEA'), 0, 1, 1, 0, 0, 0, 2),
+  ((SELECT id FROM players WHERE firstName = 'Matt' AND lastName = 'Festa' AND position = 'RP' AND currentTeamId = (SELECT id FROM teams WHERE abbreviation = 'SEA')), (SELECT id FROM games WHERE startTime = '2019-06-06 15:40:00' AND homeTeamId = (SELECT id FROM teams WHERE abbreviation = 'SEA') AND awayTeamId = (SELECT id FROM teams WHERE abbreviation ='HOU')), (SELECT id FROM teams WHERE abbreviation = 'SEA'), 0, 1, 1, 1, 1, 1, 2),
+  ((SELECT id FROM players WHERE firstName = 'Cory' AND lastName = 'Gearrin' AND position = 'RP' AND currentTeamId = (SELECT id FROM teams WHERE abbreviation = 'SEA')), (SELECT id FROM games WHERE startTime = '2019-06-06 15:40:00' AND homeTeamId = (SELECT id FROM teams WHERE abbreviation = 'SEA') AND awayTeamId = (SELECT id FROM teams WHERE abbreviation ='HOU')), (SELECT id FROM teams WHERE abbreviation = 'SEA'), 0, 2, 1, 0, 0, 0, 1),
+  ((SELECT id FROM players WHERE firstName = 'Matt' AND lastName = 'Barnes' AND position = 'RP' AND currentTeamId = (SELECT id FROM teams WHERE abbreviation = 'BOS')), (SELECT id FROM games WHERE startTime = '2019-06-06 13:15:00' AND homeTeamId = (SELECT id FROM teams WHERE abbreviation = 'KC') AND awayTeamId = (SELECT id FROM teams WHERE abbreviation ='BOS')), (SELECT id FROM teams WHERE abbreviation = 'BOS'), 1, 1, 2, 1, 1, 0, 2),
+  ((SELECT id FROM players WHERE firstName = 'Ryan' AND lastName = 'Brasier' AND position = 'RP' AND currentTeamId = (SELECT id FROM teams WHERE abbreviation = 'BOS')), (SELECT id FROM games WHERE startTime = '2019-06-06 13:15:00' AND homeTeamId = (SELECT id FROM teams WHERE abbreviation = 'KC') AND awayTeamId = (SELECT id FROM teams WHERE abbreviation ='BOS')), (SELECT id FROM teams WHERE abbreviation = 'BOS'), 1, 1, 2, 0, 0, 0, 2),
+  ((SELECT id FROM players WHERE firstName = 'Colten' AND lastName = 'Brewer' AND position = 'RP' AND currentTeamId = (SELECT id FROM teams WHERE abbreviation = 'BOS')), (SELECT id FROM games WHERE startTime = '2019-06-06 13:15:00' AND homeTeamId = (SELECT id FROM teams WHERE abbreviation = 'KC') AND awayTeamId = (SELECT id FROM teams WHERE abbreviation ='BOS')), (SELECT id FROM teams WHERE abbreviation = 'BOS'), 1, 2, 2, 0, 0, 1, 2),
+  ((SELECT id FROM players WHERE firstName = 'Heath' AND lastName = 'Hembree' AND position = 'RP' AND currentTeamId = (SELECT id FROM teams WHERE abbreviation = 'BOS')), (SELECT id FROM games WHERE startTime = '2019-06-06 13:15:00' AND homeTeamId = (SELECT id FROM teams WHERE abbreviation = 'KC') AND awayTeamId = (SELECT id FROM teams WHERE abbreviation ='BOS')), (SELECT id FROM teams WHERE abbreviation = 'BOS'), 1, 1, 0, 0, 0, 0, 1),
+  ((SELECT id FROM players WHERE firstName = 'Josh' AND lastName = 'Taylor' AND position = 'RP' AND currentTeamId = (SELECT id FROM teams WHERE abbreviation = 'BOS')), (SELECT id FROM games WHERE startTime = '2019-06-06 13:15:00' AND homeTeamId = (SELECT id FROM teams WHERE abbreviation = 'KC') AND awayTeamId = (SELECT id FROM teams WHERE abbreviation ='BOS')), (SELECT id FROM teams WHERE abbreviation = 'BOS'), 1, 1, 2, 1, 1, 0, 1),
+  ((SELECT id FROM players WHERE firstName = 'Marcus' AND lastName = 'Walden' AND position = 'RP' AND currentTeamId = (SELECT id FROM teams WHERE abbreviation = 'BOS')), (SELECT id FROM games WHERE startTime = '2019-06-06 13:15:00' AND homeTeamId = (SELECT id FROM teams WHERE abbreviation = 'KC') AND awayTeamId = (SELECT id FROM teams WHERE abbreviation ='BOS')), (SELECT id FROM teams WHERE abbreviation = 'BOS'), 1, 1.2, 1, 1, 1, 0, 2),
+  ((SELECT id FROM players WHERE firstName = 'Ryan' AND lastName = 'Weber' AND position = 'RP' AND currentTeamId = (SELECT id FROM teams WHERE abbreviation = 'BOS')), (SELECT id FROM games WHERE startTime = '2019-06-06 13:15:00' AND homeTeamId = (SELECT id FROM teams WHERE abbreviation = 'KC') AND awayTeamId = (SELECT id FROM teams WHERE abbreviation ='BOS')), (SELECT id FROM teams WHERE abbreviation = 'BOS'), 1, 1.1, 5, 2, 2, 0, 1),
+  ((SELECT id FROM players WHERE firstName = 'Ryan' AND lastName = 'Buchter' AND position = 'RP' AND currentTeamId = (SELECT id FROM teams WHERE abbreviation = 'OAK')), (SELECT id FROM games WHERE startTime = '2019-06-06 22:07:00' AND homeTeamId = (SELECT id FROM teams WHERE abbreviation = 'LAA') AND awayTeamId = (SELECT id FROM teams WHERE abbreviation ='OAK')), (SELECT id FROM teams WHERE abbreviation = 'OAK'), 1, 0.2, 1, 0, 0, 0, 0),
+  ((SELECT id FROM players WHERE firstName = 'Liam' AND lastName = 'Hendriks' AND position = 'RP' AND currentTeamId = (SELECT id FROM teams WHERE abbreviation = 'OAK')), (SELECT id FROM games WHERE startTime = '2019-06-06 22:07:00' AND homeTeamId = (SELECT id FROM teams WHERE abbreviation = 'LAA') AND awayTeamId = (SELECT id FROM teams WHERE abbreviation ='OAK')), (SELECT id FROM teams WHERE abbreviation = 'OAK'), 1, 0.1, 0, 0, 0, 1, 0),
+  ((SELECT id FROM players WHERE firstName = 'Joakim' AND lastName = 'Soria' AND position = 'RP' AND currentTeamId = (SELECT id FROM teams WHERE abbreviation = 'OAK')), (SELECT id FROM games WHERE startTime = '2019-06-06 22:07:00' AND homeTeamId = (SELECT id FROM teams WHERE abbreviation = 'LAA') AND awayTeamId = (SELECT id FROM teams WHERE abbreviation ='OAK')), (SELECT id FROM teams WHERE abbreviation = 'OAK'), 1, 1, 1, 1, 1, 0, 0),
+  ((SELECT id FROM players WHERE firstName = 'Lou' AND lastName = 'Trivino' AND position = 'RP' AND currentTeamId = (SELECT id FROM teams WHERE abbreviation = 'OAK')), (SELECT id FROM games WHERE startTime = '2019-06-06 22:07:00' AND homeTeamId = (SELECT id FROM teams WHERE abbreviation = 'LAA') AND awayTeamId = (SELECT id FROM teams WHERE abbreviation ='OAK')), (SELECT id FROM teams WHERE abbreviation = 'OAK'), 1, 1, 0, 0, 0, 1, 0),
+  ((SELECT id FROM players WHERE firstName = 'Josh' AND lastName = 'Hader' AND position = 'RP' AND currentTeamId = (SELECT id FROM teams WHERE abbreviation = 'MIL')), (SELECT id FROM games WHERE startTime = '2019-06-06 14:10:00' AND homeTeamId = (SELECT id FROM teams WHERE abbreviation = 'MIL') AND awayTeamId = (SELECT id FROM teams WHERE abbreviation ='MIA')), (SELECT id FROM teams WHERE abbreviation = 'MIL'), 1, 1.1, 0, 0, 0, 1, 3),
+  ((SELECT id FROM players WHERE firstName = 'Jeremy' AND lastName = 'Jeffress' AND position = 'RP' AND currentTeamId = (SELECT id FROM teams WHERE abbreviation = 'MIL')), (SELECT id FROM games WHERE startTime = '2019-06-06 14:10:00' AND homeTeamId = (SELECT id FROM teams WHERE abbreviation = 'MIL') AND awayTeamId = (SELECT id FROM teams WHERE abbreviation ='MIA')), (SELECT id FROM teams WHERE abbreviation = 'MIL'), 1, 1.2, 1, 0, 0, 1, 2),
+  ((SELECT id FROM players WHERE firstName = 'Austin' AND lastName = 'Brice' AND position = 'RP' AND currentTeamId = (SELECT id FROM teams WHERE abbreviation = 'MIA')), (SELECT id FROM games WHERE startTime = '2019-06-06 14:10:00' AND homeTeamId = (SELECT id FROM teams WHERE abbreviation = 'MIL') AND awayTeamId = (SELECT id FROM teams WHERE abbreviation ='MIA')), (SELECT id FROM teams WHERE abbreviation = 'MIA'), 0, 1, 0, 0, 0, 0, 2),
+  ((SELECT id FROM players WHERE firstName = 'Tayron' AND lastName = 'Guerrero' AND position = 'RP' AND currentTeamId = (SELECT id FROM teams WHERE abbreviation = 'MIA')), (SELECT id FROM games WHERE startTime = '2019-06-06 14:10:00' AND homeTeamId = (SELECT id FROM teams WHERE abbreviation = 'MIL') AND awayTeamId = (SELECT id FROM teams WHERE abbreviation ='MIA')), (SELECT id FROM teams WHERE abbreviation = 'MIA'), 0, 1, 3, 1, 1, 0, 0),
+  ((SELECT id FROM players WHERE firstName = 'Jon' AND lastName = 'Edwards' AND position = 'RP' AND currentTeamId = (SELECT id FROM teams WHERE abbreviation = 'CLE')), (SELECT id FROM games WHERE startTime = '2019-06-06 19:00:00' AND homeTeamId = (SELECT id FROM teams WHERE abbreviation = 'CLE') AND awayTeamId = (SELECT id FROM teams WHERE abbreviation ='MIN')), (SELECT id FROM teams WHERE abbreviation = 'CLE'), 0, 0.2, 0, 0, 0, 0, 0),
+  ((SELECT id FROM players WHERE firstName = 'Josh' AND lastName = 'Smith' AND position = 'RP' AND currentTeamId = (SELECT id FROM teams WHERE abbreviation = 'CLE')), (SELECT id FROM games WHERE startTime = '2019-06-06 19:00:00' AND homeTeamId = (SELECT id FROM teams WHERE abbreviation = 'CLE') AND awayTeamId = (SELECT id FROM teams WHERE abbreviation ='MIN')), (SELECT id FROM teams WHERE abbreviation = 'CLE'), 0, 0.1, 2, 0, 0, 0, 1),
+  ((SELECT id FROM players WHERE firstName = 'Mark' AND lastName = 'Melancon' AND position = 'RP' AND currentTeamId = (SELECT id FROM teams WHERE abbreviation = 'SF')), (SELECT id FROM games WHERE startTime = '2019-06-06 12:10:00' AND homeTeamId = (SELECT id FROM teams WHERE abbreviation = 'NYM') AND awayTeamId = (SELECT id FROM teams WHERE abbreviation ='SF')), (SELECT id FROM teams WHERE abbreviation = 'SF'), 0, 1, 5, 4, 4, 1, 0),
+  ((SELECT id FROM players WHERE firstName = 'Reyes' AND lastName = 'Moronta' AND position = 'RP' AND currentTeamId = (SELECT id FROM teams WHERE abbreviation = 'SF')), (SELECT id FROM games WHERE startTime = '2019-06-06 12:10:00' AND homeTeamId = (SELECT id FROM teams WHERE abbreviation = 'NYM') AND awayTeamId = (SELECT id FROM teams WHERE abbreviation ='SF')), (SELECT id FROM teams WHERE abbreviation = 'SF'), 0, 0.1, 2, 0, 0, 0, 0),
+  ((SELECT id FROM players WHERE firstName = 'Tony' AND lastName = 'Watson' AND position = 'RP' AND currentTeamId = (SELECT id FROM teams WHERE abbreviation = 'SF')), (SELECT id FROM games WHERE startTime = '2019-06-06 12:10:00' AND homeTeamId = (SELECT id FROM teams WHERE abbreviation = 'NYM') AND awayTeamId = (SELECT id FROM teams WHERE abbreviation ='SF')), (SELECT id FROM teams WHERE abbreviation = 'SF'), 0, 0.2, 0, 0, 0, 0, 0),
+  ((SELECT id FROM players WHERE firstName = 'Elvis' AND lastName = 'Luciano' AND position = 'RP' AND currentTeamId = (SELECT id FROM teams WHERE abbreviation = 'TOR')), (SELECT id FROM games WHERE startTime = '2019-06-06 19:00:00' AND homeTeamId = (SELECT id FROM teams WHERE abbreviation = 'TOR') AND awayTeamId = (SELECT id FROM teams WHERE abbreviation ='NYY')), (SELECT id FROM teams WHERE abbreviation = 'TOR'), 0, 1, 1, 0, 0, 1, 2),
+  ((SELECT id FROM players WHERE firstName = 'Tim' AND lastName = 'Mayza' AND position = 'RP' AND currentTeamId = (SELECT id FROM teams WHERE abbreviation = 'TOR')), (SELECT id FROM games WHERE startTime = '2019-06-06 19:00:00' AND homeTeamId = (SELECT id FROM teams WHERE abbreviation = 'TOR') AND awayTeamId = (SELECT id FROM teams WHERE abbreviation ='NYY')), (SELECT id FROM teams WHERE abbreviation = 'TOR'), 0, 1, 0, 0, 0, 0, 1),
+  ((SELECT id FROM players WHERE firstName = 'Thomas' AND lastName = 'Pannone' AND position = 'RP' AND currentTeamId = (SELECT id FROM teams WHERE abbreviation = 'TOR')), (SELECT id FROM games WHERE startTime = '2019-06-06 19:00:00' AND homeTeamId = (SELECT id FROM teams WHERE abbreviation = 'TOR') AND awayTeamId = (SELECT id FROM teams WHERE abbreviation ='NYY')), (SELECT id FROM teams WHERE abbreviation = 'TOR'), 0, 3.2, 1, 0, 0, 1, 1),
+  ((SELECT id FROM players WHERE firstName = 'Jacob' AND lastName = 'Webb' AND position = 'RP' AND currentTeamId = (SELECT id FROM teams WHERE abbreviation = 'ATL')), (SELECT id FROM games WHERE startTime = '2019-06-06 12:35:00' AND homeTeamId = (SELECT id FROM teams WHERE abbreviation = 'PIT') AND awayTeamId = (SELECT id FROM teams WHERE abbreviation ='ATL')), (SELECT id FROM teams WHERE abbreviation = 'ATL'), 0, 1, 3, 2, 2, 0, 1),
+  ((SELECT id FROM players WHERE firstName = 'Matt' AND lastName = 'Grace' AND position = 'RP' AND currentTeamId = (SELECT id FROM teams WHERE abbreviation = 'WSH')), (SELECT id FROM games WHERE startTime = '2019-06-06 22:10:00' AND homeTeamId = (SELECT id FROM teams WHERE abbreviation = 'SD') AND awayTeamId = (SELECT id FROM teams WHERE abbreviation ='WSH')), (SELECT id FROM teams WHERE abbreviation = 'WSH'), 0, 0.2, 0, 0, 0, 0, 0),
+  ((SELECT id FROM players WHERE firstName = 'Javy' AND lastName = 'Guerra' AND position = 'RP' AND currentTeamId = (SELECT id FROM teams WHERE abbreviation = 'WSH')), (SELECT id FROM games WHERE startTime = '2019-06-06 22:10:00' AND homeTeamId = (SELECT id FROM teams WHERE abbreviation = 'SD') AND awayTeamId = (SELECT id FROM teams WHERE abbreviation ='WSH')), (SELECT id FROM teams WHERE abbreviation = 'WSH'), 0, 1.2, 1, 0, 0, 1, 2),
+  ((SELECT id FROM players WHERE firstName = 'Tony' AND lastName = 'Sipp' AND position = 'RP' AND currentTeamId = (SELECT id FROM teams WHERE abbreviation = 'WSH')), (SELECT id FROM games WHERE startTime = '2019-06-06 22:10:00' AND homeTeamId = (SELECT id FROM teams WHERE abbreviation = 'SD') AND awayTeamId = (SELECT id FROM teams WHERE abbreviation ='WSH')), (SELECT id FROM teams WHERE abbreviation = 'WSH'), 0, 0.2, 0, 0, 0, 1, 1),
+  ((SELECT id FROM players WHERE firstName = 'Chris' AND lastName = 'Devenski' AND position = 'RP' AND currentTeamId = (SELECT id FROM teams WHERE abbreviation = 'HOU')), (SELECT id FROM games WHERE startTime = '2019-06-06 15:40:00' AND homeTeamId = (SELECT id FROM teams WHERE abbreviation = 'SEA') AND awayTeamId = (SELECT id FROM teams WHERE abbreviation ='HOU')), (SELECT id FROM teams WHERE abbreviation = 'HOU'), 1, 2, 0, 0, 0, 3, 4),
+  ((SELECT id FROM players WHERE firstName = 'Will' AND lastName = 'Harris' AND position = 'RP' AND currentTeamId = (SELECT id FROM teams WHERE abbreviation = 'HOU')), (SELECT id FROM games WHERE startTime = '2019-06-06 15:40:00' AND homeTeamId = (SELECT id FROM teams WHERE abbreviation = 'SEA') AND awayTeamId = (SELECT id FROM teams WHERE abbreviation ='HOU')), (SELECT id FROM teams WHERE abbreviation = 'HOU'), 1, 0.1, 3, 1, 1, 0, 0),
+  ((SELECT id FROM players WHERE firstName = 'Roberto' AND lastName = 'Osuna' AND position = 'RP' AND currentTeamId = (SELECT id FROM teams WHERE abbreviation = 'HOU')), (SELECT id FROM games WHERE startTime = '2019-06-06 15:40:00' AND homeTeamId = (SELECT id FROM teams WHERE abbreviation = 'SEA') AND awayTeamId = (SELECT id FROM teams WHERE abbreviation ='HOU')), (SELECT id FROM teams WHERE abbreviation = 'HOU'), 1, 1.2, 1, 1, 1, 1, 0),
+  ((SELECT id FROM players WHERE firstName = 'Ryan' AND lastName = 'Pressly' AND position = 'RP' AND currentTeamId = (SELECT id FROM teams WHERE abbreviation = 'HOU')), (SELECT id FROM games WHERE startTime = '2019-06-06 15:40:00' AND homeTeamId = (SELECT id FROM teams WHERE abbreviation = 'SEA') AND awayTeamId = (SELECT id FROM teams WHERE abbreviation ='HOU')), (SELECT id FROM teams WHERE abbreviation = 'HOU'), 1, 0.2, 1, 1, 1, 2, 0),
+  ((SELECT id FROM players WHERE firstName = 'Hector' AND lastName = 'Rondon' AND position = 'RP' AND currentTeamId = (SELECT id FROM teams WHERE abbreviation = 'HOU')), (SELECT id FROM games WHERE startTime = '2019-06-06 15:40:00' AND homeTeamId = (SELECT id FROM teams WHERE abbreviation = 'SEA') AND awayTeamId = (SELECT id FROM teams WHERE abbreviation ='HOU')), (SELECT id FROM teams WHERE abbreviation = 'HOU'), 1, 1, 1, 1, 1, 0, 1),
+  ((SELECT id FROM players WHERE firstName = 'Jeurys' AND lastName = 'Familia' AND position = 'RP' AND currentTeamId = (SELECT id FROM teams WHERE abbreviation = 'NYM')), (SELECT id FROM games WHERE startTime = '2019-06-06 12:10:00' AND homeTeamId = (SELECT id FROM teams WHERE abbreviation = 'NYM') AND awayTeamId = (SELECT id FROM teams WHERE abbreviation ='SF')), (SELECT id FROM teams WHERE abbreviation = 'NYM'), 1, 1, 0, 0, 0, 0, 2),
+  ((SELECT id FROM players WHERE firstName = 'Amir' AND lastName = 'Garrett' AND position = 'RP' AND currentTeamId = (SELECT id FROM teams WHERE abbreviation = 'CIN')), (SELECT id FROM games WHERE startTime = '2019-06-06 13:15:00' AND homeTeamId = (SELECT id FROM teams WHERE abbreviation = 'STL') AND awayTeamId = (SELECT id FROM teams WHERE abbreviation ='CIN')), (SELECT id FROM teams WHERE abbreviation = 'CIN'), 0, 1, 1, 0, 0, 0, 1),
+  ((SELECT id FROM players WHERE firstName = 'Michael' AND lastName = 'Lorenzen' AND position = 'RP' AND currentTeamId = (SELECT id FROM teams WHERE abbreviation = 'CIN')), (SELECT id FROM games WHERE startTime = '2019-06-06 13:15:00' AND homeTeamId = (SELECT id FROM teams WHERE abbreviation = 'STL') AND awayTeamId = (SELECT id FROM teams WHERE abbreviation ='CIN')), (SELECT id FROM teams WHERE abbreviation = 'CIN'), 0, 1.1, 2, 2, 2, 0, 3),
+  ((SELECT id FROM players WHERE firstName = 'Wandy' AND lastName = 'Peralta' AND position = 'RP' AND currentTeamId = (SELECT id FROM teams WHERE abbreviation = 'CIN')), (SELECT id FROM games WHERE startTime = '2019-06-06 13:15:00' AND homeTeamId = (SELECT id FROM teams WHERE abbreviation = 'STL') AND awayTeamId = (SELECT id FROM teams WHERE abbreviation ='CIN')), (SELECT id FROM teams WHERE abbreviation = 'CIN'), 0, 0.2, 0, 0, 0, 0, 0),
+  ((SELECT id FROM players WHERE firstName = 'Austin' AND lastName = 'Adams' AND position = 'RP' AND currentTeamId = (SELECT id FROM teams WHERE abbreviation = 'DET')), (SELECT id FROM games WHERE startTime = '2019-06-06 13:10:00' AND homeTeamId = (SELECT id FROM teams WHERE abbreviation = 'DET') AND awayTeamId = (SELECT id FROM teams WHERE abbreviation ='TB')), (SELECT id FROM teams WHERE abbreviation = 'DET'), 0, 1, 0, 0, 0, 0, 2),
+  ((SELECT id FROM players WHERE firstName = 'Victor' AND lastName = 'Alcantara' AND position = 'RP' AND currentTeamId = (SELECT id FROM teams WHERE abbreviation = 'DET')), (SELECT id FROM games WHERE startTime = '2019-06-06 13:10:00' AND homeTeamId = (SELECT id FROM teams WHERE abbreviation = 'DET') AND awayTeamId = (SELECT id FROM teams WHERE abbreviation ='TB')), (SELECT id FROM teams WHERE abbreviation = 'DET'), 0, 1.1, 0, 0, 0, 0, 1),
+  ((SELECT id FROM players WHERE firstName = 'Buck' AND lastName = 'Farmer' AND position = 'RP' AND currentTeamId = (SELECT id FROM teams WHERE abbreviation = 'DET')), (SELECT id FROM games WHERE startTime = '2019-06-06 13:10:00' AND homeTeamId = (SELECT id FROM teams WHERE abbreviation = 'DET') AND awayTeamId = (SELECT id FROM teams WHERE abbreviation ='TB')), (SELECT id FROM teams WHERE abbreviation = 'DET'), 0, 0.1, 1, 0, 0, 0, 0),
+  ((SELECT id FROM players WHERE firstName = 'Daniel' AND lastName = 'Stumpf' AND position = 'RP' AND currentTeamId = (SELECT id FROM teams WHERE abbreviation = 'DET')), (SELECT id FROM games WHERE startTime = '2019-06-06 13:10:00' AND homeTeamId = (SELECT id FROM teams WHERE abbreviation = 'DET') AND awayTeamId = (SELECT id FROM teams WHERE abbreviation ='TB')), (SELECT id FROM teams WHERE abbreviation = 'DET'), 0, 0.2, 2, 3, 3, 1, 0),
+  ((SELECT id FROM players WHERE firstName = 'Miguel' AND lastName = 'Castro' AND position = 'RP' AND currentTeamId = (SELECT id FROM teams WHERE abbreviation = 'BAL')), (SELECT id FROM games WHERE startTime = '2019-06-06 20:05:00' AND homeTeamId = (SELECT id FROM teams WHERE abbreviation = 'TEX') AND awayTeamId = (SELECT id FROM teams WHERE abbreviation ='BAL')), (SELECT id FROM teams WHERE abbreviation = 'BAL'), 0, 2, 0, 0, 0, 1, 3),
+  ((SELECT id FROM players WHERE firstName = 'David' AND lastName = 'Hess' AND position = 'RP' AND currentTeamId = (SELECT id FROM teams WHERE abbreviation = 'BAL')), (SELECT id FROM games WHERE startTime = '2019-06-06 20:05:00' AND homeTeamId = (SELECT id FROM teams WHERE abbreviation = 'TEX') AND awayTeamId = (SELECT id FROM teams WHERE abbreviation ='BAL')), (SELECT id FROM teams WHERE abbreviation = 'BAL'), 0, 6, 8, 4, 3, 1, 2),
+  ((SELECT id FROM players WHERE firstName = 'Aroldis' AND lastName = 'Chapman' AND position = 'RP' AND currentTeamId = (SELECT id FROM teams WHERE abbreviation = 'NYY')), (SELECT id FROM games WHERE startTime = '2019-06-06 19:00:00' AND homeTeamId = (SELECT id FROM teams WHERE abbreviation = 'TOR') AND awayTeamId = (SELECT id FROM teams WHERE abbreviation ='NYY')), (SELECT id FROM teams WHERE abbreviation = 'NYY'), 1, 1, 0, 0, 0, 0, 0),
+  ((SELECT id FROM players WHERE firstName = 'Chad' AND lastName = 'Green' AND position = 'RP' AND currentTeamId = (SELECT id FROM teams WHERE abbreviation = 'NYY')), (SELECT id FROM games WHERE startTime = '2019-06-06 19:00:00' AND homeTeamId = (SELECT id FROM teams WHERE abbreviation = 'TOR') AND awayTeamId = (SELECT id FROM teams WHERE abbreviation ='NYY')), (SELECT id FROM teams WHERE abbreviation = 'NYY'), 1, 1, 4, 1, 1, 0, 0),
+  ((SELECT id FROM players WHERE firstName = 'Craig' AND lastName = 'Stammen' AND position = 'RP' AND currentTeamId = (SELECT id FROM teams WHERE abbreviation = 'SD')), (SELECT id FROM games WHERE startTime = '2019-06-06 22:10:00' AND homeTeamId = (SELECT id FROM teams WHERE abbreviation = 'SD') AND awayTeamId = (SELECT id FROM teams WHERE abbreviation ='WSH')), (SELECT id FROM teams WHERE abbreviation = 'SD'), 1, 1, 0, 0, 0, 0, 0),
+  ((SELECT id FROM players WHERE firstName = 'Trey' AND lastName = 'Wingenter' AND position = 'RP' AND currentTeamId = (SELECT id FROM teams WHERE abbreviation = 'SD')), (SELECT id FROM games WHERE startTime = '2019-06-06 22:10:00' AND homeTeamId = (SELECT id FROM teams WHERE abbreviation = 'SD') AND awayTeamId = (SELECT id FROM teams WHERE abbreviation ='WSH')), (SELECT id FROM teams WHERE abbreviation = 'SD'), 1, 1, 0, 0, 0, 0, 2),
+  ((SELECT id FROM players WHERE firstName = 'Kirby' AND lastName = 'Yates' AND position = 'RP' AND currentTeamId = (SELECT id FROM teams WHERE abbreviation = 'SD')), (SELECT id FROM games WHERE startTime = '2019-06-06 22:10:00' AND homeTeamId = (SELECT id FROM teams WHERE abbreviation = 'SD') AND awayTeamId = (SELECT id FROM teams WHERE abbreviation ='WSH')), (SELECT id FROM teams WHERE abbreviation = 'SD'), 1, 1, 0, 0, 0, 0, 1),
+  ((SELECT id FROM players WHERE firstName = 'Chris' AND lastName = 'Archer' AND position = 'SP' AND currentTeamId = (SELECT id FROM teams WHERE abbreviation = 'PIT')), (SELECT id FROM games WHERE startTime = '2019-06-06 12:35:00' AND homeTeamId = (SELECT id FROM teams WHERE abbreviation = 'PIT') AND awayTeamId = (SELECT id FROM teams WHERE abbreviation ='ATL')), (SELECT id FROM teams WHERE abbreviation = 'PIT'), 1, 6, 6, 1, 1, 2, 6),
+  ((SELECT id FROM players WHERE firstName = 'Francisco' AND lastName = 'Liriano' AND position = 'SP' AND currentTeamId = (SELECT id FROM teams WHERE abbreviation = 'PIT')), (SELECT id FROM games WHERE startTime = '2019-06-06 12:35:00' AND homeTeamId = (SELECT id FROM teams WHERE abbreviation = 'PIT') AND awayTeamId = (SELECT id FROM teams WHERE abbreviation ='ATL')), (SELECT id FROM teams WHERE abbreviation = 'PIT'), 1, 1.2, 0, 0, 0, 0, 1),
+  ((SELECT id FROM players WHERE firstName = 'Danny' AND lastName = 'Duffy' AND position = 'SP' AND currentTeamId = (SELECT id FROM teams WHERE abbreviation = 'KC')), (SELECT id FROM games WHERE startTime = '2019-06-06 13:15:00' AND homeTeamId = (SELECT id FROM teams WHERE abbreviation = 'KC') AND awayTeamId = (SELECT id FROM teams WHERE abbreviation ='BOS')), (SELECT id FROM teams WHERE abbreviation = 'KC'), 0, 2.1, 4, 4, 4, 2, 2),
+  ((SELECT id FROM players WHERE firstName = 'Peter' AND lastName = 'Lambert' AND position = 'SP' AND currentTeamId = (SELECT id FROM teams WHERE abbreviation = 'COL')), (SELECT id FROM games WHERE startTime = '2019-06-06 14:20:00' AND homeTeamId = (SELECT id FROM teams WHERE abbreviation = 'CHC') AND awayTeamId = (SELECT id FROM teams WHERE abbreviation ='COL')), (SELECT id FROM teams WHERE abbreviation = 'COL'), 1, 7, 4, 1, 1, 1, 9),
+  ((SELECT id FROM players WHERE firstName = 'Dakota' AND lastName = 'Hudson' AND position = 'SP' AND currentTeamId = (SELECT id FROM teams WHERE abbreviation = 'STL')), (SELECT id FROM games WHERE startTime = '2019-06-06 13:15:00' AND homeTeamId = (SELECT id FROM teams WHERE abbreviation = 'STL') AND awayTeamId = (SELECT id FROM teams WHERE abbreviation ='CIN')), (SELECT id FROM teams WHERE abbreviation = 'STL'), 1, 6.1, 5, 1, 1, 4, 3),
+  ((SELECT id FROM players WHERE firstName = 'Jose' AND lastName = 'Berrios' AND position = 'SP' AND currentTeamId = (SELECT id FROM teams WHERE abbreviation = 'MIN')), (SELECT id FROM games WHERE startTime = '2019-06-06 19:00:00' AND homeTeamId = (SELECT id FROM teams WHERE abbreviation = 'CLE') AND awayTeamId = (SELECT id FROM teams WHERE abbreviation ='MIN')), (SELECT id FROM teams WHERE abbreviation = 'MIN'), 1, 6, 2, 2, 1, 1, 6),
+  ((SELECT id FROM players WHERE firstName = 'Jose' AND lastName = 'Quintana' AND position = 'SP' AND currentTeamId = (SELECT id FROM teams WHERE abbreviation = 'CHC')), (SELECT id FROM games WHERE startTime = '2019-06-06 14:20:00' AND homeTeamId = (SELECT id FROM teams WHERE abbreviation = 'CHC') AND awayTeamId = (SELECT id FROM teams WHERE abbreviation ='COL')), (SELECT id FROM teams WHERE abbreviation = 'CHC'), 0, 7.1, 6, 3, 3, 0, 4),
+  ((SELECT id FROM players WHERE firstName = 'Kyle' AND lastName = 'Ryan' AND position = 'SP' AND currentTeamId = (SELECT id FROM teams WHERE abbreviation = 'CHC')), (SELECT id FROM games WHERE startTime = '2019-06-06 14:20:00' AND homeTeamId = (SELECT id FROM teams WHERE abbreviation = 'CHC') AND awayTeamId = (SELECT id FROM teams WHERE abbreviation ='COL')), (SELECT id FROM teams WHERE abbreviation = 'CHC'), 0, 1, 0, 0, 0, 1, 2),
+  ((SELECT id FROM players WHERE firstName = 'Roenis' AND lastName = 'Elias' AND position = 'SP' AND currentTeamId = (SELECT id FROM teams WHERE abbreviation = 'SEA')), (SELECT id FROM games WHERE startTime = '2019-06-06 15:40:00' AND homeTeamId = (SELECT id FROM teams WHERE abbreviation = 'SEA') AND awayTeamId = (SELECT id FROM teams WHERE abbreviation ='HOU')), (SELECT id FROM teams WHERE abbreviation = 'SEA'), 0, 1, 2, 1, 1, 0, 1),
+  ((SELECT id FROM players WHERE firstName = 'Tommy' AND lastName = 'Milone' AND position = 'SP' AND currentTeamId = (SELECT id FROM teams WHERE abbreviation = 'SEA')), (SELECT id FROM games WHERE startTime = '2019-06-06 15:40:00' AND homeTeamId = (SELECT id FROM teams WHERE abbreviation = 'SEA') AND awayTeamId = (SELECT id FROM teams WHERE abbreviation ='HOU')), (SELECT id FROM teams WHERE abbreviation = 'SEA'), 0, 5.1, 3, 1, 1, 1, 1),
+  ((SELECT id FROM players WHERE firstName = 'Mike' AND lastName = 'Fiers' AND position = 'SP' AND currentTeamId = (SELECT id FROM teams WHERE abbreviation = 'OAK')), (SELECT id FROM games WHERE startTime = '2019-06-06 22:07:00' AND homeTeamId = (SELECT id FROM teams WHERE abbreviation = 'LAA') AND awayTeamId = (SELECT id FROM teams WHERE abbreviation ='OAK')), (SELECT id FROM teams WHERE abbreviation = 'OAK'), 1, 6, 7, 3, 3, 0, 5),
+  ((SELECT id FROM players WHERE firstName = 'Freddy' AND lastName = 'Peralta' AND position = 'SP' AND currentTeamId = (SELECT id FROM teams WHERE abbreviation = 'MIL')), (SELECT id FROM games WHERE startTime = '2019-06-06 14:10:00' AND homeTeamId = (SELECT id FROM teams WHERE abbreviation = 'MIL') AND awayTeamId = (SELECT id FROM teams WHERE abbreviation ='MIA')), (SELECT id FROM teams WHERE abbreviation = 'MIL'), 1, 6, 4, 1, 1, 0, 9),
+  ((SELECT id FROM players WHERE firstName = 'Sergio' AND lastName = 'Romo' AND position = 'SP' AND currentTeamId = (SELECT id FROM teams WHERE abbreviation = 'MIA')), (SELECT id FROM games WHERE startTime = '2019-06-06 14:10:00' AND homeTeamId = (SELECT id FROM teams WHERE abbreviation = 'MIL') AND awayTeamId = (SELECT id FROM teams WHERE abbreviation ='MIA')), (SELECT id FROM teams WHERE abbreviation = 'MIA'), 0, 1, 0, 0, 0, 0, 0),
+  ((SELECT id FROM players WHERE firstName = 'Caleb' AND lastName = 'Smith' AND position = 'SP' AND currentTeamId = (SELECT id FROM teams WHERE abbreviation = 'MIA')), (SELECT id FROM games WHERE startTime = '2019-06-06 14:10:00' AND homeTeamId = (SELECT id FROM teams WHERE abbreviation = 'MIL') AND awayTeamId = (SELECT id FROM teams WHERE abbreviation ='MIA')), (SELECT id FROM teams WHERE abbreviation = 'MIA'), 0, 5, 6, 4, 4, 2, 2),
+  ((SELECT id FROM players WHERE firstName = 'Trevor' AND lastName = 'Bauer' AND position = 'SP' AND currentTeamId = (SELECT id FROM teams WHERE abbreviation = 'CLE')), (SELECT id FROM games WHERE startTime = '2019-06-06 19:00:00' AND homeTeamId = (SELECT id FROM teams WHERE abbreviation = 'CLE') AND awayTeamId = (SELECT id FROM teams WHERE abbreviation ='MIN')), (SELECT id FROM teams WHERE abbreviation = 'CLE'), 0, 8, 5, 5, 5, 3, 7),
+  ((SELECT id FROM players WHERE firstName = 'Shaun' AND lastName = 'Anderson' AND position = 'SP' AND currentTeamId = (SELECT id FROM teams WHERE abbreviation = 'SF')), (SELECT id FROM games WHERE startTime = '2019-06-06 12:10:00' AND homeTeamId = (SELECT id FROM teams WHERE abbreviation = 'NYM') AND awayTeamId = (SELECT id FROM teams WHERE abbreviation ='SF')), (SELECT id FROM teams WHERE abbreviation = 'SF'), 0, 6, 6, 3, 3, 3, 3),
+  ((SELECT id FROM players WHERE firstName = 'Edwin' AND lastName = 'Jackson' AND position = 'SP' AND currentTeamId = (SELECT id FROM teams WHERE abbreviation = 'TOR')), (SELECT id FROM games WHERE startTime = '2019-06-06 19:00:00' AND homeTeamId = (SELECT id FROM teams WHERE abbreviation = 'TOR') AND awayTeamId = (SELECT id FROM teams WHERE abbreviation ='NYY')), (SELECT id FROM teams WHERE abbreviation = 'TOR'), 0, 3.1, 6, 6, 2, 2, 3),
+  ((SELECT id FROM players WHERE firstName = 'Jaime' AND lastName = 'Barria' AND position = 'SP' AND currentTeamId = (SELECT id FROM teams WHERE abbreviation = 'LAA')), (SELECT id FROM games WHERE startTime = '2019-06-06 22:07:00' AND homeTeamId = (SELECT id FROM teams WHERE abbreviation = 'LAA') AND awayTeamId = (SELECT id FROM teams WHERE abbreviation ='OAK')), (SELECT id FROM teams WHERE abbreviation = 'LAA'), 0, 5, 3, 1, 1, 2, 6),
+  ((SELECT id FROM players WHERE firstName = 'Tyler' AND lastName = 'Skaggs' AND position = 'SP' AND currentTeamId = (SELECT id FROM teams WHERE abbreviation = 'LAA')), (SELECT id FROM games WHERE startTime = '2019-06-06 22:07:00' AND homeTeamId = (SELECT id FROM teams WHERE abbreviation = 'LAA') AND awayTeamId = (SELECT id FROM teams WHERE abbreviation ='OAK')), (SELECT id FROM teams WHERE abbreviation = 'LAA'), 0, 4, 6, 6, 5, 4, 4),
+  ((SELECT id FROM players WHERE firstName = 'Mike' AND lastName = 'Foltynewicz' AND position = 'SP' AND currentTeamId = (SELECT id FROM teams WHERE abbreviation = 'ATL')), (SELECT id FROM games WHERE startTime = '2019-06-06 12:35:00' AND homeTeamId = (SELECT id FROM teams WHERE abbreviation = 'PIT') AND awayTeamId = (SELECT id FROM teams WHERE abbreviation ='ATL')), (SELECT id FROM teams WHERE abbreviation = 'ATL'), 0, 6, 6, 3, 3, 1, 5),
+  ((SELECT id FROM players WHERE firstName = 'Sean' AND lastName = 'Newcomb' AND position = 'SP' AND currentTeamId = (SELECT id FROM teams WHERE abbreviation = 'ATL')), (SELECT id FROM games WHERE startTime = '2019-06-06 12:35:00' AND homeTeamId = (SELECT id FROM teams WHERE abbreviation = 'PIT') AND awayTeamId = (SELECT id FROM teams WHERE abbreviation ='ATL')), (SELECT id FROM teams WHERE abbreviation = 'ATL'), 0, 1, 1, 1, 1, 0, 1),
+  ((SELECT id FROM players WHERE firstName = 'Patrick' AND lastName = 'Corbin' AND position = 'SP' AND currentTeamId = (SELECT id FROM teams WHERE abbreviation = 'WSH')), (SELECT id FROM games WHERE startTime = '2019-06-06 22:10:00' AND homeTeamId = (SELECT id FROM teams WHERE abbreviation = 'SD') AND awayTeamId = (SELECT id FROM teams WHERE abbreviation ='WSH')), (SELECT id FROM teams WHERE abbreviation = 'WSH'), 0, 5, 5, 5, 3, 5, 6),
+  ((SELECT id FROM players WHERE firstName = 'Josh' AND lastName = 'James' AND position = 'SP' AND currentTeamId = (SELECT id FROM teams WHERE abbreviation = 'HOU')), (SELECT id FROM games WHERE startTime = '2019-06-06 15:40:00' AND homeTeamId = (SELECT id FROM teams WHERE abbreviation = 'SEA') AND awayTeamId = (SELECT id FROM teams WHERE abbreviation ='HOU')), (SELECT id FROM teams WHERE abbreviation = 'HOU'), 1, 2, 0, 0, 0, 3, 4),
+  ((SELECT id FROM players WHERE firstName = 'Justin' AND lastName = 'Verlander' AND position = 'SP' AND currentTeamId = (SELECT id FROM teams WHERE abbreviation = 'HOU')), (SELECT id FROM games WHERE startTime = '2019-06-06 15:40:00' AND homeTeamId = (SELECT id FROM teams WHERE abbreviation = 'SEA') AND awayTeamId = (SELECT id FROM teams WHERE abbreviation ='HOU')), (SELECT id FROM teams WHERE abbreviation = 'HOU'), 1, 6.1, 5, 3, 3, 0, 7),
+  ((SELECT id FROM players WHERE firstName = 'Seth' AND lastName = 'Lugo' AND position = 'SP' AND currentTeamId = (SELECT id FROM teams WHERE abbreviation = 'NYM')), (SELECT id FROM games WHERE startTime = '2019-06-06 12:10:00' AND homeTeamId = (SELECT id FROM teams WHERE abbreviation = 'NYM') AND awayTeamId = (SELECT id FROM teams WHERE abbreviation ='SF')), (SELECT id FROM teams WHERE abbreviation = 'NYM'), 1, 1, 0, 0, 0, 0, 1),
+  ((SELECT id FROM players WHERE firstName = 'Zack' AND lastName = 'Wheeler' AND position = 'SP' AND currentTeamId = (SELECT id FROM teams WHERE abbreviation = 'NYM')), (SELECT id FROM games WHERE startTime = '2019-06-06 12:10:00' AND homeTeamId = (SELECT id FROM teams WHERE abbreviation = 'NYM') AND awayTeamId = (SELECT id FROM teams WHERE abbreviation ='SF')), (SELECT id FROM teams WHERE abbreviation = 'NYM'), 1, 7, 3, 3, 3, 1, 6),
+  ((SELECT id FROM players WHERE firstName = 'Anthony' AND lastName = 'DeSclafani' AND position = 'SP' AND currentTeamId = (SELECT id FROM teams WHERE abbreviation = 'CIN')), (SELECT id FROM games WHERE startTime = '2019-06-06 13:15:00' AND homeTeamId = (SELECT id FROM teams WHERE abbreviation = 'STL') AND awayTeamId = (SELECT id FROM teams WHERE abbreviation ='CIN')), (SELECT id FROM teams WHERE abbreviation = 'CIN'), 0, 5, 6, 1, 1, 1, 7),
+  ((SELECT id FROM players WHERE firstName = 'Daniel' AND lastName = 'Norris' AND position = 'SP' AND currentTeamId = (SELECT id FROM teams WHERE abbreviation = 'DET')), (SELECT id FROM games WHERE startTime = '2019-06-06 13:10:00' AND homeTeamId = (SELECT id FROM teams WHERE abbreviation = 'DET') AND awayTeamId = (SELECT id FROM teams WHERE abbreviation ='TB')), (SELECT id FROM teams WHERE abbreviation = 'DET'), 0, 5.2, 11, 3, 3, 1, 6),
+  ((SELECT id FROM players WHERE firstName = 'J.A.' AND lastName = 'Happ' AND position = 'SP' AND currentTeamId = (SELECT id FROM teams WHERE abbreviation = 'NYY')), (SELECT id FROM games WHERE startTime = '2019-06-06 19:00:00' AND homeTeamId = (SELECT id FROM teams WHERE abbreviation = 'TOR') AND awayTeamId = (SELECT id FROM teams WHERE abbreviation ='NYY')), (SELECT id FROM teams WHERE abbreviation = 'NYY'), 1, 7, 4, 1, 1, 0, 4),
+  ((SELECT id FROM players WHERE firstName = 'Joey' AND lastName = 'Lucchesi' AND position = 'SP' AND currentTeamId = (SELECT id FROM teams WHERE abbreviation = 'SD')), (SELECT id FROM games WHERE startTime = '2019-06-06 22:10:00' AND homeTeamId = (SELECT id FROM teams WHERE abbreviation = 'SD') AND awayTeamId = (SELECT id FROM teams WHERE abbreviation ='WSH')), (SELECT id FROM teams WHERE abbreviation = 'SD'), 1, 5, 4, 4, 4, 3, 5),
+  ((SELECT id FROM players WHERE firstName = 'Matt' AND lastName = 'Wisler' AND position = 'SP' AND currentTeamId = (SELECT id FROM teams WHERE abbreviation = 'SD')), (SELECT id FROM games WHERE startTime = '2019-06-06 22:10:00' AND homeTeamId = (SELECT id FROM teams WHERE abbreviation = 'SD') AND awayTeamId = (SELECT id FROM teams WHERE abbreviation ='WSH')), (SELECT id FROM teams WHERE abbreviation = 'SD'), 1, 1, 0, 0, 0, 0, 3);
